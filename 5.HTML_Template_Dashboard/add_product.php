@@ -1,6 +1,6 @@
 <?php
 require_once("../conexion/connect.php");
-include_once("../HTML_Template_Frontend_LTR/header.php");
+include_once("../1.HTML_Template_Frontend_LTR/header.php");
 
 if($con != NULL) {
     if (isset($_POST['product_name']) && isset($_POST['price']) && isset($_POST['category']) && isset($_FILES['image'])) {
@@ -32,5 +32,5 @@ if($con != NULL) {
     echo "<h1>Algo salió mal con la conexión</h1>";
 }
 
-include_once("../HTML_Template_Frontend_LTR/footer.php");
+include_once("../1.HTML_Template_Frontend_LTR/footer.php");
 ?>
