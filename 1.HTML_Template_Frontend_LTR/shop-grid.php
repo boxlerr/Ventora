@@ -16,6 +16,7 @@
   <body>
     <?php
     include_once("main2.php");
+    include_once("consultas_bd.php");
     ?>
     <main class="main">
       <div class="section-box d-none d-md-block">
