@@ -96,6 +96,7 @@ require_once("../conexion/connect.php");
         <div class="card mx-auto card-login">
           <div class="card-body">
             <h4 class="card-title mb-4">Create an Account</h4>
+            <!-- formulario para crear un usuario -->
             <form action="../registros/alta_cliente.php" method="POST">
     <div class="mb-3">
         <label class="form-label">Nombre</label>
@@ -106,15 +107,10 @@ require_once("../conexion/connect.php");
         <input class="form-control" name="email" placeholder="Tu email" type="email" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Teléfono</label>
-        <div class="row gx-2">
-            <div class="col-4">
-                <input class="form-control" value="+998" type="text" disabled>
-            </div>
+        <label class="form-label">Teléfono</label>      
             <div class="col-8">
                 <input class="form-control" name="telefono" placeholder="Teléfono" type="text" required>
-            </div>
-        </div>
+            </div>    
     </div>
     <div class="mb-3">
         <label class="form-label">Crear contraseña</label>

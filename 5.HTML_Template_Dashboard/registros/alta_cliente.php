@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Mostrar error si la consulta falla
         echo "Error: " . $consulta . "<br>" . mysqli_error($con);
     }
-
     mysqli_close($con);
 } else {
     
