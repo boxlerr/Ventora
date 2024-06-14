@@ -21,26 +21,33 @@
         "ultimacoleccion": "ÚLTIMA COLECCIÓN",
         "dispoysoftapple": "Dispositivos y Software Apple",
         "categoria": "",
-        "cantidad": "2356 artículos",
+        "cantidad": "artículos",
         "categoria1": "",
-        "cantidad1": "2356 artículos",
         "categoria2": "",
-        "cantidad2": "2356 artículos",
         "categoria3": "",
-        "cantidad3": "2356 artículos",
         "categoria4": "",
-        "cantidad4": "2356 artículos",
         "categoria5": "",
-        "cantidad5": "2356 artículos",
         "categoria6": "",
-        "cantidad6": "2356 artículos",
-        "categoria7": "",
-        "cantidad7": "2356 artículos",
+        "categoria7": "", 
         "categoria8": "",
-        "cantidad8": "2356 artículos",
-        "productdescatado":"Productos Destacados",
-        "productprimavera":"Los mejores productos de la primavera",
-        "agregarcarrito":"Agregar al Carrito"
+        "productdestacado":"Productos Destacados",
+        "agregarcarrito":"Agregar al Carrito",
+        "caractarísticaproductodestacado1":"Nuevo", /* Aca puede ir un descuento (20%) o 'Hot' para marcar que es un producto tendencia */
+        "nombreproductodestacado1":"Airpods",
+        "descripcionproductodestacado1":"La mejor calidad de sonido",
+        "caractarísticaproductodestacado2":"Tendencia", /* Aca puede ir un descuento (20%) o 'Hot' para marcar que es un producto tendencia */
+        "nombreproductodestacado2":"Airpods Max",
+        "descripcionproductodestacado2":"Lorem Ipsum",
+        "caractarísticaproductodestacado3":"20%", /* Aca puede ir un descuento (20%) o 'Hot' para marcar que es un producto tendencia */
+        "nombreproductodestacado3":"Airpods Pro",
+        "descripcionproductodestacado3":"Lorem Ipsum",
+        "nombreproductodestacado4":"Airpods 2da Generación",
+        "descripcionproductodestacado4":"Lorem Ipsum",
+        "nombreproductodestacado5":"Airpods 3da Generación",
+        "descripcionproductodestacado5":"Lorem Ipsum",
+
+
+
 
     }
 }
