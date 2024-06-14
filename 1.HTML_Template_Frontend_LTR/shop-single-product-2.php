@@ -11,9 +11,9 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Single Product - Ecom Marketplace Template</title>
+    <title>Single Product 2 - Ecom Marketplace Template</title>
   </head>
-  <body>
+  <bxody>
     <div id="preloader-active">
       <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
@@ -87,18 +87,9 @@
             <div class="header-nav">
               <nav class="nav-main-menu d-none d-xl-block">
                 <ul class="main-menu">
-                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                  <li class="has-children"><a class="active" href="index-10.php">Home</a>
                     <ul class="sub-menu two-col">
-                      <li><a href="index.html">Homepage - 1</a></li>
-                      <li><a href="index-2.html">Homepage - 2</a></li>
-                      <li><a href="index-3.html">Homepage - 3</a></li>
-                      <li><a href="index-4.html">Homepage - 4</a></li>
-                      <li><a href="index-5.html">Homepage - 5</a></li>
-                      <li><a href="index-6.html">Homepage - 6</a></li>
-                      <li><a href="index-7.html">Homepage - 7</a></li>
-                      <li><a href="index-8.html">Homepage - 8</a></li>
-                      <li><a href="index-9.html">Homepage - 9</a></li>
-                      <li><a href="index-10.html">Homepage - 10</a></li>
+                      <li><a href="index-10.php">Homepage - 10</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="shop-grid.html">Shop</a>
@@ -482,7 +473,7 @@
                       <li><a href="index-7.html">Homepage - 7</a></li>
                       <li><a href="index-8.html">Homepage - 8</a></li>
                       <li><a href="index-9.html">Homepage - 9</a></li>
-                      <li><a href="index-10.html">Homepage - 10</a></li>
+                      <li><a href="index-10.php">Homepage - 10</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="shop-grid.html">Shop</a>
@@ -629,78 +620,79 @@
                 <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.html"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a><a href="shop-compare.html"><span class="btn btn-compare mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Compare</span></a></div>
               </div>
               <div class="border-bottom pt-10 mb-20"></div>
-              <div class="box-product-price">
-                <h3 class="color-brand-3 price-main d-inline-block mr-10">$2856.3</h3><span class="color-gray-500 price-line font-xl line-througt">$3225.6</span>
-              </div>
-              <div class="product-description mt-20 color-gray-900">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="box-product-price">
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10">$2856.3</h3><span class="color-gray-500 price-line font-xl line-througt">$3225.6</span>
+                  </div>
+                  <div class="box-progress-product mt-15 mb-20">
+                    <div class="progress mb-5">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="font-xs color-gray-500">Sold: 135/320</span>
+                  </div>
+                  <div class="product-description color-gray-900">
                     <ul class="list-dot">
                       <li>8k super steady video</li>
                       <li>Nightography plus portait mode</li>
                       <li>50mp photo resolution plus bright display</li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                    <ul class="list-dot">
                       <li>Adaptive color contrast</li>
                       <li>premium design & craftmanship</li>
                       <li>Long lasting battery plus fast charging</li>
                     </ul>
                   </div>
-                </div>
-              </div>
-              <div class="box-product-color mt-20">
-                <p class="font-sm color-gray-900">Color:<span class="color-brand-2 nameColor">Pink Gold</span></p>
-                <ul class="list-colors">
-                  <li class="disabled"><img src="assets/imgs/page/product/img-gallery-1.jpg" alt="Ecom" title="Pink"></li>
-                  <li><img src="assets/imgs/page/product/img-gallery-2.jpg" alt="Ecom" title="Gold"></li>
-                  <li><img src="assets/imgs/page/product/img-gallery-3.jpg" alt="Ecom" title="Pink Gold"></li>
-                  <li><img src="assets/imgs/page/product/img-gallery-4.jpg" alt="Ecom" title="Silver"></li>
-                  <li class="active"><img src="assets/imgs/page/product/img-gallery-5.jpg" alt="Ecom" title="Pink Gold"></li>
-                  <li class="disabled"><img src="assets/imgs/page/product/img-gallery-6.jpg" alt="Ecom" title="Black"></li>
-                  <li class="disabled"><img src="assets/imgs/page/product/img-gallery-7.jpg" alt="Ecom" title="Red"></li>
-                </ul>
-              </div>
-              <div class="box-product-style-size mt-20">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 mb-20">
-                    <p class="font-sm color-gray-900">Style:<span class="color-brand-2 nameStyle">S22</span></p>
-                    <ul class="list-styles">
-                      <li class="disabled" title="S22 Ultra">S22 Ultra</li>
-                      <li class="active" title="S22">S22</li>
-                      <li title="S22 + Standing Cover">S22 + Standing Cover</li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 col-md-6 mb-20">
-                    <p class="font-sm color-gray-900">Size:<span class="color-brand-2 nameSize">512GB</span></p>
-                    <ul class="list-sizes">
-                      <li class="disabled" title="1GB">1GB</li>
-                      <li class="active" title="512 GB">512 GB</li>
-                      <li title="256 GB">256 GB</li>
-                      <li title="128 GB">128 GB</li>
-                      <li class="disabled" title="64GB">64GB</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="buy-product mt-30">
-                <p class="font-sm mb-20">Quantity</p>
-                <div class="box-quantity">
-                  <div class="input-quantity">
-                    <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
-                  </div>
-                  <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
-                </div>
-              </div>
-              <div class="info-product mt-40">
-                <div class="row align-items-end">
-                  <div class="col-lg-4 col-md-4 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br>Category:<span class="color-gray-500">Smartphones</span><br>Tags:<span class="color-gray-500">Blue, Smartphone</span></span></div>
-                  <div class="col-lg-4 col-md-4 mb-20"><span class="font-sm font-medium color-gray-900">Free Delivery<br><span class="color-gray-500">Available for all locations.</span><br><span class="color-gray-500">Delivery Options & Info</span></span></div>
-                  <div class="col-lg-4 col-md-4 mb-20 text-start text-md-end">
-                    <div class="d-inline-block">
-                      <div class="share-link"><span class="font-md-bold color-brand-3 mr-15">Share</span><a class="facebook hover-up" href="#"></a><a class="printest hover-up" href="#"></a><a class="twitter hover-up" href="#"></a><a class="instagram hover-up" href="#"></a></div>
+                  <div class="border-bottom mt-20 mb-20"></div>
+                  <div class="info-product">
+                    <div class="row align-items-end">
+                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br>Category:<span class="color-gray-500">Smartphones</span><br>Tags:<span class="color-gray-500">Blue, Smartphone</span></span></div>
+                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">Free Delivery<br><span class="color-gray-500">Available for all locations.</span><br><span class="color-gray-500">Delivery Options & Info</span></span></div>
+                      <div class="col-lg-12 mb-20">
+                        <div class="d-inline-block">
+                          <div class="share-link"><span class="font-md-bold color-brand-3 mr-15">Share</span><a class="facebook hover-up" href="#"></a><a class="printest hover-up" href="#"></a><a class="twitter hover-up" href="#"></a><a class="instagram hover-up" href="#"></a></div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="box-border-product">
+                    <div class="box-product-color">
+                      <p class="font-sm color-gray-900">Color:<span class="color-brand-2 nameColor">Pink Gold</span></p>
+                      <ul class="list-colors">
+                        <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink"></li>
+                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Gold"></li>
+                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Silver"></li>
+                        <li class="active"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                      </ul>
+                    </div>
+                    <div class="box-product-style-size mt-20">
+                      <div class="row">
+                        <div class="col-lg-12 mb-20">
+                          <p class="font-sm color-gray-900">Style:<span class="color-brand-2 nameStyle">S22</span></p>
+                          <ul class="list-styles">
+                            <li class="disabled" title="S22 Ultra">S22 Ultra</li>
+                            <li class="active" title="S22">S22</li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-12 mb-10">
+                          <p class="font-sm color-gray-900">Size:<span class="color-brand-2 nameSize">512GB</span></p>
+                          <ul class="list-sizes">
+                            <li class="disabled" title="1GB">1GB</li>
+                            <li class="active" title="512 GB">512 GB</li>
+                            <li title="256 GB">256 GB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buy-product mt-10 d-flex">
+                      <div class="font-sm text-quantity">Quantity</div>
+                      <div class="box-quantity">
+                        <div class="input-quantity">
+                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-buy mt-15"><a class="btn btn-cart mb-15" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
                   </div>
                 </div>
               </div>
@@ -709,10 +701,11 @@
           <div class="border-bottom pt-30 mb-40"></div>
           <h4 class="color-brand-3 mb-20">Frequently Bought Together</h4>
           <div class="box-bought-together">
-            <div class="box-product-bought">
+            <div class="box-product-bought box-product-bought-2">
               <div class="product-bought"><img src="assets/imgs/page/product/sp1.png" alt="Ecom"></div>
               <div class="product-bought"><img src="assets/imgs/page/product/sp2.png" alt="Ecom"></div>
               <div class="product-bought"><img src="assets/imgs/page/product/sp3.png" alt="Ecom"></div>
+              <div class="product-bought"><img src="assets/imgs/page/product/sp4.png" alt="Ecom"></div>
             </div>
             <div class="price-bought">
               <h3 class="color-brand-3 mr-10">$2856.3</h3><span class="font-lg color-gray-900">(3 items)</span>
