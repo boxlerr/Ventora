@@ -14,9 +14,10 @@
     <title>Home 10 - Ecom Marketplace Template</title>
   </head>
   <body>
-    <?php
+  <?php
     include_once("main.php");
     ?>
+  <!-- tengo que quitar incluide de main.php porque no cargaba la pagina -->
     <main class="main">
       <section class="section-box mt-30">
         <div class="banner-hero banner-1">
@@ -210,7 +211,7 @@
       <section class="section-box mt-50">
         <div class="container">
           <div class="head-main text-center border-none mb-0">
-            <h3 class="mb-5">Featured Products</h3>
+            <h3 class="mb-5">Featured Products</h3>  <!--hasta aca llegue-->
             <p class="font-base color-gray-500">The best products from Spring</p>
           </div>
           <div class="mt-0">
