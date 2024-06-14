@@ -1,7 +1,6 @@
 <?php
 require_once("../conexion/connect.php");
 
-
 if($con != NULL) {
     if (isset($_POST['product_name']) && isset($_POST['price']) && isset($_POST['category']) && isset($_FILES['image'])) {
         $nombre = $_POST['product_name'];
@@ -9,7 +8,6 @@ if($con != NULL) {
         $precio = $_POST['price'];
         $categoria_id = $_POST['category'];
 
-        // Process image upload
         $hora = time();
         $foto = $hora . '.jpg';
         if(move_uploaded_file($_FILES['image']['tmp_name'], "../img/$foto")) {
