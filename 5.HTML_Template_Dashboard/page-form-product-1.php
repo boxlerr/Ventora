@@ -119,36 +119,35 @@ require_once("../conexion/connect.php");
         <textarea class="form-control" name="description" placeholder="Type here" rows="4" required></textarea>
       </div>
       <div class="row">
-        <div class="col-lg-4">
+      
           <div class="mb-4">
             <label class="form-label">Regular price</label>
             <div class="row gx-2"></div>
             <input class="form-control" name="price" placeholder="$" type="text" required>
           </div>
-        </div>
-        <div class="col-lg-4">
+        
+        <!-- <div class="col-lg-4">
           <label class="form-label">Currency</label>
           <select class="form-select" name="currency">
             <option> USD</option>
             <option> EUR</option>
             <option> RUBL</option>
           </select>
-        </div>
+        </div> -->
       </div>
       <div class="mb-4">
         <label class="form-label">Category</label>
         <select class="form-select" name="category">
           <?php
-          $sql = "SELECT categoria_id, nombre FROM categoria";
-          $result = $conn->query($sql);
+          $sql = "SELECT nombre FROM categoria";
+          $result = $con->query($sql);
           //soy un dios supremo que pone sql aca porque remil pinto
-          if ($result->num_rows > 0) {
-              // Recorrer los resultados y generar los <option>
+          if ($result->num_rows > 0){
               while($row = $result->fetch_assoc()) {
-                  echo "<option value='" . $row['categoria_id'] . "'>" . $row['nombre'] . "</option>";
+              echo "<option value='"  . "'>" . $row['nombre'] . "</option>";
               }
           } else {
-              echo "<option value=''>No hay categorías disponibles</option>";
+            echo "<option value=''>No hay categorías disponibles</option>";
           }
           ?>
         </select>
