@@ -97,6 +97,7 @@ $categorias = getCategorias();
       </header>
     <main class="main-wrap">
         <section class="content-main">
+            
             <div class="content-header">
                 <div>
                     <h2 class="content-title card-title">Categories</h2>
@@ -106,7 +107,30 @@ $categorias = getCategorias();
                     <input class="form-control bg-white" type="text" placeholder="Search Categories">
                 </div>
             </div>
-            <div class="card">
+
+            <div class="row">
+                <div class="col-md-3">
+                <form action="add_categoria.php" method="post">
+    <div class="mb-4">
+        <label class="form-label" for="product_name">Name</label>
+        <input class="form-control" id="product_name" name="product_name" type="text" placeholder="Type here">
+    </div>
+    <div class="mb-4">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" name="product_description" placeholder="Type here"></textarea>
+    </div>
+    <div class="mb-4">
+        <label class="form-label" for="product_slug">Slug</label>
+        <input class="form-control" id="product_slug" name="product_slug" type="text" placeholder="Type here">
+    </div>
+    
+    <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Create category</button>
+    </div>              
+</form>
+                    </div>
+                
+                <div class="card col-md-9">
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-hover">
@@ -121,7 +145,6 @@ $categorias = getCategorias();
                                     <th>Name</th>
                                     <th>Description</th>
                                     <th>Slug</th>
-                                    <th>Order</th>
                                     <th class="text-end">Action</th>
                                 </tr>
                             </thead>
@@ -156,6 +179,9 @@ $categorias = getCategorias();
                     </div>
                 </div>
             </div>
+            </div>
+            
+            
         </section>
     </main>
     <footer class="main-footer font-xs">
