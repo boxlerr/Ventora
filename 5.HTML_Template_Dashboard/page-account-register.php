@@ -96,7 +96,7 @@ require_once("../conexion/connect.php");
         <div class="card mx-auto card-login">
           <div class="card-body">
             <h4 class="card-title mb-4">Create an Account</h4>
-            <form action="../registros/alta.php" method="POST">
+            <form action="../registros/alta_cliente.php" method="POST">
     <div class="mb-3">
         <label class="form-label">Nombre</label>
         <input class="form-control" name="nombre" placeholder="Tu nombre" type="text" required>
