@@ -211,8 +211,7 @@
       <section class="section-box mt-50">
         <div class="container">
           <div class="head-main text-center border-none mb-0">
-            <h3 class="mb-5">Featured Products</h3>  <!--hasta aca llegue-->
-            <p class="font-base color-gray-500">The best products from Spring</p>
+            <h3 class="mb-5">Featured Products</h3> 
           </div>
           <div class="mt-0">
             <div class="list-products-5 list-products-home10">
