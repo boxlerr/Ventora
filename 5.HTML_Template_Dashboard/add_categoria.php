@@ -1,18 +1,25 @@
 <?php
-// Verificar si se ha enviado el formulario
-if (isset($_POST['submit'])) {
-    // Incluir el archivo de conexión
-    include 'connect.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // Verificar y obtener datos del formulario
+    include '../conexion/connect.php';
+    
+    
     if (isset($_POST['product_name'], $_POST['product_description'], $_POST['product_slug'])) {
-        // Escapar los datos del formulario para prevenir inyecciones SQL
+    
         $nombre = $con->real_escape_string($_POST['product_name']);
         $descripcion = $con->real_escape_string($_POST['product_description']);
         $slug = $con->real_escape_string($_POST['product_slug']);
         
-        // Preparar la consulta SQL para insertar la categoría
-        $sql = "INSERT INTO categorias (nombre, descripcion, slug) VALUES ('$nombre', '$descripcion', '$slug')";
+        
+        echo "Nombre: " . $nombre . "<br>";
+        echo "Descripción: " . $descripcion . "<br>";
+        echo "Slug: " . $slug . "<br>";
+        
+        
+        $sql = "INSERT INTO categoria (nombre, descripcion, slug) VALUES ('$nombre', '$descripcion', '$slug')";
+        
+        
         
         if ($con->query($sql) === TRUE) {
             echo "Categoría creada exitosamente";
@@ -23,7 +30,6 @@ if (isset($_POST['submit'])) {
         echo "Por favor completa todos los campos del formulario";
     }
     
-    // Cerrar conexión
     $con->close();
 }
 ?>

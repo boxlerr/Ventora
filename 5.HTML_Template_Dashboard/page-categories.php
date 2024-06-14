@@ -107,7 +107,7 @@ $categorias = getCategorias();
                     <input class="form-control bg-white" type="text" placeholder="Search Categories">
                 </div>
             </div>
-
+              <!--formulario para agregar categorias  -->
             <div class="row">
                 <div class="col-md-3">
                 <form action="add_categoria.php" method="post">
@@ -125,11 +125,11 @@ $categorias = getCategorias();
     </div>
     
     <div class="d-grid">
-        <button class="btn btn-primary" type="submit">Create category</button>
-    </div>              
-</form>
+        <button class="btn btn-primary" name="submit" type="submit">Create category</button>
+    </div>   
+              </form>
                     </div>
-                
+                <!-- tabla para mostrar las categorias -->
                 <div class="card col-md-9">
                 <div class="card-body">
                     <div class="table-responsive">
@@ -150,7 +150,7 @@ $categorias = getCategorias();
                             </thead>
                             <tbody>
                                 <?php
-                                // Iterar sobre cada categoría y mostrar en la tabla
+                                
                                 if ($categorias->num_rows > 0) {
                                     while ($row = $categorias->fetch_assoc()) {
                                         echo '<tr>';
