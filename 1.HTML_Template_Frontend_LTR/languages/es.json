@@ -1,8 +1,24 @@
 {
     "index-10":{
         "titulo":"Vestora",
-        "descuento":"Descuento hasta un 50%",
+        "descuento50":"Descuento hasta un 50%",
         "dispositivosMoviles":"Dispositivos Moviles",
-        "carrouselP1":"texto"
+        "carrouselP1":"texto",
+        "comprarahora": "Comprar ahora",
+        "sabermas": "Saber más",
+        "tendenciaahora": "Trending Now",
+        "descuento25": "Grandes descuentos 25%",
+        "laptopypc": "Laptop & PC",
+        "masvendidomes": "Más vendido este mes",
+        "Hot Collection": "Hot Collection",
+        "gafasvirtuales": "Gafas de realidad virtual",
+        "descuento10": "10% de descuento",
+        "Apple Watch Serial 7": "Apple Watch Serial 7",
+        "ultimaoportunidad": "No te pierdas la última oportunidad.",
+        "ultimacoleccion": "ÚLTIMA COLECCIÓN",
+        "dispoysoftapple": "Dispositivos y Software Apple",
+        "cantidad": "2356 artículos"
+        "categoria": "",
+        "categoria": ""
     }
 }
