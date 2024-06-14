@@ -16,16 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (mysqli_query($con, $consulta)) {
     
-        header("Location: ../usuarios.php?alta=ok");
+        header("Location: ../index.php?alta=ok");
         exit(); 
-    } else {
-        // Mostrar error si la consulta falla
-        echo "Error: " . $consulta . "<br>" . mysqli_error($con);
-    }
+    } 
     mysqli_close($con);
 } else {
-    
-    header("Location: ../registro.php");
+    header("Location: ../index.php");
     exit(); 
 }
 ?>
