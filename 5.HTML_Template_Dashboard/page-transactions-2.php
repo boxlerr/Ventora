@@ -112,129 +112,46 @@
                   </div>
                 </header>
                 <!-- card-header end//-->
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Transaction ID</th>
-                        <th>Paid</th>
-                        <th>Method</th>
-                        <th>Date</th>
-                        <th class="text-end"> Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><b>#456667</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/1.png" alt="Payment"><span class="text text-muted">Amex</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/2.png" alt="Payment"><span class="text text-muted">Master card</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/3.png" alt="Payment"><span class="text text-muted">Paypal</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/4.png" alt="Payment"><span class="text text-muted">Visa</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#887780</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/4.png" alt="Payment"><span class="text text-muted">Visa</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#344556</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/4.png" alt="Payment"><span class="text text-muted">Visa</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/2.png" alt="Payment"><span class="text text-muted">Master card</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/2.png" alt="Payment"><span class="text text-muted">Master card</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#998784</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/3.png" alt="Payment"><span class="text text-muted">Paypal</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#556667</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/3.png" alt="Payment"><span class="text text-muted">Paypal</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#098989</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/3.png" alt="Payment"><span class="text text-muted">Paypal</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                      <tr>
-                        <td><b>#134768</b></td>
-                        <td>$294.00</td>
-                        <td>
-                          <div class="icontext"><img class="icon border" src="assets/imgs/card-brands/4.png" alt="Payment"><span class="text text-muted">Visa</span></div>
-                        </td>
-                        <td>16.12.2022, 14:21</td>
-                        <td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#">Details</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <?php
+include '../conexion/connect.php';
+?>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Paid</th>
+                <th>Method</th>
+                <th>Date</th>
+                <th class="text-end">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $sql = "SELECT pago_id, venta_id, metodo_pago, estado_pago, fecha_pago, total_pago FROM detalle_pago";
+            $result = $con->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<tr>';
+                    echo '<td><b>#' . htmlspecialchars($row['pago_id']) . '</b></td>';
+                    echo '<td>$' . htmlspecialchars(number_format($row['total_pago'], 2)) . '</td>';
+                    echo '<td>';
+                    echo '<div class="icontext"><img class="icon border" src="assets/imgs/card-brands/1.png" alt="Payment"><span class="text text-muted">' . htmlspecialchars($row['metodo_pago']) . '</span></div>';
+                    echo '</td>';
+                    echo '<td>' . htmlspecialchars($row['fecha_pago']) . '</td>';
+                    echo '<td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#" onclick="showDetails(' . htmlspecialchars($row['pago_id']) . ')">Details</a></td>';
+                    echo '</tr>';
+                }
+            } else {
+                echo '<tr><td colspan="5">No hay transacciones disponibles</td></tr>';
+            }
+            $con->close();
+            ?>
+        </tbody>
+    </table>
+</div>
                 <!-- table-responsive.//-->
                 <!-- col end//-->
               </div>
@@ -298,5 +215,23 @@
     <script src="assets/js/vendors/chart.js"></script>
     <script src="assets/js/main.js?v=1.0.0"></script>
     <script src="assets/js/custom-chart.js" type="text/javascript"></script>
+    <script>
+      function showDetails(pago_id) {
+          
+          $.ajax({
+              url: 'get_transaction_details.php',
+              type: 'GET',
+              data: { pago_id: pago_id },
+              success: function(data) {
+                  
+                  $('#transaction-details').html(data);
+              },
+              error: function() {
+                  $('#transaction-details').html('<p>Error al cargar los detalles de la transacción.</p>');
+              }
+          });
+      }
+      </script>
+      
   </body>
 </html>

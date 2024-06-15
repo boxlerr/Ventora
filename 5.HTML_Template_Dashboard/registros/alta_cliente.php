@@ -11,14 +11,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
 
-    $consulta = "INSERT INTO cliente (nombre, email, contraseña, telefono, fecha_registro, nacionalidad) 
+    $consulta = "INSERT INTO cliente (nombre, correo, contrasena, telefono, fecha_registro, nacionalidad) 
                 VALUES ('$nombre', '$correo', '$contraseña_hash', '$telefono', NOW(), '$nacionalidad')";
 
     if (mysqli_query($con, $consulta)) {
     
         header("Location: ../index.php?alta=ok");
         exit(); 
-    } 
+    } else {
+        echo "Error: " . mysqli_error($con);
+    }
+
     mysqli_close($con);
 } else {
     header("Location: ../index.php");
