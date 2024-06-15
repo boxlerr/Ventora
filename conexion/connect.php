@@ -12,5 +12,7 @@ $puerto= '3306';
 
 
 $con = mysqli_connect($servidor,$usuario,$contrasena,$base_de_datos,$puerto);
-
+if (!$con) {
+    die("Error al conectar: " . mysqli_connect_error());
+}
 ?>
