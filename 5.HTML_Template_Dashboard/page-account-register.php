@@ -97,7 +97,7 @@ require_once("../conexion/connect.php");
           <div class="card-body">
             <h4 class="card-title mb-4">Create an Account</h4>
             <!-- formulario para crear un usuario -->
-            <form action="../registros/alta_cliente.php" method="POST">
+            <form action="registros/alta_cliente.php" method="POST">
     <div class="mb-3">
         <label class="form-label">Nombre</label>
         <input class="form-control" name="nombre" placeholder="Tu nombre" type="text" required>
@@ -107,10 +107,8 @@ require_once("../conexion/connect.php");
         <input class="form-control" name="email" placeholder="Tu email" type="email" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Teléfono</label>      
-            <div class="col-8">
-                <input class="form-control" name="telefono" placeholder="Teléfono" type="text" required>
-            </div>    
+        <label class="form-label">Teléfono</label>        
+        <input class="form-control" name="telefono" placeholder="Teléfono" type="text" required> 
     </div>
     <div class="mb-3">
         <label class="form-label">Crear contraseña</label>
