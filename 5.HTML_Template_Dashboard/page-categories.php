@@ -1,12 +1,21 @@
+
 <?php
-// categorias.php
+session_start();
 
 // Incluir archivo de funciones y establecer conexión
 include('funciones_admin.php');
 
-// Obtener las categorías desde la función
-$categorias = getCategorias();
+// Verificar y mostrar mensajes de sesión
+if (isset($_SESSION['message'])) {
+    echo '<div class="alert alert-success">' . $_SESSION['message'] . '</div>';
+    unset($_SESSION['message']); // Limpiar el mensaje para evitar mostrarlo más de una vez
+}
 
+if (isset($_SESSION['error'])) {
+    echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
+    unset($_SESSION['error']); // Limpiar el error para evitar mostrarlo más de una vez
+}
+$categorias = getCategorias();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -133,49 +142,43 @@ $categorias = getCategorias();
                 <div class="card col-md-9">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                        </div>
-                                    </th>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Slug</th>
-                                    <th class="text-end">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                
-                                if ($categorias->num_rows > 0) {
-                                    while ($row = $categorias->fetch_assoc()) {
-                                        echo '<tr>';
-                                        echo '<td class="text-center">';
-                                        echo '<div class="form-check">';
-                                        echo '<input class="form-check-input" type="checkbox" value="">';
-                                        echo '</div>';
-                                        echo '</td>';
-                                        echo '<td>' . htmlspecialchars($row['categoria_id']) . '</td>';
-                                        echo '<td><b>' . htmlspecialchars($row['nombre']) . '</b></td>';
-                                        echo '<td>' . htmlspecialchars($row['descripcion']) . '</td>';
-                                        echo '<td>' . htmlspecialchars($row['slug']) . '</td>';
-                                        echo '<td class="text-end">';
-                                        echo '<div class="dropdown"><a class="btn btn-light rounded btn-sm font-sm" href="#" data-bs-toggle="dropdown"><i class="material-icons md-more_horiz"></i></a>';
-                                        echo '<div class="dropdown-menu"><a class="dropdown-item" href="#">View detail</a><a class="dropdown-item" href="#">Edit info</a><a class="dropdown-item text-danger" href="#">Delete</a></div>';
-                                        echo '</div>';
-                                        echo '</td>';
-                                        echo '</tr>';
-                                    }
-                                } else {
-                                    echo "<tr><td colspan='7'>No hay categorías cargadas</td></tr>";
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                    <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Slug</th>
+                    <th class="text-end">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                if (!empty($categorias)) {
+                    foreach ($categorias as $categoria) {
+                        echo '<tr>';
+                        echo '<td>' . htmlspecialchars($categoria['categoria_id']) . '</td>';
+                        echo '<td><b>' . htmlspecialchars($categoria['nombre']) . '</b></td>';
+                        echo '<td>' . htmlspecialchars($categoria['descripcion']) . '</td>';
+                        echo '<td>' . htmlspecialchars($categoria['slug']) . '</td>';
+                        echo '<td class="text-end">';
+                        echo '<div class="dropdown">';
+                        echo '<a class="btn btn-light rounded btn-sm font-sm" href="#" data-bs-toggle="dropdown"><i class="material-icons md-more_horiz"></i></a>';
+                        echo '<div class="dropdown-menu">';
+                        echo '<a class="dropdown-item" href="modificar_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Edit info</a>';
+                        echo '<a class="dropdown-item text-danger" href="delete_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Delete</a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</td>';
+                        echo '</tr>';
+                    }
+                } else {
+                    echo "<tr><td colspan='5'>No hay categorías cargadas</td></tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+
                     </div>
                 </div>
             </div>

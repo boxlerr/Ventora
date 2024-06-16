@@ -1,25 +1,24 @@
-
 <?php
 session_start();
 require_once("../conexion/connect.php");
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['categoria_id'])) {
-        $categoria_id = $con->real_escape_string($_POST['categoria_id']);
+if (isset($_GET['categoria_id'])) {
+    $categoria_id = $con->real_escape_string($_GET['categoria_id']);
 
-        $sql = "DELETE FROM categoria WHERE categoria_id = '$categoria_id'";
+    $sql = "DELETE FROM categoria WHERE categoria_id = '$categoria_id'";
 
-        if ($con->query($sql) === TRUE) {
-            echo "Categoría eliminada exitosamente";
-        } else {
-            echo "Error al eliminar la categoría: " . $con->error;
-        }
+    if ($con->query($sql) === TRUE) {
+        $_SESSION['message'] = "Categoría eliminada exitosamente";
     } else {
-        echo "ID de categoría no proporcionado";
+        $_SESSION['error'] = "Error al eliminar la categoría: " . $con->error;
     }
 
     $con->close();
 } else {
-    echo "Método de solicitud no permitido";
+    $_SESSION['error'] = "ID de categoría no proporcionado";
 }
+
+// Redireccionar a page-categories.php después de procesar la eliminación
+header("Location: page-categories.php");
+exit();
 ?>
