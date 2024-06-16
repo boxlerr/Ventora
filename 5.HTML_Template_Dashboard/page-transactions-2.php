@@ -128,27 +128,34 @@ include '../conexion/connect.php';
             </tr>
         </thead>
         <tbody>
-            <?php
-            $sql = "SELECT pago_id, venta_id, metodo_pago, estado_pago, fecha_pago, total_pago FROM detalle_pago";
-            $result = $con->query($sql);
+        <?php
+include '../conexion/connect.php';
 
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo '<tr>';
-                    echo '<td><b>#' . htmlspecialchars($row['pago_id']) . '</b></td>';
-                    echo '<td>$' . htmlspecialchars(number_format($row['total_pago'], 2)) . '</td>';
-                    echo '<td>';
-                    echo '<div class="icontext"><img class="icon border" src="assets/imgs/card-brands/1.png" alt="Payment"><span class="text text-muted">' . htmlspecialchars($row['metodo_pago']) . '</span></div>';
-                    echo '</td>';
-                    echo '<td>' . htmlspecialchars($row['fecha_pago']) . '</td>';
-                    echo '<td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#" onclick="showDetails(' . htmlspecialchars($row['pago_id']) . ')">Details</a></td>';
-                    echo '</tr>';
-                }
-            } else {
-                echo '<tr><td colspan="5">No hay transacciones disponibles</td></tr>';
-            }
-            $con->close();
-            ?>
+$sql = "SELECT dp.pago_id, v.venta_id, dp.metodo_pago, dp.estado_pago, dp.fecha_pago, dp.total_pago 
+        FROM detalle_pago dp
+        JOIN venta v ON dp.venta_id = v.venta_id";
+
+$result = $con->query($sql);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<tr>';
+        echo '<td><b>#' . htmlspecialchars($row['pago_id']) . '</b></td>';
+        echo '<td>$' . htmlspecialchars(number_format($row['total_pago'], 2)) . '</td>';
+        echo '<td>';
+        echo '<div class="icontext"><img class="icon border" src="assets/imgs/card-brands/1.png" alt="Payment"><span class="text text-muted">' . htmlspecialchars($row['metodo_pago']) . '</span></div>';
+        echo '</td>';
+        echo '<td>' . htmlspecialchars($row['fecha_pago']) . '</td>';
+        echo '<td class="text-end"><a class="btn btn-sm btn-light font-sm rounded" href="#" onclick="showDetails(' . htmlspecialchars($row['pago_id']) . ')">Details</a></td>';
+        echo '</tr>';
+    }
+} else {
+    echo '<tr><td colspan="5">No hay transacciones disponibles</td></tr>';
+}
+
+$con->close();
+?>
+
         </tbody>
     </table>
 </div>
@@ -156,26 +163,16 @@ include '../conexion/connect.php';
                 <!-- col end//-->
               </div>
               <aside class="col-lg-3">
-                <div class="box bg-light" style="min-height:80%">
-                  <h6 class="mt-15">Transaction Details</h6>
-                  <hr>
-                  <h6 class="mb-0">Suplier:</h6>
-                  <p>TemplateMount</p><br>
-                  <h6 class="mb-0">Date:</h6>
-                  <p>December 19th, 2022</p><br>
-                  <h6 class="mb-0">Billing address</h6>
-                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p><br>
-                  <h6 class="mb-0">VAT ID:</h6>
-                  <p>54741654160</p><br>
-                  <h6 class="mb-0">Email:</h6>
-                  <p>support@example.com</p><br>
-                  <h6 class="mb-0">Item purchased:</h6><br>
-                  <p><a href="#">Adidas Air Jordan<i class="icons material-icons md-launch"></i></a><br><a href="#">Great product<i class="icons material-icons md-launch"></i></a></p><br>
-                  <p>Payment: PayPal</p>
-                  <p class="h4">$457.14</p>
-                  <hr><a class="btn btn-light" href="#"> Download receipe</a>
-                </div>
-              </aside>
+    <div class="box bg-light" style="min-height:80%">
+        <div id="venta-details">
+            <!-- Aquí se mostrarán los detalles de la venta -->
+            <h6 class="mt-15">Transaction Details</h6>
+            <hr>
+            <!-- Los detalles de la venta se cargarán aquí mediante JavaScript -->
+        </div>
+    </div>
+</aside>
+
               <!-- col end//-->
               <!-- row end//-->
               <!-- card-body //-->
@@ -216,22 +213,42 @@ include '../conexion/connect.php';
     <script src="assets/js/main.js?v=1.0.0"></script>
     <script src="assets/js/custom-chart.js" type="text/javascript"></script>
     <script>
-      function showDetails(pago_id) {
-          
-          $.ajax({
-              url: 'get_transaction_details.php',
-              type: 'GET',
-              data: { pago_id: pago_id },
-              success: function(data) {
-                  
-                  $('#transaction-details').html(data);
-              },
-              error: function() {
-                  $('#transaction-details').html('<p>Error al cargar los detalles de la transacción.</p>');
-              }
-          });
-      }
-      </script>
+function showDetails(pago_id) {
+    $.ajax({
+        url: 'detalle_venta.php',
+        type: 'GET',
+        data: { pago_id: pago_id },
+        dataType: 'json',
+        success: function(venta) {
+            $('#venta-details').html(`
+                <h6 class="mt-15">Transaction Details</h6>
+                <hr>
+                <h6 class="mb-0">Cliente:</h6>
+                <p>${venta.nombre_cliente}</p><br>
+                <h6 class="mb-0">Fecha:</h6>
+                <p>${venta.fecha_venta}</p><br>
+                <h6 class="mb-0">Dirección de Envío:</h6>
+                <p>${venta.direccion}, ${venta.ciudad}, ${venta.estado}, ${venta.codigo_postal}, ${venta.pais}</p><br>
+                <h6 class="mb-0">Correo:</h6>
+                <p>${venta.correo}</p><br>
+                <h6 class="mb-0">Productos Comprados:</h6>
+                <ul>
+                    ${venta.productos.split(', ').map(producto => `<li>${producto}</li>`).join('')}
+                </ul>
+                <p>Total: $${venta.total}</p>
+                <p class="h4">$${venta.subtotal}</p>
+                <hr><a class="btn btn-light" href="#">Download receipt</a>
+            `);
+        },
+        error: function() {
+            $('#venta-details').html('<p>Error al cargar los detalles de la venta.</p>');
+        }
+    });
+}
+</script>
+
+
+
       
   </body>
 </html>
