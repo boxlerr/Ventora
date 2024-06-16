@@ -1,27 +1,43 @@
 <?php
-session_start();
 require_once("../conexion/connect.php");
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['categoria_id'], $_POST['nombre'], $_POST['descripcion'], $_POST['slug'])) {
-        $categoria_id = $con->real_escape_string($_POST['categoria_id']);
-        $nombre = $con->real_escape_string($_POST['nombre']);
-        $descripcion = $con->real_escape_string($_POST['descripcion']);
-        $slug = $con->real_escape_string($_POST['slug']);
+if ($con) {
+    if (isset($_GET['categoria'])) {
+        $categoria_id = $_GET['categoria'];
 
-        $sql = "UPDATE categoria SET nombre='$nombre', descripcion='$descripcion', slug='$slug' WHERE categoria_id='$categoria_id'";
+        $consulta = "SELECT categoria_id, nombre, descripcion, slug FROM categoria WHERE categoria_id='$categoria_id'";
+        $resultado = mysqli_query($con, $consulta);
 
-        if ($con->query($sql) === TRUE) {
-            echo "Categoría actualizada exitosamente";
+        if ($resultado) {
+            $fila = mysqli_fetch_array($resultado);
+            echo "
+                <form action='modificar_categoria_2.php' method='post' enctype='multipart/form-data' class='admin-form'>
+                    <div>
+                        <h2>ID de la Categoría: {$fila['categoria_id']}</h2>
+                        <input type='hidden' name='categoria_id' value='{$fila['categoria_id']}' />
+                    </div>
+                    <div>
+                        <label class='admin-label' for='nombre'>Nombre de la Categoría</label>
+                        <input class='admin-input' value='{$fila['nombre']}' id='nombre' type='text' name='nombre' />
+                    </div>
+                    <div>
+                        <label class='admin-label' for='descripcion'>Descripción</label>
+                        <input class='admin-input' value='{$fila['descripcion']}' id='descripcion' type='text' name='descripcion' />
+                    </div>
+                    <div>
+                        <label class='admin-label' for='slug'>Slug</label>
+                        <input class='admin-input' value='{$fila['slug']}' id='slug' type='text' name='slug' />
+                    </div>
+                    <input class='admin-submit' type='submit' value='Modificar Categoría' />
+                </form>
+            ";
         } else {
-            echo "Error al actualizar la categoría: " . $con->error;
+            echo "Error al recuperar los datos de la categoría.";
         }
     } else {
-        echo "Por favor completa todos los campos del formulario";
+        echo "ID de categoría no proporcionado.";
     }
-
-    $con->close();
 } else {
-    echo "Método de solicitud no permitido";
+    echo "Error al conectar con la base de datos.";
 }
 ?>
