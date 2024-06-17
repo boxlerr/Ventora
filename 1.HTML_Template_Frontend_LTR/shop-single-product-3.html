@@ -11,17 +11,558 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Single Product 2 - Ecom Marketplace Template</title>
+    <title>Single Product 3 - Ecom Marketplace Template</title>
   </head>
   <body>
-    <?php
-    include_once("main.php");
-    include_once("consultas_bd.php");
-    if(isset($_GET['id'])){
-      $id = $_GET['id'];
-      $producto = getProducto($id);
-    }
-    ?>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center"><img class="mb-10" src="assets/imgs/template/favicon.svg" alt="Ecom">
+            <div class="preloader-dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="topbar">
+      <div class="container-topbar">
+        <div class="menu-topbar-left d-none d-xl-block">
+          <ul class="nav-small">
+            <li><a class="font-xs" href="page-about-us.html">About Us</a></li>
+            <li><a class="font-xs" href="page-careers.html">Careers</a></li>
+            <li><a class="font-xs" href="page-register.html">Open a shop</a></li>
+          </ul>
+        </div>
+        <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Free shipping for all orders over</span><span class="font-sm-bold color-success"> $75.00</span></div>
+        <div class="menu-topbar-right"><span class="font-xs color-brand-3">Need help? Call Us:</span><span class="font-sm-bold color-success"> + 1800 900</span>
+          <div class="dropdown dropdown-language">
+            <button class="btn dropdown-toggle" id="dropdownPage" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3"><img src="assets/imgs/template/en.svg" alt="Ecom"> English</span></button>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownPage" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-en.svg" alt="Ecom"> English</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-fr.svg" alt="Ecom"> Français</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-es.svg" alt="Ecom"> Español</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-pt.svg" alt="Ecom"> Português</a></li>
+              <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-cn.svg" alt="Ecom"> 中国人</a></li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-language">
+            <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button>
+            <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownPage2" data-bs-popper="static">
+              <li><a class="dropdown-item active" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">AUD</a></li>
+              <li><a class="dropdown-item" href="#">SGP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header sticky-bar">
+      <div class="container">
+        <div class="main-header">
+          <div class="header-left">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+            <div class="header-search">
+              <div class="box-header-search">
+                <form class="form-search" method="post" action="#">
+                  <div class="box-category">
+                    <select class="select-active select2-hidden-accessible">
+                      <option>All categories</option>
+                      <option value="Computers Accessories">Computers Accessories</option>
+                      <option value="Cell Phones">Cell Phones</option>
+                      <option value="Gaming Gatgets">Gaming Gatgets</option>
+                      <option value="Smart watches">Smart watches</option>
+                      <option value="Wired Headphone">Wired Headphone</option>
+                      <option value="Mouse &amp; Keyboard">Mouse Keyboard</option>
+                      <option value="Headphone">Headphone</option>
+                      <option value="Bluetooth devices">Bluetooth devices</option>
+                      <option value="Cloud Software">Cloud Software</option>
+                    </select>
+                  </div>
+                  <div class="box-keysearch">
+                    <input class="form-control font-xs" type="text" value="" placeholder="Search for items">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="header-nav">
+              <nav class="nav-main-menu d-none d-xl-block">
+                <ul class="main-menu">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu two-col">
+                      <li><a href="index.html">Homepage - 1</a></li>
+                      <li><a href="index-2.html">Homepage - 2</a></li>
+                      <li><a href="index-3.html">Homepage - 3</a></li>
+                      <li><a href="index-4.html">Homepage - 4</a></li>
+                      <li><a href="index-5.html">Homepage - 5</a></li>
+                      <li><a href="index-6.html">Homepage - 6</a></li>
+                      <li><a href="index-7.html">Homepage - 7</a></li>
+                      <li><a href="index-8.html">Homepage - 8</a></li>
+                      <li><a href="index-9.html">Homepage - 9</a></li>
+                      <li><a href="index-10.html">Homepage - 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-grid.html">Shop</a>
+                    <ul class="sub-menu two-col">
+                      <li><a href="shop-grid.html">Shop Grid</a></li>
+                      <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
+                      <li><a href="shop-list.html">Shop list - Left sidebar</a></li>
+                      <li><a href="shop-list-2.html">Shop list - Right sidebar</a></li>
+                      <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                      <li><a href="shop-single-product.html">Single Product</a></li>
+                      <li><a href="shop-single-product-2.html">Single Product 2</a></li>
+                      <li><a href="shop-single-product-3.html">Single Product 3</a></li>
+                      <li><a href="shop-single-product-4.html">Single Product 4</a></li>
+                      <li><a href="shop-cart.html">Shop Cart</a></li>
+                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
+                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
+                    <ul class="sub-menu">
+                      <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
+                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="#">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="page-about-us.html">About Us</a></li>
+                      <li><a href="page-contact.html">Contact Us</a></li>
+                      <li><a href="page-careers.html">Careers</a></li>
+                      <li><a href="page-term.html">Term and Condition</a></li>
+                      <li><a href="page-register.html">Register</a></li>
+                      <li><a href="page-login.html">Login</a></li>
+                      <li><a href="page-404.html">Error 404</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog - No Sidebar</a></li>
+                      <li><a href="blog-2.html">Blog - Right Sidebar</a></li>
+                      <li><a href="blog-list.html">Blog List</a></li>
+                      <li><a href="blog-big.html">Blog category big</a></li>
+                      <li><a href="blog-single.html">Blog Single - Left sidebar</a></li>
+                      <li><a href="blog-single-2.html">Blog Single - Right sidebar</a></li>
+                      <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="page-contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+              <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+            </div>
+            <div class="header-shop">
+              <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span>Account</span></span>
+                <div class="dropdown-account">
+                  <ul>
+                    <li><a href="page-account.html">My Account</a></li>
+                    <li><a href="page-account.html">Order Tracking</a></li>
+                    <li><a href="page-account.html">My Orders</a></li>
+                    <li><a href="page-account.html">My Wishlist</a></li>
+                    <li><a href="page-account.html">Setting</a></li>
+                    <li><a href="page-login.html">Sign out</a></li>
+                  </ul>
+                </div>
+              </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
+              <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><span class="number-item font-xs">2</span></span>
+                <div class="dropdown-cart">
+                  <div class="item-cart mb-20">
+                    <div class="cart-image"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"></div>
+                    <div class="cart-info"><a class="font-sm-bold color-brand-3" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD</a>
+                      <p><span class="color-brand-2 font-sm-bold">1 x $2856.4</span></p>
+                    </div>
+                  </div>
+                  <div class="item-cart mb-20">
+                    <div class="cart-image"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"></div>
+                    <div class="cart-info"><a class="font-sm-bold color-brand-3" href="shop-single-product-2.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD</a>
+                      <p><span class="color-brand-2 font-sm-bold">1 x $2856.4</span></p>
+                    </div>
+                  </div>
+                  <div class="border-bottom pt-0 mb-15"></div>
+                  <div class="cart-total">
+                    <div class="row">
+                      <div class="col-6 text-start"><span class="font-md-bold color-brand-3">Total</span></div>
+                      <div class="col-6"><span class="font-md-bold color-brand-1">$2586.3</span></div>
+                    </div>
+                    <div class="row mt-15">
+                      <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.html">View cart</a></div>
+                      <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.html">Checkout</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="font-lg icon-list icon-compare" href="shop-compare.html"><span>Compare</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="mobile-logo"><a class="d-flex" href="index.html"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+          <div class="perfect-scroll">
+            <div class="mobile-menu-wrap mobile-header-border">
+              <nav class="mt-15">
+                <ul class="mobile-menu font-heading">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="index.html">Homepage - 1</a></li>
+                      <li><a href="index-2.html">Homepage - 2</a></li>
+                      <li><a href="index-3.html">Homepage - 3</a></li>
+                      <li><a href="index-4.html">Homepage - 4</a></li>
+                      <li><a href="index-5.html">Homepage - 5</a></li>
+                      <li><a href="index-6.html">Homepage - 6</a></li>
+                      <li><a href="index-7.html">Homepage - 7</a></li>
+                      <li><a href="index-8.html">Homepage - 8</a></li>
+                      <li><a href="index-9.html">Homepage - 9</a></li>
+                      <li><a href="index-10.html">Homepage - 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-grid.html">Shop</a>
+                    <ul class="sub-menu">
+                      <li><a href="shop-grid.html">Shop Grid</a></li>
+                      <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
+                      <li><a href="shop-list.html">Shop List</a></li>
+                      <li><a href="shop-list-2.html">Shop List 2</a></li>
+                      <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                      <li><a href="shop-single-product.html">Single Product</a></li>
+                      <li><a href="shop-single-product-2.html">Single Product 2</a></li>
+                      <li><a href="shop-single-product-3.html">Single Product 3</a></li>
+                      <li><a href="shop-single-product-4.html">Single Product 4</a></li>
+                      <li><a href="shop-cart.html">Shop Cart</a></li>
+                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
+                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
+                    <ul class="sub-menu">
+                      <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
+                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="#">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="page-about-us.html">About Us</a></li>
+                      <li><a href="page-contact.html">Contact Us</a></li>
+                      <li><a href="page-careers.html">Careers</a></li>
+                      <li><a href="page-term.html">Term and Condition</a></li>
+                      <li><a href="page-register.html">Register</a></li>
+                      <li><a href="page-login.html">Login</a></li>
+                      <li><a href="page-404.html">Error 404</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog Grid</a></li>
+                      <li><a href="blog-2.html">Blog Grid 2</a></li>
+                      <li><a href="blog-list.html">Blog List</a></li>
+                      <li><a href="blog-big.html">Blog Big</a></li>
+                      <li><a href="blog-single.html">Blog Single - Left sidebar</a></li>
+                      <li><a href="blog-single-2.html">Blog Single - Right sidebar</a></li>
+                      <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="page-contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-account">
+              <div class="mobile-header-top">
+                <div class="user-account"><a href="page-account.html"><img src="assets/imgs/template/ava_1.png" alt="Ecom"></a>
+                  <div class="content">
+                    <h6 class="user-name">Hello<span class="text-brand"> Steven !</span></h6>
+                    <p class="font-xs text-muted">You have 3 new messages</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="mobile-menu">
+                <li><a href="page-account.html">My Account</a></li>
+                <li><a href="page-account.html">Order Tracking</a></li>
+                <li><a href="page-account.html">My Orders</a></li>
+                <li><a href="page-account.html">My Wishlist</a></li>
+                <li><a href="page-account.html">Setting</a></li>
+                <li><a href="page-login.html">Sign out</a></li>
+              </ul>
+            </div>
+            <div class="mobile-banner">
+              <div class="bg-5 block-iphone"><span class="color-brand-3 font-sm-lh32">Starting from $899</span>
+                <h3 class="font-xl mb-10">iPhone 12 Pro 128Gb</h3>
+                <p class="font-base color-brand-3 mb-10">Special Sale</p><a class="btn btn-arrow" href="shop-grid.html">learn more</a>
+              </div>
+            </div>
+            <div class="site-copyright color-gray-400 mt-30">Copyright 2022 &copy; Ecom - Marketplace Template.<br>Designed by<a href="http://alithemes.com" target="_blank">&nbsp; AliThemes</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-left"><a class="btn btn-open" href="#"></a>
+      <ul class="menu-icons hidden">
+        <li><a href="javascript:void(0)"><img src="assets/imgs/template/monitor.svg" alt="Ecom"></a></li>
+        <li><a href="javascript:void(0)"><img src="assets/imgs/template/mobile.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/game.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/clock.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/airpod.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/airpods.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/mouse.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/music-play.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/bluetooth.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/clound.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/electricity.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/cpu.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/devices.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/driver.svg" alt="Ecom"></a></li>
+        <li><a href="#"><img src="assets/imgs/template/lamp.svg" alt="Ecom"></a></li>
+      </ul>
+      <ul class="menu-texts menu-close">
+        <li class="has-children"><a href="shop-grid-2.html"><span class="img-link"><img src="assets/imgs/template/monitor.svg" alt="Ecom"></span><span class="text-link">Computers &amp; Accessories</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Computer Accessories</a></li>
+            <li><a href="shop-grid.html">Computer Cases</a></li>
+            <li><a href="shop-grid.html">Laptop</a></li>
+            <li><a href="shop-grid.html">HDD</a></li>
+            <li><a href="shop-grid.html">RAM</a></li>
+            <li><a href="shop-grid.html">Headphone</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="#"><span class="img-link"><img src="assets/imgs/template/mobile.svg" alt="Ecom"></span><span class="text-link">Cell Phones</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Phone Accessories</a></li>
+            <li><a href="shop-grid.html">Phone Cases</a></li>
+            <li><a href="shop-grid.html">Postpaid Phones</a></li>
+            <li><a href="shop-grid.html">Unlocked Phones</a></li>
+            <li><a href="shop-grid.html">Prepaid Phones</a></li>
+            <li><a href="shop-grid.html">Prepaid Plans</a></li>
+            <li><a href="shop-grid.html">Refurbished Phones</a></li>
+            <li><a href="shop-grid.html">Straight Talk</a></li>
+            <li><a href="shop-grid.html">iPhone</a></li>
+            <li><a href="shop-grid.html">Samsung Galaxy</a></li>
+            <li><a href="shop-grid.html">Samsung Galaxy</a></li>
+            <li><a href="shop-grid.html">Samsung Galaxy</a></li>
+            <li><a href="shop-grid.html">Samsung Galaxy</a></li>
+            <li><a href="shop-grid.html">Samsung Galaxy</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/game.svg" alt="Ecom"></span><span class="text-link">Gaming Gatgets</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Wireless Routers</a></li>
+            <li><a href="shop-grid.html">Cool New Gadgets</a></li>
+            <li><a href="shop-grid.html">Tech and Gadgets</a></li>
+            <li><a href="shop-grid.html">Geek Gifts and Gadgets</a></li>
+            <li><a href="shop-grid.html">Xbox Accessories</a></li>
+            <li><a href="shop-grid.html">PlayStation Accessories</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/clock.svg" alt="Ecom"></span><span class="text-link">Smart watches</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Smart Watches</a></li>
+            <li><a href="shop-grid.html">Fashion Smart Watches</a></li>
+            <li><a href="shop-grid.html">Smart Bracelets</a></li>
+            <li><a href="shop-grid.html">Pocket Watches</a></li>
+            <li><a href="shop-grid.html">Smart Rings</a></li>
+            <li><a href="shop-grid.html">Other Watches</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/airpods.svg" alt="Ecom"></span><span class="text-link">Wired Headphone</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">On-Ear Headphones</a></li>
+            <li><a href="shop-grid.html">Earbud & In-Ear</a></li>
+            <li><a href="shop-grid.html">DJ Headphones</a></li>
+            <li><a href="shop-grid.html">PC Accessories</a></li>
+            <li><a href="shop-grid.html">PC Game Headsets</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/mouse.svg" alt="Ecom"></span><span class="text-link">Mouse &amp; Keyboard</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Logitech</a></li>
+            <li><a href="shop-grid.html">Redragon</a></li>
+            <li><a href="shop-grid.html">Amazon Basics</a></li>
+            <li><a href="shop-grid.html">Microsoft</a></li>
+            <li><a href="shop-grid.html">MageGee</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/music-play.svg" alt="Ecom"></span><span class="text-link">Headphone</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Car Audio Systems</a></li>
+            <li><a href="shop-grid.html">Cellphones</a></li>
+            <li><a href="shop-grid.html">Desktops</a></li>
+            <li><a href="shop-grid.html">Gaming Consoles</a></li>
+            <li><a href="shop-grid.html">Telephones</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/bluetooth.svg" alt="Ecom"></span><span class="text-link">Bluetooth devices</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Player Accessories</a></li>
+            <li><a href="shop-grid.html">Computer Accessories</a></li>
+            <li><a href="shop-grid.html">Speakers & Audio</a></li>
+            <li><a href="shop-grid.html">Computer Networking</a></li>
+            <li><a href="shop-grid.html">Movies & Films</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/clound.svg" alt="Ecom"></span><span class="text-link">Cloud Software</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Android</a></li>
+            <li><a href="shop-grid.html">Linux & Unix</a></li>
+            <li><a href="shop-grid.html">Macintosh</a></li>
+            <li><a href="shop-grid.html">Windows</a></li>
+            <li><a href="shop-grid.html">iPhone & iOS</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/electricity.svg" alt="Ecom"></span><span class="text-link">Electric accessories</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Antenna Toppers</a></li>
+            <li><a href="shop-grid.html">Automotive Body Armor</a></li>
+            <li><a href="shop-grid.html">Power Inverter</a></li>
+            <li><a href="shop-grid.html">Gas Tank Doors</a></li>
+            <li><a href="shop-grid.html">Hood Scoops & Vents</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/cpu.svg" alt="Ecom"></span><span class="text-link">Mainboard &amp; CPU</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Computer CPU Processors</a></li>
+            <li><a href="shop-grid.html">Internal Fans & Cooling</a></li>
+            <li><a href="shop-grid.html">Graphics Cards</a></li>
+            <li><a href="shop-grid.html">Network I/O Port Cards</a></li>
+            <li><a href="shop-grid.html">Internal Memory Card</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/devices.svg" alt="Ecom"></span><span class="text-link">Desktop PC</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Graphic PC</a></li>
+            <li><a href="shop-grid.html">Office PC</a></li>
+            <li><a href="shop-grid.html">Gaming PC</a></li>
+            <li><a href="shop-grid.html">Server</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/driver.svg" alt="Ecom"></span><span class="text-link">Speaker</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">JBL</a></li>
+            <li><a href="shop-grid.html">Anker</a></li>
+            <li><a href="shop-grid.html">Pyle</a></li>
+            <li><a href="shop-grid.html">Bose</a></li>
+            <li><a href="shop-grid.html">Logitech</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/airpod.svg" alt="Ecom"></span><span class="text-link">Bluetooth Headphone</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">On-Ear Headphones</a></li>
+            <li><a href="shop-grid.html">In-Ear Headphones</a></li>
+            <li><a href="shop-grid.html">Earbud</a></li>
+            <li><a href="shop-grid.html">Over-Ear Headphones</a></li>
+            <li><a href="shop-grid.html">Other</a></li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="shop-grid.html"><span class="img-link"><img src="assets/imgs/template/lamp.svg" alt="Ecom"></span><span class="text-link">Computer Decor</span></a>
+          <ul class="sub-menu">
+            <li><a href="shop-grid.html">Copyholders</a></li>
+            <li><a href="shop-grid.html">Office Bookends</a></li>
+            <li><a href="shop-grid.html">Business Card Holders</a></li>
+            <li><a href="shop-grid.html">Lap Desks</a></li>
+            <li><a href="shop-grid.html">Mouse Pads</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="mobile-logo"><a class="d-flex" href="index.html"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+          <div class="perfect-scroll">
+            <div class="mobile-menu-wrap mobile-header-border">
+              <nav class="mt-15">
+                <ul class="mobile-menu font-heading">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="index.html">Homepage - 1</a></li>
+                      <li><a href="index-2.html">Homepage - 2</a></li>
+                      <li><a href="index-3.html">Homepage - 3</a></li>
+                      <li><a href="index-4.html">Homepage - 4</a></li>
+                      <li><a href="index-5.html">Homepage - 5</a></li>
+                      <li><a href="index-6.html">Homepage - 6</a></li>
+                      <li><a href="index-7.html">Homepage - 7</a></li>
+                      <li><a href="index-8.html">Homepage - 8</a></li>
+                      <li><a href="index-9.html">Homepage - 9</a></li>
+                      <li><a href="index-10.html">Homepage - 10</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-grid.html">Shop</a>
+                    <ul class="sub-menu">
+                      <li><a href="shop-grid.html">Shop Grid</a></li>
+                      <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
+                      <li><a href="shop-list.html">Shop List</a></li>
+                      <li><a href="shop-list-2.html">Shop List 2</a></li>
+                      <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
+                      <li><a href="shop-single-product.html">Single Product</a></li>
+                      <li><a href="shop-single-product-2.html">Single Product 2</a></li>
+                      <li><a href="shop-single-product-3.html">Single Product 3</a></li>
+                      <li><a href="shop-single-product-4.html">Single Product 4</a></li>
+                      <li><a href="shop-cart.html">Shop Cart</a></li>
+                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
+                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
+                    <ul class="sub-menu">
+                      <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
+                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="#">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="page-about-us.html">About Us</a></li>
+                      <li><a href="page-contact.html">Contact Us</a></li>
+                      <li><a href="page-careers.html">Careers</a></li>
+                      <li><a href="page-term.html">Term and Condition</a></li>
+                      <li><a href="page-register.html">Register</a></li>
+                      <li><a href="page-login.html">Login</a></li>
+                      <li><a href="page-404.html">Error 404</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog Grid</a></li>
+                      <li><a href="blog-2.html">Blog Grid 2</a></li>
+                      <li><a href="blog-list.html">Blog List</a></li>
+                      <li><a href="blog-big.html">Blog Big</a></li>
+                      <li><a href="blog-single.html">Blog Single - Left sidebar</a></li>
+                      <li><a href="blog-single-2.html">Blog Single - Right sidebar</a></li>
+                      <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="page-contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-account">
+              <div class="mobile-header-top">
+                <div class="user-account"><a href="page-account.html"><img src="assets/imgs/template/ava_1.png" alt="Ecom"></a>
+                  <div class="content">
+                    <h6 class="user-name">Hello<span class="text-brand"> Steven !</span></h6>
+                    <p class="font-xs text-muted">You have 3 new messages</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="mobile-menu">
+                <li><a href="page-account.html">My Account</a></li>
+                <li><a href="page-account.html">Order Tracking</a></li>
+                <li><a href="page-account.html">My Orders</a></li>
+                <li><a href="page-account.html">My Wishlist</a></li>
+                <li><a href="page-account.html">Setting</a></li>
+                <li><a href="page-login.html">Sign out</a></li>
+              </ul>
+            </div>
+            <div class="mobile-banner">
+              <div class="bg-5 block-iphone"><span class="color-brand-3 font-sm-lh32">Starting from $899</span>
+                <h3 class="font-xl mb-10">iPhone 12 Pro 128Gb</h3>
+                <p class="font-base color-brand-3 mb-10">Special Sale</p><a class="btn btn-arrow" href="shop-grid.html">learn more</a>
+              </div>
+            </div>
+            <div class="site-copyright color-gray-400 mt-30">Copyright 2022 &copy; Ecom - Marketplace Template.<br>Designed by<a href="http://alithemes.com" target="_blank">&nbsp; AliThemes</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="main">
       <div class="section-box">
         <div class="breadcrumbs-div">
@@ -38,6 +579,23 @@
       <section class="section-box shop-template">
         <div class="container">
           <div class="row">
+            <div class="col-lg-12">
+              <h3 class="color-brand-3 mb-5 mw-80">Samsung Galaxy S22 Ultra 5G 128/256GB SM-S906U1 Unlocked Cell Phones All Colors - Good Condition</h3>
+              <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-7 text-center text-sm-start mb-mobile"><span class="bytext color-gray-500 font-xs font-medium">by</span><a class="byAUthor color-gray-900 font-xs font-medium" href="shop-vendor-single.html"> Ecom Tech</a>
+                  <div class="rating mt-5 d-inline-block mr-20"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
+                  <div class="sku-product d-inline-block"><span class="font-sm color-brand-3 font-medium">SKU:</span><span class="font-sm color-gray-500"> EcomTech13689</span></div>
+                </div>
+                <div class="col-xl-6 col-lg-5 col-md-4 col-sm-5 text-center text-sm-end">
+                  <div class="d-inline-block"><a class="mr-20" href="shop-wishlist.html"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a><a href="shop-compare.html"><span class="btn btn-compare mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Compare</span></a>
+                    <div class="d-inline-block align-middle ml-50">
+                      <div class="share-link"><span class="font-md-bold color-brand-3 mr-15 d-none d-lg-inline-block">Share</span><a class="facebook hover-up" href="#"></a><a class="printest hover-up" href="#"></a><a class="twitter hover-up" href="#"></a><a class="instagram hover-up" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pt-10 mb-20"></div>
+            </div>
             <div class="col-lg-5">
               <div class="gallery-image">
                 <div class="galleries">
@@ -78,79 +636,109 @@
                   </div>
                 </div>
               </div>
+              <div class="box-tags mt-15 mb-30">
+                <div class="d-inline-block mr-25"><span class="font-sm font-medium color-gray-900">Category:</span><a class="link" href="#">Smartphones</a></div>
+                <div class="d-inline-block"><span class="font-sm font-medium color-gray-900">Tags:</span><a class="link" href="#">Blue</a>,<a class="link" href="#">Smartphone</a></div>
+              </div>
             </div>
             <div class="col-lg-7">
-              <h3 class="color-brand-3 mb-25"><?php echo $producto['nombre'] ?></h3>
-              <div class="row align-items-center">
-                <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
-                  <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.html"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a><a href="shop-compare.html"><span class="btn btn-compare mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Compare</span></a></div>
-              </div>
-              <div class="border-bottom pt-10 mb-20"></div>
               <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-7 mb-30">
                   <div class="box-product-price">
-                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo $producto['precio'] ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10">$2856.3</h3><span class="color-gray-500 price-line font-xl line-througt">$3225.6</span>
                   </div>
-                  <div class="product-description color-gray-900">
+                  <div class="box-progress-product mt-15 mb-20">
+                    <div class="progress mb-5">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="font-xs color-gray-500">Sold: 135/320</span>
+                  </div>
+                  <div class="product-description color-gray-900 mb-30">
                     <ul class="list-dot">
-                      <li><?php echo $producto['descripcion'] ?></li>
+                      <li>8k super steady video</li>
+                      <li>Nightography plus portait mode</li>
+                      <li>50mp photo resolution plus bright display</li>
+                      <li>Adaptive color contrast</li>
+                      <li>premium design & craftmanship</li>
+                      <li>Long lasting battery plus fast charging</li>
                     </ul>
                   </div>
-                  <div class="border-bottom mt-20 mb-20"></div>
-                  <div class="info-product">
-                    <div class="row align-items-end">
-                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br>Category:<span class="color-gray-500">Smartphones</span><br>Tags:<span class="color-gray-500">Blue, Smartphone</span></span></div>
-                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">Free Delivery<br><span class="color-gray-500">Available for all locations.</span><br><span class="color-gray-500">Delivery Options & Info</span></span></div>
+                  <div class="box-product-color">
+                    <p class="font-sm color-gray-900">Color:<span class="color-brand-2 nameColor">Pink Gold</span></p>
+                    <ul class="list-colors">
+                      <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink"></li>
+                      <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Gold"></li>
+                      <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                      <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Silver"></li>
+                      <li class="active"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                      <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                      <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
+                    </ul>
+                  </div>
+                  <div class="box-product-style-size mt-30">
+                    <div class="row">
                       <div class="col-lg-12 mb-20">
-                        <div class="d-inline-block">
-                          <div class="share-link"><span class="font-md-bold color-brand-3 mr-15">Share</span><a class="facebook hover-up" href="#"></a><a class="printest hover-up" href="#"></a><a class="twitter hover-up" href="#"></a><a class="instagram hover-up" href="#"></a></div>
-                        </div>
+                        <p class="font-sm color-gray-900">Style:<span class="color-brand-2 nameStyle">S22</span></p>
+                        <ul class="list-styles">
+                          <li class="disabled" title="S22 Ultra">S22 Ultra</li>
+                          <li class="active" title="S22">S22</li>
+                          <li title="S22 + Standing Cover">S22 + Standing Cover</li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-12 mb-10">
+                        <p class="font-sm color-gray-900">Size:<span class="color-brand-2 nameSize">512GB</span></p>
+                        <ul class="list-sizes">
+                          <li class="disabled" title="1GB">1GB</li>
+                          <li class="active" title="512 GB">512 GB</li>
+                          <li title="256 GB">256 GB</li>
+                          <li class="disabled" title="64GB">64GB</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                  <div class="buy-product mt-25">
+                    <div class="font-sm text-quantity mb-10">Quantity</div>
+                    <div class="box-quantity">
+                      <div class="input-quantity">
+                        <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                      </div>
+                      <div class="button-buy button-buy-full"><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-5">
-                  <div class="box-border-product">
-                    <div class="box-product-color">
-                      <p class="font-sm color-gray-900">Color:<span class="color-brand-2 nameColor">Pink Gold</span></p>
-                      <ul class="list-colors">
-                        <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink"></li>
-                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Gold"></li>
-                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
-                        <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Silver"></li>
-                        <li class="active"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
-                      </ul>
-                    </div>
-                    <div class="box-product-style-size mt-20">
-                      <div class="row">
-                        <div class="col-lg-12 mb-20">
-                          <p class="font-sm color-gray-900">Style:<span class="color-brand-2 nameStyle">S22</span></p>
-                          <ul class="list-styles">
-                            <li class="disabled" title="S22 Ultra">S22 Ultra</li>
-                            <li class="active" title="S22">S22</li>
-                          </ul>
+                <div class="col-lg-5 col-md-5">
+                  <div class="pl-30 pl-mb-0">
+                    <div class="box-featured-product">
+                      <div class="item-featured">
+                        <div class="featured-icon"><img src="assets/imgs/page/product/delivery.svg" alt="Ecom"></div>
+                        <div class="featured-info"><span class="font-sm-bold color-gray-1000">Free Delivery</span>
+                          <p class="font-sm color-gray-500 font-medium">From all orders over $10</p>
                         </div>
-                        <div class="col-lg-12 mb-10">
-                          <p class="font-sm color-gray-900">Size:<span class="color-brand-2 nameSize">512GB</span></p>
-                          <ul class="list-sizes">
-                            <li class="disabled" title="1GB">1GB</li>
-                            <li class="active" title="512 GB">512 GB</li>
-                            <li title="256 GB">256 GB</li>
-                          </ul>
+                      </div>
+                      <div class="item-featured">
+                        <div class="featured-icon"><img src="assets/imgs/page/product/support.svg" alt="Ecom"></div>
+                        <div class="featured-info"><span class="font-sm-bold color-gray-1000">Support 24/7</span>
+                          <p class="font-sm color-gray-500 font-medium">Shop with an expert</p>
+                        </div>
+                      </div>
+                      <div class="item-featured">
+                        <div class="featured-icon"><img src="assets/imgs/page/product/return.svg" alt="Ecom"></div>
+                        <div class="featured-info"><span class="font-sm-bold color-gray-1000">Return & Refund</span>
+                          <p class="font-sm color-gray-500 font-medium">Free return over $200</p>
+                        </div>
+                      </div>
+                      <div class="item-featured">
+                        <div class="featured-icon"><img src="assets/imgs/page/product/payment.svg" alt="Ecom"></div>
+                        <div class="featured-info"><span class="font-sm-bold color-gray-1000">Secure payment</span>
+                          <p class="font-sm color-gray-500 font-medium">100% Protected</p>
                         </div>
                       </div>
                     </div>
-                    <div class="buy-product mt-10 d-flex">
-                      <div class="font-sm text-quantity">Quantity</div>
-                      <div class="box-quantity">
-                        <div class="input-quantity">
-                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
-                        </div>
+                    <div class="box-sidebar-product">
+                      <div class="banner-right h-500 text-center mb-30 banner-right-product"><span class="text-no font-11">No.9</span>
+                        <h5 class="font-md-bold mt-10">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
+                        <p class="text-desc font-xs mt-10">Smooth handle and accurate click</p>
                       </div>
                     </div>
-                    <div class="button-buy mt-15"><a class="btn btn-cart mb-15" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
                   </div>
                 </div>
               </div>
@@ -163,7 +751,6 @@
               <div class="product-bought"><img src="assets/imgs/page/product/sp1.png" alt="Ecom"></div>
               <div class="product-bought"><img src="assets/imgs/page/product/sp2.png" alt="Ecom"></div>
               <div class="product-bought"><img src="assets/imgs/page/product/sp3.png" alt="Ecom"></div>
-              <div class="product-bought"><img src="assets/imgs/page/product/sp4.png" alt="Ecom"></div>
             </div>
             <div class="price-bought">
               <h3 class="color-brand-3 mr-10">$2856.3</h3><span class="font-lg color-gray-900">(3 items)</span>

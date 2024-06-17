@@ -15,6 +15,11 @@
   </head>
   <body>
   <?php
+    if(isset($_GET['accion'])){
+      session_start();
+      $_SESSION["usuario"] = false;
+      session_abort();
+    }
     include_once("main.php");
     ?>
   <!-- tengo que quitar incluide de main.php porque no cargaba la pagina -->

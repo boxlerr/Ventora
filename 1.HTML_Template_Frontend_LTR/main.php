@@ -1,4 +1,11 @@
-
+<?php
+session_start();
+if(!empty($_SESSION["usuario"])){
+    $usuario=$_SESSION["usuario"];
+} else{
+    $usuario = false;
+}
+?>
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
     <div class="preloader-inner position-relative">
@@ -140,12 +147,21 @@
                 <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span>Account</span></span>
                 <div class="dropdown-account">
                     <ul>
-                    <li><a href="page-account.html">My Account</a></li>
-                    <li><a href="page-account.html">Order Tracking</a></li>
-                    <li><a href="page-account.html">My Orders</a></li>
-                    <li><a href="page-account.html">My Wishlist</a></li>
-                    <li><a href="page-account.html">Setting</a></li>
-                    <li><a href="page-login.html">Sign out</a></li>
+                    <?php
+                    if($usuario){
+                        echo"
+                        <li><a href='page-account.html'>Mi cuenta</a></li>
+                        <li><a href='page-account.html'>Historial de compras</a></li>
+                        <li><a href='page-account.html'>Mis compras</a></li>
+                        <li><a href='page-account.html'>Mis favoritos</a></li>
+                        <li><a href='page-account.html'>Configuracion</a></li>
+                        <li><a href='index-10.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
+                        ";
+                    } else{
+                        echo"<li><a href='page-login.php'>Iniciar sesion</a></li>";
+                        echo"<li><a href='page-account.html'>Crear cuenta</a></li>";
+                    }
+                    ?>
                     </ul>
                 </div>
                 </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>

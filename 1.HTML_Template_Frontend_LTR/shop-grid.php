@@ -41,28 +41,33 @@
                 </div>
                 <div class="sidebar-content">
                   <ul class="list-nav-arrow">
-                    <li><a href="shop-grid.html">Computers &amp; Laptop<span class="number">09</span></a></li>
-                    <li><a href="shop-grid.html">Electric accessories<span class="number">12</span></a></li>
-                    <li><a href="shop-grid.html">Mainboard &amp; CPU<span class="number">24</span></a></li>
-                    <li><a href="shop-grid.html">Bluetooth devices<span class="number">34</span></a></li>
-                    <li><a href="shop-grid.html">Mouse &amp; Keyboard<span class="number">65</span></a></li>
-                    <li><a href="shop-grid.html">Wired Headphone<span class="number">15</span></a></li>
-                    <li><a href="shop-grid.html">Gaming Gatgets<span class="number">76</span></a></li>
-                    <li><a href="shop-grid.html">Smart watches<span class="number">89</span></a></li>
-                    <li><a href="shop-grid.html">Cell Phones<span class="number">23</span></a></li>
-                    <li><a href="shop-grid.html">Headphone<span class="number">98</span></a></li>
-                  </ul>
-                  <div>
-                    <div class="collapse" id="moreMenu">
-                      <ul class="list-nav-arrow">
-                        <li><a href="shop-grid.html">Home theater<span class="number">98</span></a></li>
-                        <li><a href="shop-grid.html">Cameras & drones<span class="number">124</span></a></li>
-                        <li><a href="shop-grid.html">PC gaming<span class="number">56</span></a></li>
-                        <li><a href="shop-grid.html">Smart home<span class="number">87</span></a></li>
-                        <li><a href="shop-grid.html">Networking<span class="number">36</span></a></li>
-                      </ul>
-                    </div><a class="link-see-more mt-5" data-bs-toggle="collapse" href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">See More</a>
-                  </div>
+                    <?php
+                    $categorias=getCategorias();
+                    $i=0;
+                    while($i<15 && $categorias[0]>$i){   
+                      echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
+                      $i++;
+                    }
+                    ?>
+                    </ul>
+                    <?php
+                    if($i==15 && $categorias[0]>$i){
+
+                      echo"                      
+                      <div>
+                        <div class='collapse' id='moreMenu'>
+                          <ul class='list-nav-arrow'>";
+                          while($categorias[0]>$i){   
+                            echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
+                            $i++;
+                          }
+                          echo"
+                          </ul>
+                        </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
+                      </div>
+                      ";
+                    } 
+                    ?>
                 </div>
               </div>
               <div class="sidebar-border mb-40">
@@ -279,204 +284,29 @@
                 </div>
               <!-- </div> -->
               <div class="row mt-20">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
+                <?php
+                $productos = getProductos();
+                foreach($productos as $producto){
+                  echo"
+                  <div class='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12'>
+                    <div class='card-grid-style-3 home6-style home7-style'>
+                      <div class='card-grid-inner'>
+                        <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.html' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
+                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=$producto[producto_id]'><img src='assets/imgs/$producto[imagen_url]' alt='Ecom'></a></div>
+                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>$producto[nombre]</a>
+                          <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$producto[precio]</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                          <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
+                          <ul class='list-features'>
+                            <li>$producto[descripcion]</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="card-grid-style-3 home6-style home7-style">
-                    <div class="card-grid-inner">
-                      <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                      <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-                      <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Amish</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Crown of Thorns. 2 months. Good vitality. Including pots.</a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                        <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                        <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                        <ul class="list-features">
-                          <li>27-inch (diagonal) Retina 5K display</li>
-                          <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                          <li>AMD Radeon Pro 5300 graphics</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  ";
+                }
+                ?>
               </div>
               <nav>
                 <ul class="pagination">
