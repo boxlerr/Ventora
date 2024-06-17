@@ -1,7 +1,7 @@
 <?php
 require_once("../conexion/connect.php");
 ?>
-
+<!-- page-account-register -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -97,7 +97,7 @@ require_once("../conexion/connect.php");
           <div class="card-body">
             <h4 class="card-title mb-4">Create an Account</h4>
             <!-- formulario para crear un usuario -->
-            <form action="registros/alta_cliente.php" method="POST">
+            <form id="registroForm" action="registros/alta_administrador.php" method="POST">
     <div class="mb-3">
         <label class="form-label">Nombre</label>
         <input class="form-control" name="nombre" placeholder="Tu nombre" type="text" required>
@@ -107,16 +107,16 @@ require_once("../conexion/connect.php");
         <input class="form-control" name="email" placeholder="Tu email" type="email" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Teléfono</label>        
-        <input class="form-control" name="telefono" placeholder="Teléfono" type="text" required> 
+        <label class="form-label">Teléfono</label>
+        <input class="form-control" name="telefono" placeholder="Teléfono" type="text" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Crear contraseña</label>
-        <input class="form-control" name="contraseña" placeholder="Contraseña" type="password" required>
+        <input class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" type="password" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Nacionalidad</label>
-        <input class="form-control" name="nacionalidad" placeholder="Nacionalidad" type="text" required>
+        <label class="form-label">Confirmar contraseña</label>
+        <input class="form-control" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirmar Contraseña" type="password" required>
     </div>
     <div class="mb-4">
         <button class="btn btn-primary w-100" type="submit">Registrarse</button>
@@ -161,5 +161,15 @@ require_once("../conexion/connect.php");
     <script src="assets/js/vendors/chart.js"></script>
     <script src="assets/js/main.js?v=1.0.0"></script>
     <script src="assets/js/custom-chart.js" type="text/javascript"></script>
+    <script>
+    document.getElementById('registroForm').addEventListener('submit', function(event) {
+        var contrasena = document.getElementById('contrasena').value;
+        var confirmar_contrasena = document.getElementById('confirmar_contrasena').value;
+        if (contrasena !== confirmar_contrasena) {
+            event.preventDefault();
+            alert('Las contraseñas no coinciden. Por favor, inténtelo de nuevo.');
+        }
+    });
+</script>
   </body>
 </html>
