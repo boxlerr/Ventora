@@ -93,5 +93,141 @@
         "ingresar":"Ingresar",
 
         "":""
+    },
+
+    "shop-single-product-2":{
+        "titulo":"",
+
+        "inicio":"inicio",
+        "categoria":"Auriculares",
+        "sub_categoria":"Marca",
+        "sub_categoria1":"Accesorios",
+
+        "anadir_deados":"Añadir a Deseados",
+        "anadir_comparar":"Añadir para Comparar",
+        "":"",
+
+        "punto1_producto1":"Lorem Ipsum",
+        "punto2_producto1":"Lorem Ipsum",
+        "punto3_producto1":"Lorem Ipsum",
+        "punto4_producto1":"Lorem Ipsum",
+        "punto5_producto1":"Lorem Ipsum",
+        "punto6_producto1":"Lorem Ipsum",
+
+        "categoria_desc":"Categoria",
+        "Smartphones":"Smartphones",
+        "tags":"Blue Smartphones",
+        "entrega_gratis":"Entrega Gratis",
+        "disponible_todas_ubicaciones":"Disponible para todas las ubicaciones.",
+        "opciones_info_entrega":"Opciones e Información de Entrega",
+        "compartir":"Compartir",
+
+        "color": "Color",
+        "oro_rosa": "Oro Rosa",
+        "estilo": "Estilo",
+        "tamano": "Tamaño",
+        "cantidad": "Cantidad",
+        "carrito_producto": "Agregar al carrito",
+        "vermas_producto": "Ver mas",
+
+        "comprados_juntos": "Comprados Juntos Frecuenteente",
+
+        "descripcion": "Descripción",
+        "parrafo_1":"Loremp Ipsum",
+        "parrafo_2":"Loremp Ipsum",
+
+        "especificaciones": "Especificaciones",
+        "modelo": "Modelo",
+        "marca": "Marca",
+        "tamano_2": "Tamaño",
+        "acabado": "Acabado",
+        "pais_origen": "País de Origen",
+        "fabricante": "Fabricante",
+        "ano_lanzamiento": "Año de Lanzamiento",
+        "garantia": "Garantía",
+
+        "informacion_adicional": "Información Adicional",
+        "peso": "Peso",
+        "dimensiones": "Dimensiones",
+
+        "opiniones": "Opiniones",
+        "preguntas_respuestas_clientes": "Preguntas y Respuestas de Clientes",
+        "resenas_clientes": "Reseñas de Clientes",
+        "5_estrellas": "5 estrellas",
+        "4_estrellas": "4 estrellas",
+        "3_estrellas": "3 estrellas",
+        "2_estrellas": "2 estrellas",
+        "1_estrella": "1 estrella",
+        "como_se_calculan_calificaciones": "¿Cómo se calculan las calificaciones?",
+
+        "vendedor": "Vendedor", /*no va*/
+
+        "productos_relacionados": "Productos Relacionados",
+        "punto1_producto1pr":"Lorem Ipsum",
+        "punto2_producto1pr":"Lorem Ipsum",
+        "punto3_producto1pr":"Lorem Ipsum",
+
+        "punto1_producto2pr":"Lorem Ipsum",
+        "punto2_producto2pr":"Lorem Ipsum",
+        "punto3_producto2pr":"Lorem Ipsum",
+
+        "punto1_producto3pr":"Lorem Ipsum",
+        "punto2_producto3pr":"Lorem Ipsum",
+        "punto3_producto3pr":"Lorem Ipsum",
+
+        "punto1_producto4pr":"Lorem Ipsum",
+        "punto2_producto4pr":"Lorem Ipsum",
+        "punto3_producto4pr":"Lorem Ipsum",
+
+        "punto1_producto5pr":"Lorem Ipsum",
+        "punto2_producto5pr":"Lorem Ipsum",
+        "punto3_producto5pr":"Lorem Ipsum",
+
+        "te_puede_interesar": "Te Puede Interesar",
+        "punto1_producto1ti":"Lorem Ipsum",
+        "punto2_producto1ti":"Lorem Ipsum",
+        "punto3_producto1ti":"Lorem Ipsum",
+
+        "punto1_producto2ti":"Lorem Ipsum",
+        "punto2_producto2ti":"Lorem Ipsum",
+        "punto3_producto2ti":"Lorem Ipsum",
+
+        "punto1_producto3ti":"Lorem Ipsum",
+        "punto2_producto3ti":"Lorem Ipsum",
+        "punto3_producto3ti":"Lorem Ipsum",
+
+        "punto1_producto4ti":"Lorem Ipsum",
+        "punto2_producto4ti":"Lorem Ipsum",
+        "punto3_producto4ti":"Lorem Ipsum",
+
+        "punto1_producto5ti":"Lorem Ipsum",
+        "punto2_producto5ti":"Lorem Ipsum",
+        "punto3_producto5ti":"Lorem Ipsum",
+
+        "vistos_recientemente": "Artículos Vistos Recientemente",
+
+        "mejor_calidad":"Mejor Calidad",
+        "mejor_calidad_texto":"La Mejor Calidad",
+        "soporte":"Soporte",
+        "soporte_texto":"Compra con un experto",
+        "tarjetas_regalo":"Tarjetas de Regalo",
+        "tarjetas_regalo_texto":"Recomenda a un amigo",
+        "reembolsos":"Reembolsos",
+        "reembolsos_texto":"Reembolsos asegurados",
+        "compra_segura":"Compra Segura",
+        "compra_segura_texto":"100% Protegido",
+
+        "suscripcion":"Suscribete y consigue 10% de Descuento",
+        "suscripcion_descripcion":"Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales",
+
+        "mail":"Ingresa tu mail",
+        "ingresar":"Ingresar",
+
+        "contacto": "Contacto",
+        "ganar_dinero_con_nosotros": "Ganar Dinero con Nosotros",
+        "empresa": "Empresa",
+        "mi_cuenta": "Mi Cuenta",
+        "app_pagos": "App y Pagos"
+        
     }
 }
