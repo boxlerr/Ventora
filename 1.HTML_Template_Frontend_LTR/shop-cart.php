@@ -11,319 +11,330 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Shop Grid - Ecom Marketplace Template</title>
+    <title>Cart - Ecom Marketplace Template</title>
   </head>
   <body>
     <?php
     include_once("consultas_bd.php");
-    include_once("main2.php");
+    include_once("main.php");
     ?>
     <main class="main">
-      <div class="section-box d-none d-md-block">
+      <div class="section-box">
         <div class="breadcrumbs-div">
           <div class="container">
             <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Electronics</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Cell phone</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Accessories</a></li>
+              <li><a class="font-xs color-gray-1000" href="index.html">Homee</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.html">Shop</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-cart.html">Cart</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="section-box shop-template mt-30">
+      <section class="section-box shop-template">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
-              <div class="sidebar-border mb-0">
-                <div class="sidebar-head">
-                  <h6 class="color-gray-900">Product Categories</h6>
-                </div>
-                <div class="sidebar-content">
-                  <ul class="list-nav-arrow">
-                    <?php
-                    $categorias=getCategorias();
-                    $i=0;
-                    while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
-                      $i++;
-                    }
-                    ?>
-                    </ul>
-                    <?php
-                    if($i==15 && $categorias[0]>$i){
-
-                      echo"                      
-                      <div>
-                        <div class='collapse' id='moreMenu'>
-                          <ul class='list-nav-arrow'>";
-                          while($categorias[0]>$i){   
-                            echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
-                            $i++;
-                          }
-                          echo"
-                          </ul>
-                        </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
-                      </div>
-                      ";
-                    } 
-                    ?>
-                </div>
-              </div>
-              <div class="sidebar-border mb-40">
-                <div class="sidebar-head">
-                  <h6 class="color-gray-900">Products Filter</h6>
-                </div>
-                <div class="sidebar-content">
-                  <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
-                  <div class="box-slider-range mt-20 mb-15">
-                    <div class="row mb-20">
-                      <div class="col-sm-12">
-                        <div id="slider-range"></div>
-                      </div>
+            <div class="col-lg-9">
+              <div class="box-carts">
+                <div class="head-wishlist">
+                  <div class="item-wishlist">
+                    <div class="wishlist-cb">
+                      <input class="cb-layout cb-all" type="checkbox">
                     </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <label class="lb-slider font-sm color-gray-500">Price Range: &nbsp</label><span class="min-value-money font-sm"></span>
-                        <label class="lb-slider font-sm font-medium"></label>-
-                        <span class="max-value-money font-sm font-medium"></span>
-                      </div>
-                      <div class="col-lg-12">
-                        <input class="form-control min-value" type="hidden" name="min-value" value="">
-                        <input class="form-control max-value" type="hidden" name="max-value" value="">
-                      </div>
-                    </div>
+                    <div class="wishlist-product"><span class="font-md-bold color-brand-3">Product</span></div>
+                    <div class="wishlist-price"><span class="font-md-bold color-brand-3">Unit Price</span></div>
+                    <div class="wishlist-status"><span class="font-md-bold color-brand-3">Quantity</span></div>
+                    <div class="wishlist-action"><span class="font-md-bold color-brand-3">Subtotal</span></div>
+                    <div class="wishlist-remove"><span class="font-md-bold color-brand-3">Remove</span></div>
                   </div>
-                  <ul class="list-checkbox">
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Free - $100</span><span class="checkmark"></span>
-                      </label><span class="number-item">145</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$100 - $200</span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$200 - $400</span><span class="checkmark"></span>
-                      </label><span class="number-item">23</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$400 - $600</span><span class="checkmark"></span>
-                      </label><span class="number-item">43</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$600 - $800</span><span class="checkmark"></span>
-                      </label><span class="number-item">65</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Over $1000</span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                  </ul>
-                  <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
-                  <ul class="list-checkbox">
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Apple</span><span class="checkmark"></span>
-                      </label><span class="number-item">12</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Sony</span><span class="checkmark"></span>
-                      </label><span class="number-item">34</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Toshiba</span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Assus</span><span class="checkmark"></span>
-                      </label><span class="number-item">78</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Samsung</span><span class="checkmark"></span>
-                      </label><span class="number-item">23</span>
-                    </li>
-                  </ul>
-                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal">More Fillters</a>
                 </div>
-              </div>
-              <!-- <div class="box-slider-item mb-30">
-                <div class="head pb-15 border-brand-2">
-                  <h5 class="color-gray-900">Best seller</h5>
-                </div>
-                <div class="content-slider">
-                  <div class="box-swiper slide-shop">
-                    <div class="swiper-container swiper-best-seller">
-                      <div class="swiper-wrapper pt-5">
-                        <div class="swiper-slide">
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/camera.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP Slim Desktop, Intel Celeron J4025, 4GB RAM</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/clock.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/airpod.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP 11.6&quot; Chromebook, AMD A4, 4GB RAM, 32GB Storage</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-7.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-8.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Lenovo Legion 5i 15.6&quot; Laptop, Intel Core i5</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot; Tablet 32GB</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Apple AirPods Pro with MagSafe Charging</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Razer Power Up Gaming Bundle V2 - Cynosa</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                              </div>
-                            </div>
-                          </div>
+                <div class="content-wishlist mb-20">
+                  <div class="item-wishlist">
+                    <div class="wishlist-cb">
+                      <input class="cb-layout cb-select" type="checkbox">
+                    </div>
+                    <div class="wishlist-product">
+                      <div class="product-wishlist">
+                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"></a></div>
+                        <div class="product-info"><a href="shop-single-product.html">
+                            <h6 class="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6></a>
+                          <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-button-next swiper-button-next-style-2 swiper-button-next-bestseller"></div>
-                    <div class="swiper-button-prev swiper-button-prev-style-2 swiper-button-prev-bestseller"></div>
+                    <div class="wishlist-price">
+                      <h4 class="color-brand-3">$2.51</h4>
+                    </div>
+                    <div class="wishlist-status">
+                      <div class="box-quantity">
+                        <div class="input-quantity">
+                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wishlist-action">
+                      <h4 class="color-brand-3">$2.51</h4>
+                    </div>
+                    <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
+                  </div>
+                  <div class="item-wishlist">
+                    <div class="wishlist-cb">
+                      <input class="cb-layout cb-select" type="checkbox">
+                    </div>
+                    <div class="wishlist-product">
+                      <div class="product-wishlist">
+                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"></a></div>
+                        <div class="product-info"><a href="shop-single-product.html">
+                            <h6 class="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6></a>
+                          <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wishlist-price">
+                      <h4 class="color-brand-3">$1.51</h4>
+                    </div>
+                    <div class="wishlist-status">
+                      <div class="box-quantity">
+                        <div class="input-quantity">
+                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wishlist-action">
+                      <h4 class="color-brand-3">$1.51</h4>
+                    </div>
+                    <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
+                  </div>
+                  <div class="item-wishlist">
+                    <div class="wishlist-cb">
+                      <input class="cb-layout cb-select" type="checkbox">
+                    </div>
+                    <div class="wishlist-product">
+                      <div class="product-wishlist">
+                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"></a></div>
+                        <div class="product-info"><a href="shop-single-product.html">
+                            <h6 class="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6></a>
+                          <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wishlist-price">
+                      <h4 class="color-brand-3">$3.51</h4>
+                    </div>
+                    <div class="wishlist-status">
+                      <div class="box-quantity">
+                        <div class="input-quantity">
+                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wishlist-action">
+                      <h4 class="color-brand-3">$3.51</h4>
+                    </div>
+                    <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                   </div>
                 </div>
-              </div> -->
-              <!-- <div class="box-slider-item">
-                <div class="head pb-15 border-brand-2">
-                  <h5 class="color-gray-900">Product Tags</h5>
+                <div class="row mb-40">
+                  <div class="col-lg-6 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="shop-grid.html">Continue shopping</a></div>
+                  <div class="col-lg-6 col-md-6 col-sm-6-col-6 text-md-end"><a class="btn btn-buy w-auto update-cart mb-10" href="shop-cart.html">Update cart</a></div>
                 </div>
-                <div class="content-slider mb-50"><a class="btn btn-border mr-5" href="shop-grid.html">Games</a><a class="btn btn-border mr-5" href="shop-grid.html">Electronics</a><a class="btn btn-border mr-5" href="shop-grid.html">Video</a><a class="btn btn-border mr-5" href="shop-grid.html">Cellphone</a><a class="btn btn-border mr-5" href="shop-grid.html">Indoor</a><a class="btn btn-border mr-5" href="shop-grid.html">VGA Card</a><a class="btn btn-border mr-5" href="shop-grid.html">USB</a><a class="btn btn-border mr-5" href="shop-grid.html">Lightning</a><a class="btn btn-border mr-5" href="shop-grid.html">Camera</a><a class="btn btn-border" href="shop-grid.html">Window</a><a class="btn btn-border mr-5" href="shop-grid.html">Air Vent</a><a class="btn btn-border mr-5" href="shop-grid.html">Bedroom</a><a class="btn btn-border mr-5" href="shop-grid.html">Laptop</a><a class="btn btn-border mr-5" href="shop-grid.html">Dashboard</a><a class="btn btn-border mr-5" href="shop-grid.html">Keyboard</a></div>
-              </div> -->
-              <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
-                  <span class="text-no font-11">No.9</span>
-                  <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
-                  <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p>
-                  <a href="shop-single-product-2.html">View Details</a>
+                <div class="row mb-50">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="box-cart-left">
+                      <h5 class="font-md-bold mb-10">Calculate Shipping</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500">Flat rate:</span><span class="font-sm-bold d-inline-block color-brand-3">5%</span>
+                      <div class="form-group">
+                        <select class="form-control select-style1 color-gray-700">
+                          <option value="1">USA</option>
+                          <option value="1">EURO</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 mb-10">
+                          <input class="form-control" placeholder="Stage / Country">
+                        </div>
+                        <div class="col-lg-6 mb-10">
+                          <input class="form-control" placeholder="PostCode / ZIP">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="box-cart-right p-20">
+                      <h5 class="font-md-bold mb-10">Apply Coupon</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500">Using A Promo Code?</span>
+                      <div class="form-group d-flex">
+                        <input class="form-control mr-15" placeholder="Enter Your Coupon">
+                        <button class="btn btn-buy w-auto">Apply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-9 col-md-8 order-first order-lg-last">
-              <div class="banner-ads-top mb-30"><a href="shop-single-product-3.html"><img src="assets/imgs/page/shop/banner.png" alt="Ecom"></a></div>
-              <!-- <div class="box-filters mt-0 pb-5 border-bottom"> -->
-                <div class="row filtros_celular">
-                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div>
-                  <div class="col-xl-3 col-lg-5 col-md-6 mb-10 text-lg-end text-center d-none d-md-block">
-                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium">Sort by:</span>
-                      <div class="dropdown dropdown-sort border-1-right">
-                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">Latest products</button>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
-                          <li><a class="dropdown-item active" href="#">Latest products</a></li>
-                          <li><a class="dropdown-item" href="#">Oldest products</a></li>
-                          <li><a class="dropdown-item" href="#">Comments products</a></li>
-                        </ul>
-                      </div>
+            <div class="col-lg-3">
+              <div class="summary-cart">
+                <div class="border-bottom mb-10">
+                  <div class="row">
+                    <div class="col-6"><span class="font-md-bold color-gray-500">Subtotal</span></div>
+                    <div class="col-6 text-end">
+                      <h4>	$2.51</h4>
                     </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-4 col-md-12 d-none d-md-block">
-                    <input class="form-control font-xs" type="text" value="" placeholder="Search for items">
                   </div>
                 </div>
-              <!-- </div> -->
-              <div class="row mt-20">
-                <?php
-                $productos = getProductos();
-                foreach($productos as $producto){
-                  echo"
-                  <div class='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12'>
-                    <div class='card-grid-style-3 home6-style home7-style'>
-                      <div class='card-grid-inner'>
-                        <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.html' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
-                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=$producto[producto_id]'><img src='assets/imgs/$producto[imagen_url]' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>$producto[nombre]</a>
-                          <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$producto[precio]</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
-                          <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
-                          <ul class='list-features'>
-                            <li>$producto[descripcion]</li>
-                          </ul>
-                        </div>
-                      </div>
+                <div class="border-bottom mb-10">
+                  <div class="row">
+                    <div class="col-6"><span class="font-md-bold color-gray-500">Shipping</span></div>
+                    <div class="col-6 text-end">
+                      <h4>	Free</h4>
                     </div>
                   </div>
-                  ";
-                }
-                ?>
+                </div>
+                <div class="border-bottom mb-10">
+                  <div class="row">
+                    <div class="col-6"><span class="font-md-bold color-gray-500">Estimate for</span></div>
+                    <div class="col-6 text-end">
+                      <h6>United Kingdom</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-10">
+                  <div class="row">
+                    <div class="col-6"><span class="font-md-bold color-gray-500">Total</span></div>
+                    <div class="col-6 text-end">
+                      <h4>	$2.51</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-button"><a class="btn btn-buy" href="shop-checkout.html">Proceed To CheckOut</a></div>
               </div>
-              <nav>
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link page-prev" href="#"></a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item"><a class="page-link page-next" href="#"></a></li>
-                </ul>
-              </nav>
+            </div>
+          </div>
+          <h4 class="color-brand-3">You may also like</h4>
+          <div class="list-products-5 mt-20 mb-40">
+            <div class="card-grid-style-3">
+              <div class="card-grid-inner">
+                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
+                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Hisense</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Hisense 43&quot; Class 4K UHD LED XClass Smart TV HDR</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                  <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                  <ul class="list-features">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-grid-style-3">
+              <div class="card-grid-inner">
+                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"></a></div>
+                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Silver</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                  <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                  <ul class="list-features">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-grid-style-3">
+              <div class="card-grid-inner">
+                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"></a></div>
+                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">LG</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series </a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                  <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                  <ul class="list-features">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-grid-style-3">
+              <div class="card-grid-inner">
+                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp6.png" alt="Ecom"></a></div>
+                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Apple AirPods Pro with MagSafe Charging Case</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                  <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                  <ul class="list-features">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-grid-style-3">
+              <div class="card-grid-inner">
+                <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+                <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp7.png" alt="Ecom"></a></div>
+                <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Razer</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Razer Power Up Gaming Bundle V2 - Cynosa Lite</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                  <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                  <ul class="list-features">
+                    <li>27-inch (diagonal) Retina 5K display</li>
+                    <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                    <li>AMD Radeon Pro 5300 graphics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="color-brand-3">Recently viewed items</h4>
+          <div class="row mt-40">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card-grid-style-2 card-grid-none-border hover-up">
+                <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
+                </div>
+                <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">HP DeskJet 2755e Wireless Color All-in-One Printer</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card-grid-style-2 card-grid-none-border hover-up">
+                <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
+                </div>
+                <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Original HP 63XL Black High-yield Ink Cartridge</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card-grid-style-2 card-grid-none-border hover-up">
+                <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
+                </div>
+                <div class="info-right"><span class="font-xs color-gray-500">Logitech</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Logitech H390 Wired Headset, Stereo Headphones</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card-grid-style-2 card-grid-none-border hover-up">
+                <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
+                </div>
+                <div class="info-right"><span class="font-xs color-gray-500">Logitech</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Logitech MK345 Wireless Combo Full-Sized</a>
+                  <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                  <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="section-box mt-90 mb-50">
         <div class="container">
           <ul class="list-col-5">
@@ -379,8 +390,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3>Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">

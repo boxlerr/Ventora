@@ -15,8 +15,8 @@
   </head>
   <body>
     <?php
-    include_once("main.php");
     include_once("consultas_bd.php");
+    include_once("main.php");
     if(isset($_GET['id'])){
       $id = $_GET['id'];
       $producto = getProducto($id);
@@ -112,8 +112,8 @@
                   </div>
                 </div>
                 <div class="col-lg-5">
-                  <div class="box-border-product">
-                    <div class="box-product-color">
+                  <form class="box-border-product" method="post" action="agregarCarrito.php">
+                    <!-- <div class="box-product-color">
                       <p class="font-sm color-gray-900">Color:<span class="color-brand-2 nameColor">Pink Gold</span></p>
                       <ul class="list-colors">
                         <li class="disabled"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink"></li>
@@ -122,8 +122,8 @@
                         <li><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Silver"></li>
                         <li class="active"><img src="assets/imgs/page/product/img-thumb.png" alt="Ecom" title="Pink Gold"></li>
                       </ul>
-                    </div>
-                    <div class="box-product-style-size mt-20">
+                    </div> -->
+                    <!-- <div class="box-product-style-size mt-20">
                       <div class="row">
                         <div class="col-lg-12 mb-20">
                           <p class="font-sm color-gray-900">Style:<span class="color-brand-2 nameStyle">S22</span></p>
@@ -141,17 +141,19 @@
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="buy-product mt-10 d-flex">
                       <div class="font-sm text-quantity">Quantity</div>
                       <div class="box-quantity">
                         <div class="input-quantity">
-                          <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
+                          <input class="font-xl color-brand-3" type="text" value="1" name="cantidad"><span class="minus-cart"></span><span class="plus-cart"></span>
                         </div>
                       </div>
                     </div>
-                    <div class="button-buy mt-15"><a class="btn btn-cart mb-15" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
-                  </div>
+                    <input type="hidden" value="<?php echo $producto['producto_id'] ?>" name="producto_id">
+                    <div class="button-buy mt-15"><input class="btn btn-cart mb-15" type="submit" name="agregarCarrito" value="Add to cart">
+                    <a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
+                  </form>
                 </div>
               </div>
             </div>
