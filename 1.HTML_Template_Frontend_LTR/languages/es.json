@@ -1,5 +1,5 @@
 {
-    "index-10":{
+    "index":{
         "titulo":"Vestore",
         "descuento50":"Descuento hasta un 50%",
         "dispositivos_Moviles":"Dispositivos Moviles",
@@ -75,8 +75,8 @@
         "punto2_producto5":"Lorem Ipsum",
         "punto3_producto5":"Lorem Ipsum",
 
-        "mejor_calidad":"Mejor Calidad",
-        "mejor_calidad_texto":"La Mejor Calidad",
+        "mejor_calidad":"Envío gratis",
+        "mejor_calidad_texto":"Para compras mayores a $40.000",
         "soporte":"Soporte",
         "soporte_texto":"Compra con un experto",
         "tarjetas_regalo":"Tarjetas de Regalo",
