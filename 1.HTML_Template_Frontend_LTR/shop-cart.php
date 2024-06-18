@@ -23,7 +23,7 @@
         <div class="breadcrumbs-div">
           <div class="container">
             <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
+              <li><a class="font-xs color-gray-1000" href="index.html">Homee</a></li>
               <li><a class="font-xs color-gray-500" href="shop-grid.html">Shop</a></li>
               <li><a class="font-xs color-gray-500" href="shop-cart.html">Cart</a></li>
             </ul>
