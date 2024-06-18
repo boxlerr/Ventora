@@ -1,10 +1,13 @@
 <?php
 session_start();
-if(!empty($_SESSION["usuario"])){
-    $usuario=$_SESSION["usuario"];
-} else{
+if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     $usuario = false;
+    session_unset();    
+    session_destroy();
+} else{
+    $usuario=$_SESSION["usuario"];
 }
+
 ?>
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
@@ -19,7 +22,7 @@ if(!empty($_SESSION["usuario"])){
     <div class="container-topbar">
     <div class="menu-topbar-left d-none d-xl-block">
         <ul class="nav-small">
-        <li><a class="font-xs" href="page-about-us.html">About Us</a></li>
+        <li><a class="font-xs" href="page-about-us.html">About-us</a></li>
         <li><a class="font-xs" href="page-careers.html">Careers</a></li>
         <li><a class="font-xs" href="page-register.html">Open a shop</a></li>
         </ul>
@@ -90,12 +93,12 @@ if(!empty($_SESSION["usuario"])){
                         <li><a href="index-7.html">Homepage - 7</a></li>
                         <li><a href="index-8.html">Homepage - 8</a></li>
                         <li><a href="index-9.html">Homepage - 9</a></li>
-                        <li><a href="index-10.html">Homepage - 10</a></li>
+                        <li><a href="index-10.php">Homepage - 10</a></li>
                     </ul>
                     </li>
                     <li class="has-children"><a href="shop-grid.html">Shop</a>
                     <ul class="sub-menu two-col">
-                        <li><a href="shop-grid.html">Shop Grid</a></li>
+                        <li><a href="shop-grid.php">Shop Grid</a></li>
                         <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
                         <li><a href="shop-list.html">Shop list - Left sidebar</a></li>
                         <li><a href="shop-list-2.html">Shop list - Right sidebar</a></li>
@@ -165,33 +168,43 @@ if(!empty($_SESSION["usuario"])){
                     </ul>
                 </div>
                 </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
-                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><span class="number-item font-xs">2</span></span>
-                <div class="dropdown-cart">
-                    <div class="item-cart mb-20">
-                    <div class="cart-image"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"></div>
-                    <div class="cart-info"><a class="font-sm-bold color-brand-3" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD</a>
-                        <p><span class="color-brand-2 font-sm-bold">1 x $2856.4</span></p>
-                    </div>
-                    </div>
-                    <div class="item-cart mb-20">
-                    <div class="cart-image"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"></div>
-                    <div class="cart-info"><a class="font-sm-bold color-brand-3" href="shop-single-product-2.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD</a>
-                        <p><span class="color-brand-2 font-sm-bold">1 x $2856.4</span></p>
-                    </div>
-                    </div>
-                    <div class="border-bottom pt-0 mb-15"></div>
-                    <div class="cart-total">
-                    <div class="row">
-                        <div class="col-6 text-start"><span class="font-md-bold color-brand-3">Total</span></div>
-                        <div class="col-6"><span class="font-md-bold color-brand-1">$2586.3</span></div>
-                    </div>
-                    <div class="row mt-15">
-                        <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.html">View cart</a></div>
-                        <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.html">Checkout</a></div>
-                    </div>
+                <?php
+                if(!$usuario){
+                    echo "<span class='font-lg icon-list icon-cart'><span>Cart</span></span>";
+                } else{
+                $carrito = mostrarCarrito($usuario);
+                ?>
+                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
+                    <div class="dropdown-cart">
+                        <?php
+                        foreach($carrito[1] as $producto){
+                            $articulo = getProducto($producto['producto_id']);
+                            echo "
+                            <div class='item-cart mb-20'>
+                                <div class='cart-image'><img src='assets/imgs/page/$articulo[imagen_url]' alt='Ecom'></div>
+                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>$articulo[nombre]</a>
+                                    <p><span class='color-brand-2 font-sm-bold'>$producto[cantidad] x $producto[precio_producto]</span></p>
+                                </div>
+                            </div>
+                            ";
+                        }
+                        ?>
+
+                        <div class="border-bottom pt-0 mb-15"></div>
+                        <div class="cart-total">
+                        <div class="row">
+                            <div class="col-6 text-start"><span class="font-md-bold color-brand-3">Total</span></div>
+                            <div class="col-6"><span class="font-md-bold color-brand-1">$2586.3</span></div>
+                        </div>
+                        <div class="row mt-15">
+                            <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php">View cart</a></div>
+                            <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.html">Checkout</a></div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                </div><a class="font-lg icon-list icon-compare" href="shop-compare.html"><span>Compare</span></a>
+                <?php } ?>
+                <a class="font-lg icon-list icon-compare" href="shop-compare.html"><span>Compare</span></a>
             </div>
             </div>
         </div>
