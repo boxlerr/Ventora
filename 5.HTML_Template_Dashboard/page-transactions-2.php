@@ -235,9 +235,10 @@ function showDetails(pago_id) {
                 <ul>
                     ${venta.productos.split(', ').map(producto => `<li>${producto}</li>`).join('')}
                 </ul>
-                <p>Total: $${venta.total}</p>
-                <p class="h4">$${venta.subtotal}</p>
-                <hr><a class="btn btn-light" href="#">Download receipt</a>
+                <p class="h4">Subtotal: $${venta.subtotal}</p>
+                <p class="h4">Total: $${venta.total_pago}</p>
+                <hr>
+                <a class="btn btn-light" href="#">Download receipt</a>
             `);
         },
         error: function() {
@@ -245,6 +246,7 @@ function showDetails(pago_id) {
         }
     });
 }
+
 </script>
 
 

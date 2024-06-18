@@ -1,12 +1,13 @@
 {
-    "index-10":{
+    "index":{
         "titulo":"Vestore",
+        "tendencia_ahora_mismo":"Tendencia ahora mismo",
         "descuento50":"Descuento hasta un 50%",
         "dispositivos_Moviles":"Dispositivos Moviles",
         "carrouselP1":"texto",
         "comprar_ahora": "Comprar ahora",
         "saber_mas": "Saber más",
-        "tendencia_ahora": "Trending Now",
+        "tendencia_ahora": "Tendencia ahora",
         "descuento25": "Grandes descuentos 25%",
         "laptop_y_pc": "Laptop & PC",
         "carrouselP2":"texto",
@@ -14,7 +15,7 @@
         "hot_collection": "Hot Collection",
         "gafas_virtuales": "Gafas de realidad virtual",
         "carrouselP3":"text",
-        "descuento10": "10% de descuento",
+        "descuento10": "de descuento",
         "applewatch7": "Apple Watch Serial 7",
         "ultima_oportunidad": "No te pierdas la última oportunidad.",
         "ultima_coleccion": "ÚLTIMA COLECCIÓN",
@@ -46,7 +47,7 @@
         "nombre_producto4":"Airpods 2da Generación",
         "descripcion_producto4":"Lorem Ipsum",
 
-        "nombre_producto5":"Airpods 3da Generación",
+        "nombre_producto5":"Airpods 3ra Generación",
         "descripcion_producto5":"Lorem Ipsum",
 
         "masvendidos":"Mas Vendidos",
@@ -75,8 +76,8 @@
         "punto2_producto5":"Lorem Ipsum",
         "punto3_producto5":"Lorem Ipsum",
 
-        "mejor_calidad":"Mejor Calidad",
-        "mejor_calidad_texto":"La Mejor Calidad",
+        "mejor_calidad":"Envío gratis",
+        "mejor_calidad_texto":"Para compras mayores a $40.000",
         "soporte":"Soporte",
         "soporte_texto":"Compra con un experto",
         "tarjetas_regalo":"Tarjetas de Regalo",
@@ -159,8 +160,6 @@
         "2_estrellas": "2 estrellas",
         "1_estrella": "1 estrella",
         "como_se_calculan_calificaciones": "¿Cómo se calculan las calificaciones?",
-
-        "vendedor": "Vendedor", /*no va*/
 
         "productos_relacionados": "Productos Relacionados",
         "punto1_producto1pr":"Lorem Ipsum",
