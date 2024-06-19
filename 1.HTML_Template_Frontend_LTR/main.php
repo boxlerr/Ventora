@@ -91,11 +91,11 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         <li><a href='page-account.html'>Mis compras</a></li>
                         <li><a href='page-account.html'>Mis favoritos</a></li>
                         <li><a href='page-account.html'>Configuracion</a></li>
-                        <li><a href='index-10.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
+                        <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
                         ";
                     } else{
                         echo"<li><a href='page-login.php'>Iniciar sesion</a></li>";
-                        echo"<li><a href='page-account.html'>Crear cuenta</a></li>";
+                        echo"<li><a href='page-register.php'>Crear cuenta</a></li>";
                     }
                     ?>
                     </ul>
@@ -103,7 +103,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
                 <?php
                 if(!$usuario){
-                    echo "<span class='font-lg icon-list icon-cart'><span>Cart</span></span>";
+                    echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
                 } else{
                 $carrito = mostrarCarrito($usuario);
                 ?>
@@ -114,9 +114,9 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                             $articulo = getProducto($producto['producto_id']);
                             echo "
                             <div class='item-cart mb-20'>
-                                <div class='cart-image'><img src='assets/imgs/page/$articulo[imagen_url]' alt='Ecom'></div>
-                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>$articulo[nombre]</a>
-                                    <p><span class='color-brand-2 font-sm-bold'>$producto[cantidad] x $producto[precio_producto]</span></p>
+                                <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
+                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>".htmlspecialchars($articulo['nombre'])."</a>
+                                    <p><span class='color-brand-2 font-sm-bold'>".htmlspecialchars($producto['cantidad'])." x ".htmlspecialchars($producto['precio_producto'])."</span></p>
                                 </div>
                             </div>
                             ";
