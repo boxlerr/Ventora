@@ -30,6 +30,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+
 thead {
   font-weight: 600;
 }
@@ -513,7 +514,7 @@ b {
 }
 .menu-aside .menu-link:hover {
   transition: 0.2s linear;
-  background-color: #e9ecef;
+  background-color: #979cab;
 }
 .menu-aside .submenu {
   margin-left: 44px;
@@ -3645,6 +3646,10 @@ body.offcanvas-active {
   overflow: hidden;
 }
 
+.main-wrap-categories{
+  background-color: #f8f9fa;
+  position: relative;
+}
 .main-wrap {
   margin-left: 300px;
   background-color: #f8f9fa;
@@ -4041,6 +4046,10 @@ body.dark .dropdown-menu .dropdown-item.text-danger {
 
 .btn-mobile {
   display: none;
+}
+
+.centrado {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

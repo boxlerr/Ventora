@@ -25,4 +25,4 @@ if ($con) {
 } else {
     echo "Error al conectar con la base de datos.";
 }
-?>
+

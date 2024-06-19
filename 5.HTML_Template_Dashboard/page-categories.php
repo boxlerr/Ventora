@@ -6,7 +6,7 @@ include('funciones_admin.php');
 
 // Verificar y mostrar mensajes de sesión
 if (isset($_SESSION['message'])) {
-  echo '<div class="alert alert-success">' . $_SESSION['message'] . '</div>';
+  echo '<div class="alert alert-success centrado">' . $_SESSION['message'] . '</div>';
   unset($_SESSION['message']); // Limpiar el mensaje para evitar mostrarlo más de una vez
 }
 
@@ -17,7 +17,7 @@ if (isset($_SESSION['error'])) {
 $categorias = getCategorias();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -29,7 +29,7 @@ $categorias = getCategorias();
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
-  <link href="assets/css/style.css?v=1.0.0" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
   <title>Ecom - Marketplace Dashboard Template</title>
 </head>
 
@@ -37,7 +37,7 @@ $categorias = getCategorias();
   <?php
   include_once("header_admin.php")
   ?>
-  <main class="main-wrap">
+  <main class="main-wrap-categories">
     <section class="content-main">
       <div class="content-header">
         <div>
@@ -117,6 +117,19 @@ $categorias = getCategorias();
       </div>
     </section>
   </main>
-  <?php
-  include_once("footer_admin.php")
-  ?>
+  <footer class="main-footer font-xs">
+    <?php
+    include_once("footer_admin.php")
+    ?>
+  </footer>
+  <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/vendors/select2.min.js"></script>
+  <script src="assets/js/vendors/perfect-scrollbar.js"></script>
+  <script src="assets/js/vendors/jquery.fullscreen.min.js"></script>
+  <script src="assets/js/vendors/chart.js"></script>
+  <script src="assets/js/main.js?v=1.0.0"></script>
+  <script src="assets/js/custom-chart.js" type="text/javascript"></script>
+</body>
+
+</html>
