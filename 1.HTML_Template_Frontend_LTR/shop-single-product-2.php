@@ -80,7 +80,7 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <h3 class="color-brand-3 mb-25"><?php echo $producto['nombre'] ?></h3>
+              <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
               <div class="row align-items-center">
                 <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
                   <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
@@ -91,11 +91,11 @@
               <div class="row">
                 <div class="col-lg-7">
                   <div class="box-product-price">
-                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo $producto['precio'] ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo htmlspecialchars($producto['precio']) ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
                   </div>
                   <div class="product-description color-gray-900">
                     <ul class="list-dot">
-                      <li><?php echo $producto['descripcion'] ?></li>
+                      <li><?php echo htmlspecialchars($producto['descripcion']) ?></li>
                     </ul>
                   </div>
                   <div class="border-bottom mt-20 mb-20"></div>
@@ -150,7 +150,7 @@
                         </div>
                       </div>
                     </div>
-                    <input type="hidden" value="<?php echo $producto['producto_id'] ?>" name="producto_id">
+                    <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
                     <div class="button-buy mt-15"><input class="btn btn-cart mb-15" type="submit" name="agregarCarrito" value="Add to cart">
                     <a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
                   </form>

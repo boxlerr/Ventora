@@ -8590,7 +8590,7 @@ a:hover span {
 }
 .head-wishlist .item-wishlist {
   padding: 5px 15px;
-  background-color: #F0F3F8;
+  background-color: var(--secondary-color);
   border-radius: 4px;
 }
 

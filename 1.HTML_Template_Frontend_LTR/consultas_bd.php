@@ -8,6 +8,13 @@ function getProductos() {
     return $result;
 }
 
+function getProductosLimitados($cant) {
+    global $con;
+    $sql = "SELECT * FROM producto LIMIT $cant";
+    $result = $con->query($sql);
+    return $result;
+}
+
 function getProducto($id) {
     global $con;
     $sql = "SELECT * FROM producto WHERE producto_id = $id";
@@ -76,4 +83,10 @@ function mostrarCarrito($cliente_id){
     $datos = $result->fetch_all(MYSQLI_ASSOC);
     $rows = $result->num_rows;
     return [$rows,$datos];
+}
+
+function eliminarArticuloCarrito($id){
+    global $con;
+    $sql = "DELETE FROM `carrito_producto` WHERE carrito_producto_id = '$id'";
+    $con->query($sql);
 }

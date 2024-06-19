@@ -45,7 +45,7 @@
                     $categorias=getCategorias();
                     $i=0;
                     while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
+                      echo"<li><a href='shop-grid.html'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                       $i++;
                     }
                     ?>
@@ -58,7 +58,7 @@
                         <div class='collapse' id='moreMenu'>
                           <ul class='list-nav-arrow'>";
                           while($categorias[0]>$i){   
-                            echo"<li><a href='shop-grid.html'>".$categorias[1][$i]['nombre']."<span class='number'>09</span></a></li>";
+                            echo"<li><a href='shop-grid.html'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                             $i++;
                           }
                           echo"
@@ -292,13 +292,13 @@
                     <div class='card-grid-style-3 home6-style home7-style'>
                       <div class='card-grid-inner'>
                         <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.html' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
-                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=$producto[producto_id]'><img src='assets/imgs/$producto[imagen_url]' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>$producto[nombre]</a>
+                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$producto[precio]</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
                           <ul class='list-features'>
-                            <li>$producto[descripcion]</li>
+                            <li>".htmlspecialchars($producto['descripcion'])."</li>
                           </ul>
                         </div>
                       </div>
