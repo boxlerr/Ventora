@@ -15,8 +15,28 @@ if (isset($_SESSION['error'])) {
   unset($_SESSION['error']); // Limpiar el error para evitar mostrarlo más de una vez
 }
 $categorias = getCategorias();
-include_once("header_admin.php")
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
+  <link href="assets/css/style.css?v=1.0.0" rel="stylesheet">
+  <title>Ecom - Marketplace Dashboard Template</title>
+</head>
+
+<body>
+  <?php
+  include_once("header_admin.php")
+  ?>
   <main class="main-wrap">
     <section class="content-main">
       <div class="content-header">
@@ -97,6 +117,6 @@ include_once("header_admin.php")
       </div>
     </section>
   </main>
-<?php
+  <?php
   include_once("footer_admin.php")
-?>
+  ?>
