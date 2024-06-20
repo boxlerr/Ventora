@@ -23,7 +23,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     <div class="container-topbar">
     <div class="menu-topbar-left d-none d-xl-block">
         <ul class="nav-small">
-        <li><a class="font-xs" href="page-about-us.html">Sobre nosotros</a></li>
+        <li><a class="font-xs" href="page-about-us.php">Sobre nosotros</a></li>
         <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
         <li><a class="font-xs" href="page-register.html">Importá con nosotros</a></li>
         </ul>
@@ -83,7 +83,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-vendor-list.html">Marcas</a></li>
                     <li class="has-children"><a href="#">Paginas</a>
                     <ul class="sub-menu">
-                        <li><a href="page-about-us.html">Sobre nosotros</a></li>
+                        <li><a href="page-about-us.php">Sobre nosotros</a></li>
                         <li><a href="page-term.html">Términos y condiciones</a></li>
                     </ul>
                     </li>
@@ -194,7 +194,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 </li>
                 <li class="has-children"><a href="#">Pages</a>
                 <ul class="sub-menu">
-                    <li><a href="page-about-us.html">About Us</a></li>
+                    <li><a href="page-about-us.php">About Us</a></li>
                     <li><a href="page-contact.html">Contact Us</a></li>
                     <li><a href="page-careers.html">Careers</a></li>
                     <li><a href="page-term.html">Term and Condition</a></li>

@@ -1017,8 +1017,15 @@ h6 {
   background-color: #DDE4F0 !important;
 }
 
+.background-about-us-100 {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff !important;
+}
+
 .background-gray-50 {
-  background-color: #F0F3F8 !important;
+  background-color: #192e47 !important;
+  border-radius: 10px;
 }
 
 .w-auto {
