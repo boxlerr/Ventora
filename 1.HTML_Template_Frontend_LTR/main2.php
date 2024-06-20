@@ -83,7 +83,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-vendor-list.html">Marcas</a></li>
                     <li class="has-children"><a href="#">Paginas</a>
                     <ul class="sub-menu">
-                        <li><a href="page-about-us.html">Sobre nosotros</a></li>
+                        <li><a href="page-about-us.php">Sobre nosotros</a></li>
                         <li><a href="page-term.html">Términos y condiciones</a></li>
                     </ul>
                     </li>

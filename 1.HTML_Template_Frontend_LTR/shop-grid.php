@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Shop Grid - Ecom Marketplace Template</title>
+    <title>Lista Productos</title>
   </head>
   <body>
     <?php
@@ -97,7 +97,7 @@
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Free - $100</span><span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"><span class="text-small">Under $100</span><span class="checkmark"></span>
                       </label><span class="number-item">145</span>
                     </li>
                     <li>
@@ -329,57 +329,6 @@
           </div>
         </div>
       </div>
-      <section class="section-box mt-90 mb-50">
-        <div class="container">
-          <ul class="list-col-5">
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/delivery.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Free Delivery</h5>
-                  <p class="font-sm color-gray-500">From all orders over $10</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/support.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Support 24/7</h5>
-                  <p class="font-sm color-gray-500">Shop with an expert</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/voucher.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Gift voucher</h5>
-                  <p class="font-sm color-gray-500">Refer a friend</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/return.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Return &amp; Refund</h5>
-                  <p class="font-sm color-gray-500">Free return over $200</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/secure.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Secure payment</h5>
-                  <p class="font-sm color-gray-500">100% Protected</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
       <section class="section-box box-newsletter">
         <div class="container">
           <div class="row">
@@ -402,7 +351,7 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content apply-job-form">
             <div class="modal-header">
-              <h5 class="modal-title color-gray-1000 filters-icon">Addvance Fillters</h5>
+              <h5 class="modal-title color-gray-1000 filters-icon">Advance Filters</h5>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-30">
@@ -485,11 +434,6 @@
                         <input type="checkbox"><span class="text-small">Big deals</span><span class="checkmark"></span>
                       </label>
                     </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Shop Mall</span><span class="checkmark"></span>
-                      </label>
-                    </li>
                   </ul>
                   <h6 class="color-gray-900 mb-0 mt-40">Ready to ship in</h6>
                   <ul class="list-checkbox">
@@ -506,11 +450,6 @@
                     <li>
                       <label class="cb-container">
                         <input type="checkbox"><span class="text-small">in 1 week</span><span class="checkmark"></span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Shipping now</span><span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
@@ -577,7 +516,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal-footer justify-content-start pl-30"><a class="btn btn-buy w-auto" href="#">Apply Fillter</a><a class="btn font-sm-bold color-gray-500" href="#">Reset Fillter</a></div>
+            <div class="modal-footer justify-content-start pl-30"><a class="btn btn-buy w-auto" href="#">Apply Filter</a><a class="btn font-sm-bold color-gray-500" href="#">Reset Filter</a></div>
           </div>
         </div>
       </div>
