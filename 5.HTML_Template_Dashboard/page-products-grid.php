@@ -88,8 +88,8 @@
                         <div class="info-wrap">
                           <a class="title text-truncate" href="#">' . $nombre . '</a>
                           <div class="price mb-2">$' . $precio . '</div>
-                          <a class="btn btn-sm font-sm rounded btn-brand" href="#"><i class="material-icons md-edit"></i> Edit</a>
-                          <a class="btn btn-sm font-sm btn-light rounded" href="#"><i class="material-icons md-delete_forever"></i> Delete</a>
+                          <a class="btn btn-sm font-sm rounded btn-brand" href="modificar_producto"><i class="material-icons md-edit"></i> Edit</a>
+                          <a class="btn btn-sm font-sm btn-light rounded" href="eliminar_producto"><i class="material-icons md-delete_forever"></i> Delete</a>
                         </div>
                       </div>
                     </div>';
