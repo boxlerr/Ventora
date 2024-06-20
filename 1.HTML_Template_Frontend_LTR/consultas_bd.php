@@ -105,3 +105,11 @@ function buscarCarritoProducto($cliente_id,$producto_id,$cantidad){
     return true;
 }
 
+function getMonedas(){
+    global $con;
+    $sql = "SELECT moneda_corto FROM cambio";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all();
+    return $datos;
+}
+
