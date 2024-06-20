@@ -19,7 +19,7 @@
     include_once("main.php");
     ?>
     <main class="main">
-      <div class="section-box">
+      <!-- <div class="section-box">
         <div class="breadcrumbs-div">
           <div class="container">
             <ul class="breadcrumb">
@@ -29,7 +29,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
       <section class="section-box shop-template">
         <div class="container">
           <div class="row">
@@ -713,5 +713,7 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
+
   </body>
 </html>

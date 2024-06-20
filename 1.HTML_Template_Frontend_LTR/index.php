@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -94,7 +94,7 @@
       <div class="section-box mt-30">
         <div class="container">
           <div class="box-swiper">
-            <div class="swiper-container swiper-group-9">
+            <div class="swiper-container swiper-group-5">
               <div class="swiper-wrapper pt-5">
                 <div class="swiper-slide">
                   <div class="item-cat"> 
@@ -216,569 +216,69 @@
           </div>
           <div class="mt-0">
             <div class="list-products-5 list-products-home10">
-              <div class="card-grid-style-3 home6-style home7-style">
-                <div class="card-grid-inner">
-                  <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                  <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage10/sp1.png" alt="Ecom"></a>
-                  </div>
-                  <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Airpods</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">La mejor calidad de sonido</a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                    <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                    <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Agregar al Carrito</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-grid-style-3 home6-style home7-style">
-                <div class="card-grid-inner">
-                  <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                  <div class="image-box"><span class="label bg-danger">Tendencia</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage10/sp2.png" alt="Ecom"></a>
-                  </div>
-                  <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Airpods Max</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">La mejor calidad de sonido</a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                    <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                    <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Agregar al Carrito</a></div>
+            <?php
+            $productos=getProductosLimitados(5);
+            foreach($productos as $producto){
+              echo"              
+                <div class='card-grid-style-3 home6-style home7-style'>
+                  <div class='card-grid-inner'>
+                    <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.html' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
+                    <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                    <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
+                      <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
+                      <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                      <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
+                      <ul class='list-features'>
+                        <li>".htmlspecialchars($producto['descripcion'])."</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card-grid-style-3 home6-style home7-style">
-                <div class="card-grid-inner">
-                  <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                  <div class="image-box"><span class="label bg-success">New</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage10/sp3.png" alt="Ecom"></a>
-                  </div>
-                  <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Airpods Pro</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">La mejor calidad de sonido</a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                    <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                    <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Agregar al Carrito</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-grid-style-3 home6-style home7-style">
-                <div class="card-grid-inner">
-                  <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                  <div class="image-box"><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage10/sp4.png" alt="Ecom"></a>
-                  </div>
-                  <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Airpods 2da Generación</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">La mejor calidad de sonido</a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                    <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                    <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Agregar al Carrito</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-grid-style-3 home6-style home7-style">
-                <div class="card-grid-inner">
-                  <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                  <div class="image-box"><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage10/sp5.png" alt="Ecom"></a>
-                  </div>
-                  <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.html">Airpods 3ra Generación</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">La mejor calidad de sonido</a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                    <div class="price-info mb-10"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                    <div class="mt-10 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Agregar al Carrito</a></div>
-                  </div>
-                </div>
-              </div>
+              ";
+            }
+            ?>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="section-box mt-50">
-        <div class="container">
-          <div class="row">  
-            <div class="col-lg-4 mb-20">
-              <div class="banner-small-home10 bg-2">
-                <div class="info-banner">
-                  <h1 class="color-gray-1000 mb-10">Sale</h1>
-                  <h3 class="color-brand-3 mb-5">70% OFF</h3>
-                  <h4 class="color-gray-500 mb-5">Potted in home</h4>
-                  <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Shop now</a></div>
-                </div>
-                <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-20">
-              <div class="banner-small-home10 bg-3">
-                <div class="info-banner">
-                  <h1 class="color-gray-1000 mb-10">Deals</h1>
-                  <h3 class="color-gray-500 mb-5">Cactus Collection</h3>
-                  <h4 class="color-gray-500 mb-5">Free Shipping</h4>
-                  <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Shop now</a></div>
-                </div>
-                <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-20">
-              <div class="banner-small-home10 bg-32">
-                <div class="info-banner">
-                  <h1 class="color-gray-1000">Hot <br class="d-none d-lg-block">Trend</h1>
-                  <h3 class="color-gray-500 mb-0">Summer 2022</h3>
-                  <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.html">Learn more</a></div>
-                </div>
-                <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section class="section-box mt-50">
-        <div class="container">
-          <div class="head-main bd-gray-200">
-            <div class="row">
-              <div class="col-xl-6 col-lg-4">
-                <h3 class="mb-5">Mas Vendidos</h3>
-                <p class="font-base color-gray-500">Productos Especiales de este Mes</p>
-              </div>
-              <div class="col-xl-6 col-lg-8">
-                <ul class="nav nav-tabs text-uppercase pr-100" role="tablist">
-                  <li><a class="active" href="#tab-3-all" data-bs-toggle="tab" role="tab" aria-controls="tab-3-all" aria-selected="true" data-index="1">Todos</a></li>
-                  <li><a href="#tab-3-bestseller" data-bs-toggle="tab" role="tab" aria-controls="tab-3-bestseller" aria-selected="false" data-index="2">Mas Vendidos</a></li>
-                  <li><a href="#tab-3-mostviewed" data-bs-toggle="tab" role="tab" aria-controls="tab-3-mostviewed" aria-selected="false" data-index="3">Mas Vistos</a></li>
-                  <li><a href="#tab-3-topbrands" data-bs-toggle="tab" role="tab" aria-controls="tab-3-topbrands" aria-selected="false" data-index="4">Mejores Marcas</a></li>
-                </ul>
-                <!-- Button slider-->
-                <div class="box-button-slider">
-                  <div class="button-slider-nav" id="tab-3-all-nav">
-                    <div class="swiper-button-next swiper-button-next-tab-1"></div>
-                    <div class="swiper-button-prev swiper-button-prev-tab-1"></div>
+        <section class="section-box mt-50">
+          <div class="container">
+            <div class="row">  
+              <div class="col-lg-4 mb-20">
+                <div class="banner-small-home10 bg-2">
+                  <div class="info-banner">
+                    <h1 class="color-gray-1000 mb-10">Descuento</h1>
+                    <h3 class="color-brand-3 mb-5">70% OFF</h3>
+                    <h4 class="color-gray-500 mb-5">Auriculares</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
                   </div>
-                  <div class="button-slider-nav" id="tab-3-bestseller-nav" style="display: none;">
-                    <div class="swiper-button-next swiper-button-next-tab-2"></div>
-                    <div class="swiper-button-prev swiper-button-prev-tab-2"></div>
-                  </div>
-                  <div class="button-slider-nav" id="tab-3-mostviewed-nav" style="display: none;">
-                    <div class="swiper-button-next swiper-button-next-tab-3"></div>
-                    <div class="swiper-button-prev swiper-button-prev-tab-3"></div>
-                  </div>
-                  <div class="button-slider-nav" id="tab-3-topbrands-nav" style="display: none;">
-                    <div class="swiper-button-next swiper-button-next-tab-4"></div>
-                    <div class="swiper-button-prev swiper-button-prev-tab-4"></div>
-                  </div>
-                </div>
-                <!-- End Button slider-->
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-content-slider">
-            <div class="tab-pane fade active show" id="tab-3-all" role="tabpanel" aria-labelledby="tab-3-all">
-              <div class="box-swiper">
-                <div class="swiper-container swiper-tab-1">
-                  <div class="swiper-wrapper pt-5">
-                    <div class="swiper-slide">
-                      <div class="list-products-5">
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-danger">Tendencia</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods Max</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-success">Nuevo</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods Pro</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots4.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 2da Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots5.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 3ra Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
                 </div>
               </div>
-            </div>
-            <div class="tab-pane fade" id="tab-3-bestseller" role="tabpanel" aria-labelledby="tab-3-bestseller">
-              <div class="box-swiper">
-                <div class="swiper-container swiper-tab-2">
-                  <div class="swiper-wrapper pt-5">
-                    <div class="swiper-slide">
-                      <div class="list-products-5">
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-danger">Tendencia</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods Max</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-success">Nuevo</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods Pro</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots4.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 2da Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots5.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 3ra Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-lg-4 mb-20">
+                <div class="banner-small-home10 bg-3">
+                  <div class="info-banner">
+                    <h1 class="color-gray-1000 mb-10">Ofertas</h1>
+                    <h3 class="color-gray-500 mb-5">Electronica</h3>
+                    <h4 class="color-gray-500 mb-5">Envio gratis</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
                   </div>
+                  <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
                 </div>
               </div>
-            </div>
-            <div class="tab-pane fade" id="tab-3-mostviewed" role="tabpanel" aria-labelledby="tab-3-mostviewed">
-              <div class="box-swiper">
-                <div class="swiper-container swiper-tab-3">
-                  <div class="swiper-wrapper pt-5">
-                    <div class="swiper-slide">
-                      <div class="list-products-5">
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-danger">Tendencia</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods Max</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-success">Nuevo</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods Pro</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots4.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 2da Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots5.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 3ra Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-lg-4 mb-20">
+                <div class="banner-small-home10 bg-32">
+                  <div class="info-banner">
+                    <h1 class="color-gray-1000">Ultima <br class="d-none d-lg-block">Tendencia</h1>
+                    <h3 class="color-gray-500 mb-0">Productos</h3>
+                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.html">Saber más</a></div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tab-3-topbrands" role="tabpanel" aria-labelledby="tab-3-topbrands">
-              <div class="box-swiper">
-                <div class="swiper-container swiper-tab-4">
-                  <div class="swiper-wrapper pt-5">
-                    <div class="swiper-slide">
-                      <div class="list-products-5">
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-danger">Tendencia</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage10/pots2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-3.html">Airpods Max</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><span class="label bg-success">Nuevo</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods Pro</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots4.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 2da Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-grid-style-3">
-                          <div class="card-grid-inner">
-                            <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                            <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage10/pots5.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><span class="font-xs color-gray-500">Apple</span><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Airpods 3ra Generación</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                              <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                              <ul class="list-features">
-                                <li>text1</li>
-                                <li>text2</li>
-                                <li>text3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section-box mt-10 mb-50">
-        <div class="container">
-          <ul class="list-col-5">
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/delivery.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Envío gratis</h5>
-                  <p class="font-sm color-gray-500">Para compras mayores a $40.000</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/support.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Soporte</h5>
-                  <p class="font-sm color-gray-500">Compra con un experto</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/voucher.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Tarjetas de Regalo</h5>
-                  <p class="font-sm color-gray-500">Recomenda a un amigo</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/return.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Reembolsos</h5>
-                  <p class="font-sm color-gray-500">Reembolsos asegurados</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/secure.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Compra Segura</h5>
-                  <p class="font-sm color-gray-500">100% Protegido</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
       <section class="section-box box-newsletter">
         <div class="container">
           <div class="row">
@@ -944,6 +444,7 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>
 

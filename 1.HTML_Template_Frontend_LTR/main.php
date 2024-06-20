@@ -1,13 +1,14 @@
 <?php
-session_start();
+include_once("moneda.php");
+
+// session_start();
 if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     $usuario = false;
-    session_unset();    
-    session_destroy();
+    unset($_SESSION["usuario"]);    
+    // session_destroy();
 } else{
     $usuario=$_SESSION["usuario"];
 }
-
 ?>
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
@@ -36,15 +37,27 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-es.svg" alt="Ecom"> Español</a></li>
         </ul>
         </div>
-        <div class="dropdown dropdown-language">
-        <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button>
-        <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownPage2" data-bs-popper="static">
-            <li><a class="dropdown-item" href="#">ARS</a></li>
-            <li><a class="dropdown-item" href="#">USD</a></li>
-            <li><a class="dropdown-item" href="#">EUR</a></li>
-            <li><a class="dropdown-item" href="#">BRL</a></li>
-        </ul>
-        </div>
+        <form class="dropdown dropdown-language" action="" method="">
+            <!-- <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button> -->
+            <select name="mascara" id="monedas" class="seleccionMoneda" aria-labelledby="dropdownPage2" data-bs-popper="static">
+                <?php 
+                $monedas = getMonedas();
+                if(!empty($_SESSION["moneda"])){
+                    foreach($monedas as $moneda){
+                        if($moneda[0] == $_SESSION["moneda"]){
+                            echo "<option class='opcionMoneda' selected>$moneda[0]</option>";
+                        } else{
+                            echo "<option class='opcionMoneda'>$moneda[0]</option>";
+                        }
+                    }
+                } else{
+                    foreach($monedas as $moneda){
+                        echo "<option class='opcionMoneda'>$moneda[0]</option>";
+                    }
+                }
+                ?>
+            </select>
+        </form>
     </div>
     </div>
 </div>
@@ -100,14 +113,14 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
+                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Lista de Deseos</span><span class="number-item font-xs">5</span></a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
                 } else{
                 $carrito = mostrarCarrito($usuario);
                 ?>
-                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
+                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Carrito</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
                     <div class="dropdown-cart">
                         <?php
                         foreach($carrito[1] as $producto){
@@ -153,16 +166,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <ul class="mobile-menu font-heading">
                 <li class="has-children"><a class="active" href="index.html">Home</a>
                 <ul class="sub-menu">
-                    <li><a href="index.html">Homepage - 1</a></li>
-                    <li><a href="index-2.html">Homepage - 2</a></li>
-                    <li><a href="index-3.html">Homepage - 3</a></li>
-                    <li><a href="index-4.html">Homepage - 4</a></li>
-                    <li><a href="index-5.html">Homepage - 5</a></li>
-                    <li><a href="index-6.html">Homepage - 6</a></li>
-                    <li><a href="index-7.html">Homepage - 7</a></li>
-                    <li><a href="index-8.html">Homepage - 8</a></li>
-                    <li><a href="index-9.html">Homepage - 9</a></li>
-                    <li><a href="index-10.php">Homepage - 10</a></li>
+                    <li><a href="index.php">Home</a></li>
                 </ul>
                 </li>
                 <li class="has-children"><a href="shop-grid.html">Shop</a>

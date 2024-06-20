@@ -8,7 +8,10 @@ if(isset($_POST['agregarCarrito'])){
         // $cantidad = $_POST['cantidad'];
         // $producto_id = $_POST['producto_id'];
         session_start();
-        agregarCarritoProducto($_SESSION["usuario"],$producto_id,$cantidad);
+        $existe = buscarCarritoProducto($_SESSION["usuario"],$producto_id,$cantidad);
+        if($existe){
+            agregarCarritoProducto($_SESSION["usuario"],$producto_id,$cantidad);
+        }
         header("location: shop-grid.php");
         exit();
     }

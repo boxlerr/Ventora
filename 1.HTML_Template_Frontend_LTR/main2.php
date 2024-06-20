@@ -1,9 +1,11 @@
 <?php
-session_start();
+include_once("moneda.php");
+
+// session_start();
 if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     $usuario = false;
-    session_unset();    
-    session_destroy();
+    unset($_SESSION["usuario"]);    
+    // session_destroy();
 } else{
     $usuario=$_SESSION["usuario"];
 }
@@ -35,15 +37,27 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-es.svg" alt="Ecom"> Español</a></li>
         </ul>
         </div>
-        <div class="dropdown dropdown-language">
-        <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button>
-        <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownPage2" data-bs-popper="static">
-            <li><a class="dropdown-item" href="#">ARS</a></li>
-            <li><a class="dropdown-item" href="#">USD</a></li>
-            <li><a class="dropdown-item" href="#">EUR</a></li>
-            <li><a class="dropdown-item" href="#">BRL</a></li>
-        </ul>
-        </div>
+        <form class="dropdown dropdown-language" action="" method="">
+            <!-- <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button> -->
+            <select name="mascara" id="monedas" class="seleccionMoneda" aria-labelledby="dropdownPage2" data-bs-popper="static">
+                <?php 
+                $monedas = getMonedas();
+                if(!empty($_SESSION["moneda"])){
+                    foreach($monedas as $moneda){
+                        if($moneda[0] == $_SESSION["moneda"]){
+                            echo "<option class='opcionMoneda' selected>$moneda[0]</option>";
+                        } else{
+                            echo "<option class='opcionMoneda'>$moneda[0]</option>";
+                        }
+                    }
+                } else{
+                    foreach($monedas as $moneda){
+                        echo "<option class='opcionMoneda'>$moneda[0]</option>";
+                    }
+                }
+                ?>
+            </select>
+        </form>
     </div>
     </div>
 </div>
