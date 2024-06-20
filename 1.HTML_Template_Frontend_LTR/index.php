@@ -247,10 +247,10 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-2">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000 mb-10">Sale</h1>
+                    <h1 class="color-gray-1000 mb-10">Descuento</h1>
                     <h3 class="color-brand-3 mb-5">70% OFF</h3>
-                    <h4 class="color-gray-500 mb-5">Potted in home</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Shop now</a></div>
+                    <h4 class="color-gray-500 mb-5">Auriculares</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
                 </div>
@@ -258,10 +258,10 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-3">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000 mb-10">Deals</h1>
-                    <h3 class="color-gray-500 mb-5">Cactus Collection</h3>
-                    <h4 class="color-gray-500 mb-5">Free Shipping</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Shop now</a></div>
+                    <h1 class="color-gray-1000 mb-10">Ofertas</h1>
+                    <h3 class="color-gray-500 mb-5">Electronica</h3>
+                    <h4 class="color-gray-500 mb-5">Envio gratis</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
                 </div>
@@ -269,9 +269,9 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-32">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000">Hot <br class="d-none d-lg-block">Trend</h1>
-                    <h3 class="color-gray-500 mb-0">Summer 2022</h3>
-                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.html">Learn more</a></div>
+                    <h1 class="color-gray-1000">Ultima <br class="d-none d-lg-block">Tendencia</h1>
+                    <h3 class="color-gray-500 mb-0">Productos</h3>
+                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.html">Saber más</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
                 </div>

@@ -100,14 +100,14 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
+                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Lista de Deseos</span><span class="number-item font-xs">5</span></a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
                 } else{
                 $carrito = mostrarCarrito($usuario);
                 ?>
-                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
+                <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Carrito</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
                     <div class="dropdown-cart">
                         <?php
                         foreach($carrito[1] as $producto){
@@ -153,16 +153,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <ul class="mobile-menu font-heading">
                 <li class="has-children"><a class="active" href="index.html">Home</a>
                 <ul class="sub-menu">
-                    <li><a href="index.html">Homepage - 1</a></li>
-                    <li><a href="index-2.html">Homepage - 2</a></li>
-                    <li><a href="index-3.html">Homepage - 3</a></li>
-                    <li><a href="index-4.html">Homepage - 4</a></li>
-                    <li><a href="index-5.html">Homepage - 5</a></li>
-                    <li><a href="index-6.html">Homepage - 6</a></li>
-                    <li><a href="index-7.html">Homepage - 7</a></li>
-                    <li><a href="index-8.html">Homepage - 8</a></li>
-                    <li><a href="index-9.html">Homepage - 9</a></li>
-                    <li><a href="index-10.php">Homepage - 10</a></li>
+                    <li><a href="index.php">Home</a></li>
                 </ul>
                 </li>
                 <li class="has-children"><a href="shop-grid.html">Shop</a>
