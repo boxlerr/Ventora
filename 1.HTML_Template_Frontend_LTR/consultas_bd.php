@@ -90,3 +90,18 @@ function eliminarArticuloCarrito($id){
     $sql = "DELETE FROM `carrito_producto` WHERE carrito_producto_id = '$id'";
     $con->query($sql);
 }
+
+function buscarCarritoProducto($cliente_id,$producto_id,$cantidad){
+    global $con;
+    $sql = "SELECT * FROM carrito_producto WHERE carrito_id = (SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id) AND producto_id = '$producto_id'";
+    $result = $con->query($sql);
+    if($result->num_rows >= 1){
+        $datos = $result->fetch_assoc();
+        $cantidad = $cantidad + $datos['cantidad'];
+        $sql = "UPDATE `carrito_producto` SET `cantidad`='$cantidad' WHERE carrito_id = (SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id) AND producto_id = '$producto_id'";
+        $con->query($sql);
+        return false;
+    }
+    return true;
+}
+
