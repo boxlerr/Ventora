@@ -10943,3 +10943,13 @@ a:hover span {
   text-align: center;
   margin-top: 10px;
 }
+
+.seleccionMoneda:valid{
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.opcionMoneda{
+  color: #000;
+}
