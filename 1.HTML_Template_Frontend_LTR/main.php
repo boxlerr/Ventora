@@ -122,25 +122,34 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 ?>
                 <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Carrito</span><?php if($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";}?> </span>
                     <div class="dropdown-cart">
-                        <?php
-                        foreach($carrito[1] as $producto){
-                            $articulo = getProducto($producto['producto_id']);
-                            echo "
-                            <div class='item-cart mb-20'>
-                                <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
-                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>".htmlspecialchars($articulo['nombre'])."</a>
-                                    <p><span class='color-brand-2 font-sm-bold'>".htmlspecialchars($producto['cantidad'])." x ".htmlspecialchars($producto['precio_producto'])."</span></p>
-                                </div>
+                    <?php
+                    if(empty($_SESSION["moneda"])){
+                        $moneda = getTipoCambio('ARS');
+                    }else{
+                        $moneda = getTipoCambio($_SESSION["moneda"]);
+                    } 
+                    $total=0;
+                    foreach($carrito[1] as $producto){
+                        $articulo = getProducto($producto['producto_id']);
+                        $total_prod_mod = round($articulo['precio'] * $moneda['precio_moneda']);
+                        $total += round($producto['total_carrito']); 
+                        echo "
+                        <div class='item-cart mb-20'>
+                            <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
+                            <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>".htmlspecialchars($articulo['nombre'])."</a>
+                                <p><span class='color-brand-2 font-sm-bold'>$total_prod_mod x ".htmlspecialchars($producto['cantidad'])."</span></p>
                             </div>
-                            ";
-                        }
-                        ?>
+                        </div>
+                        ";
+                    }
+                    $total = round($total * $moneda['precio_moneda']);
+                    ?>
 
                         <div class="border-bottom pt-0 mb-15"></div>
                         <div class="cart-total">
                         <div class="row">
                             <div class="col-6 text-start"><span class="font-md-bold color-brand-3">Total</span></div>
-                            <div class="col-6"><span class="font-md-bold color-brand-1">$2586.3</span></div>
+                            <div class="col-6"><span class="font-md-bold color-brand-1">$<?php echo $total; ?></span></div>
                         </div>
                         <div class="row mt-15">
                             <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php">View cart</a></div>

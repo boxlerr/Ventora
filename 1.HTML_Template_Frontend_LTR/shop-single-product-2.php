@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -17,9 +17,11 @@
     <?php
     include_once("consultas_bd.php");
     include_once("main.php");
+    include_once("cambio.php");
     if(isset($_GET['id'])){
       $id = $_GET['id'];
       $producto = getProducto($id);
+      $precio = round($producto['precio'] * $moneda['precio_moneda']);
     }
     ?>
     <main class="main">
@@ -91,7 +93,7 @@
               <div class="row">
                 <div class="col-lg-7">
                   <div class="box-product-price">
-                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo htmlspecialchars($producto['precio']) ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo $precio ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
                   </div>
                   <div class="product-description color-gray-900">
                     <ul class="list-dot">
@@ -395,6 +397,7 @@
                 <?php
                 $productos=getProductosLimitados(5);
                 foreach($productos as $producto){
+                  $precio = round($producto['precio'] * $moneda['precio_moneda']);
                   echo"              
                     <div class='card-grid-style-3 home6-style home7-style'>
                       <div class='card-grid-inner'>
@@ -402,7 +405,7 @@
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
                         <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
                           <ul class='list-features'>
                             <li>".htmlspecialchars($producto['descripcion'])."</li>
@@ -851,5 +854,6 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>

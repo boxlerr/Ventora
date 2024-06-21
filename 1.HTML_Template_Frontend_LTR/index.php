@@ -17,6 +17,7 @@
   <?php
   include_once("consultas_bd.php");
   include_once("main.php");
+  include_once("cambio.php");
   ?>
   <!-- tengo que quitar incluide de main.php porque no cargaba la pagina -->
     <main class="main">
@@ -219,6 +220,7 @@
             <?php
             $productos=getProductosLimitados(5);
             foreach($productos as $producto){
+              $precio = round($producto['precio'] * $moneda['precio_moneda']);
               echo"              
                 <div class='card-grid-style-3 home6-style home7-style'>
                   <div class='card-grid-inner'>
@@ -226,7 +228,7 @@
                     <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
                     <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
                       <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                      <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                      <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                       <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
                       <ul class='list-features'>
                         <li>".htmlspecialchars($producto['descripcion'])."</li>
