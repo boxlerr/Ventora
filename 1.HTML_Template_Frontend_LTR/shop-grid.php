@@ -278,7 +278,7 @@
                         <div class='tools'>
                           <!--<a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a> -->
                           <!--<a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a> -->
-                          <!--<a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.html' aria-label='Compare'></a> -->
+                          <!--<a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a> -->
                           <!--<a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a>-->
                         </div>
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
@@ -614,7 +614,7 @@
                         <div class="input-quantity">
                           <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
                         </div>
-                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
+                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                       </div>
                     </div>
                   </div>

@@ -12,270 +12,110 @@
   <meta name="author" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-  <title>Wishlist - Ecom Marketplace Template</title>
+  <title>Compare - Ecom Marketplace Template</title>
 </head>
 
 <body>
   <?php
   include_once("consultas_bd.php");
   include_once("main.php");
+  include_once("cambio.php");
   ?>
   <main class="main">
     <section class="section-box shop-template">
       <div class="container">
-        <div class="box-wishlist">
-          <div class="head-wishlist">
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-all" type="checkbox">
-              </div>
-              <div class="wishlist-product"><span class="font-md-bold color-brand-3">Product</span></div>
-              <div class="wishlist-price"><span class="font-md-bold color-brand-3">Price</span></div>
-              <div class="wishlist-status"><span class="font-md-bold color-brand-3">Stock status</span></div>
-              <div class="wishlist-action"><span class="font-md-bold color-brand-3">Action</span></div>
-              <div class="wishlist-remove"><span class="font-md-bold color-brand-3">Remove</span></div>
-            </div>
-          </div>
-          <div class="content-wishlist">
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$2.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$1.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$3.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub4.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$4.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub5.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$3.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$2.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-            <div class="item-wishlist">
-              <div class="wishlist-cb">
-                <input class="cb-layout cb-select" type="checkbox">
-              </div>
-              <div class="wishlist-product">
-                <div class="product-wishlist">
-                  <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"></a></div>
-                  <div class="product-info"><a href="shop-single-product.html">
-                      <h6 class="color-brand-3">Samsung 36&quot; French door 28 cu. ft. Smart Energy Star Refrigerator </h6>
-                    </a>
-                    <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="wishlist-price">
-                <h4 class="color-brand-3">$1.51</h4>
-              </div>
-              <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
-              <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
-            </div>
-          </div>
-        </div>
-        <h4 class="color-brand-3">You may also like</h4>
-        <div class="list-products-5 mt-20 mb-40">
-          <div class="card-grid-style-3">
-            <div class="card-grid-inner">
-              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
-              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Razer Power Up Gaming Bundle V2 - Cynosa Lite</a>
-                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                <ul class="list-features">
-                  <li>27-inch (diagonal) Retina 5K display</li>
-                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                  <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-grid-style-3">
-            <div class="card-grid-inner">
-              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"></a></div>
-              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
-                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                <ul class="list-features">
-                  <li>27-inch (diagonal) Retina 5K display</li>
-                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                  <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-grid-style-3">
-            <div class="card-grid-inner">
-              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"></a></div>
-              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Samsung Galaxy Tab A7 Lite, 8.7&quot; Tablet 32</a>
-                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                <ul class="list-features">
-                  <li>27-inch (diagonal) Retina 5K display</li>
-                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                  <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-grid-style-3">
-            <div class="card-grid-inner">
-              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp6.png" alt="Ecom"></a></div>
-              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
-                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                <ul class="list-features">
-                  <li>27-inch (diagonal) Retina 5K display</li>
-                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                  <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-grid-style-3">
-            <div class="card-grid-inner">
-              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp7.png" alt="Ecom"></a></div>
-              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HDR Smart Portable Projector - SP-LSP3B</a>
-                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
-                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
-                <ul class="list-features">
-                  <li>27-inch (diagonal) Retina 5K display</li>
-                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
-                  <li>AMD Radeon Pro 5300 graphics</li>
-                </ul>
+        <div class="row mb-80 mt-20">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <div class="box-compare-products">
+              <div class="table-responsive">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><span>Products</span></td>
+                      <td><img src="assets/imgs/page/compare/img1.png" alt="Ecom">
+                        <h6><a class="text-brand-3" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop Tower PC</a></h6>
+                      </td>
+                      <td><img src="assets/imgs/page/compare/img2.png" alt="Ecom">
+                        <h6><a class="text-brand-3" href="shop-single-product-2.html">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</a></h6>
+                      </td>
+                      <td><img src="assets/imgs/page/compare/img3.png" alt="Ecom">
+                        <h6><a class="text-brand-3" href="shop-single-product-3.html">Logitech Brio 4K Webcam, Ultra 4K HD Video Calling</a></h6>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span>Review</span></td>
+                      <td>
+                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                      </td>
+                      <td>
+                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                      </td>
+                      <td>
+                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span>Screen Size</span></td>
+                      <td><span>42”</span></td>
+                      <td><span>42”</span></td>
+                      <td><span>42”</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Screen Definition</span></td>
+                      <td><span>Full High Definition</span></td>
+                      <td><span>Full High Definition</span></td>
+                      <td><span>Full High Definition</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Product Type</span></td>
+                      <td><span>LED LCDs</span></td>
+                      <td><span>LED LCDs</span></td>
+                      <td><span>LED LCDs</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Connectivity</span></td>
+                      <td><span></span></td>
+                      <td><span></span></td>
+                      <td><span></span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Price</span></td>
+                      <td><span class="font-sm-bold color-brand-3">$2786.5</span></td>
+                      <td><span class="font-sm-bold color-brand-3">$2856.0</span></td>
+                      <td><span class="font-sm-bold color-brand-3">$2950.0</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Stock status</span></td>
+                      <td><span class="btn btn-gray font-sm-bold">In Stock</span></td>
+                      <td><span class="btn btn-out-stock font-sm-bold">Out of stock</span></td>
+                      <td><span class="btn btn-gray font-sm-bold">In Stock</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>Buy now</span></td>
+                      <td><a class="btn btn-buy w-auto" href="shop-cart.html">Add to Cart</a></td>
+                      <td><a class="btn btn-cart w-auto" href="page-contact.html">Contact us</a></td>
+                      <td><a class="btn btn-buy w-auto" href="shop-cart.html">Add to Cart</a></td>
+                    </tr>
+                    <tr>
+                      <td><span>Remove</span></td>
+                      <td><a class="btn btn-delete" href="#"></a></td>
+                      <td><a class="btn btn-delete" href="#"></a></td>
+                      <td><a class="btn btn-delete" href="#"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
         <h4 class="color-brand-3">Recently viewed items</h4>
-        <div class="row mt-40">
+        <div class="row mt-40 mb-40">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card-grid-style-2 card-grid-none-border hover-up">
-              <div class="image-box"><a href="#"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
+              <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
               </div>
-              <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="#">HP 24 All-in-One PC, Intel Core i3-1115G4</a>
+              <div class="info-right"><span class="font-xs color-gray-500">Dell</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Dell Optiplex 9020 Small Form Business Desktop</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
               </div>
@@ -283,9 +123,9 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card-grid-style-2 card-grid-none-border hover-up">
-              <div class="image-box"><a href="#"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
+              <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
               </div>
-              <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="#">HP 22 All-in-One PC, Intel Pentium Silver</a>
+              <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
               </div>
@@ -293,9 +133,9 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card-grid-style-2 card-grid-none-border hover-up">
-              <div class="image-box"><a href="#"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
+              <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"></a>
               </div>
-              <div class="info-right"><span class="font-xs color-gray-500">Class</span><br><a class="color-brand-3 font-xs-bold" href="#">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
+              <div class="info-right"><span class="font-xs color-gray-500">Gateway</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">Gateway 23.8&quot; All-in-one Desktop</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
               </div>
@@ -303,11 +143,94 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card-grid-style-2 card-grid-none-border hover-up">
-              <div class="image-box"><a href="#"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
+              <div class="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"></a>
               </div>
-              <div class="info-right"><span class="font-xs color-gray-500">LG</span><br><a class="color-brand-3 font-xs-bold" href="#">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series </a>
+              <div class="info-right"><span class="font-xs color-gray-500">HP</span><br><a class="color-brand-3 font-xs-bold" href="shop-single-product.html">HP 22 All-in-One PC, Intel Pentium Silver J5040</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2556.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="color-brand-3">You may also like</h4>
+        <div class="list-products-5 mt-20">
+          <div class="card-grid-style-3">
+            <div class="card-grid-inner">
+              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"></a></div>
+              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">HP</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">HP 24mh FHD Monitor - Computer Monitor</a>
+                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <ul class="list-features">
+                  <li>27-inch (diagonal) Retina 5K display</li>
+                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                  <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-style-3">
+            <div class="card-grid-inner">
+              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"></a></div>
+              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Logitech</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Logitech H390 Wired Headset, Stereo Headphones</a>
+                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <ul class="list-features">
+                  <li>27-inch (diagonal) Retina 5K display</li>
+                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                  <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-style-3">
+            <div class="card-grid-inner">
+              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"></a></div>
+              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Samsung</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Samsung 36&quot; French door 28 cu. ft. Smart Energy</a>
+                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <ul class="list-features">
+                  <li>27-inch (diagonal) Retina 5K display</li>
+                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                  <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-style-3">
+            <div class="card-grid-inner">
+              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp6.png" alt="Ecom"></a></div>
+              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
+                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <ul class="list-features">
+                  <li>27-inch (diagonal) Retina 5K display</li>
+                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                  <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-style-3">
+            <div class="card-grid-inner">
+              <div class="tools"><a class="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a class="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a class="btn btn-compare btn-tooltip mb-10" href="shop-compare.php" aria-label="Compare"></a><a class="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
+              <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-2.html"><img src="assets/imgs/page/homepage1/imgsp7.png" alt="Ecom"></a></div>
+              <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Samsung</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Samsung 36&quot; French door 28 cu. ft. Smart Energy</a>
+                <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
+                <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <ul class="list-features">
+                  <li>27-inch (diagonal) Retina 5K display</li>
+                  <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
+                  <li>AMD Radeon Pro 5300 graphics</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -688,9 +611,9 @@
     </div>
   </main>
   <footer class="footer">
-      <?php
-        include_once("footer.php")
-      ?>
+    <?php
+    include_once("footer.php");
+    ?>
   </footer>
   <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
   <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>

@@ -113,8 +113,8 @@
                       <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                       <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                       <li><a href="shop-cart.html">Shop Cart</a></li>
-                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
-                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-checkout.php">Shop Checkout</a></li>
+                      <li><a href="shop-compare.php">Shop Compare</a></li>
                       <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
                     </ul>
                   </li>
@@ -186,11 +186,11 @@
                     </div>
                     <div class="row mt-15">
                       <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.html">View cart</a></div>
-                      <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.html">Checkout</a></div>
+                      <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.php">Checkout</a></div>
                     </div>
                   </div>
                 </div>
-              </div><a class="font-lg icon-list icon-compare" href="shop-compare.html"><span>Compare</span></a>
+              </div><a class="font-lg icon-list icon-compare" href="shop-compare.php"><span>Compare</span></a>
             </div>
           </div>
         </div>
@@ -230,8 +230,8 @@
                       <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                       <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                       <li><a href="shop-cart.html">Shop Cart</a></li>
-                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
-                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-checkout.php">Shop Checkout</a></li>
+                      <li><a href="shop-compare.php">Shop Compare</a></li>
                       <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
                     </ul>
                   </li>
@@ -497,8 +497,8 @@
                       <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                       <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                       <li><a href="shop-cart.html">Shop Cart</a></li>
-                      <li><a href="shop-checkout.html">Shop Checkout</a></li>
-                      <li><a href="shop-compare.html">Shop Compare</a></li>
+                      <li><a href="shop-checkout.php">Shop Checkout</a></li>
+                      <li><a href="shop-compare.php">Shop Compare</a></li>
                       <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
                     </ul>
                   </li>
@@ -1338,7 +1338,7 @@
                         <div class="input-quantity">
                           <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
                         </div>
-                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.html">Buy now</a></div>
+                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                       </div>
                     </div>
                   </div>
