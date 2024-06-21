@@ -121,7 +121,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>
@@ -238,7 +238,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>
@@ -505,7 +505,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>

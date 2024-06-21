@@ -1304,7 +1304,7 @@ a.text-brand-3:hover {
   width: 100%;
   text-align: center;
   padding: 7px 22px;
-  background-color: var(--tercery-color);
+  background-color: #acc0cd;
 }
 .btn.btn-buy:hover {
   border: 1px solid var(--tercery-color);
@@ -9697,6 +9697,7 @@ a:hover span {
 .align-top {
   vertical-align: top;
 }
+
 
 @media (min-width: 792px) {
   .col-w-1 {
