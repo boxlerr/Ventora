@@ -15,8 +15,8 @@
   </head>
   <body>
     <?php
-    include_once("main.php");
     include_once("consultas_bd.php");
+    include_once("main.php");
     ?>
     <main class="main">
       <section class="section-box shop-template mt-60">
