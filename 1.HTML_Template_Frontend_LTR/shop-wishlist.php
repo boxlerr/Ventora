@@ -55,7 +55,7 @@
                 <h4 class="color-brand-3">$2.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -76,7 +76,7 @@
                 <h4 class="color-brand-3">$1.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -97,7 +97,7 @@
                 <h4 class="color-brand-3">$3.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -118,7 +118,7 @@
                 <h4 class="color-brand-3">$4.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -139,7 +139,7 @@
                 <h4 class="color-brand-3">$3.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -160,7 +160,7 @@
                 <h4 class="color-brand-3">$2.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
             <div class="item-wishlist">
@@ -181,7 +181,7 @@
                 <h4 class="color-brand-3">$1.51</h4>
               </div>
               <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.html">Add to Cart</a></div>
+              <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
               <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
             </div>
           </div>
@@ -195,7 +195,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Razer Power Up Gaming Bundle V2 - Cynosa Lite</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -211,7 +211,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -227,7 +227,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">Samsung Galaxy Tab A7 Lite, 8.7&quot; Tablet 32</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -243,7 +243,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -259,7 +259,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product.html">HDR Smart Portable Projector - SP-LSP3B</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -676,7 +676,7 @@
                       <div class="input-quantity">
                         <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
                       </div>
-                      <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
+                      <div class="button-buy"><a class="btn btn-cart" href="shop-cart.php">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                     </div>
                   </div>
                 </div>

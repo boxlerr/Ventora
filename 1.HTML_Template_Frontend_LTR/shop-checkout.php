@@ -35,7 +35,7 @@
                 <div class="col-lg-6 col-sm-6 mb-20">
                   <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
                 </div>
-                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.html"> Login</a></div>
+                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
                 <div class="col-lg-12">
                   <div class="form-group">
                     <input class="form-control font-sm" type="text" placeholder="Email*">
@@ -107,7 +107,7 @@
               </div>
             </div>
             <div class="row mt-20">
-              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.html">Return to Cart</a></div>
+              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
               <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-checkout.php">Place an Order</a></div>
             </div>
           </div>

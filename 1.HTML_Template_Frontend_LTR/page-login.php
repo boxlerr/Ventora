@@ -96,8 +96,8 @@
             <div class="col-lg-3 width-20 mb-30">
               <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
               <ul class="menu-footer">
-                <li><a href="page-about-us.html">Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.html">Our Team</a></li>
+                <li><a href="page-about-us.php">Mission &amp; Vision</a></li>
+                <li><a href="page-about-us.php">Our Team</a></li>
                 <li><a href="page-careers.html">Careers</a></li>
                 <li><a href="#">Press &amp; Media</a></li>
                 <li><a href="#">Advertising</a></li>
@@ -122,7 +122,7 @@
                 <li><a href="#">Editor Help</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.html">Contact Us</a></li>
+                <li><a href="page-contact.php">Contact Us</a></li>
                 <li><a href="#">Support Center</a></li>
               </ul>
             </div>

@@ -93,9 +93,9 @@
                     </tr>
                     <tr>
                       <td><span>Buy now</span></td>
-                      <td><a class="btn btn-buy w-auto" href="shop-cart.html">Add to Cart</a></td>
-                      <td><a class="btn btn-cart w-auto" href="page-contact.html">Contact us</a></td>
-                      <td><a class="btn btn-buy w-auto" href="shop-cart.html">Add to Cart</a></td>
+                      <td><a class="btn btn-buy w-auto" href="shop-cart.php">Add to Cart</a></td>
+                      <td><a class="btn btn-cart w-auto" href="page-contact.php">Contact us</a></td>
+                      <td><a class="btn btn-buy w-auto" href="shop-cart.php">Add to Cart</a></td>
                     </tr>
                     <tr>
                       <td><span>Remove</span></td>
@@ -161,7 +161,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">HP</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">HP 24mh FHD Monitor - Computer Monitor</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -177,7 +177,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Logitech</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Logitech H390 Wired Headset, Stereo Headphones</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -193,7 +193,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Samsung</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Samsung 36&quot; French door 28 cu. ft. Smart Energy</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -209,7 +209,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Apple</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">2022 Apple iMac with Retina 5K Display 8GB RAM</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -225,7 +225,7 @@
               <div class="info-right"><a class="font-xs color-gray-500" href="shop-vendor-single.php">Samsung</a><br><a class="color-brand-3 font-sm-bold" href="shop-single-product-2.html">Samsung 36&quot; French door 28 cu. ft. Smart Energy</a>
                 <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500">(65)</span></div>
                 <div class="price-info"><strong class="font-lg-bold color-brand-3 price-main">$2856.3</strong><span class="color-gray-500 price-line">$3225.6</span></div>
-                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+                <div class="mt-20 box-btn-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
                 <ul class="list-features">
                   <li>27-inch (diagonal) Retina 5K display</li>
                   <li>3.1GHz 6-core 10th-generation Intel Core i5</li>
@@ -599,7 +599,7 @@
                       <div class="input-quantity">
                         <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
                       </div>
-                      <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
+                      <div class="button-buy"><a class="btn btn-cart" href="shop-cart.php">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                     </div>
                   </div>
                 </div>

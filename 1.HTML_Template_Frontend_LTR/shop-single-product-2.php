@@ -174,7 +174,7 @@
             </div>
             <div class="price-bought">
               <h3 class="color-brand-3 mr-10">$2856.3</h3><span class="font-lg color-gray-900">(3 items)</span>
-              <div class="box-btn-add-cart"><a class="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
+              <div class="box-btn-add-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
             </div>
           </div>
           <label class="cb-container-2">
@@ -406,7 +406,7 @@
                         <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                           <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
-                          <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
+                          <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
                           <ul class='list-features'>
                             <li>".htmlspecialchars($producto['descripcion'])."</li>
                           </ul>
@@ -732,7 +732,7 @@
                         <div class="input-quantity">
                           <input class="font-xl color-brand-3" type="text" value="1"><span class="minus-cart"></span><span class="plus-cart"></span>
                         </div>
-                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.html">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
+                        <div class="button-buy"><a class="btn btn-cart" href="shop-cart.php">Add to cart</a><a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                       </div>
                     </div>
                   </div>
@@ -758,8 +758,8 @@
             <div class="col-lg-3 width-20 mb-30">
               <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
               <ul class="menu-footer">
-                <li><a href="page-about-us.html">Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.html">Our Team</a></li>
+                <li><a href="page-about-us.php">Mission &amp; Vision</a></li>
+                <li><a href="page-about-us.php">Our Team</a></li>
                 <li><a href="page-careers.html">Careers</a></li>
                 <li><a href="#">Press &amp; Media</a></li>
                 <li><a href="#">Advertising</a></li>
@@ -784,7 +784,7 @@
                 <li><a href="#">Editor Help</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.html">Contact Us</a></li>
+                <li><a href="page-contact.php">Contact Us</a></li>
                 <li><a href="#">Support Center</a></li>
               </ul>
             </div>

@@ -103,11 +103,11 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <?php
                     if($usuario){
                         echo"
-                        <li><a href='page-account.html'>Mi cuenta</a></li>
-                        <li><a href='page-account.html'>Historial de compras</a></li>
-                        <li><a href='page-account.html'>Mis compras</a></li>
-                        <li><a href='page-account.html'>Mis favoritos</a></li>
-                        <li><a href='page-account.html'>Configuracion</a></li>
+                        <li><a href='page-account.php'>Mi cuenta</a></li>
+                        <li><a href='page-account.php'>Historial de compras</a></li>
+                        <li><a href='page-account.php'>Mis compras</a></li>
+                        <li><a href='page-account.php'>Mis favoritos</a></li>
+                        <li><a href='page-account.php'>Configuracion</a></li>
                         <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
                         ";
                     } else{
@@ -193,7 +193,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-single-product-2.html">Single Product 2</a></li>
                     <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                     <li><a href="shop-single-product-4.html">Single Product 4</a></li>
-                    <li><a href="shop-cart.html">Shop Cart</a></li>
+                    <li><a href="shop-cart.php">Shop Cart</a></li>
                     <li><a href="shop-checkout.php">Shop Checkout</a></li>
                     <li><a href="shop-compare.php">Shop Compare</a></li>
                     <li><a href="shop-wishlist.php">Shop Wishlist</a></li>
@@ -212,7 +212,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="page-careers.php">Careers</a></li>
                     <li><a href="page-term.php">Term and Condition</a></li>
                     <li><a href="page-register.html">Register</a></li>
-                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="page-login.php">Login</a></li>
                     <li><a href="page-404.html">Error 404</a></li>
                 </ul>
                 </li>
@@ -233,7 +233,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
         </div>
         <div class="mobile-account">
             <div class="mobile-header-top">
-            <div class="user-account"><a href="page-account.html"><img src="assets/imgs/template/ava_1.png" alt="Ecom"></a>
+            <div class="user-account"><a href="page-account.php"><img src="assets/imgs/template/ava_1.png" alt="Ecom"></a>
                 <div class="content">
                 <h6 class="user-name">Hello<span class="text-brand"> Steven !</span></h6>
                 <p class="font-xs text-muted">You have 3 new messages</p>
@@ -241,12 +241,12 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             </div>
             </div>
             <ul class="mobile-menu">
-            <li><a href="page-account.html">My Account</a></li>
-            <li><a href="page-account.html">Order Tracking</a></li>
-            <li><a href="page-account.html">My Orders</a></li>
-            <li><a href="page-account.html">My Wishlist</a></li>
-            <li><a href="page-account.html">Setting</a></li>
-            <li><a href="page-login.html">Sign out</a></li>
+            <li><a href="page-account.php">My Account</a></li>
+            <li><a href="page-account.php">Order Tracking</a></li>
+            <li><a href="page-account.php">My Orders</a></li>
+            <li><a href="page-account.php">My Wishlist</a></li>
+            <li><a href="page-account.php">Setting</a></li>
+            <li><a href="page-login.php">Sign out</a></li>
             </ul>
         </div>
         <div class="mobile-banner">
