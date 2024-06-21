@@ -495,7 +495,8 @@
         "remover":"Remover",
         "en_stock":"En Stock",
         "añadir_al_carrito":"Añadir al Carrito",
-        "":""
+        "tambien_podria_gustarte":"También te Podría Gustar",
+        "items_vistos_recientemente":"Items Vistos Recientemente"
     },
 
     "exportar":{
@@ -537,5 +538,21 @@
         "utilizamos_estrategias_importar":"Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de importación, maximizando tu rentabilidad.",
         "implementamos_medidas_importar":"Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus importaciones lleguen a destino sin contratiempos.",
         "traemos_lo_que_quieras":"Te traemos lo que quieras a la puerta de tu casa!"
+    },
+
+    "shop-checkout":{
+        "o":"o",
+        "informacion_contacto":"Información de Contacto",
+        "ya_tienes_cuenta":"¿Ya tienes una Cuenta?",
+        "mantenme_informado":"Mantenme informado sobre noticias y ofertas exclusivas",
+        "direccion_envio":"Dirección del Envío",
+        "elige_una_opcion":"Elige una Opción",
+        "opcion1":"Opción 1",
+        "volver_al_carrito":"Volver al Carrito",
+        "tu_orden":"Tu Orden",
+        "aplicar":"Aplicar",
+        "subtotal":"Subtotal",
+        "pedido":"Pedido",
+        "total":"Total"
     }
 }

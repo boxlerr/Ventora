@@ -12,7 +12,7 @@
   <meta name="author" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-  <title>Checkout - Ecom Marketplace Template</title>
+  <title>Pagos</title>
 </head>
 
 <body>
