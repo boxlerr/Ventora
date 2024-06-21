@@ -72,7 +72,7 @@ function crearCarrito($id){
 
 function agregarCarritoProducto($cliente_id,$producto_id,$cantidad){
     global $con;
-    $sql = "INSERT INTO `carrito_producto`(`carrito_id`, `producto_id`, `cantidad`, `precio_producto`) VALUES ((SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id),'$producto_id','$cantidad',(SELECT precio FROM producto WHERE producto_id = $producto_id))";
+    $sql = "INSERT INTO `carrito_producto`(`carrito_id`, `producto_id`, `cantidad`, `total_carrito`) VALUES ((SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id),'$producto_id','$cantidad',(SELECT precio FROM producto WHERE producto_id = $producto_id) * $cantidad)";
     $con->query($sql);
 }
 
@@ -117,6 +117,6 @@ function getTipoCambio($moneda){
     global $con;
     $sql = "SELECT * FROM cambio WHERE moneda_corto = '$moneda'";
     $result = $con->query($sql);
-    $datos = $result->fetch_all();
+    $datos = $result->fetch_assoc();
     return $datos;
 }

@@ -17,6 +17,7 @@
     <?php
     include_once("consultas_bd.php");
     include_once("main2.php");
+    include_once("cambio.php");
     ?>
     <main class="main">
       <!-- <div class="section-box d-none d-md-block">
@@ -76,53 +77,35 @@
                 </div>
                 <div class="sidebar-content">
                   <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
-                  <div class="box-slider-range mt-20 mb-15">
-                    <div class="row mb-20">
-                      <div class="col-sm-12">
-                        <div id="slider-range"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <label class="lb-slider font-sm color-gray-500">Price Range: &nbsp</label><span class="min-value-money font-sm"></span>
-                        <label class="lb-slider font-sm font-medium"></label>-
-                        <span class="max-value-money font-sm font-medium"></span>
-                      </div>
-                      <div class="col-lg-12">
-                        <input class="form-control min-value" type="hidden" name="min-value" value="">
-                        <input class="form-control max-value" type="hidden" name="max-value" value="">
-                      </div>
-                    </div>
-                  </div>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Under $100</span><span class="checkmark"></span>
+                  <input type="checkbox" checked="checked"><span class="text-small">Under $<?php echo round(100 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">145</span>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$100 - $200</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(200 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">56</span>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$200 - $400</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(400 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">23</span>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$400 - $600</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">$<?php echo round(400 * $moneda['precio_moneda']); ?> - $<?php echo round(600 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">43</span>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$600 - $800</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">$<?php echo round(600 * $moneda['precio_moneda']); ?> - $<?php echo round(800 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">65</span>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Over $1000</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">Over $<?php echo round(1000 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">56</span>
                     </li>
                   </ul>
@@ -284,9 +267,10 @@
                 </div>
               <!-- </div> -->
               <div class="row mt-20">
-                <?php
+                <?php   
                 $productos = getProductos();
                 foreach($productos as $producto){
+                  $precio = round($producto['precio'] * $moneda['precio_moneda']);
                   echo"
                   <div class='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12'>
                     <div class='card-grid-style-3 home6-style home7-style'>
@@ -300,7 +284,7 @@
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
                         <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.html'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".$precio ."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.html'>Add To Cart</a></div> -->
                           <ul class='list-features'>
                             <li>".htmlspecialchars($producto['descripcion'])."</li>
