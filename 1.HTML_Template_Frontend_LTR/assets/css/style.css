@@ -1304,7 +1304,7 @@ a.text-brand-3:hover {
   width: 100%;
   text-align: center;
   padding: 7px 22px;
-  background-color: #acc0cd;
+  background-color: var(--tercery-color);
 }
 .btn.btn-buy:hover {
   border: 1px solid var(--tercery-color);
@@ -1375,10 +1375,10 @@ a.text-brand-3:hover {
   position: absolute;
   bottom: -20px;
   right: -15px;
-  background-color: #D5DFE4;
+  background-color: var(--tercery-color);
   font-size: 14px;
   line-height: 18px;
-  color: var(--tercery-color);
+  color: var(--primary-color);
   border-radius: 0px;
   border-top-left-radius: 4px;
   padding: 4px 10px;
@@ -1387,10 +1387,10 @@ a.text-brand-3:hover {
   color: #FD9636;
 }
 .btn.btn-gray {
-  background-color: #D5DFE4;
+  background-color: var(--tercery-color);
   font-size: 12px;
   line-height: 18px;
-  color: var(--tercery-color);
+  color: var(--primary-color) !important;
   border-radius: 0px;
   border-radius: 4px;
   padding: 2px 10px;
@@ -1488,6 +1488,7 @@ a.text-brand-3:hover {
   padding: 0px 0px 0px 0px;
   height: 34px;
   width: 34px;
+  background-color: white;
 }
 .btn.arrow-back {
   background-image: url(../imgs/page/cart/back.svg);
@@ -1518,24 +1519,24 @@ a.text-brand-3:hover {
 }
 .btn.btn-amazon {
   padding: 5px 10px;
-  border: 1px solid #DDE4F0;
 }
 .btn.btn-amazon img {
   max-height: 42px;
+  border-radius: 5px;
 }
 .btn.btn-gpay {
   padding: 5px 10px;
-  border: 1px solid #DDE4F0;
 }
 .btn.btn-gpay img {
   max-height: 42px;
+  border-radius: 5px;
 }
 .btn.btn-paypal {
   padding: 5px 10px;
-  border: 1px solid #DDE4F0;
 }
 .btn.btn-paypal img {
   max-height: 42px;
+  border-radius: 5px;
 }
 .btn.btn-tags {
   background-color: var(--primary-color);
@@ -8725,6 +8726,7 @@ a:hover span {
   margin: 0px 5px;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 .box-border {
@@ -9687,6 +9689,7 @@ a:hover span {
 
 .shop-template .font-sm {
   font-weight: 500;
+  background-color: transparent;
 }
 
 .modal-body .list-checkbox li .cb-container {

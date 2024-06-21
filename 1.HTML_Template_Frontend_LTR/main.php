@@ -163,7 +163,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     </div>
                 </div>
                 <?php } ?>
-                <a class="font-lg icon-list icon-compare" href="shop-compare.html"><span>Compare</span></a>
+                <a class="font-lg icon-list icon-compare" href="shop-compare.php"><span>Compare</span></a>
             </div>
             </div>
         </div>
@@ -195,7 +195,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                     <li><a href="shop-cart.html">Shop Cart</a></li>
                     <li><a href="shop-checkout.php">Shop Checkout</a></li>
-                    <li><a href="shop-compare.html">Shop Compare</a></li>
+                    <li><a href="shop-compare.php">Shop Compare</a></li>
                     <li><a href="shop-wishlist.php">Shop Wishlist</a></li>
                 </ul>
                 </li>
