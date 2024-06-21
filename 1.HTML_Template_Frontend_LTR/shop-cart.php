@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Cart - Ecom Marketplace Template</title>
+    <title>Carrito</title>
   </head>
   <body>
     <?php
@@ -36,7 +36,7 @@
             <div class="col-lg-9">
               <div class="box-carts">
                 <div class="head-wishlist">
-                  <div class="item-wishlist">
+                  <div class="item-wishlist mt-55">
                     <div class="wishlist-cb">
                       <input class="cb-layout cb-all" type="checkbox">
                     </div>
