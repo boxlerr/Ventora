@@ -113,3 +113,10 @@ function getMonedas(){
     return $datos;
 }
 
+function getTipoCambio($moneda){
+    global $con;
+    $sql = "SELECT * FROM cambio WHERE moneda_corto = '$moneda'";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all();
+    return $datos;
+}
