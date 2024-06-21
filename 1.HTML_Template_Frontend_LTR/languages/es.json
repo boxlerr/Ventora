@@ -396,13 +396,13 @@
         "cargo2":"cargo2",
         "nuestros_socios":"Nuestros Socios",
         "importamos_marcas_top":"Importamos Marcas de Primer Nivel",
-        "":"",
-        "":"",
+        "a":"a",
+        "b":"b",
         "casa1":"direccion1",
         "casa2":"direccion2",
         "casa3":"direccion3",
 
-        "saber_de_ti":"Nos encantaría saber de ti.",
+        "saber_de_ti":"¡A nuestro equipo le encantaría saber de ti!",
         "chatea_con_nuestro_equipo":"Chatea con nuestro amable equipo",
         "chatea_con_ventas":"Chatea con ventas",
         "habla_con_nuestro_equipo":"Habla con nuestro equipo",
@@ -410,7 +410,11 @@
         "horario_llamada":"Lun-Vie de 8am a 5pm"
     },
 
-    "page-contact":{
-        
+    "page_contact":{
+        "":""
+    },
+
+    "":{
+        "":""
     }
 }
