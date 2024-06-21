@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,8 +15,8 @@
   </head>
   <body>
     <?php
-    include_once("main.php");
     include_once("consultas_bd.php");
+    include_once("main.php");
     ?>
     <main class="main">
       <section class="section-box shop-template mt-60">
