@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,23 +18,23 @@
       include_once("consultas_bd.php");
       include_once("main.php");
     ?>
-    
     <main class="main">
       <section class="section-box shop-template mt-30">
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h5 class="color-gray-500 mb-10">Sobre Nosotros</h5>
-              <h2>Leading Online Shop</h2>
+              <h5 class="color-gray-500 mb-10">Importar</h5>
+              <h2>Importa con Vestore</h2>
               <div class="row mt-20">
                 <div class="col-lg-6">
-                  <p class="font-sm font-medium color-white mb-15">Ecom expands global footprint, delivering entertaining experiences customised to each user. Branches are expanding both in size and number.</p>
-                  <p class="font-sm font-medium color-white mb-15">Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit. Urna neque viverra justo nec. Suspendisse faucibus interdum posuere lorem ipsum dolor. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Tortor vitae purus faucibus ornare.</p>
-                  <p class="font-sm font-medium color-white mb-15">Tempus iaculis urna id volutpat lacus laoreet. Id neque aliquam vestibulum morbi blandit. Lacinia quis vel eros donec ac odio tempor orci. Lectus sit amet est placerat in egestas erat imperdiet. Nunc congue nisi vitae suscipit. Sed adipiscing diam donec adipiscing tristique risus.</p>
+                  <p class="font-sm font-medium color-white mb-15">En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</p>
+                  <p class="font-sm font-medium color-white mb-15">Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</p>
+                  <p class="font-sm font-medium color-white mb-15">Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
                   <ul class="list-services mt-20">
-                    <li class="hover-up">We provide qualified & expert</li>
-                    <li class="hover-up">Modern tools & technology use</li>
-                    <li class="hover-up">We Develop Digital Future</li>
+                    <li class="hover-up">Ofrecemos servicios calificados y expertos en importación</li>
+                    <li class="hover-up">Utilizamos herramientas modernas en el proceso de importación</li>
+                    <li class="hover-up">Soluciones logísticas adaptadas a tus necesidades</li>
+                    <li class="hover-up">Garantizamos cumplimiento y seguridad en todas tus importaciones</li>
                   </ul>
                 </div>
                 <div class="col-lg-6"><img src="assets/imgs/page/about/img.png" alt="Ecom"></div>
@@ -42,20 +42,21 @@
               <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
                 <div class="row">
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 1</h4>
-                    <p class="font-md color-gray-700 mb-5">description 1</p>
+                    <h4 class="mb-5">Amplia experiencia en el mercado</h4>
+                    <p class="font-md color-gray-700 mb-5">Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus importaciones de manera eficiente y segura.</p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 2</h4>
-                    <p class="font-md color-gray-700 mb-5">description 2</p>
+                    <h4 class="mb-5">Optimización de costos</h4>
+                    <p class="font-md color-gray-700 mb-5">Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de importación, maximizando tu rentabilidad.
+                    </p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 3</h4>
-                    <p class="font-md color-gray-700 mb-5">description 3</p>
+                    <h4 class="mb-5">Asistencia personalizada</h4>
+                    <p class="font-md color-gray-700 mb-5">Nuestro equipo de expertos te brinda soporte personalizado en todo momento, asegurando que tus necesidades específicas sean atendidas.</p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 4</h4>
-                    <p class="font-md color-gray-700 mb-5">description 4</p>
+                    <h4 class="mb-5">Gestión de riesgos</h4>
+                    <p class="font-md color-gray-700 mb-5">Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus importaciones lleguen a destino sin contratiempos.</p>
                   </div>
                 </div>
               </div>
@@ -135,8 +136,44 @@
                   </div>
                 </div>
               </div>
-              <h5 class="color-gray-500 mb-10">Our Partners</h5>
-              <h2 class="mb-40">We import top-tier brands</h2>
+              <div class="contact-form">
+                  <h3 class="color-brand-3 mt-60">Importar</h3>
+                  <p class="font-sm color-gray-700 mb-30">Te traemos lo que quieras a la puerta de tu casa!</p>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Nombre">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Apellido">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input class="form-control" type="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input class="form-control" type="tel" placeholder="Numero de telefono">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Cuentanos sobre lo que quieras importar y nosotros te contactamos!" rows="5"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <h5 class="color-gray-500 mb-10">Nuestros socios</h5>
+              <h2 class="mb-40">Ellos exportan e importan con nosotros</h2>
               <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
               los logos de las marcas -->
               <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
@@ -265,94 +302,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 width-25 mb-30">
-              <h4 class="mb-30 color-gray-1000">Contact</h4>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Phone:</strong> (+01) 123-456-789</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">E-mail:</strong> contact@ecom-market.com</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat</div>
-              <div class="mt-30"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-instagram" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
-            </div>
-            <div class="col-lg-3 width-20 mb-30">
-              <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
-              <ul class="menu-footer">
-                <li><a href="page-about-us.html">Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.html">Our Team</a></li>
-                <li><a href="page-careers.html">Careers</a></li>
-                <li><a href="#">Press &amp; Media</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">Company</h4>
-              <ul class="menu-footer">
-                <li><a href="blog-2.html">Our Blog</a></li>
-                <li><a href="#">Plans &amp; Pricing</a></li>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Office Center</a></li>
-                <li><a href="blog.html">News &amp; Events</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">My account</h4>
-              <ul class="menu-footer">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Editor Help</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.html">Contact Us</a></li>
-                <li><a href="#">Support Center</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-23">
-              <h4 class="mb-30 color-gray-1000">App &amp; Payment</h4>
-              <div>
-                <p class="font-md color-gray-900">Download our Apps and get extra 15% Discount on your first Order&mldr;!</p>
-                <div class="mt-20"><a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="Ecom"></a><a href="#"><img src="assets/imgs/template/google-play.png" alt="Ecom"></a></div>
-                <p class="font-md color-gray-900 mt-20 mb-10">Secured Payment Gateways</p><img src="assets/imgs/template/payment-method.png" alt="Ecom">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-2">
-        <div class="footer-bottom-1">
-          <div class="container">
-            <div class="footer-2-top mb-20"><a href="index.html"><img alt="Ecom" src="assets/imgs/template/logo-2.svg"></a><a class="font-xs color-gray-1000" href="#">EcomMarket.com</a><a class="font-xs color-gray-1000" href="#">Ecom Partners</a><a class="font-xs color-gray-1000" href="#">Ecom Bussiness</a><a class="font-xs color-gray-1000" href="#">Ecom Factory</a></div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Electronic:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.html">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.html">HTC</a><a href="shop-grid.html">Ipad</a><a href="shop-grid.html">Keyboard</a><a href="shop-grid.html">Samsung</a><a href="shop-grid.html">Wireless Speaker</a><a href="shop-grid.html">Samsung Galaxy</a><a href="shop-grid.html">Gaming Mouse</a><a href="shop-grid.html">eBook Readers</a><a href="shop-grid.html">Service Plans</a><a href="shop-grid.html">Home Audio</a><a href="shop-grid.html">Office Electronics</a><a href="shop-grid.html">Lenovo</a><a href="shop-grid.html">Mackbook Pro M1</a><a href="shop-grid.html">HD Videos Player</a></div>
-            </div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Furniture:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-grid.html">Sofa</a><a href="shop-grid.html">Chair</a><a href="shop-grid.html">Dining Table</a><a href="shop-grid.html">Living Room</a><a href="shop-grid.html">Table Lamp</a><a href="shop-grid.html">Night Stand</a><a href="shop-grid.html">Computer Desk</a><a href="shop-grid.html">Bar Table</a><a href="shop-grid.html">Pillow</a><a href="shop-grid.html">Radio</a><a href="shop-grid.html">Clock</a><a href="shop-grid.html">Bad Room</a><a href="shop-grid.html">Stool</a><a href="shop-grid.html">Television</a><a href="shop-grid.html">wardrobe</a><a href="shop-grid.html">Living Room Tables</a><a href="shop-grid.html">Dressers</a><a href="shop-grid.html">Patio Sofas</a><a href="shop-grid.html">Nursery</a><a href="shop-grid.html">Kitchen</a><a href="shop-grid.html">Accent Furniture</a><a href="shop-grid.html">Replacement Parts</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="footer-bottom mt-20">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
-              <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                <ul class="menu-bottom">
-                  <li><a class="font-sm color-gray-900" href="page-term.html">Conditions of Use</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-term.html">Privacy Notice</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+      include_once("footer.php")
+      ?>
     </footer>
     <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
