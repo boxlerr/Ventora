@@ -30,9 +30,9 @@
           <div class="container">
             <ul class="breadcrumb">
               <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Electronics</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Cell phone</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Accessories</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Electronics</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Cell phone</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Accessories</a></li>
             </ul>
           </div>
         </div>
@@ -87,7 +87,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
                   <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.html"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a></div>
+                <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.php"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a></div>
               </div>
               <div class="border-bottom pt-10 mb-20"></div>
               <div class="row">
@@ -401,9 +401,9 @@
                   echo"              
                     <div class='card-grid-style-3 home6-style home7-style'>
                       <div class='card-grid-inner'>
-                        <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
+                        <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
+                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                           <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
@@ -807,13 +807,13 @@
               <div class="head-left-footer">
                 <h6 class="color-gray-1000">Electronic:</h6>
               </div>
-              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.html">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.html">HTC</a><a href="shop-grid.html">Ipad</a><a href="shop-grid.html">Keyboard</a><a href="shop-grid.html">Samsung</a><a href="shop-grid.html">Wireless Speaker</a><a href="shop-grid.html">Samsung Galaxy</a><a href="shop-grid.html">Gaming Mouse</a><a href="shop-grid.html">eBook Readers</a><a href="shop-grid.html">Service Plans</a><a href="shop-grid.html">Home Audio</a><a href="shop-grid.html">Office Electronics</a><a href="shop-grid.html">Lenovo</a><a href="shop-grid.html">Mackbook Pro M1</a><a href="shop-grid.html">HD Videos Player</a></div>
+              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.php">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.php">HTC</a><a href="shop-grid.php">Ipad</a><a href="shop-grid.php">Keyboard</a><a href="shop-grid.php">Samsung</a><a href="shop-grid.php">Wireless Speaker</a><a href="shop-grid.php">Samsung Galaxy</a><a href="shop-grid.php">Gaming Mouse</a><a href="shop-grid.php">eBook Readers</a><a href="shop-grid.php">Service Plans</a><a href="shop-grid.php">Home Audio</a><a href="shop-grid.php">Office Electronics</a><a href="shop-grid.php">Lenovo</a><a href="shop-grid.php">Mackbook Pro M1</a><a href="shop-grid.php">HD Videos Player</a></div>
             </div>
             <div class="footer-2-bottom">
               <div class="head-left-footer">
                 <h6 class="color-gray-1000">Furniture:</h6>
               </div>
-              <div class="tags-footer"><a href="shop-grid.html">Sofa</a><a href="shop-grid.html">Chair</a><a href="shop-grid.html">Dining Table</a><a href="shop-grid.html">Living Room</a><a href="shop-grid.html">Table Lamp</a><a href="shop-grid.html">Night Stand</a><a href="shop-grid.html">Computer Desk</a><a href="shop-grid.html">Bar Table</a><a href="shop-grid.html">Pillow</a><a href="shop-grid.html">Radio</a><a href="shop-grid.html">Clock</a><a href="shop-grid.html">Bad Room</a><a href="shop-grid.html">Stool</a><a href="shop-grid.html">Television</a><a href="shop-grid.html">wardrobe</a><a href="shop-grid.html">Living Room Tables</a><a href="shop-grid.html">Dressers</a><a href="shop-grid.html">Patio Sofas</a><a href="shop-grid.html">Nursery</a><a href="shop-grid.html">Kitchen</a><a href="shop-grid.html">Accent Furniture</a><a href="shop-grid.html">Replacement Parts</a></div>
+              <div class="tags-footer"><a href="shop-grid.php">Sofa</a><a href="shop-grid.php">Chair</a><a href="shop-grid.php">Dining Table</a><a href="shop-grid.php">Living Room</a><a href="shop-grid.php">Table Lamp</a><a href="shop-grid.php">Night Stand</a><a href="shop-grid.php">Computer Desk</a><a href="shop-grid.php">Bar Table</a><a href="shop-grid.php">Pillow</a><a href="shop-grid.php">Radio</a><a href="shop-grid.php">Clock</a><a href="shop-grid.php">Bad Room</a><a href="shop-grid.php">Stool</a><a href="shop-grid.php">Television</a><a href="shop-grid.php">wardrobe</a><a href="shop-grid.php">Living Room Tables</a><a href="shop-grid.php">Dressers</a><a href="shop-grid.php">Patio Sofas</a><a href="shop-grid.php">Nursery</a><a href="shop-grid.php">Kitchen</a><a href="shop-grid.php">Accent Furniture</a><a href="shop-grid.php">Replacement Parts</a></div>
             </div>
           </div>
         </div>
@@ -823,8 +823,8 @@
               <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
               <div class="col-lg-6 col-md-12 text-center text-lg-end">
                 <ul class="menu-bottom">
-                  <li><a class="font-sm color-gray-900" href="page-term.html">Conditions of Use</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-term.html">Privacy Notice</a></li>
+                  <li><a class="font-sm color-gray-900" href="page-term.php">Conditions of Use</a></li>
+                  <li><a class="font-sm color-gray-900" href="page-term.php">Privacy Notice</a></li>
                   <li><a class="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
                 </ul>
               </div>

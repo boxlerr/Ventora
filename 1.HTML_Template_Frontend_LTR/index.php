@@ -38,7 +38,7 @@
                               <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.html">Comprar ahora</a><a class="btn btn-link" href="shop-grid.html">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -50,7 +50,7 @@
                               <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.html">Comprar ahora</a><a class="btn btn-link" href="shop-grid.html">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -62,7 +62,7 @@
                               <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.html">Comprar ahora</a><a class="btn btn-link" href="shop-grid.html">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
                         </div>
                       </div>
                     </div>
@@ -76,14 +76,14 @@
                     <div class="banner-small banner-small-1 bg-13"><span class="color-danger text-uppercase font-sm-lh32">10%<span class="color-brand-3">de descuento</span></span>
                       <h4 class="mb-10">Apple Watch Serial 7</h4>
                       <p class="color-brand-3 font-desc">No te pierdas la última oportunidad.</p>
-                      <div class="mt-20"><a class="btn btn-brand-3 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
+                      <div class="mt-20"><a class="btn btn-brand-3 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-6 col-sm-12">
                     <div class="banner-small banner-small-2 bg-14"><span class="color-danger text-uppercase font-sm-lh32">ÚLTIMA COLECCIÓN</span>
                       <h4 class="mb-10">Dispositivos y Software Apple</h4>
                       <p class="color-brand-3 font-md">No te pierdas la última oportunidad.</p>
-                      <div class="mt-20"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
+                      <div class="mt-20"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
                     </div>
                   </div>
                 </div>
@@ -224,9 +224,9 @@
               echo"              
                 <div class='card-grid-style-3 home6-style home7-style'>
                   <div class='card-grid-inner'>
-                    <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
+                    <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
                     <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                    <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
+                    <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
                       <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                       <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                       <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
@@ -252,7 +252,7 @@
                     <h1 class="color-gray-1000 mb-10">Descuento</h1>
                     <h3 class="color-brand-3 mb-5">70% OFF</h3>
                     <h4 class="color-gray-500 mb-5">Auriculares</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
                 </div>
@@ -263,7 +263,7 @@
                     <h1 class="color-gray-1000 mb-10">Ofertas</h1>
                     <h3 class="color-gray-500 mb-5">Electronica</h3>
                     <h4 class="color-gray-500 mb-5">Envio gratis</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.html">Comprar ahora</a></div>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
                 </div>
@@ -273,7 +273,7 @@
                   <div class="info-banner">
                     <h1 class="color-gray-1000">Ultima <br class="d-none d-lg-block">Tendencia</h1>
                     <h3 class="color-gray-500 mb-0">Productos</h3>
-                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.html">Saber más</a></div>
+                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.php">Saber más</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
                 </div>

@@ -25,9 +25,9 @@
           <div class="container">
             <ul class="breadcrumb">
               <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Electronics</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Cell phone</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.html">Accessories</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Electronics</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Cell phone</a></li>
+              <li><a class="font-xs color-gray-500" href="shop-grid.php">Accessories</a></li>
             </ul>
           </div>
         </div>
@@ -46,7 +46,7 @@
                     $categorias=getCategorias();
                     $i=0;
                     while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.html'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                      echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                       $i++;
                     }
                     ?>
@@ -59,7 +59,7 @@
                         <div class='collapse' id='moreMenu'>
                           <ul class='list-nav-arrow'>";
                           while($categorias[0]>$i){   
-                            echo"<li><a href='shop-grid.html'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                            echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                             $i++;
                           }
                           echo"
@@ -235,13 +235,13 @@
                 <div class="head pb-15 border-brand-2">
                   <h5 class="color-gray-900">Product Tags</h5>
                 </div>
-                <div class="content-slider mb-50"><a class="btn btn-border mr-5" href="shop-grid.html">Games</a><a class="btn btn-border mr-5" href="shop-grid.html">Electronics</a><a class="btn btn-border mr-5" href="shop-grid.html">Video</a><a class="btn btn-border mr-5" href="shop-grid.html">Cellphone</a><a class="btn btn-border mr-5" href="shop-grid.html">Indoor</a><a class="btn btn-border mr-5" href="shop-grid.html">VGA Card</a><a class="btn btn-border mr-5" href="shop-grid.html">USB</a><a class="btn btn-border mr-5" href="shop-grid.html">Lightning</a><a class="btn btn-border mr-5" href="shop-grid.html">Camera</a><a class="btn btn-border" href="shop-grid.html">Window</a><a class="btn btn-border mr-5" href="shop-grid.html">Air Vent</a><a class="btn btn-border mr-5" href="shop-grid.html">Bedroom</a><a class="btn btn-border mr-5" href="shop-grid.html">Laptop</a><a class="btn btn-border mr-5" href="shop-grid.html">Dashboard</a><a class="btn btn-border mr-5" href="shop-grid.html">Keyboard</a></div>
+                <div class="content-slider mb-50"><a class="btn btn-border mr-5" href="shop-grid.php">Games</a><a class="btn btn-border mr-5" href="shop-grid.php">Electronics</a><a class="btn btn-border mr-5" href="shop-grid.php">Video</a><a class="btn btn-border mr-5" href="shop-grid.php">Cellphone</a><a class="btn btn-border mr-5" href="shop-grid.php">Indoor</a><a class="btn btn-border mr-5" href="shop-grid.php">VGA Card</a><a class="btn btn-border mr-5" href="shop-grid.php">USB</a><a class="btn btn-border mr-5" href="shop-grid.php">Lightning</a><a class="btn btn-border mr-5" href="shop-grid.php">Camera</a><a class="btn btn-border" href="shop-grid.php">Window</a><a class="btn btn-border mr-5" href="shop-grid.php">Air Vent</a><a class="btn btn-border mr-5" href="shop-grid.php">Bedroom</a><a class="btn btn-border mr-5" href="shop-grid.php">Laptop</a><a class="btn btn-border mr-5" href="shop-grid.php">Dashboard</a><a class="btn btn-border mr-5" href="shop-grid.php">Keyboard</a></div>
               </div> -->
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
                   <span class="text-no font-11">No.9</span>
                   <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
                   <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p>
-                  <a href="shop-single-product-2.html">View Details</a>
+                  <a href="shop-single-product-2.php">View Details</a>
               </div>
             </div>
             <div class="col-lg-9 col-md-8 order-first order-lg-last">
@@ -277,12 +277,12 @@
                       <div class='card-grid-inner'>
                         <div class='tools'>
                           <!--<a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a> -->
-                          <!--<a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.html' aria-label='Add To Wishlist'></a> -->
+                          <!--<a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a> -->
                           <!--<a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a> -->
                           <!--<a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a>-->
                         </div>
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.html'>".htmlspecialchars($producto['nombre'])."</a>
+                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
                           <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                           <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".$precio ."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->

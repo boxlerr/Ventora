@@ -27,7 +27,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
         <ul class="nav-small">
         <li><a class="font-xs" href="page-contact.php">Sobre nosotros</a></li>
         <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
-        <li><a class="font-xs" href="page-register.html">Importá con nosotros</a></li>
+        <li><a class="font-xs" href="page-register.php">Importá con nosotros</a></li>
         </ul>
     </div>
     <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Envío gratis en compras a partir de</span><span class="font-sm-bold color-success"> ARS 40.000</span></div>
@@ -120,7 +120,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
+                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Wishlist</span><span class="number-item font-xs">5</span></a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
@@ -143,7 +143,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                             echo "
                             <div class='item-cart mb-20'>
                                 <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
-                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.html'>".htmlspecialchars($articulo['nombre'])."</a>
+                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php'>".htmlspecialchars($articulo['nombre'])."</a>
                                     <p><span class='color-brand-2 font-sm-bold'>$total_prod_mod x ".htmlspecialchars($producto['cantidad'])."</span></p>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="index-10.php">Homepage - 10</a></li>
                 </ul>
                 </li>
-                <li class="has-children"><a href="shop-grid.html">Shop</a>
+                <li class="has-children"><a href="shop-grid.php">Shop</a>
                 <ul class="sub-menu">
                     <li><a href="shop-grid.php">Shop Grid</a></li>
                     <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
@@ -220,13 +220,13 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-list-2.html">Shop List 2</a></li>
                     <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
                     <li><a href="shop-single-product.html">Single Product</a></li>
-                    <li><a href="shop-single-product-2.html">Single Product 2</a></li>
+                    <li><a href="shop-single-product-2.php">Single Product 2</a></li>
                     <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                     <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                     <li><a href="shop-cart.php">Shop Cart</a></li>
                     <li><a href="shop-checkout.php">Shop Checkout</a></li>
                     <li><a href="shop-compare.php">Shop Compare</a></li>
-                    <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
+                    <li><a href="shop-wishlist.php">Shop Wishlist</a></li>
                 </ul>
                 </li>
                 <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
@@ -241,7 +241,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="page-contact.php">Contact Us</a></li>
                     <li><a href="page-careers.html">Careers</a></li>
                     <li><a href="page-term.php">Term and Condition</a></li>
-                    <li><a href="page-register.html">Register</a></li>
+                    <li><a href="page-register.php">Register</a></li>
                     <li><a href="page-login.php">Login</a></li>
                     <li><a href="page-404.html">Error 404</a></li>
                 </ul>
@@ -282,7 +282,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
         <div class="mobile-banner">
             <div class="bg-5 block-iphone"><span class="color-brand-3 font-sm-lh32">Starting from $899</span>
             <h3 class="font-xl mb-10">iPhone 12 Pro 128Gb</h3>
-            <p class="font-base color-brand-3 mb-10">Special Sale</p><a class="btn btn-arrow" href="shop-grid.html">learn more</a>
+            <p class="font-base color-brand-3 mb-10">Special Sale</p><a class="btn btn-arrow" href="shop-grid.php">learn more</a>
             </div>
         </div>
         <div class="site-copyright color-gray-400 mt-30">Copyright 2022 &copy; Ecom - Marketplace Template.<br>Designed by<a href="http://alithemes.com" target="_blank">&nbsp; AliThemes</a></div>
