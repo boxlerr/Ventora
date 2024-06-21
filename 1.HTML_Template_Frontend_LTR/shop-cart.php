@@ -122,7 +122,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-55">
               <div class="summary-cart">
                 <div class="border-bottom mb-10">
                   <div class="row">
@@ -302,7 +302,7 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content apply-job-form">
             <div class="modal-header">
-              <h5 class="modal-title color-gray-1000 filters-icon">Addvance Fillters</h5>
+              <h5 class="modal-title color-gray-1000 filters-icon">Advance Filters</h5>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-30">
