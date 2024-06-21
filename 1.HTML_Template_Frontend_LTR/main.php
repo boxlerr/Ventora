@@ -87,7 +87,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         <li><a href="page-term.html">Términos y condiciones</a></li>
                     </ul>
                     </li>
-                    <li><a href="page-contact.html">Contacto</a></li>
+                    <li><a href="page-contact.php">Contacto</a></li>
                 </ul>
                 </nav>
                 <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
@@ -195,7 +195,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 <li class="has-children"><a href="#">Pages</a>
                 <ul class="sub-menu">
                     <li><a href="page-about-us.php">About Us</a></li>
-                    <li><a href="page-contact.html">Contact Us</a></li>
+                    <li><a href="page-contact.php">Contact Us</a></li>
                     <li><a href="page-careers.html">Careers</a></li>
                     <li><a href="page-term.html">Term and Condition</a></li>
                     <li><a href="page-register.html">Register</a></li>
@@ -214,7 +214,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
                 </ul>
                 </li>
-                <li><a href="page-contact.html">Contact</a></li>
+                <li><a href="page-contact.php">Contact</a></li>
             </ul>
             </nav>
         </div>
