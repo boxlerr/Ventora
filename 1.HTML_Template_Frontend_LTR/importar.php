@@ -170,63 +170,39 @@
                         <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
                       </div>
                     </div>
-                  </div>
                 </div>
-              <h5 class="color-gray-500 mb-10">Nuestros socios</h5>
-              <h2 class="mb-40">Ellos exportan e importan con nosotros</h2>
-              <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
-              los logos de las marcas -->
-              <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
-              <div class="border-1 mb-80 mt-50"></div>
-              <h2 class="mb-5">Visit our stores</h2>
-              <p class="font-sm color-gray-700">Find us at these locations</p>
-              <div class="box-contact-address pt-30 pb-50">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="mb-30">
-                      <h4>Casa Ale</h4>
-                      <p class="font-sm color-gray-700">742 Evergreen Terrace<br>BSAS, 60601, ARG</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">          
-                    <div class="mb-30">
-                      <h4>Casa Bauti</h4>
-                      <p class="font-sm color-gray-700">Adolfo Alsina 2260<br>BSAS, 60601, ARG</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">     
-                    <div class="mb-30">
-                      <h4>Casa Juli</h4>
-                      <p class="font-sm color-gray-700">Thames 2439, Piso X<br>BSAS, 60601, ARG</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            <h5 class="color-gray-500 mb-10">Nuestros socios</h5>
+            <h2 class="mb-40">Ellos exportan e importan con nosotros</h2>
+            <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
+            los logos de las marcas -->
+            <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.html"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
+            <div class="border-1 mb-80 mt-50"></div>
             </div>
-          </div>
+        </div>
         </div>
         <div class="box-contact-support pt-80 pb-50 background-gray-50">
-          <div class="container">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-1"></div>
-              <div class="col-lg-10">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
                 <div class="row">
-                  <div class="col-lg-4 mb-30 text-center text-lg-start">
+                <div class="col-lg-4 mb-30 text-center text-lg-start">
                     <h3 class="mb-5">We‘d love to hear from you</h3>
                     <p class="font-sm color-gray-700">Chat with our friendly team</p>
-                  </div>
-                  <div class="col-lg-4 text-center mb-30">
+                </div>
+                <div class="col-lg-4 text-center mb-30">
                     <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
                     <h4 class="mb-5">Chat to sales</h4>
                     <p class="font-sm color-gray-700 mb-5">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
-                  </div>
-                  <div class="col-lg-4 text-center mb-30">
+                </div>
+                <div class="col-lg-4 text-center mb-30">
                     <div class="box-image mb-20"><img src="assets/imgs/page/contact/call.svg" alt="Ecom"></div>
                     <h4 class="mb-5">Call us</h4>
                     <p class="font-sm color-gray-700 mb-5">Mon-Fri from 8am to 5pm</p><a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
