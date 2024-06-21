@@ -485,5 +485,16 @@
         "total":"Total",
         "proceder_al_pago":"Proceder al Pago",
         "tambien_podria_gustarte":"También te Podría Gustar"
+    },
+
+    "shop-wishlist":{
+        "producto":"Producto",
+        "precio_unidad":"Precio Unidad",
+        "cantidad":"Cantidad",
+        "subtotal":"Subtotal",
+        "remover":"Remover",
+        "en_stock":"En Stock",
+        "añadir_al_carrito":"Añadir al Carrito",
+        "":"",
     }
 }

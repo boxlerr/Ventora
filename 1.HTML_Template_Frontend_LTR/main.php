@@ -102,7 +102,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         <li><a href='page-account.html'>Mi cuenta</a></li>
                         <li><a href='page-account.html'>Historial de compras</a></li>
                         <li><a href='page-account.html'>Mis compras</a></li>
-                        <li><a href='page-account.html'>Mis favoritos</a></li>
+                        <li><a href='shop-wishlist.php'>Mis favoritos</a></li>
                         <li><a href='page-account.html'>Configuracion</a></li>
                         <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
                         ";
@@ -113,7 +113,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.html"><span>Lista de Deseos</span><span class="number-item font-xs">5</span></a>
+                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span>Lista de Deseos</span><span class="number-item font-xs">5</span></a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
@@ -183,7 +183,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-cart.html">Shop Cart</a></li>
                     <li><a href="shop-checkout.html">Shop Checkout</a></li>
                     <li><a href="shop-compare.html">Shop Compare</a></li>
-                    <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
+                    <li><a href="shop-wishlist.php">Shop Wishlist</a></li>
                 </ul>
                 </li>
                 <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
@@ -231,7 +231,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <li><a href="page-account.html">My Account</a></li>
             <li><a href="page-account.html">Order Tracking</a></li>
             <li><a href="page-account.html">My Orders</a></li>
-            <li><a href="page-account.html">My Wishlist</a></li>
+            <li><a href="shop-wishlist.php">My Wishlist</a></li>
             <li><a href="page-account.html">Setting</a></li>
             <li><a href="page-login.html">Sign out</a></li>
             </ul>
