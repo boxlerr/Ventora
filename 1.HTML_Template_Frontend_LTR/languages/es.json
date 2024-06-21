@@ -495,6 +495,47 @@
         "remover":"Remover",
         "en_stock":"En Stock",
         "añadir_al_carrito":"Añadir al Carrito",
-        "":"",
+        "":""
+    },
+
+    "exportar":{
+        "exportar":"Exportar",
+        "exporta_con_vestore":"Exporta con Vestore",
+        "exportar_text_1":"En Vestore, nos especializamos en conectar tus productos con mercados internacionales a través de soluciones personalizadas de exportación. Simplificamos el proceso para que puedas expandir tus horizontes comerciales con la seguridad de que tus productos llegarán puntualmente y en condiciones óptimas.",
+        "exportar_text_2":"Nos destacamos por nuestra dedicación y experiencia, implementando tecnología avanzada y estrategias adaptadas a las particularidades de cada cliente. Desde asesoramiento en regulaciones internacionales hasta mejoras logísticas para optimizar tus envíos, estamos comprometidos a facilitar cada etapa del proceso.",
+        "exportar_text_3":"Confía en Vestore para manejar todas tus necesidades de exportación. Contamos con un equipo especializado y una red global de colaboradores que aseguran la competitividad y eficiencia de tu negocio en el dinámico mercado global.",
+        "item_exportar_1":"Ofrecemos servicios calificados y expertos en exportación",
+        "item_exportar_2":"Utilizamos herramientas modernas en el proceso de exportación",
+        "item_exportar_3":"Desarrollamos el futuro digital del comercio internacional",
+        "item_exportar_4":"Garantizamos cumplimiento y seguridad en todas tus exportaciones",
+        "amplia_experiencia":"Amplia experiencia en el mercado",
+        "con_mas_de_10_años_exportar":"Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus exportaciones de manera eficiente y segura.",
+        "optimizacion_costos":"Optimización de costo",
+        "utilizamos_estrategias_exportar":"Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de exportación, maximizando tu rentabilidad.",
+        "asistencia_personalizada":"Asistencia personalizada",
+        "nuestro_equipo_expertos":"Nuestro equipo de expertos te brinda soporte personalizado en todo momento, asegurando que tus necesidades específicas sean atendidas.",
+        "gestion_de_riesgos":"Gestión de riesgos",
+        "implementamos_medidas_exportar":"Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus exportaciones lleguen a destino sin contratiempos.",
+        "detras_marcas":"Detrás de la Marca",
+        "personas_que_trabajan":"Las Personas que Trabajan en Vestore Comparten la Misma Visión y Valores",
+        "el_mundo_te_espera":"El mundo te espera!",
+        "nuestros_socios":"Nuestros socios",
+        "ellos_exportan_importan":"Ellos Exportan e Importan con nosotros"
+    },
+
+    "importar":{
+        "importar":"Importar",
+        "importa_con_vestore":"Importa con Vestore",
+        "importar_text_1":"En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.",
+        "importar_text_2":"Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.",
+        "importar_text_3":"Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.",
+        "item_importar_1":"Ofrecemos servicios calificados y expertos en importación",
+        "item_importar_2":"Utilizamos herramientas modernas en el proceso de importación",
+        "item_importar_3":"Soluciones logísticas adaptadas a tus necesidades",
+        "item_importar_4":"Garantizamos cumplimiento y seguridad en todas tus importaciones",
+        "con_mas_de_10_años_importar":"Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus importaciones de manera eficiente y segura.",
+        "utilizamos_estrategias_importar":"Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de importación, maximizando tu rentabilidad.",
+        "implementamos_medidas_importar":"Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus importaciones lleguen a destino sin contratiempos.",
+        "traemos_lo_que_quieras":"Te traemos lo que quieras a la puerta de tu casa!"
     }
 }
