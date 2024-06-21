@@ -25,7 +25,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     <div class="container-topbar">
     <div class="menu-topbar-left d-none d-xl-block">
         <ul class="nav-small">
-        <li><a class="font-xs" href="page-about-us.html">Sobre nosotros</a></li>
+        <li><a class="font-xs" href="page-contact.php">Sobre nosotros</a></li>
         <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
         <li><a class="font-xs" href="page-register.html">Importá con nosotros</a></li>
         </ul>
@@ -67,7 +67,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
     <div class="container">
         <div class="main-header">
             <div class="header-left">
-            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+            <div class="header-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
             <div class="header-search ">
                 <div class="box-header-search">
                 <form class="form-search" method="post" action="#">
@@ -80,16 +80,21 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
             <div class="header-nav">
                 <nav class="nav-main-menu d-none d-xl-block">
                 <ul class="main-menu">
-                    <li><a class="active" href="index.php">Inicio</a></li>
+                <li><a class="active" href="index.php">Inicio</a></li>
                     <li><a href="shop-grid.php">Productos</a></li>
-                    <li><a href="shop-vendor-list.html">Marcas</a></li>
+                    <li class="has-children"><a href="#">Trabajá con nosotros</a>
+                    <ul class="sub-menu">
+                        <li><a href="importar.php">Importá</a></li>
+                        <li><a href="exportar.php">Exportá</a></li>
+                    </ul>
+                    </li>
                     <li class="has-children"><a href="#">Paginas</a>
                     <ul class="sub-menu">
                         <li><a href="page-about-us.php">Sobre nosotros</a></li>
-                        <li><a href="page-term.html">Términos y condiciones</a></li>
+                        <li><a href="page-term.php">Términos y condiciones</a></li>
                     </ul>
                     </li>
-                    <li><a href="page-contact.html">Contacto</a></li>
+                    <li><a href="page-contact.php">Contacto</a></li>
                 </ul>
                 </nav>
                 <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
@@ -155,7 +160,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         </div>
                         <div class="row mt-15">
                             <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php">View cart</a></div>
-                            <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.html">Checkout</a></div>
+                            <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.php">Checkout</a></div>
                         </div>
                         </div>
                     </div>
@@ -188,14 +193,14 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
 <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
     <div class="mobile-header-wrapper-inner">
     <div class="mobile-header-content-area">
-        <div class="mobile-logo"><a class="d-flex" href="index.html"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+        <div class="mobile-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
         <div class="perfect-scroll">
         <div class="mobile-menu-wrap mobile-header-border">
             <nav class="mt-15">
             <ul class="mobile-menu font-heading">
-                <li class="has-children"><a class="active" href="index.html">Home</a>
+                <li class="has-children"><a class="active" href="index.php">Home</a>
                 <ul class="sub-menu">
-                    <li><a href="index.html">Homepage - 1</a></li>
+                    <li><a href="index.php">Homepage - 1</a></li>
                     <li><a href="index-2.html">Homepage - 2</a></li>
                     <li><a href="index-3.html">Homepage - 3</a></li>
                     <li><a href="index-4.html">Homepage - 4</a></li>
@@ -219,7 +224,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="shop-single-product-3.html">Single Product 3</a></li>
                     <li><a href="shop-single-product-4.html">Single Product 4</a></li>
                     <li><a href="shop-cart.html">Shop Cart</a></li>
-                    <li><a href="shop-checkout.html">Shop Checkout</a></li>
+                    <li><a href="shop-checkout.php">Shop Checkout</a></li>
                     <li><a href="shop-compare.html">Shop Compare</a></li>
                     <li><a href="shop-wishlist.html">Shop Wishlist</a></li>
                 </ul>
@@ -227,15 +232,15 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                 <ul class="sub-menu">
                     <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                    <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                    <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                 </ul>
                 </li>
                 <li class="has-children"><a href="#">Pages</a>
                 <ul class="sub-menu">
-                    <li><a href="page-about-us.html">About Us</a></li>
-                    <li><a href="page-contact.html">Contact Us</a></li>
+                    <li><a href="page-contact.php">About Us</a></li>
+                    <li><a href="page-contact.php">Contact Us</a></li>
                     <li><a href="page-careers.html">Careers</a></li>
-                    <li><a href="page-term.html">Term and Condition</a></li>
+                    <li><a href="page-term.php">Term and Condition</a></li>
                     <li><a href="page-register.html">Register</a></li>
                     <li><a href="page-login.html">Login</a></li>
                     <li><a href="page-404.html">Error 404</a></li>
@@ -252,7 +257,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
                 </ul>
                 </li>
-                <li><a href="page-contact.html">Contact</a></li>
+                <li><a href="page-contact.php">Contact</a></li>
             </ul>
             </nav>
         </div>

@@ -121,7 +121,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>
@@ -238,7 +238,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>
@@ -505,7 +505,7 @@
                   <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
                     <ul class="sub-menu">
                       <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                      <li><a href="shop-vendor-single.html">Vendor Single</a></li>
+                      <li><a href="shop-vendor-single.php">Vendor Single</a></li>
                     </ul>
                   </li>
                   <li class="has-children"><a href="#">Pages</a>
@@ -621,7 +621,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/futur.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -637,7 +637,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/elmado.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -653,7 +653,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/costctrl.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -669,7 +669,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/fasfox.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -685,7 +685,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/elmado.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -701,7 +701,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/fasfox.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -717,7 +717,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/tropper.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -733,7 +733,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/asembly.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -749,7 +749,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/aslan.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -765,7 +765,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/market.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -781,7 +781,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/costctrl.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -797,7 +797,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/fasfox.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -813,7 +813,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/elmado.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -829,7 +829,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/fasfox.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -845,7 +845,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/tropper.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -861,7 +861,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/asembly.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -877,7 +877,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/aslan.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
@@ -893,7 +893,7 @@
                       <div class="card-top-vendor-left"><img src="assets/imgs/page/vendor/market.png" alt="Ecom">
                         <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
                       </div>
-                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.html">360 Products</a>
+                      <div class="card-top-vendor-right"><a class="btn btn-gray" href="shop-vendor-single.php">360 Products</a>
                         <p class="font-xs color-gray-500 mt-10">Member since 2012</p>
                       </div>
                     </div>
