@@ -21,15 +21,15 @@
     <main class="main">
       <section class="section-box shop-template mt-30">
         <div class="container box-account-template">
-          <h3>Hello Steven</h3>
-          <p class="font-md color-gray-500">From your account dashboard. you can easily check & view your recent orders,<br class="d-none d-lg-block">manage your shipping and billing addresses and edit your password and account details.</p>
+          <h3 data-section="page-account" data-value="hola">Hello Steven</h3>
+          <p class="font-md color-gray-500" data-section="page-account" data-value="desde_el_panel">From your account dashboard. you can easily check & view your recent orders,<br class="d-none d-lg-block">manage your shipping and billing addresses and edit your password and account details.</p>
           <div class="box-tabs mb-100">
             <ul class="nav nav-tabs nav-tabs-account" role="tablist">
-              <li><a class="active" href="#tab-notification" data-bs-toggle="tab" role="tab" aria-controls="tab-notification" aria-selected="true">Notification</a></li>
-              <li><a href="#tab-wishlist" data-bs-toggle="tab" role="tab" aria-controls="tab-wishlist" aria-selected="true">Wishlist</a></li>
-              <li><a href="#tab-orders" data-bs-toggle="tab" role="tab" aria-controls="tab-orders" aria-selected="true">Orders</a></li>
-              <li><a href="#tab-order-tracking" data-bs-toggle="tab" role="tab" aria-controls="tab-order-tracking" aria-selected="true">Order Tracking</a></li>
-              <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting" aria-selected="true">Setting</a></li>
+              <li><a class="active" href="#tab-notification" data-bs-toggle="tab" role="tab" aria-controls="tab-notification" aria-selected="true" data-section="page-account" data-value="notificacion">Notification</a></li>
+              <li><a href="#tab-wishlist" data-bs-toggle="tab" role="tab" aria-controls="tab-wishlist" aria-selected="true" data-section="page-account" data-value="lista_de_deseos">Wishlist</a></li>
+              <li><a href="#tab-orders" data-bs-toggle="tab" role="tab" aria-controls="tab-orders" aria-selected="true" data-section="page-account" data-value="ordenes">Orders</a></li>
+              <li><a href="#tab-order-tracking" data-bs-toggle="tab" role="tab" aria-controls="tab-order-tracking" aria-selected="true" data-section="page-account" data-value="seguimiento_ordenes">Order Tracking</a></li>
+              <li><a href="#tab-setting" data-bs-toggle="tab" role="tab" aria-controls="tab-setting" aria-selected="true" data-section="page-account" data-value="ajustes">Setting</a></li>
             </ul>
             <div class="border-bottom mt-20 mb-40"></div>
             <div class="tab-content mt-30">
@@ -38,34 +38,34 @@
                   <div class="item-notification">
                     <div class="image-notification"><img src="assets/imgs/page/account/img-1.png" alt="Ecom"></div>
                     <div class="info-notification">
-                      <h5 class="mb-5">COD payment confirmed</h5>
-                      <p class="font-md color-brand-3">Order<span class="font-md-bold"> 220914QR92BXNH</span> has been confirmed. Please check the estimated delivery time in the order details section!</p>
+                      <h5 class="mb-5" data-section="page-account" data-value="pago_confirmado">COD payment confirmed</h5>
+                      <p class="font-md color-brand-3" data-section="page-account" data-value="confirmacion">Has been confirmed. Please check the estimated delivery time in the order details section!</p>
                     </div>
-                    <div class="button-notification"><a class="btn btn-buy w-auto">View Details</a></div>
+                    <div class="button-notification"><a class="btn btn-buy w-auto" data-section="page-account" data-value="ver_detalles">Ver Detalles</a></div>
                   </div>
                   <div class="item-notification">
                     <div class="image-notification"><img src="assets/imgs/page/account/img-2.png" alt="Ecom"></div>
                     <div class="info-notification">
                       <h5 class="mb-5">COD payment confirmed</h5>
-                      <p class="font-md color-brand-3">Order<span class="font-md-bold"> 220914QR92BXNH</span> has been confirmed. Please check the estimated delivery time in the order details section!</p>
+                      <p class="font-md color-brand-3" data-section="page-account" data-value="confirmacion">Has been confirmed. Please check the estimated delivery time in the order details section!</p>
                     </div>
-                    <div class="button-notification"><a class="btn btn-buy w-auto">View Details</a></div>
+                    <div class="button-notification"><a class="btn btn-buy w-auto" data-section="page-account" data-value="ver_detalles">Ver Detalles</a></div>
                   </div>
                   <div class="item-notification">
                     <div class="image-notification"><img src="assets/imgs/page/account/img-3.png" alt="Ecom"></div>
                     <div class="info-notification">
                       <h5 class="mb-5">COD payment confirmed</h5>
-                      <p class="font-md color-brand-3">Order<span class="font-md-bold"> 220914QR92BXNH</span> has been confirmed. Please check the estimated delivery time in the order details section!</p>
+                      <p class="font-md color-brand-3" data-section="page-account" data-value="confirmacion">Has been confirmed. Please check the estimated delivery time in the order details section!</p>
                     </div>
-                    <div class="button-notification"><a class="btn btn-buy w-auto">View Details</a></div>
+                    <div class="button-notification"><a class="btn btn-buy w-auto" data-section="page-account" data-value="ver_detalles">Ver Detalles</a></div>
                   </div>
                   <div class="item-notification">
                     <div class="image-notification"><img src="assets/imgs/page/account/img-4.png" alt="Ecom"></div>
                     <div class="info-notification">
                       <h5>COD payment confirmed</h5>
-                      <p class="font-md color-brand-3">Order<span class="font-md-bold"> 220914QR92BXNH</span> has been confirmed. Please check the estimated delivery time in the order details section!</p>
+                      <p class="font-md color-brand-3" data-section="page-account" data-value="confirmacion">Has been confirmed. Please check the estimated delivery time in the order details section!</p>
                     </div>
-                    <div class="button-notification"><a class="btn btn-buy w-auto">View Details</a></div>
+                    <div class="button-notification"><a class="btn btn-buy w-auto" data-section="page-account" data-value="ver_detalles">Ver Detalles</a></div>
                   </div>
                 </div>
                 <nav>
@@ -88,11 +88,11 @@
                       <div class="wishlist-cb">
                         <input class="cb-layout cb-all" type="checkbox">
                       </div>
-                      <div class="wishlist-product"><span class="font-md-bold color-brand-3">Product</span></div>
-                      <div class="wishlist-price"><span class="font-md-bold color-brand-3">Price</span></div>
-                      <div class="wishlist-status"><span class="font-md-bold color-brand-3">Stock status</span></div>
-                      <div class="wishlist-action"><span class="font-md-bold color-brand-3">Action</span></div>
-                      <div class="wishlist-remove"><span class="font-md-bold color-brand-3">Remove</span></div>
+                      <div class="wishlist-product"><span class="font-md-bold color-brand-3" data-section="page-account" data-value="producto">Product</span></div>
+                      <div class="wishlist-price"><span class="font-md-bold color-brand-3" data-section="page-account" data-value="precio">Price</span></div>
+                      <div class="wishlist-status"><span class="font-md-bold color-brand-3" data-section="page-account" data-value="status_stock">Stock status</span></div>
+                      <div class="wishlist-action"><span class="font-md-bold color-brand-3" data-section="page-account" data-value="accion">Action</span></div>
+                      <div class="wishlist-remove"><span class="font-md-bold color-brand-3" data-section="page-account" data-value="remover">Remove</span></div>
                     </div>
                   </div>
                   <div class="content-wishlist">
@@ -112,8 +112,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$2.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -132,8 +132,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$1.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -152,8 +152,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$3.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -172,8 +172,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$4.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -192,8 +192,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$3.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -212,8 +212,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$2.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                     <div class="item-wishlist">
@@ -232,8 +232,8 @@
                       <div class="wishlist-price">
                         <h4 class="color-brand-3">$1.51</h4>
                       </div>
-                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3">In Stock</span></div>
-                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php">Add to Cart</a></div>
+                      <div class="wishlist-status"><span class="btn btn-gray font-md-bold color-brand-3" data-section="page-account" data-value="en_stock">In Stock</span></div>
+                      <div class="wishlist-action"><a class="btn btn-cart font-sm-bold" href="shop-cart.php" data-section="page-account" data-value="añadir_al_carrito">Add to Cart</a></div>
                       <div class="wishlist-remove"><a class="btn btn-delete" href="#"></a></div>
                     </div>
                   </div>
@@ -243,9 +243,9 @@
                 <div class="box-orders">
                   <div class="head-orders">
                     <div class="head-left">
-                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20">Date: 18 September 2022</span><span class="label-delivery">Delivery in progress</span>
+                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20"><span data-section="page-account" data-value="fecha">Date:</span> 18 September 2022</span><span class="label-delivery" data-section="page-account" data-value="entrega_en_progreso">Delivery in progress</span>
                     </div>
-                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto">View Order</a></div>
+                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto" data-section="page-account" data-value="ver_orden">View Order</a></div>
                   </div>
                   <div class="body-orders">
                     <div class="list-orders">
@@ -255,7 +255,7 @@
                           <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                          <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -267,7 +267,7 @@
                           <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                        <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -279,19 +279,19 @@
                 <div class="box-orders">
                   <div class="head-orders">
                     <div class="head-left">
-                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20">Date: 18 September 2022</span><span class="label-delivery label-delivered">Delivered</span>
+                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20">Date: 18 September 2022</span><span class="label-delivery label-delivered" data-section="page-account" data-value="entregado">Delivered</span>
                     </div>
-                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto">View Order</a></div>
+                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto" data-section="page-account" data-value="ver_orden">View Order</a></div>
                   </div>
                   <div class="body-orders">
                     <div class="list-orders">
                       <div class="item-orders">
                         <div class="image-orders"><img src="assets/imgs/page/account/img-1.png" alt="Ecom"></div>
                         <div class="info-orders">
-                          <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
+                          <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                        <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -303,7 +303,7 @@
                           <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                        <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -315,9 +315,9 @@
                 <div class="box-orders">
                   <div class="head-orders">
                     <div class="head-left">
-                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20">Date: 18 September 2022</span><span class="label-delivery label-cancel">Cancel</span>
+                      <h5 class="mr-20">Order ID: #EWFDSAF1321655</h5><span class="font-md color-brand-3 mr-20">Date: 18 September 2022</span><span class="label-delivery label-cancel" data-section="page-account" data-value="cancelado">Cancel</span>
                     </div>
-                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto">View Order</a></div>
+                    <div class="head-right"><a class="btn btn-buy font-sm-bold w-auto" data-section="page-account" data-value="ver_orden">View Order</a></div>
                   </div>
                   <div class="body-orders">
                     <div class="list-orders">
@@ -327,7 +327,7 @@
                           <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                        <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -339,7 +339,7 @@
                           <h5>Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator</h5>
                         </div>
                         <div class="quantity-orders">
-                          <h5>Quantity: 01</h5>
+                          <h5><span data-section="page-account" data-value="cantidad">Quantity:</span> 01</h5>
                         </div>
                         <div class="price-orders">
                           <h3>$2.51</h3>
@@ -362,7 +362,7 @@
                 </nav>
               </div>
               <div class="tab-pane fade" id="tab-order-tracking" role="tabpanel" aria-labelledby="tab-order-tracking">
-                <p class="font-md color-gray-600">To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on<br class="d-none d-lg-block">your receipt and in the confirmation email you should have received.</p>
+                <p class="font-md color-gray-600" data-section="page-account" data-value="para_rastrear">To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on<br class="d-none d-lg-block">your receipt and in the confirmation email you should have received.</p>
                 <div class="row mt-30">
                   <div class="col-lg-6">
                     <div class="form-tracking">
@@ -372,7 +372,7 @@
                             <input class="form-control" type="text" placeholder="FDSFWRFAF13585">
                           </div>
                           <div class="form-group box-button">
-                            <button class="btn btn-buy font-md-bold" type="submit">Tracking Now</button>
+                            <button class="btn btn-buy font-md-bold" type="submit" data-section="page-account" data-value="rastreando_ahora">Tracking Now</button>
                           </div>
                         </div>
                       </form>
@@ -380,42 +380,42 @@
                   </div>
                 </div>
                 <div class="border-bottom mb-20 mt-20"></div>
-                <h3 class="mb-10">Order Status:<span class="color-success">International shipping</span></h3>
-                <h6 class="color-gray-500">Estimated Delivery Date: 27 August - 29 August</h6>
+                <h3 class="mb-10"><span data-section="page-account" data-value="order_status">Order Status:</span><span class="color-success" data-section="page-account" data-value="envio_internacional"> International shipping</span></h3>
+                <h6 class="color-gray-500"><span data-section="page-account" data-value="fecha_estimada_entrega">Estimated Delivery Date:</span> 27 August - 29 August</h6>
                 <div class="table-responsive">
                   <div class="list-steps">
                     <div class="item-step">
                       <div class="rounded-step">
                         <div class="icon-step step-1 active"></div>
-                        <h6 class="mb-5">Order Placed</h6>
+                        <h6 class="mb-5" data-section="page-account" data-value="pedido_realizado">Order Placed</h6>
                         <p class="font-md color-gray-500">15 August 2022</p>
                       </div>
                     </div>
                     <div class="item-step">
                       <div class="rounded-step">
                         <div class="icon-step step-2 active"></div>
-                        <h6 class="mb-5">In Production</h6>
+                        <h6 class="mb-5" data-section="page-account" data-value="en_produccion">In Production</h6>
                         <p class="font-md color-gray-500">16 August 2022</p>
                       </div>
                     </div>
                     <div class="item-step">
                       <div class="rounded-step">
                         <div class="icon-step step-3 active"></div>
-                        <h6 class="mb-5">International shipping</h6>
+                        <h6 class="mb-5" data-section="page-account" data-value="envio_internacional">International shipping</h6>
                         <p class="font-md color-gray-500">17 August 2022</p>
                       </div>
                     </div>
                     <div class="item-step">
                       <div class="rounded-step">
                         <div class="icon-step step-4"></div>
-                        <h6 class="mb-5">Shipping Final Mile</h6>
+                        <h6 class="mb-5" data-section="page-account" data-value="entrega_ult_milla">Shipping Final Mile</h6>
                         <p class="font-md color-gray-500">18 August 2022</p>
                       </div>
                     </div>
                     <div class="item-step">
                       <div class="rounded-step">
                         <div class="icon-step step-5"></div>
-                        <h6 class="mb-5">Delivered</h6>
+                        <h6 class="mb-5" data-section="page-account" data-value="entregado">Delivered</h6>
                         <p class="font-md color-gray-500">19 August 2022</p>
                       </div>
                     </div>
@@ -435,16 +435,16 @@
                     <li>10:44 15 August 2022: The sender is preparing the goods</li>
                   </ul>
                 </div>
-                <h3>Package Location</h3>
+                <h3 data-section="page-account" data-value="localizacion_paquete">Package Location</h3>
                 <div class="map-account">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193548.25784139088!2d-74.12251055507726!3d40.71380001554004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1664974174994!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325467.51371614134!2d-58.481592!3d-34.603722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1ses!2s!4v1664373110059!5m2!1ses!2s&hl=es" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="row">
                   <div class="col-lg-6">
-                    <p class="color-gray-500 mb-20">Maecenas porttitor augue sit amet nibh venenatis bibendum. Morbi lorem elit, fringilla quis libero vitae, tincidunt commodo purus. Quisque diam nisi, tincidunt sed vehicula nec, fermentum vitae lectus. Curabitur sit amet sagittis libero. Pellentesque cursus turpis at ipsum luctus tempor.</p>
+                    <p class="color-gray-500 mb-20" data-section="page-account" data-value="parrafo1">Comienza cuando el proveedor confirma el pedido y lo registra en un sistema de seguimiento con un número de identificación único. El paquete se transporta al puerto o aeropuerto de salida, pasa por controles aduaneros y embarca hacia el país de destino, con actualizaciones periódicas sobre su ubicación en el sistema</p>
                   </div>
                   <div class="col-lg-6">
-                    <p class="color-gray-500 mb-20">Ut auctor varius nisl, scelerisque dictum justo maximus ut. Fusce rhoncus, augue sed molestie consectetur, leo felis ultricies erat, nec lobortis enim dui eu justo. Pellentesque aliquam hendrerit venenatis. Integer efficitur bibendum lectus sed sollicitudin. Suspendisse faucibus posuere euismod.</p>
+                    <p class="color-gray-500 mb-20" data-section="page-account" data-value="parrafo2">Al llegar al país de destino, el paquete se somete a inspecciones aduaneras y, tras la aprobación, se transfiere a la red de distribución local. El sistema de seguimiento continúa proporcionando información actualizada sobre su ubicación y estado hasta que el paquete llega al cliente final, asegurando transparencia en cada etapa del proceso</p>
                   </div>
                 </div>
               </div>
@@ -454,7 +454,7 @@
                     <form action="#" method="get">
                       <div class="row">
                         <div class="col-lg-12 mb-20">
-                          <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
+                          <h5 class="font-md-bold color-brand-3 text-sm-start text-center" data-section="page-account" data-value="informacion_contacto">Contact information</h5>
                         </div>
                         <div class="col-lg-12">
                           <div class="form-group">
@@ -480,12 +480,14 @@
                           <div class="form-group">
                             <label class="font-sm color-brand-3" for="checkboxOffers">
                               <input class="checkboxOffer" id="checkboxOffers" type="checkbox">
-                              Keep me up to date on news and exclusive offers
+                              <span data-section="page-account" data-value="mantenme_al_tanto">
+                                Keep me up to date on news and exclusive offers
+                              </span>
                             </label>
                           </div>
                         </div>
                         <div class="col-lg-12">
-                          <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
+                          <h5 class="font-md-bold color-brand-3 mt-15 mb-20" data-section="page-account" data-value="direccion_envio">Shipping address</h5>
                         </div>
                         <div class="col-lg-6">
                           <div class="form-group">
@@ -510,8 +512,8 @@
                         <div class="col-lg-6">
                           <div class="form-group">
                             <select class="form-control font-sm select-style1 color-gray-700">
-                              <option value="">Select an option...</option>
-                              <option value="1">Option 1</option>
+                              <option value="" data-section="page-account" data-value="elige_una_opcion">Select an option...</option>
+                              <option value="1" data-section="page-account" data-value="opcion1">Option 1</option>
                             </select>
                           </div>
                         </div>
@@ -553,15 +555,15 @@
                     <div class="mt-40">
                       <h4 class="mb-10">Steven Job</h4>
                       <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Home Address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
+                        <p class="font-sm color-brand-3 font-medium" data-section="page-account" data-value="direccion_casa">Home Address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
                       </div>
                       <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Delivery address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
+                        <p class="font-sm color-brand-3 font-medium" data-section="page-account" data-value="direccion_entrega">Delivery address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
                       </div>
                       <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Phone Number:</p><span class="font-sm color-gray-500 font-medium">(+01) 234 567 89 - (+01) 688 866 99</span>
+                        <p class="font-sm color-brand-3 font-medium" data-section="page-account" data-value="numero_telefono">Phone Number:</p><span class="font-sm color-gray-500 font-medium">(+01) 234 567 89 - (+01) 688 866 99</span>
                       </div>
-                      <div class="mb-10 mt-15"><a class="btn btn-cart w-auto">Set as Default</a></div>
+                      <div class="mb-10 mt-15"><a class="btn btn-cart w-auto" data-section="page-account" data-value="establecer_predeterminado">Set as Default</a></div>
                     </div>
                   </div>
                 </div>
@@ -574,14 +576,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+            <h3 class="color-white" data-section="index" data-value="suscripcion">Subscribe &amp; Get <span class="color-warning">10%</span> Discount</h3>
+            <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
-                  <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
-                  <button class="btn btn-brand-2">Sign Up</button>
+                  <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Sign Up</button>
                 </form>
               </div>
             </div>
@@ -893,94 +895,9 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 width-25 mb-30">
-              <h4 class="mb-30 color-gray-1000">Contact</h4>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Phone:</strong> (+01) 123-456-789</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">E-mail:</strong> contact@ecom-market.com</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat</div>
-              <div class="mt-30"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-instagram" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
-            </div>
-            <div class="col-lg-3 width-20 mb-30">
-              <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
-              <ul class="menu-footer">
-                <li><a href="page-about-us.php">Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.php">Our Team</a></li>
-                <li><a href="page-careers.html">Careers</a></li>
-                <li><a href="#">Press &amp; Media</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">Company</h4>
-              <ul class="menu-footer">
-                <li><a href="blog-2.html">Our Blog</a></li>
-                <li><a href="#">Plans &amp; Pricing</a></li>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Office Center</a></li>
-                <li><a href="blog.html">News &amp; Events</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">My account</h4>
-              <ul class="menu-footer">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Editor Help</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.php">Contact Us</a></li>
-                <li><a href="#">Support Center</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-23">
-              <h4 class="mb-30 color-gray-1000">App &amp; Payment</h4>
-              <div>
-                <p class="font-md color-gray-900">Download our Apps and get extra 15% Discount on your first Order&mldr;!</p>
-                <div class="mt-20"><a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="Ecom"></a><a href="#"><img src="assets/imgs/template/google-play.png" alt="Ecom"></a></div>
-                <p class="font-md color-gray-900 mt-20 mb-10">Secured Payment Gateways</p><img src="assets/imgs/template/payment-method.png" alt="Ecom">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-2">
-        <div class="footer-bottom-1">
-          <div class="container">
-            <div class="footer-2-top mb-20"><a href="index.html"><img alt="Ecom" src="assets/imgs/template/logo-2.svg"></a><a class="font-xs color-gray-1000" href="#">EcomMarket.com</a><a class="font-xs color-gray-1000" href="#">Ecom Partners</a><a class="font-xs color-gray-1000" href="#">Ecom Bussiness</a><a class="font-xs color-gray-1000" href="#">Ecom Factory</a></div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Electronic:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.php">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.php">HTC</a><a href="shop-grid.php">Ipad</a><a href="shop-grid.php">Keyboard</a><a href="shop-grid.php">Samsung</a><a href="shop-grid.php">Wireless Speaker</a><a href="shop-grid.php">Samsung Galaxy</a><a href="shop-grid.php">Gaming Mouse</a><a href="shop-grid.php">eBook Readers</a><a href="shop-grid.php">Service Plans</a><a href="shop-grid.php">Home Audio</a><a href="shop-grid.php">Office Electronics</a><a href="shop-grid.php">Lenovo</a><a href="shop-grid.php">Mackbook Pro M1</a><a href="shop-grid.php">HD Videos Player</a></div>
-            </div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Furniture:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-grid.php">Sofa</a><a href="shop-grid.php">Chair</a><a href="shop-grid.php">Dining Table</a><a href="shop-grid.php">Living Room</a><a href="shop-grid.php">Table Lamp</a><a href="shop-grid.php">Night Stand</a><a href="shop-grid.php">Computer Desk</a><a href="shop-grid.php">Bar Table</a><a href="shop-grid.php">Pillow</a><a href="shop-grid.php">Radio</a><a href="shop-grid.php">Clock</a><a href="shop-grid.php">Bad Room</a><a href="shop-grid.php">Stool</a><a href="shop-grid.php">Television</a><a href="shop-grid.php">wardrobe</a><a href="shop-grid.php">Living Room Tables</a><a href="shop-grid.php">Dressers</a><a href="shop-grid.php">Patio Sofas</a><a href="shop-grid.php">Nursery</a><a href="shop-grid.php">Kitchen</a><a href="shop-grid.php">Accent Furniture</a><a href="shop-grid.php">Replacement Parts</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="footer-bottom mt-20">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
-              <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                <ul class="menu-bottom">
-                  <li><a class="font-sm color-gray-900" href="page-term.php">Conditions of Use</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-term.php">Privacy Notice</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+      include_once("footer.php")
+      ?>
     </footer>
     <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
@@ -1003,5 +920,6 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>

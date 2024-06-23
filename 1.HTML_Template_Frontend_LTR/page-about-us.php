@@ -24,17 +24,17 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h5 class="color-gray-500 mb-10">Sobre Nosotros</h5>
-              <h2>Leading Online Shop</h2>
+              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="sobre_nosotros">Sobre Nosotros</h5>
+              <h2 data-section="page-about-us" data-value="tienda_lider">Leading Online Shop</h2>
               <div class="row mt-20">
                 <div class="col-lg-6">
-                  <p class="font-sm font-medium color-white mb-15">Ecom expands global footprint, delivering entertaining experiences customised to each user. Branches are expanding both in size and number.</p>
-                  <p class="font-sm font-medium color-white mb-15">Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit. Urna neque viverra justo nec. Suspendisse faucibus interdum posuere lorem ipsum dolor. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Tortor vitae purus faucibus ornare.</p>
-                  <p class="font-sm font-medium color-white mb-15">Tempus iaculis urna id volutpat lacus laoreet. Id neque aliquam vestibulum morbi blandit. Lacinia quis vel eros donec ac odio tempor orci. Lectus sit amet est placerat in egestas erat imperdiet. Nunc congue nisi vitae suscipit. Sed adipiscing diam donec adipiscing tristique risus.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto1">Ecom expands global footprint, delivering entertaining experiences customised to each user. Branches are expanding both in size and number.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto2">Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit. Urna neque viverra justo nec. Suspendisse faucibus interdum posuere lorem ipsum dolor. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Tortor vitae purus faucibus ornare.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto3">Tempus iaculis urna id volutpat lacus laoreet. Id neque aliquam vestibulum morbi blandit. Lacinia quis vel eros donec ac odio tempor orci. Lectus sit amet est placerat in egestas erat imperdiet. Nunc congue nisi vitae suscipit. Sed adipiscing diam donec adipiscing tristique risus.</p>
                   <ul class="list-services mt-20">
-                    <li class="hover-up">We provide qualified & expert</li>
-                    <li class="hover-up">Modern tools & technology use</li>
-                    <li class="hover-up">We Develop Digital Future</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos">We provide qualified & expert</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas">Modern tools & technology use</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">We Develop Digital Future</li>
                   </ul>
                 </div>
                 <div class="col-lg-6"><img src="assets/imgs/page/about/img.png" alt="Ecom"></div>
@@ -42,25 +42,25 @@
               <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
                 <div class="row">
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 1</h4>
-                    <p class="font-md color-gray-700 mb-5">description 1</p>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="text1">Text 1</h4>
+                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">description 1</p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 2</h4>
-                    <p class="font-md color-gray-700 mb-5">description 2</p>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="text2">Text 2</h4>
+                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion2">description 2</p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 3</h4>
-                    <p class="font-md color-gray-700 mb-5">description 3</p>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="text3">Text 3</h4>
+                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion3">description 3</p>
                   </div>
                   <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5">Text 4</h4>
-                    <p class="font-md color-gray-700 mb-5">description 4</p>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="text4">Text 4</h4>
+                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion4">description 4</p>
                   </div>
                 </div>
               </div>
-              <h5 class="color-gray-500 mb-10">Behind The Brands</h5>
-              <h2 class="mb-40">The people who work at Vestore share the vision and values of our community.</h2>
+              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="detras_marcas">Behind The Brands</h5>
+              <h2 class="mb-40" data-section="page-about-us" data-value="personas_que_trabajan">The people who work at Vestore share the vision and values of our community.</h2>
               <div class="row mb-50">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                   <div class="card-staff hover-up">
@@ -135,8 +135,8 @@
                   </div>
                 </div>
               </div>
-              <h5 class="color-gray-500 mb-10">Our Partners</h5>
-              <h2 class="mb-40">We import top-tier brands</h2>
+              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="nuestros_socios">Our Partners</h5>
+              <h2 class="mb-40" data-section="page-about-us" data-value="importamos_marcas_top">We import top-tier brands</h2>
               <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
               los logos de las marcas -->
               <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
@@ -175,18 +175,13 @@
               <div class="col-lg-10">
                 <div class="row">
                   <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <h3 class="mb-5">We‘d love to hear from you</h3>
-                    <p class="font-sm color-gray-700">Chat with our friendly team</p>
+                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">We‘d love to hear from you</h3>
+                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Chat with our friendly team</p>
                   </div>
                   <div class="col-lg-4 text-center mb-30">
                     <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
-                    <h4 class="mb-5">Chat to sales</h4>
-                    <p class="font-sm color-gray-700 mb-5">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
-                  </div>
-                  <div class="col-lg-4 text-center mb-30">
-                    <div class="box-image mb-20"><img src="assets/imgs/page/contact/call.svg" alt="Ecom"></div>
-                    <h4 class="mb-5">Call us</h4>
-                    <p class="font-sm color-gray-700 mb-5">Mon-Fri from 8am to 5pm</p><a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat to sales</h4>
+                    <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
                   </div>
                 </div>
               </div>
@@ -194,69 +189,19 @@
           </div>
         </div>
       </section>
-      <section class="section-box mt-90 mb-50">
-        <div class="container">
-          <ul class="list-col-5">
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/delivery.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Free Delivery</h5>
-                  <p class="font-sm color-gray-500">From all orders over $10</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/support.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Support 24/7</h5>
-                  <p class="font-sm color-gray-500">Shop with an expert</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/voucher.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Gift voucher</h5>
-                  <p class="font-sm color-gray-500">Refer a friend</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/return.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Return &amp; Refund</h5>
-                  <p class="font-sm color-gray-500">Free return over $200</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/secure.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Secure payment</h5>
-                  <p class="font-sm color-gray-500">100% Protected</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      
       <section class="section-box box-newsletter">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3 class="color-white" data-section="index" data-value="suscripcion">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
-                  <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
-                  <button class="btn btn-brand-2">Sign Up</button>
+                  <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Sign Up</button>
                 </form>
               </div>
             </div>
@@ -290,5 +235,6 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>

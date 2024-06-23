@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,7 +38,7 @@
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
               <div class="sidebar-border mb-0">
                 <div class="sidebar-head">
-                  <h6 class="color-gray-900">Categorías</h6>
+                  <h6 class="color-gray-900" data-section="shop-grid" data-value="categorias">Categorías</h6>
                 </div>
                 <form class="sidebar-content" method="get" action="shop-grid.php">
                   <ul class="list-nav-arrow">
@@ -75,11 +75,11 @@
               </div>
               <div class="sidebar-border mb-40">
                 <div class="sidebar-content">
-                  <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
+                  <h6 class="color-gray-900 mt-10 mb-10" data-section="shop-grid" data-value="precio">Price</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                  <input type="checkbox" checked="checked"><span class="text-small">Under $<?php echo round(100 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
+                  <input type="checkbox" checked="checked"><span class="text-small"><span data-section="shop-grid" data-value="menor">Under</span> $<?php echo round(100 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">145</span>
                     </li>
                     <li>
@@ -104,11 +104,11 @@
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Over $<?php echo round(1000 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small"><span data-section="shop-grid" data-value="mayor">Over</span> $<?php echo round(1000 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
                       </label><span class="number-item">56</span>
                     </li>
                   </ul>
-                  <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
+                  <h6 class="color-gray-900 mt-20 mb-10" data-section="shop-grid" data-value="marcas">Brands</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
@@ -136,29 +136,30 @@
                       </label><span class="number-item">23</span>
                     </li>
                   </ul>
-                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal">More Fillters</a>
+                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal" data-section="shop-grid" data-value="mas_filtros">More Fillters</a>
                 </div>
               </div>
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
                   <span class="text-no font-11">No.9</span>
-                  <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
-                  <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p>
-                  <a href="shop-single-product-2.php">View Details</a>
+                  <h5 class="font-23 mt-20" data-section="shop-grid" data-value="sensibilidad_tactil">Sensitive Touch</h5>
+                  <h5 class="d-none d-lg-block" data-section="shop-grid" data-value="sin_huellas">without fingerprint</h5>
+                  <p class="text-desc font-16 mt-15" data-section="shop-grid" data-value="manejo_suave">Smooth handle and accurate click</p>
+                  <a href="shop-single-product-2.php" data-section="shop-grid" data-value="ver_detalles">View Details</a>
               </div>
             </div>
             <div class="col-lg-9 col-md-8 order-first order-lg-last">
               <div class="banner-ads-top mb-30"><a href="shop-single-product-3.html"><img src="assets/imgs/page/shop/banner.png" alt="Ecom"></a></div>
               <!-- <div class="box-filters mt-0 pb-5 border-bottom"> -->
                 <div class="row filtros_celular">
-                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div>
+                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal" data-section="shop-grid" data-value="todos_los_filtros">All Filters</a></div>
                   <div class="col-xl-3 col-lg-5 col-md-6 mb-10 text-lg-end text-center d-none d-md-block">
-                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium">Sort by:</span>
+                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium" data-section="shop-grid" data-value="ordenar_por">Sort by:</span>
                       <div class="dropdown dropdown-sort border-1-right">
-                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">Latest products</button>
+                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-section="shop-grid" data-value="ultimos_productos">Latest products</button>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
-                          <li><a class="dropdown-item active" href="#">Latest products</a></li>
-                          <li><a class="dropdown-item" href="#">Oldest products</a></li>
-                          <li><a class="dropdown-item" href="#">Comments products</a></li>
+                          <li><a class="dropdown-item active" href="#" data-section="shop-grid" data-value="ultimos_productos">Latest products</a></li>
+                          <li><a class="dropdown-item" href="#" data-section="shop-grid" data-value="productos_antiguos">Oldest products</a></li>
+                          <li><a class="dropdown-item" href="#" data-section="shop-grid" data-value="comentarios_productos">Comments products</a></li>
                         </ul>
                       </div>
                     </div>
@@ -219,14 +220,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3>Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3 data-section="index" data-value="suscripcion">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <p class="font-lg" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
-                  <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
-                  <button class="btn btn-brand-2">Sign Up</button>
+                  <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Sign Up</button>
                 </form>
               </div>
             </div>
@@ -237,13 +238,13 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content apply-job-form">
             <div class="modal-header">
-              <h5 class="modal-title color-gray-1000 filters-icon">Advance Filters</h5>
+              <h5 class="modal-title color-gray-1000 filters-icon" data-section="shop-grid" data-value="filtros_avanzados">Advance Filters</h5>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-30">
               <div class="row">
                 <div class="col-w-1">
-                  <h6 class="color-gray-900 mb-0">Brands</h6>
+                  <h6 class="color-gray-900 mb-0" data-section="shop-grid" data-value="marcas">Brands</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
@@ -303,106 +304,106 @@
                   </ul>
                 </div>
                 <div class="col-w-1">
-                  <h6 class="color-gray-900 mb-0">Special offers</h6>
+                  <h6 class="color-gray-900 mb-0" data-section="shop-grid" data-value="ofertas_especiales">Special offers</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">On sale</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="en_venta">On sale</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">FREE shipping</span><span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"><span class="text-small" data-section="shop-grid" data-value="envios_gratis">FREE shipping</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Big deals</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="grandes_ofertas">Big deals</span><span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
-                  <h6 class="color-gray-900 mb-0 mt-40">Ready to ship in</h6>
+                  <h6 class="color-gray-900 mb-0 mt-40" data-section="shop-grid" data-value="listo_enviar_en">Ready to ship in</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">1 business day</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="1_dia_laboral">1 business day</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">1&ndash;3 business days</span><span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"><span class="text-small" data-section="shop-grid" data-value="1-3_dias_laborales">1&ndash;3 business days</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">in 1 week</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="1_semana">in 1 week</span><span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
                 </div>
                 <div class="col-w-1">
-                  <h6 class="color-gray-900 mb-0">Ordering options</h6>
+                  <h6 class="color-gray-900 mb-0" data-section="shop-grid" data-value="opciones_pedidos">Ordering options</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Accepts gift cards</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="acepta_tarjetas_regalo">Accepts gift cards</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Customizable</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="customizable">Customizable</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Can be gift-wrapped</span><span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"><span class="text-small" data-section="shop-grid" data-value="puede_ser_envuelto">Can be gift-wrapped</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Installment 0%</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="cuotas_sin_intereses">Installment 0%</span><span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
-                  <h6 class="color-gray-900 mb-0 mt-40">Rating</h6>
+                  <h6 class="color-gray-900 mb-0 mt-40" data-section="shop-grid" data-value="calificacion">Rating</h6>
                   <ul class="list-checkbox">
-                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(5 stars)</span></a></li>
-                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(4 stars)</span></a></li>
-                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(3 stars)</span></a></li>
-                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(2 stars)</span></a></li>
-                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(1 star)</span></a></li>
+                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top" data-section="shop-grid" data-value="5_estrellas">(5 stars)</span></a></li>
+                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top" data-section="shop-grid" data-value="4_estrellas">(4 stars)</span></a></li>
+                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top" data-section="shop-grid" data-value="3_estrellas">(3 stars)</span></a></li>
+                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top" data-section="shop-grid" data-value="2_estrellas">(2 stars)</span></a></li>
+                    <li class="mb-5"><a href="#"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top" data-section="shop-grid" data-value="1_estrella">(1 star)</span></a></li>
                   </ul>
                 </div>
                 <div class="col-w-2">
-                  <h6 class="color-gray-900 mb-0">Material</h6>
+                  <h6 class="color-gray-900 mb-0" data-section="shop-grid" data-value="material">Material</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Nylon (8)</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="nylon">Nylon (8)</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Tempered Glass (5)</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="vidrio_templado">Tempered Glass (5)</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Liquid Silicone Rubber (5)</span><span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"><span class="text-small" data-section="shop-grid" data-value="silicona_liquida">Liquid Silicone Rubber (5)</span><span class="checkmark"></span>
                       </label>
                     </li>
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Aluminium Alloy (3)</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small" data-section="shop-grid" data-value="aleacion_aluminio">Aluminium Alloy (3)</span><span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
-                  <h6 class="color-gray-900 mb-20 mt-40">Product tags</h6>
+                  <h6 class="color-gray-900 mb-20 mt-40" data-section="shop-grid" data-value="categorias">Product tags</h6>
                   <div><a class="btn btn-border mr-5" href="#">Games</a><a class="btn btn-border mr-5" href="#">Electronics</a><a class="btn btn-border mr-5" href="#">Video</a><a class="btn btn-border mr-5" href="#">Cellphone</a><a class="btn btn-border mr-5" href="#">Indoor</a><a class="btn btn-border mr-5" href="#">VGA Card</a><a class="btn btn-border mr-5" href="#">USB</a><a class="btn btn-border mr-5" href="#">Lightning</a><a class="btn btn-border mr-5" href="#">Camera</a></div>
                 </div>
               </div>
             </div>
-            <div class="modal-footer justify-content-start pl-30"><a class="btn btn-buy w-auto" href="#">Apply Filter</a><a class="btn font-sm-bold color-gray-500" href="#">Reset Filter</a></div>
+            <div class="modal-footer justify-content-start pl-30"><a class="btn btn-buy w-auto" href="#" data-section="shop-grid" data-value="aplicar_filtros">Apply Filter</a><a class="btn font-sm-bold color-gray-500" href="#" data-section="shop-grid" data-value="reiniciar_filtros">Reset Filter</a></div>
           </div>
         </div>
       </div>
