@@ -35,7 +35,7 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 <div class="flags__item" data-language="es">
                     <img src="assets/imgs/flags/es.svg" alt="">
                 </div>
-                <div class="flags__item" data-language="sh">
+                <div class="flags__item" data-language="in">
                     <img src="assets/imgs/flags/sh.svg" alt="">
                 </div>
             </div> 

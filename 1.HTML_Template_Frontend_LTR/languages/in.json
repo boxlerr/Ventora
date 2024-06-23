@@ -1,10 +1,10 @@
 {
-    "index-10":{
+    "index":{
     "titulo":"Vestora",
     "descuento50":"Up to 50% off",
     "dispositivosMoviles":"Mobile Devices",
     "carrouselP1":"text",
-    "comprarahora":"Shop now", /* se repiten? */
+    "comprarahora":"Shop now",
     "sabermas": "Learn more",
     "tendenciaahora": "Trending Now",
     "descuento25": "Big Sale 25%",
@@ -16,7 +16,7 @@
     "carrouselP3":"text",
     "descuento10": "10% Sale off",
     "applewatch7": "Apple Watch Serial 7",
-    "ultimaoportunidad": "Don't miss the last opportunity.",  /* se repiten? */
+    "ultimaoportunidad": "Don't miss the last opportunity.", 
     "ultimacoleccion": "LATEST COLLECTION",
     "dispoysoftapple": "Apple Devices & Software",
     "categoria": "",
