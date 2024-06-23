@@ -36,18 +36,17 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
-              <div class="sidebar-border mb-0">
+              <!-- <div class="sidebar-border mb-0">
                 <div class="sidebar-head">
-                  <h6 class="color-gray-900">Categorías</h6>
+                  <h6 class="color-gray-900">Product Categories</h6>
                 </div>
-                <form class="sidebar-content" method="get" action="shop-grid.php">
+                <div class="sidebar-content">
                   <ul class="list-nav-arrow">
                     <?php
                     $categorias=getCategorias();
                     $i=0;
                     while($i<15 && $categorias[0]>$i){   
-                      // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
-                      echo"<li><input name='categoria' value='".htmlspecialchars($categorias[1][$i]['categoria_id'])."' type='checkbox'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='checkmark'></span></li>";
+                      echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                       $i++;
                     }
                     ?>
@@ -70,49 +69,83 @@
                       ";
                     } 
                     ?>
-                    <input type="submit">
-                </form>
-              </div>
+                </div>
+              </div> -->
               <div class="sidebar-border mb-40">
-                <div class="sidebar-content">
-                  <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
+                <div class="sidebar-head">
+                  <h6 class="color-gray-900">Products Filter</h6>
+                </div>
+                <form class="sidebar-content" action="shop-grid.php" method="get">
+                  <h6 class="color-gray-900 mt-10 mb-10">Categorias</h6>
+                  <ul class="list-checkbox">
+                    <?php
+                      $categorias=getCategorias();
+                      $i=0;
+                      while($i<15 && $categorias[0]>$i){   
+                        // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                        echo"
+                        <li>
+                            <label class='cb-container'>
+                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
+                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                    ?>
+                  </ul>
+                  <?php
+                  if($i==15 && $categorias[0]>$i){
+                  echo"                      
+                  <div>
+                    <div class='collapse' id='moreMenu'>
+                      <ul class='list-nav-arrow'>";
+                      while($categorias[0]>$i){   
+                        // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                        echo"
+                        <li>
+                            <label class='cb-container'>
+                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
+                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                      echo"
+                      </ul>
+                    </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
+                  </div>
+                  ";
+                  } ?>
+                  <!-- <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
                   <ul class="list-checkbox">
                     <li>
-                      <label class="cb-container">
-                  <input type="checkbox" checked="checked"><span class="text-small">Under $<?php echo round(100 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">145</span>
+                      <a href="shop-grid.php?precio=100">Hasta $<?php echo round(100 * $moneda['precio_moneda']); ?></a>  
                     </li>
                     <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(200 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
+                        <a href="shop-grid.php?precio=100">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(200 * $moneda['precio_moneda']); ?></a>  
                     </li>
                     <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(400 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">23</span>
-                    </li>
+                        <a href="shop-grid.php?precio=100">Mas de $<?php echo round(200 * $moneda['precio_moneda']); ?></a>
+                    </li> 
                     <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$<?php echo round(400 * $moneda['precio_moneda']); ?> - $<?php echo round(600 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">43</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">$<?php echo round(600 * $moneda['precio_moneda']); ?> - $<?php echo round(800 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">65</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Over $<?php echo round(1000 * $moneda['precio_moneda']); ?></span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                  </ul>
+                      <div class="row">
+                        <div class="col-5">
+                          <input class="form-control font-xs" type="text" value="" placeholder="Desde">
+                        </div>
+                        <div class="col-5">
+                          <input class="form-control font-xs" type="text" value="" placeholder="Hasta">
+                        </div>
+                      </div>
+                    </li> 
+                  </ul> -->
                   <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class="cb-container">
-                        <input type="checkbox" checked="checked"><span class="text-small">Apple</span><span class="checkmark"></span>
+                        <input type="checkbox"><span class="text-small">Apple</span><span class="checkmark"></span>
                       </label><span class="number-item">12</span>
                     </li>
                     <li>
@@ -136,8 +169,9 @@
                       </label><span class="number-item">23</span>
                     </li>
                   </ul>
-                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal">More Fillters</a>
-                </div>
+                  <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
+                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a>
+                </form>
               </div>
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
                   <span class="text-no font-11">No.9</span>
@@ -170,7 +204,11 @@
               <!-- </div> -->
               <div class="row mt-20">
                 <?php   
-                $productos = getProductos();
+                if(isset($_GET['categorias'])){
+                  // $productos = getProductosConFiltro($_GET['categorias']);
+                } else{
+                  $productos = getProductos();
+                }
                 foreach($productos as $producto){
                   $precio = round($producto['precio'] * $moneda['precio_moneda']);
                   echo"

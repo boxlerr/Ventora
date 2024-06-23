@@ -23,9 +23,11 @@ function getProducto($id) {
     return $datos;
 }
 
-function getProductosConFiltro($categoria) {
+function getProductosConFiltro($categorias,$precio) {
     global $con;
-    $sql = "SELECT * FROM producto WHERE categoria_id = '$categoria'";
+    $categorias = implode(",", $categorias);
+    $precio = implode(",", $precio);
+    $sql = "SELECT * FROM producto WHERE categoria_id IN ($categorias)";
     $result = $con->query($sql);
     $datos = $result->fetch_all(MYSQLI_ASSOC);
     return $datos;
