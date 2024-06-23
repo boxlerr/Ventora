@@ -23,6 +23,14 @@ function getProducto($id) {
     return $datos;
 }
 
+function getProductosConFiltro($categoria) {
+    global $con;
+    $sql = "SELECT * FROM producto WHERE categoria_id = '$categoria'";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all(MYSQLI_ASSOC);
+    return $datos;
+}
+
 function getCategorias() {
     global $con;
     $sql = "SELECT * FROM categoria";

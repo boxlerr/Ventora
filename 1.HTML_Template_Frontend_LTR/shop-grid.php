@@ -38,15 +38,16 @@
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
               <div class="sidebar-border mb-0">
                 <div class="sidebar-head">
-                  <h6 class="color-gray-900">Product Categories</h6>
+                  <h6 class="color-gray-900">Categorías</h6>
                 </div>
-                <div class="sidebar-content">
+                <form class="sidebar-content" method="get" action="shop-grid.php">
                   <ul class="list-nav-arrow">
                     <?php
                     $categorias=getCategorias();
                     $i=0;
                     while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                      // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                      echo"<li><input name='categoria' value='".htmlspecialchars($categorias[1][$i]['categoria_id'])."' type='checkbox'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='checkmark'></span></li>";
                       $i++;
                     }
                     ?>
@@ -69,12 +70,10 @@
                       ";
                     } 
                     ?>
-                </div>
+                    <input type="submit">
+                </form>
               </div>
               <div class="sidebar-border mb-40">
-                <div class="sidebar-head">
-                  <h6 class="color-gray-900">Products Filter</h6>
-                </div>
                 <div class="sidebar-content">
                   <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
                   <ul class="list-checkbox">
@@ -140,103 +139,6 @@
                   <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" href="#ModalFiltersForm" data-bs-toggle="modal">More Fillters</a>
                 </div>
               </div>
-              <!-- <div class="box-slider-item mb-30">
-                <div class="head pb-15 border-brand-2">
-                  <h5 class="color-gray-900">Best seller</h5>
-                </div>
-                <div class="content-slider">
-                  <div class="box-swiper slide-shop">
-                    <div class="swiper-container swiper-best-seller">
-                      <div class="swiper-wrapper pt-5">
-                        <div class="swiper-slide">
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/camera.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP Slim Desktop, Intel Celeron J4025, 4GB RAM</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/clock.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Class 4K UHD (2160P) LED Roku Smart TV HDR</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/airpod.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">HP 11.6&quot; Chromebook, AMD A4, 4GB RAM, 32GB Storage</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-7.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-8.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Lenovo Legion 5i 15.6&quot; Laptop, Intel Core i5</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$150</strong><span class="color-gray-500 font-sm price-line">$187</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><span class="label bg-brand-2">-17%</span><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-1.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">SAMSUNG Galaxy Tab A7 Lite, 8.7&quot; Tablet 32GB</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$2900</strong><span class="color-gray-500 font-sm price-line">$3200</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-2.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Apple AirPods Pro with MagSafe Charging</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$160</strong><span class="color-gray-500 font-sm price-line">$168</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-grid-style-2 card-grid-none-border border-bottom mb-10">
-                            <div class="image-box"><a href="shop-single-product-3.html"><img src="assets/imgs/page/homepage2/cat-img-3.png" alt="Ecom"></a>
-                            </div>
-                            <div class="info-right"><a class="color-brand-3 font-xs-bold" href="shop-single-product-3.html">Razer Power Up Gaming Bundle V2 - Cynosa</a>
-                              <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                              <div class="price-info"><strong class="font-md-bold color-brand-3 price-main">$325</strong><span class="color-gray-500 font-sm price-line">$392</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-button-next swiper-button-next-style-2 swiper-button-next-bestseller"></div>
-                    <div class="swiper-button-prev swiper-button-prev-style-2 swiper-button-prev-bestseller"></div>
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="box-slider-item">
-                <div class="head pb-15 border-brand-2">
-                  <h5 class="color-gray-900">Product Tags</h5>
-                </div>
-                <div class="content-slider mb-50"><a class="btn btn-border mr-5" href="shop-grid.php">Games</a><a class="btn btn-border mr-5" href="shop-grid.php">Electronics</a><a class="btn btn-border mr-5" href="shop-grid.php">Video</a><a class="btn btn-border mr-5" href="shop-grid.php">Cellphone</a><a class="btn btn-border mr-5" href="shop-grid.php">Indoor</a><a class="btn btn-border mr-5" href="shop-grid.php">VGA Card</a><a class="btn btn-border mr-5" href="shop-grid.php">USB</a><a class="btn btn-border mr-5" href="shop-grid.php">Lightning</a><a class="btn btn-border mr-5" href="shop-grid.php">Camera</a><a class="btn btn-border" href="shop-grid.php">Window</a><a class="btn btn-border mr-5" href="shop-grid.php">Air Vent</a><a class="btn btn-border mr-5" href="shop-grid.php">Bedroom</a><a class="btn btn-border mr-5" href="shop-grid.php">Laptop</a><a class="btn btn-border mr-5" href="shop-grid.php">Dashboard</a><a class="btn btn-border mr-5" href="shop-grid.php">Keyboard</a></div>
-              </div> -->
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
                   <span class="text-no font-11">No.9</span>
                   <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
