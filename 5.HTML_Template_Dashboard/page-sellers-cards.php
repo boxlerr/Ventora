@@ -32,14 +32,6 @@
           </div>
           <div class="col-lg-2 col-6 col-md-3">
             <select class="form-select">
-              <option>Show 20</option>
-              <option>Show 30</option>
-              <option>Show 40</option>
-              <option>Show all</option>
-            </select>
-          </div>
-          <div class="col-lg-2 col-6 col-md-3">
-            <select class="form-select">
               <option>Status: all</option>
               <option>Active only</option>
               <option>Disabled</option>
@@ -50,109 +42,36 @@
       <!-- card-header end//-->
       <div class="card-body">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar1.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Mary Sandra</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #409</p>
-                  <p>mary90@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <?php
+require_once("../conexion/connect.php");
+
+$sql = "SELECT * FROM proveedor";
+$result = $con->query($sql);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<div class="col">';
+        echo '    <div class="card card-user">';
+        echo '        <div class="card-header"><img class="img-md img-avatar" src="' . $row['img'] . '" alt="User pic"></div>';
+        echo '        <div class="card-body">';
+        echo '            <h5 class="card-title mt-50">' . $row['nombre'] . '</h5>';
+        echo '            <div class="card-text text-muted">';
+        echo '                <p class="m-0">Seller ID: #' . $row['id_proveedor'] . '</p>';
+        echo '                <p>' . $row['correo'] . '</p>';
+        echo '                <a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>';
+        echo '            </div>';
+        echo '        </div>';
+        echo '    </div>';
+        echo '</div>';
+    }
+} else {
+    echo "No hay proveedores disponibles";
+}
+
+$con->close();
+?>
           <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar2.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Leslie Alexander</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #478</p>
-                  <p>leslie@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar3.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Leslie Alexander</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #478</p>
-                  <p>leslie@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar4.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Floyd Miles</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #171</p>
-                  <p>fedor12@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar1.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">John Alexander</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #987</p>
-                  <p>john@mymail.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar3.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Albert Flores</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #478</p>
-                  <p>leslie@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar4.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Leslie Alexander</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #478</p>
-                  <p>leslie@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col.//-->
-          <div class="col">
-            <div class="card card-user">
-              <div class="card-header"><img class="img-md img-avatar" src="assets/imgs/people/avatar1.jpg" alt="User pic"></div>
-              <div class="card-body">
-                <h5 class="card-title mt-50">Marx Alberto</h5>
-                <div class="card-text text-muted">
-                  <p class="m-0">Seller ID: #478</p>
-                  <p>leslie@example.com</p><a class="btn btn-sm btn-brand rounded font-sm mt-15" href="#">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <!-- col.//-->
           <!-- row.//-->
           <!-- card-body end//-->

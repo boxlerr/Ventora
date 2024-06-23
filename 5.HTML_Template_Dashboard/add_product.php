@@ -10,17 +10,37 @@ if($con != NULL) {
 
         $hora = time();
         $foto = $hora . '.jpg';
-        if(move_uploaded_file($_FILES['image']['tmp_name'], "img_productos/$foto")) {
-            $imagen_url = "img/$foto";
+        $upload_path = "img_productos/$foto";
 
-            $consulta = "INSERT INTO producto(nombre, descripcion, precio, categoria_id, imagen_url) VALUES ('$nombre', '$descripcion', '$precio', '$categoria_id', '$imagen_url')";
-            $respuesta = mysqli_query($con, $consulta);
+        if(move_uploaded_file($_FILES['image']['tmp_name'], $upload_path)) {
+            // Escalar la imagen
+            $imagen = imagecreatefromjpeg($upload_path);
+            if ($imagen) {
+                $ancho_deseado = 800; // Ancho deseado
+                $alto_deseado = 600;  // Alto deseado
 
-            if ($respuesta) {
-                header("Location: index.php");
-                exit();
+                $imagen_escalada = imagescale($imagen, $ancho_deseado, $alto_deseado);
+                if ($imagen_escalada) {
+                    imagejpeg($imagen_escalada, $upload_path);
+                    imagedestroy($imagen);
+                    imagedestroy($imagen_escalada);
+
+                    $imagen_url = "img/$foto";
+
+                    $consulta = "INSERT INTO producto(nombre, descripcion, precio, categoria_id, imagen_url) VALUES ('$nombre', '$descripcion', '$precio', '$categoria_id', '$imagen_url')";
+                    $respuesta = mysqli_query($con, $consulta);
+
+                    if ($respuesta) {
+                        header("Location: index.php");
+                        exit();
+                    } else {
+                        echo "<h1>Algo salió mal al insertar los datos</h1>";
+                    }
+                } else {
+                    echo "<h1>Algo salió mal al escalar la imagen</h1>";
+                }
             } else {
-                echo "<h1>Algo salió mal al insertar los datos</h1>";
+                echo "<h1>Algo salió mal al crear la imagen desde el archivo</h1>";
             }
         } else {
             echo "<h1>Algo salió mal al cargar la imagen</h1>";
@@ -29,6 +49,4 @@ if($con != NULL) {
 } else {
     echo "<h1>Algo salió mal con la conexión</h1>";
 }
-
-
 ?>
