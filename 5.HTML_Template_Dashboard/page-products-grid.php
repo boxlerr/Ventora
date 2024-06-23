@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,12 +14,13 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <title>Ecom - Marketplace Dashboard Template</title>
 </head>
+
 <body>
-<?php
-  include_once("header_admin.php")
+  <?php
+  include_once("header_admin.php");
+  include_once("../conexion/connect.php"); 
   ?>
-  <?php include_once("../conexion/connect.php"); ?>
-  
+
   <section class="content-main">
     <div class="content-header">
       <div>
@@ -48,10 +50,10 @@
               $result_categorias = $con->query($sql_categorias);
 
               if ($result_categorias->num_rows > 0) {
-                  while ($row = $result_categorias->fetch_assoc()) {
-                      $categoria_nombre = htmlspecialchars($row['nombre']);
-                      echo '<option>' . $categoria_nombre . '</option>';
-                  }
+                while ($row = $result_categorias->fetch_assoc()) {
+                  $categoria_nombre = htmlspecialchars($row['nombre']);
+                  echo '<option>' . $categoria_nombre . '</option>';
+                }
               }
 
               ?>
@@ -70,19 +72,19 @@
       <!-- card-header end//-->
 
       <div class="row gx-3 mt-4">
-      <?php
-      $sql = "SELECT * FROM producto";
-      $result = $con->query($sql);
+        <?php
+        $sql = "SELECT * FROM producto";
+        $result = $con->query($sql);
 
-      if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()) {
-              $producto_id = $row['producto_id'];
-              $nombre = htmlspecialchars($row['nombre']);
-              $descripcion = htmlspecialchars($row['descripcion']);
-              $precio = number_format($row['precio'], 2);
-              $imagen_url = $row['imagen_url'];
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            $producto_id = $row['producto_id'];
+            $nombre = htmlspecialchars($row['nombre']);
+            $descripcion = htmlspecialchars($row['descripcion']);
+            $precio = number_format($row['precio'], 2);
+            $imagen_url = $row['imagen_url'];
 
-              echo '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            echo '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                       <div class="card card-product-grid">
                         <a class="img-wrap" href="#"><img src="' . $imagen_url . '" alt="' . $nombre . '"></a>
                         <div class="info-wrap">
@@ -94,10 +96,10 @@
                       </div>
                     </div>';
           }
-      } else {
+        } else {
           echo '<div class="col">0 results</div>';
-      }
-      ?>
+        }
+        ?>
 
       </div>
       <!-- Fin de card-body -->
@@ -119,14 +121,9 @@
   </section>
 
   <footer class="main-footer font-xs">
-    <div class="row pb-30 pt-15">
-      <div class="col-sm-6">
-        <script>document.write(new Date().getFullYear())</script> &copy; Ecom - HTML Ecommerce Template .
-      </div>
-      <div class="col-sm-6">
-        <div class="text-sm-end">All rights reserved</div>
-      </div>
-    </div>
+    <?php
+    include_once("footer_admin.php")
+    ?>
   </footer>
 
   <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
@@ -138,4 +135,5 @@
   <script src="assets/js/main.js?v=1.0.0"></script>
   <script src="assets/js/custom-chart.js" type="text/javascript"></script>
 </body>
+
 </html>
