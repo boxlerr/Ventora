@@ -164,7 +164,7 @@
                     ${venta.productos.split(', ').map(producto => `<li>${producto}</li>`).join('')}
                 </ul>
                 <p class="h4">Subtotal: $${venta.subtotal}</p>
-                <p class="h4">Total: $${venta.total_pago}</p>
+                <p class="h4">Total: $${venta.total}</p>
                 <hr>
                 <a class="btn btn-light" href="#">Download receipt</a>
             `);

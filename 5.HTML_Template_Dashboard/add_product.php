@@ -10,7 +10,7 @@ if($con != NULL) {
 
         $hora = time();
         $foto = $hora . '.jpg';
-        if(move_uploaded_file($_FILES['image']['tmp_name'], "../img/$foto")) {
+        if(move_uploaded_file($_FILES['image']['tmp_name'], "../img_productos/$foto")) {
             $imagen_url = "img/$foto";
 
             $consulta = "INSERT INTO producto(nombre, descripcion, precio, categoria_id, imagen_url) VALUES ('$nombre', '$descripcion', '$precio', '$categoria_id', '$imagen_url')";
