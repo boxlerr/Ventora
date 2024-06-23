@@ -29,39 +29,39 @@
                   <div class="swiper-container swiper-group-1">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <div class="banner-big bg-11" style="background-image: url(assets/imgs/page/homepage1/banner.png)"><span class="font-sm text-uppercase">Tendencia ahora mismo</span>
+                        <div class="banner-big bg-11" style="background-image: url(assets/imgs/page/homepage1/banner.png)"><span class="font-sm text-uppercase" data-section="index" data-value="tendencia_ahora_mismo">Tendencia ahora mismo</span>
                           <h2 class="mt-10" data-section="index" data-value="descuento50">Descuento hasta un 50%</h2>
-                          <h1>Dispositivos Moviles</h1>
+                          <h1 data-section="index" data-value="dispositivos_Moviles">Dispositivos Moviles</h1>
                           <div class="row">
                             <div class="col-lg-5 col-md-7 col-sm-12">
-                              <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
+                              <p class="font-sm color-brand-3" data-section="index" data-value="carrouselP1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php" data-section="index" data-value="saber_mas">Saber más</a></div>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="banner-big bg-11-2" style="background-image: url(assets/imgs/page/homepage1/banner-hero-2.png)"><span class="font-sm text-uppercase">Tendencia ahora</span>
-                          <h2 class="mt-10">Grandes descuentos 25%</h2>
-                          <h1>Laptop & PC</h1>
+                        <div class="banner-big bg-11-2" style="background-image: url(assets/imgs/page/homepage1/banner-hero-2.png)"><span class="font-sm text-uppercase" data-section="index" data-value="tendencia_ahora">Tendencia ahora</span>
+                          <h2 class="mt-10" data-section="index" data-value="descuento25">Grandes descuentos 25%</h2>
+                          <h1 data-section="index" data-value="laptop_y_pc">Laptop & PC</h1>
                           <div class="row">
                             <div class="col-lg-5 col-md-7 col-sm-12">
-                              <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
+                              <p class="font-sm color-brand-3" data-section="index" data-value="carrouselP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php" data-section="index" data-value="saber_mas">Saber más</a></div>
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <div class="banner-big bg-11-3" style="background-image: url(assets/imgs/page/homepage1/banner-hero-3.png)"><span class="font-sm text-uppercase">Más vendido este mes</span>
-                          <h2 class="mt-10">Hot Collection</h2>
-                          <h1>Gafas de realidad virtual</h1>
+                        <div class="banner-big bg-11-3" style="background-image: url(assets/imgs/page/homepage1/banner-hero-3.png)"><span class="font-sm text-uppercase" data-section="index" data-value="mas_vendido_mes">Más vendido este mes</span>
+                          <h2 class="mt-10" data-section="index" data-value="hot_collection">Hot Collection</h2>
+                          <h1 data-section="index" data-value="gafas_virtuales">Gafas de realidad virtual</h1>
                           <div class="row">
                             <div class="col-lg-5 col-md-7 col-sm-12">
-                              <p class="font-sm color-brand-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
+                              <p class="font-sm color-brand-3" data-section="index" data-value="carrouselP3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur praesentium</p>
                             </div>
                           </div>
-                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php">Saber más</a></div>
+                          <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a><a class="btn btn-link" href="shop-grid.php" data-section="index" data-value="saber_mas">Saber más</a></div>
                         </div>
                       </div>
                     </div>
@@ -72,17 +72,17 @@
               <div class="col-lg-4">
                 <div class="row">
                   <div class="col-lg-12 col-md-6 col-sm-12">
-                    <div class="banner-small banner-small-1 bg-13"><span class="color-danger text-uppercase font-sm-lh32">10%<span class="color-brand-3">de descuento</span></span>
-                      <h4 class="mb-10">Apple Watch Serial 7</h4>
-                      <p class="color-brand-3 font-desc">No te pierdas la última oportunidad.</p>
-                      <div class="mt-20"><a class="btn btn-brand-3 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
+                    <div class="banner-small banner-small-1 bg-13"><span class="color-danger text-uppercase font-sm-lh32">10%<span class="color-brand-3" data-section="index" data-value="descuento10">de descuento</span></span>
+                      <h4 class="mb-10" data-section="index" data-value="applewatch7">Apple Watch Serial 7</h4>
+                      <p class="color-brand-3 font-desc" data-section="index" data-value="ultima_oportunidad">No te pierdas la última oportunidad.</p>
+                      <div class="mt-20"><a class="btn btn-brand-3 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-6 col-sm-12">
-                    <div class="banner-small banner-small-2 bg-14"><span class="color-danger text-uppercase font-sm-lh32">ÚLTIMA COLECCIÓN</span>
-                      <h4 class="mb-10">Dispositivos y Software Apple</h4>
-                      <p class="color-brand-3 font-md">No te pierdas la última oportunidad.</p>
-                      <div class="mt-20"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
+                    <div class="banner-small banner-small-2 bg-14"><span class="color-danger text-uppercase font-sm-lh32" data-section="index" data-value="ultima_coleccion">ÚLTIMA COLECCIÓN</span>
+                      <h4 class="mb-10" data-section="index" data-value="dispo_y_soft_apple">Dispositivos y Software Apple</h4>
+                      <p class="color-brand-3 font-md" data-section="index" data-value="ultima_oportunidad">No te pierdas la última oportunidad.</p>
+                      <div class="mt-20"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                     </div>
                   </div>
                 </div>
@@ -102,8 +102,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat1.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 1</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria">Producto 1</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -114,8 +114,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat2.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 2</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria1">Producto 2</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -126,8 +126,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat3.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 3</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria2">Producto 3</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -138,8 +138,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat4.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 4</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria3">Producto 4</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -150,8 +150,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat5.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 5</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria4">Producto 5</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -162,8 +162,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat6.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 6</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria5">Producto 6</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -174,8 +174,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat7.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 7</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria6">Producto 7</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -186,8 +186,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat8.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 8</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria7">Producto 8</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -198,8 +198,8 @@
                       <div class="box-image"> 
                         <div class="inner-image"><img src="assets/imgs/page/homepage10/cat9.png" alt="Ecom"></div>
                       </div>
-                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#">Producto 9</a>
-                        <p class="font-xs color-gray-500">2356 items</p>
+                      <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria8">Producto 9</a>
+                        <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
                       </div>
                     </div>
                   </div>
@@ -212,7 +212,7 @@
       <section class="section-box mt-50">
         <div class="container">
           <div class="head-main text-center border-none mb-0">
-            <h3 class="mb-5">Productos Destacados</h3> 
+            <h3 class="mb-5" data-section="index" data-value="productos_destacados">Productos Destacados</h3> 
           </div>
           <div class="mt-0">
             <div class="list-products-5 list-products-home10">
@@ -228,7 +228,7 @@
                     <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
                       <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                       <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
-                      <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
+                      <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php' data-section='index' data-value='agregar_carrito'>Add To Cart</a></div> -->
                       <ul class='list-features'>
                         <li>".htmlspecialchars($producto['descripcion'])."</li>
                       </ul>
@@ -248,10 +248,10 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-2">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000 mb-10">Descuento</h1>
+                    <h1 class="color-gray-1000 mb-10" data-section="index" data-value="descuento">Descuento</h1>
                     <h3 class="color-brand-3 mb-5">70% OFF</h3>
-                    <h4 class="color-gray-500 mb-5">Auriculares</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
+                    <h4 class="color-gray-500 mb-5" data-section="index" data-value="auriculares">Auriculares</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
                 </div>
@@ -259,10 +259,10 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-3">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000 mb-10">Ofertas</h1>
-                    <h3 class="color-gray-500 mb-5">Electronica</h3>
-                    <h4 class="color-gray-500 mb-5">Envio gratis</h4>
-                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php">Comprar ahora</a></div>
+                    <h1 class="color-gray-1000 mb-10" data-section="index" data-value="ofertas">Ofertas</h1>
+                    <h3 class="color-gray-500 mb-5" data-section="index" data-value="electronica">Electronica</h3>
+                    <h4 class="color-gray-500 mb-5" data-section="index" data-value="envio_gratis">Envio gratis</h4>
+                    <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
                 </div>
@@ -270,9 +270,9 @@
               <div class="col-lg-4 mb-20">
                 <div class="banner-small-home10 bg-32">
                   <div class="info-banner">
-                    <h1 class="color-gray-1000">Ultima <br class="d-none d-lg-block">Tendencia</h1>
-                    <h3 class="color-gray-500 mb-0">Productos</h3>
-                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.php">Saber más</a></div>
+                    <h1 class="color-gray-1000" data-section="index" data-value="ultima_tendencia">Ultima <br class="d-none d-lg-block">Tendencia</h1>
+                    <h3 class="color-gray-500 mb-0" data-section="index" data-value="productos">Productos</h3>
+                    <div class="mt-0"><a class="btn btn-link-brand-2 btn-arrow-brand-2 font-normal" href="shop-grid.php" data-section="index" data-value="saber_mas">Saber más</a></div>
                   </div>
                   <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
                 </div>
@@ -284,14 +284,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white">Suscribete y consigue 10% de Descuento</h3>
-              <p class="font-lg color-white">Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales</span></p>
+              <h3 class="color-white" data-section="index" data-value="suscripcion">Suscribete y consigue 10% de Descuento</h3>
+              <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
                   <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
-                  <button class="btn btn-brand-2">Ingresar</button>
+                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Ingresar</button>
                 </form>
               </div>
             </div>

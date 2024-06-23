@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Carrito</title>
+    <title>Carrito - Vestore</title>
   </head>
   <body>
     <?php
@@ -40,11 +40,11 @@
                     <div class="wishlist-cb">
                       <input class="cb-layout cb-all" type="checkbox">
                     </div>
-                    <div class="wishlist-product"><span class="font-md-bold color-brand-3">Product</span></div>
-                    <div class="wishlist-price"><span class="font-md-bold color-brand-3">Unit Price</span></div>
-                    <div class="wishlist-status"><span class="font-md-bold color-brand-3">Quantity</span></div>
-                    <div class="wishlist-action"><span class="font-md-bold color-brand-3">Subtotal</span></div>
-                    <div class="wishlist-remove"><span class="font-md-bold color-brand-3">Remove</span></div>
+                    <div class="wishlist-product"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="producto">Product</span></div>
+                    <div class="wishlist-price"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="precio_unidad">Unit Price</span></div>
+                    <div class="wishlist-status"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="cantidad">Quantity</span></div>
+                    <div class="wishlist-action"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="subtotal">Subtotal</span></div>
+                    <div class="wishlist-remove"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="remover">Remove</span></div>
                   </div>
                 </div>
                 <div class="content-wishlist mb-20">
@@ -87,13 +87,13 @@
                   ?>
                 </div>
                 <div class="row mb-40">
-                  <div class="col-lg-6 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="shop-grid.php">Continue shopping</a></div>
-                  <div class="col-lg-6 col-md-6 col-sm-6-col-6 text-md-end"><a class="btn btn-buy w-auto update-cart mb-10" href="shop-cart.php">Update cart</a></div>
+                  <div class="col-lg-6 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="shop-grid.php" data-section="shop-cart" data-value="continuar_comprando">Continue shopping</a></div>
+                  <div class="col-lg-6 col-md-6 col-sm-6-col-6 text-md-end"><a class="btn btn-buy w-auto update-cart mb-10" href="shop-cart.php" data-section="shop-cart" data-value="actualizar_carrito">Update cart</a></div>
                 </div>
                 <div class="row mb-50">
                   <div class="col-lg-6 col-md-6">
                     <div class="box-cart-left">
-                      <h5 class="font-md-bold mb-10">Calculate Shipping</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500">Flat rate:</span><span class="font-sm-bold d-inline-block color-brand-3">5%</span>
+                      <h5 class="font-md-bold mb-10" data-section="shop-cart" data-value="calcular_envio">Calculate Shipping</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500" data-section="shop-cart" data-value="tarifa_plana">Flat rate:</span><span class="font-sm-bold d-inline-block color-brand-3">5%</span>
                       <div class="form-group">
                         <select class="form-control select-style1 color-gray-700">
                           <option value="1">USA</option>
@@ -112,10 +112,10 @@
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <div class="box-cart-right p-20">
-                      <h5 class="font-md-bold mb-10">Apply Coupon</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500">Using A Promo Code?</span>
+                      <h5 class="font-md-bold mb-10" data-section="shop-cart" data-value="aplicar_cupon">Apply Coupon</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500" data-section="shop-cart" data-value="usando_cod_prom">Using A Promo Code?</span>
                       <div class="form-group d-flex">
                         <input class="form-control mr-15" placeholder="Enter Your Coupon">
-                        <button class="btn btn-buy w-auto">Apply</button>
+                        <button class="btn btn-buy w-auto" data-section="shop-cart" data-value="aplicar">Apply</button>
                       </div>
                     </div>
                   </div>
@@ -126,7 +126,7 @@
               <div class="summary-cart">
                 <div class="border-bottom mb-10">
                   <div class="row">
-                    <div class="col-6"><span class="font-md-bold color-gray-500">Subtotal</span></div>
+                    <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="subtotal">Subtotal</span></div>
                     <div class="col-6 text-end">
                       <h4>	$2.51</h4>
                     </div>
@@ -134,15 +134,15 @@
                 </div>
                 <div class="border-bottom mb-10">
                   <div class="row">
-                    <div class="col-6"><span class="font-md-bold color-gray-500">Shipping</span></div>
+                    <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="envio">Shipping</span></div>
                     <div class="col-6 text-end">
-                      <h4>	Free</h4>
+                      <h4 data-section="shop-cart" data-value="gratis">Free</h4>
                     </div>
                   </div>
                 </div>
                 <div class="border-bottom mb-10">
                   <div class="row">
-                    <div class="col-6"><span class="font-md-bold color-gray-500">Estimate for</span></div>
+                    <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="estimacion_para">Estimate for</span></div>
                     <div class="col-6 text-end">
                       <h6>United Kingdom</h6>
                     </div>
@@ -150,17 +150,17 @@
                 </div>
                 <div class="mb-10">
                   <div class="row">
-                    <div class="col-6"><span class="font-md-bold color-gray-500">Total</span></div>
+                    <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="total">Total</span></div>
                     <div class="col-6 text-end">
                       <h4>	$2.51</h4>
                     </div>
                   </div>
                 </div>
-                <div class="box-button"><a class="btn btn-buy" href="shop-checkout.php">Proceed To CheckOut</a></div>
+                <div class="box-button"><a class="btn btn-buy" href="shop-checkout.php" data-section="shop-cart" data-value="proceder_al_pago">Proceed To CheckOut</a></div>
               </div>
             </div>
           </div>
-          <h4 class="color-brand-3">You may also like</h4>
+          <h4 class="color-brand-3" data-section="shop-cart" data-value="tambien_podria_gustarte">You may also like</h4>
           <div class="list-products-5 mt-20 mb-40">
             <?php
             $productos=getProductosLimitados(5);
@@ -229,57 +229,7 @@
           </div> -->
         </div>
       </section>
-      <section class="section-box mt-90 mb-50">
-        <div class="container">
-          <ul class="list-col-5">
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/delivery.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Free Delivery</h5>
-                  <p class="font-sm color-gray-500">From all orders over $10</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/support.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Support 24/7</h5>
-                  <p class="font-sm color-gray-500">Shop with an expert</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/voucher.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Gift voucher</h5>
-                  <p class="font-sm color-gray-500">Refer a friend</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/return.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Return &amp; Refund</h5>
-                  <p class="font-sm color-gray-500">Free return over $200</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/secure.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Secure payment</h5>
-                  <p class="font-sm color-gray-500">100% Protected</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      
       <section class="section-box box-newsletter">
         <div class="container">
           <div class="row">
