@@ -19,7 +19,6 @@
   include_once("main.php");
   include_once("cambio.php");
   ?>
-  <!-- tengo que quitar incluide de main.php porque no cargaba la pagina -->
     <main class="main">
       <section class="section-box mt-30">
         <div class="banner-hero banner-1">
@@ -31,7 +30,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="banner-big bg-11" style="background-image: url(assets/imgs/page/homepage1/banner.png)"><span class="font-sm text-uppercase">Tendencia ahora mismo</span>
-                          <h2 class="mt-10">Descuento hasta un 50%</h2>
+                          <h2 class="mt-10" data-section="index" data-value="descuento50">Descuento hasta un 50%</h2>
                           <h1>Dispositivos Moviles</h1>
                           <div class="row">
                             <div class="col-lg-5 col-md-7 col-sm-12">
