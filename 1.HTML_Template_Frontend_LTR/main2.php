@@ -31,17 +31,26 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
         </ul>
     </div>
     <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Envío gratis en compras a partir de</span><span class="font-sm-bold color-success"> ARS 40.000</span></div>
-    <div class="menu-topbar-right"><span class="font-xs color-brand-3">Ayuda? Llámanos:</span><span class="font-sm-bold color-success"> + 1800 900</span>
-        <div class="dropdown dropdown-language">
-        <button class="btn dropdown-toggle" id="dropdownPage" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3"><img src="assets/imgs/template/en.svg" alt="Ecom"> English</span></button>
+    <div class="menu-topbar-right">
+        <!-- <span class="font-xs color-brand-3">Ayuda? Llámanos:</span><span class="font-sm-bold color-success"> + 1800 900</span> -->
+        <div class="dropdown dropdown-language dropdown-flags">
+        <!-- <button class="btn dropdown-toggle" id="dropdownPage" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3"><img src="assets/imgs/template/en.svg" alt="Ecom"> English</span></button>
         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownPage" data-bs-popper="static">
             <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-en.svg" alt="Ecom"> English</a></li>
             <li><a class="dropdown-item" href="#"><img src="assets/imgs/template/flag-es.svg" alt="Ecom"> Español</a></li>
-        </ul>
+        </ul> -->
+            <div id="flags" class="flags">
+                <div class="flags__item" data-language="es">
+                    <img src="assets/imgs/flags/es.svg" alt="">
+                </div>
+                <div class="flags__item" data-language="sh">
+                    <img src="assets/imgs/flags/sh.svg" alt="">
+                </div>
+            </div> 
         </div>
-        <form class="dropdown dropdown-language" action="" method="">
+        <form class="dropdown-language" action="" method="">
             <!-- <button class="btn dropdown-toggle" id="dropdownPage2" type="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static"><span class="dropdown-right font-xs color-brand-3">USD</span></button> -->
-            <select name="mascara" id="monedas" class="seleccionMoneda" aria-labelledby="dropdownPage2" data-bs-popper="static">
+            <select name="mascara" id="monedas" class="seleccionMoneda dropdown-type" aria-labelledby="dropdownPage2" data-bs-popper="static">
                 <?php 
                 $monedas = getMonedas();
                 if(!empty($_SESSION["moneda"])){
