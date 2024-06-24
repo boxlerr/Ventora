@@ -36,41 +36,6 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
-              <!-- <div class="sidebar-border mb-0">
-                <div class="sidebar-head">
-                  <h6 class="color-gray-900">Product Categories</h6>
-                </div>
-                <div class="sidebar-content">
-                  <ul class="list-nav-arrow">
-                    <?php
-                    $categorias=getCategorias();
-                    $i=0;
-                    while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
-                      $i++;
-                    }
-                    ?>
-                    </ul>
-                    <?php
-                    if($i==15 && $categorias[0]>$i){
-
-                      echo"                      
-                      <div>
-                        <div class='collapse' id='moreMenu'>
-                          <ul class='list-nav-arrow'>";
-                          while($categorias[0]>$i){   
-                            echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
-                            $i++;
-                          }
-                          echo"
-                          </ul>
-                        </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
-                      </div>
-                      ";
-                    } 
-                    ?>
-                </div>
-              </div> -->
               <div class="sidebar-border mb-40">
                 <div class="sidebar-head">
                   <h6 class="color-gray-900">Products Filter</h6>
@@ -85,9 +50,13 @@
                         // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                         echo"
                         <li>
-                            <label class='cb-container'>
-                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
-                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                            <label class='cb-container'>";
+                                if(isset($_GET['categorias']) && in_array(htmlspecialchars($categorias[1][$i]['categoria_id']), $_GET["categorias"])){
+                                  echo "<input type='checkbox' checked='checked'  value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
                                 <span class='checkmark'></span>
                             </label>
                         </li>";
@@ -105,9 +74,13 @@
                         // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                         echo"
                         <li>
-                            <label class='cb-container'>
-                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
-                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                            <label class='cb-container'>";
+                                if(isset($_GET['categorias']) && in_array(htmlspecialchars($categorias[1][$i]['categoria_id']), $_GET["categorias"])){
+                                  echo "<input type='checkbox' checked='checked'  value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
                                 <span class='checkmark'></span>
                             </label>
                         </li>";
@@ -143,32 +116,54 @@
                   </ul> -->
                   <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
                   <ul class="list-checkbox">
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Apple</span><span class="checkmark"></span>
-                      </label><span class="number-item">12</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Sony</span><span class="checkmark"></span>
-                      </label><span class="number-item">34</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Toshiba</span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Assus</span><span class="checkmark"></span>
-                      </label><span class="number-item">78</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Samsung</span><span class="checkmark"></span>
-                      </label><span class="number-item">23</span>
-                    </li>
+                    <!-- <input type="hidden" name="marcas[]" value=""> -->
+                    <?php
+                      $marcas=getMarcas();
+                      $i=0;
+                      while($i<15 && $marcas[0]>$i){   
+                        echo "<li>
+                            <label class='cb-container'>";
+                                if(isset($_GET['marcas']) && in_array(htmlspecialchars($marcas[1][$i]['marca_id']), $_GET["marcas"])){
+                                  echo "<input type='checkbox' checked='checked' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre_marca']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                    ?>
                   </ul>
+                  <?php
+                  if($i==15 && $marcas[0]>$i){
+                  echo"                      
+                  <div>
+                    <div class='collapse' id='moreMenu'>
+                      <ul class='list-nav-arrow'>";
+                      while($marcas[0]>$i){   
+                        // echo"<li><a href='shop-grid.php'>".htmlspecialchars($marcas[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                        echo"
+                        <li>
+                            <label class='cb-container'>";
+                                if(isset($_GET['marcas']) && in_array(htmlspecialchars($marcas[1][$i]['marca_id']), $_GET["marcas"])){
+                                  echo "<input type='checkbox' checked='checked' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                }
+                                echo "span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                      echo"
+                      </ul>
+                    </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
+                  </div>
+                  ";
+                  } ?>
                   <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
                   <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a>
                 </form>
@@ -205,10 +200,16 @@
               <div class="row mt-20">
                 <?php   
                 if(isset($_GET['categorias'])){
-                  // $productos = getProductosConFiltro($_GET['categorias']);
-                } else{
-                  $productos = getProductos();
+                  $categorias = $_GET['categorias'];
+                }else{
+                  $categorias = [];
+                } 
+                if(isset($_GET['marcas'])){
+                  $marcas = $_GET['marcas'];
+                }else{
+                  $marcas = [];
                 }
+                $productos = getProductosConFiltro($categorias,$marcas);
                 foreach($productos as $producto){
                   $precio = round($producto['precio'] * $moneda['precio_moneda']);
                   echo"
