@@ -39,6 +39,7 @@ if(isset($_POST['crear'])){
         } else{
             $id = agregarCliente($nombre,$email,$telefono,$fecha_nacimiento,$nacionalidad,$contrasena);
             crearCarrito($id);
+            crearWislist($id);
             session_start();
             $_SESSION["usuario"] = htmlentities($id);
             header("location: index.php");

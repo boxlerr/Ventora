@@ -11016,3 +11016,32 @@ a:hover span {
   margin-left: 5px;
   padding-right: 5px;
 }
+
+.ordenar_por select{
+  display: inline !important;
+  width: 50%;
+  background: transparent;
+  border: none !important;
+  color: var(--tercery-color);
+  font-size: 1em;
+}
+
+.ordenar_por select:focus{
+  display: inline !important;
+  width: 50%;
+  background: transparent;
+  border: none !important;
+  color: var(--tercery-color);
+  font-size: 1em;
+}
+
+.ordenar_por .opcionOrden{
+  color: #000;
+}
+
+
+
+.ordenar_por p{
+  display: inline !important;
+  color: #000;
+}

@@ -38,3 +38,14 @@ flagsElement.addEventListener('click', (e) => {
     changeLanguage(idioma);
 });
 changeLanguage(sessionStorage.idioma);
+
+const formularioOrden = document.getElementById("formularioOrden");
+const orden = document.getElementById("orden");
+if(document.getElementById("formularioOrden")){
+    orden.addEventListener("change",()=>{
+        const url = new URL(document.URL);
+        url.searchParams.set('orden',orden.value);
+        window.history.replaceState('','',url);
+        location.reload();
+    })
+}

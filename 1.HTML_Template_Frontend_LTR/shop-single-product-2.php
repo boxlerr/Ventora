@@ -26,16 +26,6 @@
     ?>
     <main class="main">
       <div class="section-box">
-        <div class="breadcrumbs-div">
-          <div class="container">
-            <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Electronics</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Cell phone</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Accessories</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
       <section class="section-box shop-template">
         <div class="container">
@@ -83,12 +73,19 @@
             </div>
             <div class="col-lg-7">
               <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
-              <div class="row align-items-center">
+              <form class="row align-items-center" method="post" action="agregarWislist.php">
                 <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
                   <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.php"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900">Add to Wish list</span></a></div>
-              </div>
+                <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
+                <?php
+                if($usuario){
+                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWislist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Add to Wish list</span></span></div>";
+                } else{
+                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><a class='mr-20' href='page-login.php'><span class='btn btn-wishlist mr-5 opacity-100 transform-none'></span><span class='font-md color-gray-900'>Add to Wish list</span></a></div>";
+                }
+                ?>
+              </form>
               <div class="border-bottom pt-10 mb-20"></div>
               <div class="row">
                 <div class="col-lg-7">
