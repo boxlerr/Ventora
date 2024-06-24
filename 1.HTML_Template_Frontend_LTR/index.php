@@ -220,6 +220,7 @@
             $productos=getProductosLimitados(5);
             foreach($productos as $producto){
               $precio = round($producto['precio'] * $moneda['precio_moneda']);
+              $precio = number_format($precio, 0, ',', '.');
               echo"              
                 <div class='card-grid-style-3 home6-style home7-style'>
                   <div class='card-grid-inner'>

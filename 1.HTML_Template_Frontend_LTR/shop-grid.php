@@ -92,28 +92,19 @@
                   </div>
                   ";
                   } ?>
-                  <!-- <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
+                  <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
                   <ul class="list-checkbox">
                     <li>
-                      <a href="shop-grid.php?precio=100">Hasta $<?php echo round(100 * $moneda['precio_moneda']); ?></a>  
-                    </li>
-                    <li>
-                        <a href="shop-grid.php?precio=100">$<?php echo round(100 * $moneda['precio_moneda']); ?> - $<?php echo round(200 * $moneda['precio_moneda']); ?></a>  
-                    </li>
-                    <li>
-                        <a href="shop-grid.php?precio=100">Mas de $<?php echo round(200 * $moneda['precio_moneda']); ?></a>
-                    </li> 
-                    <li>
                       <div class="row">
-                        <div class="col-5">
-                          <input class="form-control font-xs" type="text" value="" placeholder="Desde">
+                        <div class="col-6">
+                          <input class="form-control" type="number" value="<?php if(isset($_GET['min'])){echo $_GET['min'];} ?>" name="min" placeholder="Min">
                         </div>
-                        <div class="col-5">
-                          <input class="form-control font-xs" type="text" value="" placeholder="Hasta">
+                        <div class="col-6">
+                          <input class="form-control" type="number" value="<?php if(isset($_GET['max'])){echo $_GET['max'];} ?>" name="max" placeholder="Max">
                         </div>
                       </div>
-                    </li> 
-                  </ul> -->
+                    </li>
+                  </ul>
                   <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
                   <ul class="list-checkbox">
                     <!-- <input type="hidden" name="marcas[]" value=""> -->
@@ -152,7 +143,7 @@
                                 } else{
                                   echo "<input type='checkbox' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
                                 }
-                                echo "span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre']) . "</span>
+                                echo "<span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre']) . "</span>
                                 <span class='checkmark'></span>
                             </label>
                         </li>";
@@ -164,8 +155,46 @@
                   </div>
                   ";
                   } ?>
+                  <h6 class="color-gray-900 mb-0 mt-40">Rating</h6>
+                  <ul class="list-checkbox">
+                    <li>
+                      <label class='cb-container'>
+                        <input type='checkbox' name=''>
+                        <span class='text-small'><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(5 stars)</span></span>
+                        <span class='checkmark'></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class='cb-container'>
+                        <input type='checkbox' name=''>
+                        <span class='text-small'><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(4 stars)</span></span>
+                        <span class='checkmark'></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class='cb-container'>
+                        <input type='checkbox' name=''>
+                        <span class='text-small'><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(3 stars)</span></span>
+                        <span class='checkmark'></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class='cb-container'>
+                        <input type='checkbox' name=''>
+                        <span class='text-small'><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(2 stars)</span></span>
+                        <span class='checkmark'></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class='cb-container'>
+                        <input type='checkbox' name=''>
+                        <span class='text-small'><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><img src="assets/imgs/template/icons/star-gray.svg" alt="Ecom"><span class="ml-10 font-xs color-gray-500 d-inline-block align-top">(1 star)</span></span>
+                        <span class='checkmark'></span>
+                      </label>
+                    </li>
+                  </ul>
                   <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
-                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a>
+                  <!-- <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a> -->
                 </form>
               </div>
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
@@ -179,20 +208,22 @@
               <div class="banner-ads-top mb-30"><a href="shop-single-product-3.html"><img src="assets/imgs/page/shop/banner.png" alt="Ecom"></a></div>
               <!-- <div class="box-filters mt-0 pb-5 border-bottom"> -->
                 <div class="row filtros_celular">
-                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div>
-                  <div class="col-xl-3 col-lg-5 col-md-6 mb-10 text-lg-end text-center d-none d-md-block">
-                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium">Sort by:</span>
-                      <div class="dropdown dropdown-sort border-1-right">
-                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">Latest products</button>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
-                          <li><a class="dropdown-item active" href="#">Latest products</a></li>
-                          <li><a class="dropdown-item" href="#">Oldest products</a></li>
-                          <li><a class="dropdown-item" href="#">Comments products</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-4 col-md-12 d-none d-md-block">
+                  <!-- <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div> -->
+                  <form class="col-xl-5 col-lg-6 col-md-12 mb-10 text-lg-end text-center d-none d-md-block ordenar_por" method="get" action="shop-grid.php" id="formularioOrden">
+                    <p><strong>Ordenar por:</strong></p>
+                    <select class='form-control' name="orden" id="orden">
+                      <?php
+                      if(isset($_GET["orden"]) && $_GET["orden"]=="desc"){
+                        echo "<option value='asc' class='opcionOrden'>Precio Ascendiente</option>";
+                        echo "<option value='desc' class='opcionOrden' selected>Precio Descendiente</option>";
+                      } else{
+                        echo "<option value='asc' class='opcionOrden'>Precio Ascendiente</option>";
+                        echo "<option value='desc' class='opcionOrden'>Precio Descendiente</option>";
+                      }
+                      ?>
+                    </select>
+                  </form>
+                  <div class="col-xl-7 col-lg-6 col-md-12 d-none d-md-block">
                     <input class="form-control font-xs" type="text" value="" placeholder="Search for items">
                   </div>
                 </div>
@@ -209,9 +240,25 @@
                 }else{
                   $marcas = [];
                 }
-                $productos = getProductosConFiltro($categorias,$marcas);
+                if(isset($_GET['max'])){
+                  $max = $_GET['max'];
+                }else{
+                  $max = 0;
+                }
+                if(isset($_GET['min'])){
+                  $min = $_GET['min'];
+                }else{
+                  $min = 0;
+                }
+                if(isset($_GET['orden'])){
+                  $orden = $_GET['orden'];
+                }else{
+                  $orden = "asc";
+                }
+                $productos = getProductosConFiltro($categorias,$marcas,$min,$max,$moneda['precio_moneda'],$orden);
                 foreach($productos as $producto){
                   $precio = round($producto['precio'] * $moneda['precio_moneda']);
+                  $precio = number_format($precio, 0, ',', '.');
                   echo"
                   <div class='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12'>
                     <div class='card-grid-style-3 home6-style home7-style'>
@@ -445,7 +492,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="ModalQuickview" tabindex="-1" aria-hidden="true" style="display: none;">
+      <!-- <div class="modal fade" id="ModalQuickview" tabindex="-1" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-xl">
           <div class="modal-content apply-job-form">
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -564,7 +611,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer class="footer">
           <?php

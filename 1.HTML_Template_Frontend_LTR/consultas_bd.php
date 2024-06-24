@@ -23,7 +23,7 @@ function getProducto($id) {
     return $datos;
 }
 
-function getProductosConFiltro($categorias,$marcas) {
+function getProductosConFiltro($categorias,$marcas,$min,$max,$moneda,$orden) {
     global $con;
     $sql = "SELECT * FROM producto WHERE 1=1";
 
@@ -37,6 +37,15 @@ function getProductosConFiltro($categorias,$marcas) {
         $sql .= " AND marca_id IN ($marcas)";
     }
 
+    if ($max>0) {
+        $sql .= " AND precio*$moneda <= $max";
+    }
+
+    if ($min>0) {
+        $sql .= " AND precio*$moneda >= $min";
+    }
+
+    $sql .= " ORDER BY precio $orden";
     // $precio = implode(",", $precio);
     // $sql = "SELECT * FROM producto WHERE categoria_id IN ($categorias) AND marca_id IN ($marcas)";
     $result = $con->query($sql);
@@ -91,9 +100,22 @@ function crearCarrito($id){
     $con->query($sql);
 }
 
+function crearWislist($id){
+    global $con;
+    $fechaHoy = date('Y-m-d');
+    $sql = "INSERT INTO `wishlist`(`id_cliente`, `fecha_creacion`) VALUES ('$id','$fechaHoy')";
+    $con->query($sql);
+}
+
 function agregarCarritoProducto($cliente_id,$producto_id,$cantidad){
     global $con;
     $sql = "INSERT INTO `carrito_producto`(`carrito_id`, `producto_id`, `cantidad`, `total_carrito`) VALUES ((SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id),'$producto_id','$cantidad',(SELECT precio FROM producto WHERE producto_id = $producto_id) * $cantidad)";
+    $con->query($sql);
+}
+
+function agregarWishlistProducto($cliente_id,$producto_id){
+    global $con;
+    $sql = "INSERT INTO `wishlist_producto`(`id_wishlist`, `producto_id`) VALUES ((SELECT id_wishlist FROM wishlist WHERE id_cliente = $cliente_id),'$producto_id'";
     $con->query($sql);
 }
 
@@ -122,8 +144,9 @@ function buscarCarritoProducto($cliente_id,$producto_id,$cantidad){
         $sql = "UPDATE `carrito_producto` SET `cantidad`='$cantidad' WHERE carrito_id = (SELECT carrito_id FROM carrito WHERE cliente_id = $cliente_id) AND producto_id = '$producto_id'";
         $con->query($sql);
         return false;
+    } else{
+        return true;
     }
-    return true;
 }
 
 function getMonedas(){

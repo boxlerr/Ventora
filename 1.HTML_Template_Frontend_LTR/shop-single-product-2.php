@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Single Product 2 - Vestore</title>
+    <title>Single Product 2 - Ecom Marketplace Template</title>
   </head>
   <body>
     <?php
@@ -26,16 +26,6 @@
     ?>
     <main class="main">
       <div class="section-box">
-        <div class="breadcrumbs-div">
-          <div class="container">
-            <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html" data-section="shop-single-product-2" data-value="inicio">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php" data-section="shop-single-product-2" data-value="categoria">Headphones</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php" data-section="shop-single-product-2" data-value="sub_categoria">Brand</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php" data-section="shop-single-product-2" data-value="sub_categoria1">Accessories</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
       <section class="section-box shop-template">
         <div class="container">
@@ -83,12 +73,19 @@
             </div>
             <div class="col-lg-7">
               <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
-              <div class="row align-items-center">
+              <form class="row align-items-center" method="post" action="agregarWislist.php">
                 <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
                   <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-9 text-start text-sm-end"><a class="mr-20" href="shop-wishlist.php"><span class="btn btn-wishlist mr-5 opacity-100 transform-none"></span><span class="font-md color-gray-900" data-section="shop-single-product-2" data-value="anadir_deseados">Add to Wish list</span></a></div>
-              </div>
+                <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
+                <?php
+                if($usuario){
+                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWislist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Add to Wish list</span></span></div>";
+                } else{
+                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><a class='mr-20' href='page-login.php'><span class='btn btn-wishlist mr-5 opacity-100 transform-none'></span><span class='font-md color-gray-900'>Add to Wish list</span></a></div>";
+                }
+                ?>
+              </form>
               <div class="border-bottom pt-10 mb-20"></div>
               <div class="row">
                 <div class="col-lg-7">
@@ -103,8 +100,8 @@
                   <div class="border-bottom mt-20 mb-20"></div>
                   <div class="info-product">
                     <div class="row align-items-end">
-                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br data-section="shop-single-product-2" data-value="categoria_desc">Category:<span class="color-gray-500" data-section="shop-single-product-2" data-value="Smartphones">Smartphones</span><br>Tags:<span class="color-gray-500" data-section="shop-single-product-2" data-value="tags">Blue, Smartphone</span></span></div>
-                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900" data-section="shop-single-product-2" data-value="entrega_gratis">Free Delivery<br><span class="color-gray-500" data-section="shop-single-product-2" data-value="disponible_todas_ubicaciones">Available for all locations.</span><br><span class="color-gray-500" data-section="shop-single-product-2" data-value="opciones_info_entrega">Delivery Options & Info</span></span></div>
+                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br>Category:<span class="color-gray-500">Smartphones</span><br>Tags:<span class="color-gray-500">Blue, Smartphone</span></span></div>
+                      <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">Free Delivery<br><span class="color-gray-500">Available for all locations.</span><br><span class="color-gray-500">Delivery Options & Info</span></span></div>
                       <div class="col-lg-12 mb-20">
                       </div>
                     </div>
@@ -142,7 +139,7 @@
                       </div>
                     </div> -->
                     <div class="buy-product mt-10 d-flex">
-                      <div class="font-sm text-quantity" data-section="shop-single-product-2" data-value="cantidad">Quantity</div>
+                      <div class="font-sm text-quantity">Quantity</div>
                       <div class="box-quantity">
                         <div class="input-quantity">
                           <input class="font-xl color-brand-3" type="text" value="1" name="cantidad"><span class="minus-cart"></span><span class="plus-cart"></span>
@@ -152,12 +149,12 @@
                     <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
                     <?php
                     if($usuario){
-                      echo "<div class='button-buy mt-15'><input class='btn btn-cart mb-15' type='submit' name='agregarCarrito' data-section='shop-single-product-2' data-value='carrito_producto' value='Add to cart'>";
+                      echo "<div class='button-buy mt-15'><input class='btn btn-cart mb-15' type='submit' name='agregarCarrito' value='Add to cart'>";
                     } else{
-                      echo "<div class='button-buy mt-15'><a class='btn btn-cart mb-15' href='page-login.php' data-section='shop-single-product-2' data-value='carrito_producto'>Add to cart</a>";
+                      echo "<div class='button-buy mt-15'><a class='btn btn-cart mb-15' href='page-login.php'>Add to cart</a>";
                     }
                     ?>
-                    <a class="btn btn-buy" href="shop-checkout.php" data-section="index" data-value="comprar_ahora">Buy now</a></div>
+                    <a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
                   </form>
                 </div>
               </div>
@@ -192,73 +189,76 @@
         <div class="container">
           <div class="pt-30 mb-10">
             <ul class="nav nav-tabs nav-tabs-product" role="tablist">
-              <li><a class="active" href="#tab-description" data-bs-toggle="tab" role="tab" aria-controls="tab-description" aria-selected="true" data-section="shop-single-product-2" data-value="descripcion">Description</a></li>
-              <li><a href="#tab-specification" data-bs-toggle="tab" role="tab" aria-controls="tab-specification" aria-selected="true" data-section="shop-single-product-2" data-value="especificaciones">Specification</a></li>
-              <li><a href="#tab-additional" data-bs-toggle="tab" role="tab" aria-controls="tab-additional" aria-selected="true" data-section="shop-single-product-2" data-value="informacion_adicional">Additional information</a></li>
-              <li><a href="#tab-reviews" data-bs-toggle="tab" role="tab" aria-controls="tab-reviews" aria-selected="true" data-section="shop-single-product-2" data-value="opiniones">Reviews (2)</a></li>
+              <li><a class="active" href="#tab-description" data-bs-toggle="tab" role="tab" aria-controls="tab-description" aria-selected="true">Description</a></li>
+              <li><a href="#tab-specification" data-bs-toggle="tab" role="tab" aria-controls="tab-specification" aria-selected="true">Specification</a></li>
+              <li><a href="#tab-additional" data-bs-toggle="tab" role="tab" aria-controls="tab-additional" aria-selected="true">Additional information</a></li>
+              <li><a href="#tab-reviews" data-bs-toggle="tab" role="tab" aria-controls="tab-reviews" aria-selected="true">Reviews (2)</a></li>
+              <li><a href="#tab-vendor" data-bs-toggle="tab" role="tab" aria-controls="tab-vendor" aria-selected="true">Vendor</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade active show" id="tab-description" role="tabpanel" aria-labelledby="tab-description">
                 <div class="display-text-short">
-                  <p data-section="shop-single-product-2" data-value="parrafo_1">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-                  <p data-section="shop-single-product-2" data-value="parrafo_2">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word “and” and the Little Blind Text should turn around and return to its own, safe country. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                  <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                  <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word “and” and the Little Blind Text should turn around and return to its own, safe country. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                   <p><img src="assets/imgs/page/product/product-banner.jpg" alt="Ecom"></p>
-                  <p data-section="shop-single-product-2" data-value="parrafo_3">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                  <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                  <p><img src="assets/imgs/page/product/product-banner-2.jpg" alt="Ecom"></p>
+                  <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word “and” and the Little Blind Text should turn around and return to its own, safe country.</p>
                 </div>
-                <div class="mt-20 text-center"><a class="btn btn-border font-sm-bold pl-80 pr-80 btn-expand-more" data-section="shop-single-product-2" data-value="vermas_producto">More Details</a></div>
+                <div class="mt-20 text-center"><a class="btn btn-border font-sm-bold pl-80 pr-80 btn-expand-more">More Details</a></div>
               </div>
               <div class="tab-pane fade" id="tab-specification" role="tabpanel" aria-labelledby="tab-specification">
-                <h5 class="mb-25" data-section="shop-single-product-2" data-value="especificaciones">Specification</h5>
+                <h5 class="mb-25">Specification</h5>
                 <div class="table-responsive">
                   <table class="table table-striped">
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="modelo">Mode</td>
+                      <td>Mode</td>
                       <td>#SK10923</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="marca">Brand</td>
+                      <td>Brand</td>
                       <td>SamSung</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="tamano_2">Size</td>
+                      <td>Size</td>
                       <td>6.7"</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="acabado">Finish</td>
+                      <td>Finish</td>
                       <td>Pacific Blue</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="pais_origen">Origin of Country</td>
+                      <td>Origin of Country</td>
                       <td>United States</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="fabricante">Manufacturer</td>
+                      <td>Manufacturer</td>
                       <td>USA</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="ano_lanzamiento">Released Year</td>
+                      <td>Released Year</td>
                       <td>2022</td>
                     </tr>
                     <tr>
-                      <td data-section="shop-single-product-2" data-value="garantia">Warranty</td>
+                      <td>Warranty</td>
                       <td>International</td>
                     </tr>
                   </table>
                 </div>
               </div>
               <div class="tab-pane fade" id="tab-additional" role="tabpanel" aria-labelledby="tab-additional">
-                <h5 class="mb-25" data-section="shop-single-product-2" data-value="informacion_adicional">Additional information</h5>
+                <h5 class="mb-25">Additional information</h5>
                 <div class="table-responsive">
                   <table class="table table-striped">
                     <tbody>
                       <tr>
-                        <td data-section="shop-single-product-2" data-value="peso">Weight</td>
+                        <td>Weight</td>
                         <td>
                           <p>0.240 kg</p>
                         </td>
                       </tr>
                       <tr>
-                        <td data-section="shop-single-product-2" data-value="dimensiones">Dimensions</td>
+                        <td>Dimensions</td>
                         <td>
                           <p>0.74 x 7.64 x 16.08 cm</p>
                         </td>
@@ -271,7 +271,7 @@
                 <div class="comments-area">
                   <div class="row">
                     <div class="col-lg-8">
-                      <h4 class="mb-30 title-question" data-section="shop-single-product-2" data-value="preguntas_respuestas_clientes">Customer questions &amp; answers</h4>
+                      <h4 class="mb-30 title-question">Customer questions &amp; answers</h4>
                       <div class="comment-list">
                         <div class="single-comment justify-content-between d-flex mb-30 hover-up">
                           <div class="user justify-content-between d-flex">
@@ -327,35 +327,69 @@
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <h4 class="mb-30 title-question" data-section="shop-single-product-2" data-value="resenas_clientes">Customer reviews</h4>
+                      <h4 class="mb-30 title-question">Customer reviews</h4>
                       <div class="d-flex mb-30">
                         <div class="product-rate d-inline-block mr-15">
                           <div class="product-rating" style="width: 90%"></div>
                         </div>
-                        <h6>4.8 <span data-section="shop-single-product-2" data-value="de">out of</span> 5</h6>
+                        <h6>4.8 out of 5</h6>
                       </div>
-                      <p data-section="shop-single-product-2" data-value="estrellas">Stars</p>
-                      <div class="progress"><span>5</span>
+                      <div class="progress"><span>5 star</span>
                         <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                       </div>
-                      <div class="progress"><span>4</span>
+                      <div class="progress"><span>4 star</span>
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                       </div>
-                      <div class="progress"><span>3</span>
+                      <div class="progress"><span>3 star</span>
                         <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
                       </div>
-                      <div class="progress"><span>2</span>
+                      <div class="progress"><span>2 star</span>
                         <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
                       </div>
-                      <div class="progress mb-30"><span>1</span>
+                      <div class="progress mb-30"><span>1 star</span>
                         <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                      </div><a class="font-xs text-muted" href="#" data-section="shop-single-product-2" data-value="como_se_calculan_calificaciones">How are ratings calculated?</a>
+                      </div><a class="font-xs text-muted" href="#">How are ratings calculated?</a>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="tab-pane fade" id="tab-vendor" role="tabpanel" aria-labelledby="tab-vendor">
+                <div class="vendor-logo d-flex mb-30"><img src="assets/imgs/page/product/futur.png" alt="">
+                  <div class="vendor-name ml-15">
+                    <h6><a href="shop-vendor-single.php">Futur Tech.</a></h6>
+                    <div class="product-rate-cover text-end">
+                      <div class="product-rate d-inline-block">
+                        <div class="product-rating" style="width: 90%"></div>
+                      </div><span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="contact-infor mb-50">
+                  <li><img src="assets/imgs/page/product/icon-location.svg" alt=""><strong>Address:</strong><span> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</span></li>
+                  <li><img src="assets/imgs/page/product/icon-contact.svg" alt=""><strong>Contact Seller:</strong><span> (+91) - 540-025-553</span></li>
+                </ul>
+                <div class="d-flex mb-25">
+                  <div class="mr-30">
+                    <p class="color-brand-1 font-xs">Rating</p>
+                    <h4 class="mb-0">92%</h4>
+                  </div>
+                  <div class="mr-30">
+                    <p class="color-brand-1 font-xs">Ship on time</p>
+                    <h4 class="mb-0">100%</h4>
+                  </div>
+                  <div>
+                    <p class="color-brand-1 font-xs">Chat response</p>
+                    <h4 class="mb-0">89%</h4>
+                  </div>
+                </div>
+                <p class="font-sm color-gray-500 mb-15">
+                  Noodles &amp; Company is an American fast-casual restaurant that offers international and American noodle dishes and pasta in addition to soups and salads. Noodles &amp; Company was founded in 1995 by Aaron Kennedy and is headquartered in Broomfield,
+                  Colorado. The company went public in 2013 and recorded a $457 million revenue in 2017.In late 2018, there were 460 Noodles &amp; Company locations across 29 states and Washington, D.C.
+                </p>
+                <p class="font-sm color-gray-500">Proin congue dapibus rhoncus. Curabitur ipsum orci, malesuada in porttitor a, porttitor quis diam. Nunc at arcu ut turpis facilisis volutpat. Proin tristique, mauris non gravida dignissim, purus mauris malesuada tellus, in tincidunt orci enim eget ligula. Quisque bibendum, ipsum id malesuada placerat, purus felis vehicula risus, vel fringilla justo erat ullamcorper ligula. Fusce congue ullamcorper ligula, at commodo turpis molestie vel.</p>
+              </div>
               <div class="border-bottom pt-30 mb-50"></div>
-              <h4 class="color-brand-3" data-section="shop-single-product-2" data-value="productos_relacionados">Related Products</h4>
+              <h4 class="color-brand-3">Related Products</h4>
               <div class="list-products-5 mt-20">
                 <?php
                 $productos=getProductosLimitados(5);
@@ -388,8 +422,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white" data-section="shop-single-product-2" data-value="suscripcion">Subscribe &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg color-white" data-section="shop-single-product-2" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
@@ -707,9 +741,94 @@
       </div>
     </main>
     <footer class="footer">
-      <?php
-      include_once("footer.php")
-      ?>
+      <div class="footer-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 width-25 mb-30">
+              <h4 class="mb-30 color-gray-1000">Contact</h4>
+              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
+              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Phone:</strong> (+01) 123-456-789</div>
+              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">E-mail:</strong> contact@ecom-market.com</div>
+              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat</div>
+              <div class="mt-30"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-instagram" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
+            </div>
+            <div class="col-lg-3 width-20 mb-30">
+              <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
+              <ul class="menu-footer">
+                <li><a href="page-about-us.php">Mission &amp; Vision</a></li>
+                <li><a href="page-about-us.php">Our Team</a></li>
+                <li><a href="page-careers.html">Careers</a></li>
+                <li><a href="#">Press &amp; Media</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 width-16 mb-30">
+              <h4 class="mb-30 color-gray-1000">Company</h4>
+              <ul class="menu-footer">
+                <li><a href="blog-2.html">Our Blog</a></li>
+                <li><a href="#">Plans &amp; Pricing</a></li>
+                <li><a href="#">Knowledge Base</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Office Center</a></li>
+                <li><a href="blog.html">News &amp; Events</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 width-16 mb-30">
+              <h4 class="mb-30 color-gray-1000">My account</h4>
+              <ul class="menu-footer">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Editor Help</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Live Chatting</a></li>
+                <li><a href="page-contact.php">Contact Us</a></li>
+                <li><a href="#">Support Center</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 width-23">
+              <h4 class="mb-30 color-gray-1000">App &amp; Payment</h4>
+              <div>
+                <p class="font-md color-gray-900">Download our Apps and get extra 15% Discount on your first Order&mldr;!</p>
+                <div class="mt-20"><a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="Ecom"></a><a href="#"><img src="assets/imgs/template/google-play.png" alt="Ecom"></a></div>
+                <p class="font-md color-gray-900 mt-20 mb-10">Secured Payment Gateways</p><img src="assets/imgs/template/payment-method.png" alt="Ecom">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="footer-bottom-1">
+          <div class="container">
+            <div class="footer-2-top mb-20"><a href="index.html"><img alt="Ecom" src="assets/imgs/template/logo-2.svg"></a><a class="font-xs color-gray-1000" href="#">EcomMarket.com</a><a class="font-xs color-gray-1000" href="#">Ecom Partners</a><a class="font-xs color-gray-1000" href="#">Ecom Bussiness</a><a class="font-xs color-gray-1000" href="#">Ecom Factory</a></div>
+            <div class="footer-2-bottom">
+              <div class="head-left-footer">
+                <h6 class="color-gray-1000">Electronic:</h6>
+              </div>
+              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.php">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.php">HTC</a><a href="shop-grid.php">Ipad</a><a href="shop-grid.php">Keyboard</a><a href="shop-grid.php">Samsung</a><a href="shop-grid.php">Wireless Speaker</a><a href="shop-grid.php">Samsung Galaxy</a><a href="shop-grid.php">Gaming Mouse</a><a href="shop-grid.php">eBook Readers</a><a href="shop-grid.php">Service Plans</a><a href="shop-grid.php">Home Audio</a><a href="shop-grid.php">Office Electronics</a><a href="shop-grid.php">Lenovo</a><a href="shop-grid.php">Mackbook Pro M1</a><a href="shop-grid.php">HD Videos Player</a></div>
+            </div>
+            <div class="footer-2-bottom">
+              <div class="head-left-footer">
+                <h6 class="color-gray-1000">Furniture:</h6>
+              </div>
+              <div class="tags-footer"><a href="shop-grid.php">Sofa</a><a href="shop-grid.php">Chair</a><a href="shop-grid.php">Dining Table</a><a href="shop-grid.php">Living Room</a><a href="shop-grid.php">Table Lamp</a><a href="shop-grid.php">Night Stand</a><a href="shop-grid.php">Computer Desk</a><a href="shop-grid.php">Bar Table</a><a href="shop-grid.php">Pillow</a><a href="shop-grid.php">Radio</a><a href="shop-grid.php">Clock</a><a href="shop-grid.php">Bad Room</a><a href="shop-grid.php">Stool</a><a href="shop-grid.php">Television</a><a href="shop-grid.php">wardrobe</a><a href="shop-grid.php">Living Room Tables</a><a href="shop-grid.php">Dressers</a><a href="shop-grid.php">Patio Sofas</a><a href="shop-grid.php">Nursery</a><a href="shop-grid.php">Kitchen</a><a href="shop-grid.php">Accent Furniture</a><a href="shop-grid.php">Replacement Parts</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-bottom mt-20">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
+              <div class="col-lg-6 col-md-12 text-center text-lg-end">
+                <ul class="menu-bottom">
+                  <li><a class="font-sm color-gray-900" href="page-term.php">Conditions of Use</a></li>
+                  <li><a class="font-sm color-gray-900" href="page-term.php">Privacy Notice</a></li>
+                  <li><a class="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
