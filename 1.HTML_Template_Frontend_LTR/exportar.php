@@ -23,21 +23,15 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h5 class="color-gray-500 mb-10">Exportar</h5>
-              <h2>Exporta con Vestore</h2>
+              <h2 class="item-cat">Exporta con Vestore</h2>
               <div class="row mt-20">
-                <div class="col-lg-6">
-                  <p class="font-sm font-medium color-white mb-15">En Vestore, nos especializamos en conectar tus productos con mercados internacionales a través de soluciones personalizadas de exportación. Simplificamos el proceso para que puedas expandir tus horizontes comerciales con la seguridad de que tus productos llegarán puntualmente y en condiciones óptimas.</p>
-                  <p class="font-sm font-medium color-white mb-15">Nos destacamos por nuestra dedicación y experiencia, implementando tecnología avanzada y estrategias adaptadas a las particularidades de cada cliente. Desde asesoramiento en regulaciones internacionales hasta mejoras logísticas para optimizar tus envíos, estamos comprometidos a facilitar cada etapa del proceso.</p>
-                  <p class="font-sm font-medium color-white mb-15">Confía en Vestore para manejar todas tus necesidades de exportación. Contamos con un equipo especializado y una red global de colaboradores que aseguran la competitividad y eficiencia de tu negocio en el dinámico mercado global.</p>
-                  <ul class="list-services mt-20">
-                    <li class="hover-up">Ofrecemos servicios calificados y expertos en exportación</li>
-                    <li class="hover-up">Utilizamos herramientas modernas en el proceso de exportación</li>
-                    <li class="hover-up">Desarrollamos el futuro digital del comercio internacional</li>
-                    <li class="hover-up">Garantizamos cumplimiento y seguridad en todas tus exportaciones</li>
-                  </ul>
+                <div class="col-lg row">
+                  <p class="font-sm font-medium color-white mb-15 ml-0 mr-0 col texto-exportar">En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</p>
+                  <p class="font-sm font-medium color-white mb-15 ml-0 mr-0 col texto-exportar">Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</p>
+                  <div class="row">
+                    <p class="font-md font-medium color-white mb-15 col texto-exportar">Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
+                  </div>
                 </div>
-                <div class="col-lg-6"><img src="assets/imgs/page/about/img.png" alt="Ecom"></div>
               </div>
               <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
                 <div class="row">
@@ -59,82 +53,7 @@
                   </div>
                 </div>
               </div>
-              <h5 class="color-gray-500 mb-10">Behind The Brands</h5>
-              <h2 class="mb-40">The people who work at Vestore share the vision and values of our community.</h2>
-              <div class="row mb-50">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft1.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Ronald Richards</h5>
-                      <p class="font-md color-gray-500">Chief Executive Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft2.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Jenny Wilson</h5>
-                      <p class="font-md color-gray-500">Chief Financial Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft3.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Cody Fisher</h5>
-                      <p class="font-md color-gray-500">Chief Operating Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft4.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Jacob Jones</h5>
-                      <p class="font-md color-gray-500">Chief Technology Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft5.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Leslie Alexander</h5>
-                      <p class="font-md color-gray-500">Chief Marketing Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft6.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Ralph Edwards</h5>
-                      <p class="font-md color-gray-500">Chief Human Resources Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft7.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Eleanor Pena</h5>
-                      <p class="font-md color-gray-500">Chief Legal Officer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div class="card-staff hover-up">
-                    <div class="image-staff"><img src="assets/imgs/page/about/staft8.png" alt="Ecom"></div>
-                    <div class="info-staff">
-                      <h5>Theresa Webb</h5>
-                      <p class="font-md color-gray-500">Chief Product Officer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
               <div class="contact-form">
                   <h3 class="color-brand-3 mt-60">Exportar</h3>
                   <p class="font-sm color-gray-700 mb-30">El mundo te espera!</p>
@@ -230,62 +149,12 @@
           </div>
         </div>
       </section>
-      <section class="section-box mt-90 mb-50">
-        <div class="container">
-          <ul class="list-col-5">
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/delivery.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Free Delivery</h5>
-                  <p class="font-sm color-gray-500">From all orders over $10</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/support.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Support 24/7</h5>
-                  <p class="font-sm color-gray-500">Shop with an expert</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/voucher.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Gift voucher</h5>
-                  <p class="font-sm color-gray-500">Refer a friend</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/return.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Return &amp; Refund</h5>
-                  <p class="font-sm color-gray-500">Free return over $200</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="item-list">
-                <div class="icon-left"><img src="assets/imgs/template/secure.svg" alt="Ecom"></div>
-                <div class="info-right">
-                  <h5 class="font-lg-bold color-gray-100">Secure payment</h5>
-                  <p class="font-sm color-gray-500">100% Protected</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      
       <section class="section-box box-newsletter">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <h3 class="color-white">Subscribe &amp; Get <span class="color-warning">10%</span> Discount</h3>
               <p class="font-lg color-white">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
