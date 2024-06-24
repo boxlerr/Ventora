@@ -23,11 +23,22 @@ function getProducto($id) {
     return $datos;
 }
 
-function getProductosConFiltro($categorias,$precio) {
+function getProductosConFiltro($categorias,$marcas) {
     global $con;
-    $categorias = implode(",", $categorias);
-    $precio = implode(",", $precio);
-    $sql = "SELECT * FROM producto WHERE categoria_id IN ($categorias)";
+    $sql = "SELECT * FROM producto WHERE 1=1";
+
+    if (!empty($categorias)) {
+        $categorias = implode(",", $categorias);
+        $sql .= " AND categoria_id IN ($categorias)";
+    }
+
+    if (!empty($marcas)) {
+        $marcas = implode(",", $marcas);
+        $sql .= " AND marca_id IN ($marcas)";
+    }
+
+    // $precio = implode(",", $precio);
+    // $sql = "SELECT * FROM producto WHERE categoria_id IN ($categorias) AND marca_id IN ($marcas)";
     $result = $con->query($sql);
     $datos = $result->fetch_all(MYSQLI_ASSOC);
     return $datos;
@@ -129,4 +140,13 @@ function getTipoCambio($moneda){
     $result = $con->query($sql);
     $datos = $result->fetch_assoc();
     return $datos;
+}
+
+function getMarcas(){
+    global $con;
+    $sql = "SELECT * FROM marca";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all(MYSQLI_ASSOC);
+    $rows = $result->num_rows;
+    return [$rows, $datos];
 }

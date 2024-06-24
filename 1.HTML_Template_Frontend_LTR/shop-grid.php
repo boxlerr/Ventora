@@ -36,47 +36,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
-              <!-- <div class="sidebar-border mb-0">
-                <div class="sidebar-head">
-                  <h6 class="color-gray-900">Product Categories</h6>
-                </div>
-                <div class="sidebar-content">
-                  <ul class="list-nav-arrow">
-                    <?php
-                    $categorias=getCategorias();
-                    $i=0;
-                    while($i<15 && $categorias[0]>$i){   
-                      echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
-                      $i++;
-                    }
-                    ?>
-                    </ul>
-                    <?php
-                    if($i==15 && $categorias[0]>$i){
-
-                      echo"                      
-                      <div>
-                        <div class='collapse' id='moreMenu'>
-                          <ul class='list-nav-arrow'>";
-                          while($categorias[0]>$i){   
-                            echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
-                            $i++;
-                          }
-                          echo"
-                          </ul>
-                        </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
-                      </div>
-                      ";
-                    } 
-                    ?>
-                </div>
-              </div> -->
               <div class="sidebar-border mb-40">
                 <div class="sidebar-head">
-                  <h6 class="color-gray-900" data-section="shop-grid" data-value="filtro_productos">Products Filter</h6>
+                  <h6 class="color-gray-900">Products Filter</h6>
                 </div>
                 <form class="sidebar-content" action="shop-grid.php" method="get">
-                  <h6 class="color-gray-900 mt-10 mb-10" data-section="shop-grid" data-value="categorias">Categorias</h6>
+                  <h6 class="color-gray-900 mt-10 mb-10">Categorias</h6>
                   <ul class="list-checkbox">
                     <?php
                       $categorias=getCategorias();
@@ -85,9 +50,13 @@
                         // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                         echo"
                         <li>
-                            <label class='cb-container'>
-                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
-                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                            <label class='cb-container'>";
+                                if(isset($_GET['categorias']) && in_array(htmlspecialchars($categorias[1][$i]['categoria_id']), $_GET["categorias"])){
+                                  echo "<input type='checkbox' checked='checked'  value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
                                 <span class='checkmark'></span>
                             </label>
                         </li>";
@@ -105,9 +74,13 @@
                         // echo"<li><a href='shop-grid.php'>".htmlspecialchars($categorias[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
                         echo"
                         <li>
-                            <label class='cb-container'>
-                                <input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>
-                                <span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
+                            <label class='cb-container'>";
+                                if(isset($_GET['categorias']) && in_array(htmlspecialchars($categorias[1][$i]['categoria_id']), $_GET["categorias"])){
+                                  echo "<input type='checkbox' checked='checked'  value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($categorias[1][$i]['categoria_id']) . "' name='categorias[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($categorias[1][$i]['nombre']) . "</span>
                                 <span class='checkmark'></span>
                             </label>
                         </li>";
@@ -141,58 +114,80 @@
                       </div>
                     </li> 
                   </ul> -->
-                  <h6 class="color-gray-900 mt-20 mb-10" data-section="shop-grid" data-value="marcas">Brands</h6>
+                  <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
                   <ul class="list-checkbox">
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Apple</span><span class="checkmark"></span>
-                      </label><span class="number-item">12</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Sony</span><span class="checkmark"></span>
-                      </label><span class="number-item">34</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Toshiba</span><span class="checkmark"></span>
-                      </label><span class="number-item">56</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Assus</span><span class="checkmark"></span>
-                      </label><span class="number-item">78</span>
-                    </li>
-                    <li>
-                      <label class="cb-container">
-                        <input type="checkbox"><span class="text-small">Samsung</span><span class="checkmark"></span>
-                      </label><span class="number-item">23</span>
-                    </li>
+                    <!-- <input type="hidden" name="marcas[]" value=""> -->
+                    <?php
+                      $marcas=getMarcas();
+                      $i=0;
+                      while($i<15 && $marcas[0]>$i){   
+                        echo "<li>
+                            <label class='cb-container'>";
+                                if(isset($_GET['marcas']) && in_array(htmlspecialchars($marcas[1][$i]['marca_id']), $_GET["marcas"])){
+                                  echo "<input type='checkbox' checked='checked' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                }
+                                echo "<span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre_marca']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                    ?>
                   </ul>
-                  <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Aplicar Filtros" type="submit">
-                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal" data-section="shop-grid" data-value="mas_filtros">More Filters</a>
+                  <?php
+                  if($i==15 && $marcas[0]>$i){
+                  echo"                      
+                  <div>
+                    <div class='collapse' id='moreMenu'>
+                      <ul class='list-nav-arrow'>";
+                      while($marcas[0]>$i){   
+                        // echo"<li><a href='shop-grid.php'>".htmlspecialchars($marcas[1][$i]['nombre'])."<span class='number'>09</span></a></li>";
+                        echo"
+                        <li>
+                            <label class='cb-container'>";
+                                if(isset($_GET['marcas']) && in_array(htmlspecialchars($marcas[1][$i]['marca_id']), $_GET["marcas"])){
+                                  echo "<input type='checkbox' checked='checked' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                } else{
+                                  echo "<input type='checkbox' value='" . htmlspecialchars($marcas[1][$i]['marca_id']) . "' name='marcas[]'>";
+                                }
+                                echo "span class='text-small'>" . htmlspecialchars($marcas[1][$i]['nombre']) . "</span>
+                                <span class='checkmark'></span>
+                            </label>
+                        </li>";
+                        $i++;
+                      }
+                      echo"
+                      </ul>
+                    </div><a class='link-see-more mt-5' data-bs-toggle='collapse' href='#moreMenu' role='button' aria-expanded='false' aria-controls='moreMenu'>See More</a>
+                  </div>
+                  ";
+                  } ?>
+                  <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
+                  <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a>
                 </form>
               </div>
               <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
                   <span class="text-no font-11">No.9</span>
-                  <h5 class="font-23 mt-20"><span data-section="shop-grid" data-value="sensibilidad_tactil">Sensitive Touch</span><br class="d-none d-lg-block"><span data-section="shop-grid" data-value="sin_huellas">without fingerprint</span></h5>
-                  <p class="text-desc font-16 mt-15" data-section="shop-grid" data-value="manejo_suave">Smooth handle and accurate click</p>
-                  <a href="shop-single-product-2.php" data-section="shop-grid" data-value="ver_detalles">View Details</a>
+                  <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
+                  <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p>
+                  <a href="shop-single-product-2.php">View Details</a>
               </div>
             </div>
             <div class="col-lg-9 col-md-8 order-first order-lg-last">
               <div class="banner-ads-top mb-30"><a href="shop-single-product-3.html"><img src="assets/imgs/page/shop/banner.png" alt="Ecom"></a></div>
               <!-- <div class="box-filters mt-0 pb-5 border-bottom"> -->
                 <div class="row filtros_celular">
-                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal" data-section="shop-grid" data-value="todos_los_filtros">All Filters</a></div>
+                  <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div>
                   <div class="col-xl-3 col-lg-5 col-md-6 mb-10 text-lg-end text-center d-none d-md-block">
-                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium" data-section="shop-grid" data-value="ordenar_por">Sort by:</span>
+                    <div class="d-inline-block"><span class="font-sm color-gray-500 font-medium">Sort by:</span>
                       <div class="dropdown dropdown-sort border-1-right">
-                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-section="shop-grid" data-value="ultimos_productos">Latest products</button>
+                        <button class="btn dropdown-toggle font-sm color-gray-900 font-medium" id="dropdownSort" type="button" data-bs-toggle="dropdown" aria-expanded="false">Latest products</button>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort" style="margin: 0px;">
-                          <li><a class="dropdown-item active" href="#" data-section="shop-grid" data-value="ultimos_productos">Latest products</a></li>
-                          <li><a class="dropdown-item" href="#" data-section="shop-grid" data-value="productos_antiguos">Oldest products</a></li>
-                          <li><a class="dropdown-item" href="#" data-section="shop-grid" data-value="comentarios_productos">Comments products</a></li>
+                          <li><a class="dropdown-item active" href="#">Latest products</a></li>
+                          <li><a class="dropdown-item" href="#">Oldest products</a></li>
+                          <li><a class="dropdown-item" href="#">Comments products</a></li>
                         </ul>
                       </div>
                     </div>
@@ -205,10 +200,16 @@
               <div class="row mt-20">
                 <?php   
                 if(isset($_GET['categorias'])){
-                  // $productos = getProductosConFiltro($_GET['categorias']);
-                } else{
-                  $productos = getProductos();
+                  $categorias = $_GET['categorias'];
+                }else{
+                  $categorias = [];
+                } 
+                if(isset($_GET['marcas'])){
+                  $marcas = $_GET['marcas'];
+                }else{
+                  $marcas = [];
                 }
+                $productos = getProductosConFiltro($categorias,$marcas);
                 foreach($productos as $producto){
                   $precio = round($producto['precio'] * $moneda['precio_moneda']);
                   echo"
@@ -257,14 +258,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-            <h3 class="color-white" data-section="index" data-value="suscripcion">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-            <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3>Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <p class="font-lg">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
-                  <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
-                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Sign Up</button>
+                  <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
+                  <button class="btn btn-brand-2">Sign Up</button>
                 </form>
               </div>
             </div>
