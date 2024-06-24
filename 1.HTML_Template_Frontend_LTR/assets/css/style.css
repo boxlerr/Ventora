@@ -7039,6 +7039,32 @@ a.text-brand-3:hover {
   margin-bottom: 30px;
 }
 
+.texto-importar {
+  background-color: rgb(35, 37, 61) !important;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-section {
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.preguntas-frecuentes {
+  background-color: #192e47;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
 .box-adsolute-banner {
   position: absolute;
   bottom: 10px;
