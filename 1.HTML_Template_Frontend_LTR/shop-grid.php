@@ -20,18 +20,6 @@
     include_once("cambio.php");
     ?>
     <main class="main">
-      <!-- <div class="section-box d-none d-md-block">
-        <div class="breadcrumbs-div">
-          <div class="container">
-            <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Electronics</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Cell phone</a></li>
-              <li><a class="font-xs color-gray-500" href="shop-grid.php">Accessories</a></li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
       <div class="section-box shop-template mt-30">
         <div class="container">
           <div class="row">
@@ -97,10 +85,10 @@
                     <li>
                       <div class="row">
                         <div class="col-6">
-                          <input class="form-control" type="number" value="<?php if(isset($_GET['min'])){echo $_GET['min'];} ?>" name="min" placeholder="Min">
+                          <input class="form-control colorprimario" type="number" value="<?php if(isset($_GET['min'])){echo $_GET['min'];} ?>" name="min" placeholder="Min">
                         </div>
                         <div class="col-6">
-                          <input class="form-control" type="number" value="<?php if(isset($_GET['max'])){echo $_GET['max'];} ?>" name="max" placeholder="Max">
+                          <input class="form-control colorprimario" type="number" value="<?php if(isset($_GET['max'])){echo $_GET['max'];} ?>" name="max" placeholder="Max">
                         </div>
                       </div>
                     </li>
@@ -197,28 +185,21 @@
                   <!-- <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a> -->
                 </form>
               </div>
-              <div class="banner-right h-500 text-center mb-30 d-none d-md-block">
-                  <span class="text-no font-11">No.9</span>
-                  <h5 class="font-23 mt-20">Sensitive Touch<br class="d-none d-lg-block">without fingerprint</h5>
-                  <p class="text-desc font-16 mt-15">Smooth handle and accurate click</p>
-                  <a href="shop-single-product-2.php">View Details</a>
-              </div>
+              
             </div>
             <div class="col-lg-9 col-md-8 order-first order-lg-last">
-              <div class="banner-ads-top mb-30"><a href="shop-single-product-3.html"><img src="assets/imgs/page/shop/banner.png" alt="Ecom"></a></div>
-              <!-- <div class="box-filters mt-0 pb-5 border-bottom"> -->
                 <div class="row filtros_celular">
                   <!-- <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div> -->
                   <form class="col-xl-5 col-lg-6 col-md-12 mb-10 text-lg-end text-center d-none d-md-block ordenar_por" method="get" action="shop-grid.php" id="formularioOrden">
-                    <p><strong>Ordenar por:</strong></p>
+                    <p class="colorblanco"><strong>Ordenar por:</strong></p>
                     <select class='form-control' name="orden" id="orden">
                       <?php
                       if(isset($_GET["orden"]) && $_GET["orden"]=="desc"){
-                        echo "<option value='asc' class='opcionOrden'>Precio Ascendiente</option>";
-                        echo "<option value='desc' class='opcionOrden' selected>Precio Descendiente</option>";
+                        echo "<option value='asc' class='opcionOrden'>Precio Ascendente</option>";
+                        echo "<option value='desc' class='opcionOrden' selected>Precio Descendente</option>";
                       } else{
-                        echo "<option value='asc' class='opcionOrden'>Precio Ascendiente</option>";
-                        echo "<option value='desc' class='opcionOrden'>Precio Descendiente</option>";
+                        echo "<option value='asc' class='opcionOrden'>Precio Ascendente</option>";
+                        echo "<option value='desc' class='opcionOrden'>Precio Descendente</option>";
                       }
                       ?>
                     </select>
@@ -274,9 +255,6 @@
                           <!--<div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>-->
                           <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".$precio ."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
-                          <ul class='list-features'>
-                            <li>".htmlspecialchars($producto['descripcion'])."</li>
-                          </ul>
                         </div>
                       </div>
                     </div>

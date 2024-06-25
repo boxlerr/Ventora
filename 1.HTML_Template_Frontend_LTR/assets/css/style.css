@@ -1594,6 +1594,14 @@ a.text-brand-3:hover {
   text-decoration: underline;
 }
 
+.colorblanco{
+  color: white !important;
+}
+
+.colorprimario{
+  color: #8c9ec5;
+}
+
 .dropdown-language {
   display: inline-block;
 }
@@ -1788,6 +1796,7 @@ a.text-brand-3:hover {
 /*COMPONENTS -> FORM*/
 .form-control {
   border: 1px solid #DDE4F0 !important;
+  background-color: transparent;
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2712,7 +2721,7 @@ a.text-brand-3:hover {
   height: 154px;
   display: inline-block;
   border-radius: 50%;
-  background-color: #F0F3F8;
+  background-color: #1e2a37;
 }
 .card-circle .card-image .inner-image img {
   max-width: 80%;
@@ -7477,7 +7486,7 @@ a.text-brand-3:hover {
 }
 
 .home7-style .card-grid-inner .image-box {
-  background-color: var(--tercery-color);
+  background-color: #1e2a37;
 }
 
 .mw-newsletter {
@@ -7917,7 +7926,7 @@ a.text-brand-3:hover {
 }
 
 .list-products-home10 .home7-style .image-box {
-  background-color: var(--tercery-color);
+  background-color: #1e2a37;
 }
 
 .banner-small-home10 {
@@ -11121,7 +11130,6 @@ a:hover span {
   display: inline !important;
   width: 50%;
   background: transparent;
-  border: none !important;
   color: var(--tercery-color);
   font-size: 1em;
 }
@@ -11130,7 +11138,6 @@ a:hover span {
   display: inline !important;
   width: 50%;
   background: transparent;
-  border: none !important;
   color: var(--tercery-color);
   font-size: 1em;
 }

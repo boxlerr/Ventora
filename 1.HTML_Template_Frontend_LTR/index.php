@@ -100,7 +100,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat1.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpods3ra.webp" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria">Producto 1</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -112,7 +112,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat2.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpods3ra.webp" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria1">Producto 2</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -124,7 +124,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat3.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpods3ra.webp" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria2">Producto 3</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -136,7 +136,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat4.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpodspro.png" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria3">Producto 4</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -148,7 +148,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat5.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpodspromax.png" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria4">Producto 5</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -160,7 +160,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat6.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpods3ra.webp" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria5">Producto 6</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -172,7 +172,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat7.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpodspro.png" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria6">Producto 7</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -184,7 +184,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat8.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpodspromax.png" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria7">Producto 8</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -196,7 +196,7 @@
                   <div class="item-cat"> 
                     <div class="box-category-1">
                       <div class="box-image"> 
-                        <div class="inner-image"><img src="assets/imgs/page/homepage10/cat9.png" alt="Ecom"></div>
+                        <div class="inner-image"><img src="assets/imgs/img/airpods3ra.webp" alt="Ecom"></div>
                       </div>
                       <div class="box-info"> <a class="color-gray-900 font-md-bold" href="#" data-section="index" data-value="categoria8">Producto 9</a>
                         <p class="font-xs color-gray-500" data-section="index" data-value="cantidad">2356 items</p>
@@ -230,9 +230,6 @@
                       <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
                       <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                       <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php' data-section='index' data-value='agregar_carrito'>Add To Cart</a></div> -->
-                      <ul class='list-features'>
-                        <li>".htmlspecialchars($producto['descripcion'])."</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
