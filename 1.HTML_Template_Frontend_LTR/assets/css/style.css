@@ -7093,14 +7093,49 @@ a.text-brand-3:hover {
 .container-faq .item-faq .question {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: rgba(43, 51, 122, .1);
-  padding: 20px 30px 30px 80px;
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2);
+  padding: 20px;
   transition: .4s;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.container-faq .item-faq .question .more {
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/*.container-faq .item-faq .question .more {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7108,12 +7143,11 @@ a.text-brand-3:hover {
   width: 40px;
   height: 40px;
   font-size: 1rem;
-  cursor: pointer;
   transition: .4s;
   border-radius: 10px;
-}
+}*/
 
-.container-faq .item-faq .question .more:hover {
+.container-faq .item-faq .question:hover {
   box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
 }
 
@@ -7128,15 +7162,15 @@ a.text-brand-3:hover {
 
 .container-faq .item-faq .answer {
   position: relative;
-  padding: 0 20px 0 80px;
   overflow: hidden;
   height: 0;
   transition: .4s;
 }
 
 .container-faq .item-faq .answer p {
-  font-size: 1.3rem;
-  padding: 10px;
+  display: block;
+  font-size: 1rem;
+  padding: 20px;
 }
 
 .container-faq .item-faq .answer span {

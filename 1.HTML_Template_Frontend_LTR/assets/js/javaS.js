@@ -51,7 +51,7 @@ if(document.getElementById("formularioOrden")){
 }
 
 let question = document.querySelectorAll('.question');
-let btnDropdown = document.querySelectorAll('.question .more');
+let btnDropdown = document.querySelectorAll('.question');
 let answer = document.querySelectorAll('.answer');
 let parrafo = document.querySelectorAll('.answer p');
 
@@ -59,7 +59,6 @@ let hideAll = () => {
     for (let y=0; y<answer.length; y++) {
       answer[y].style.height = `0`;
       question[y].style.marginBottom = '0';
-      btnDropdown[y].innerHTML = '<i>+</i>';
     }
 }
 
@@ -72,14 +71,12 @@ for (let i = 0; i < btnDropdown.length; i ++) {
             hideAll();
             answer[i].style.height = `${altoParrafo}px`;
             question[i].style.marginBottom = '10px';
-            btnDropdown[i].innerHTML = '<i>-</i>';
             switchc ++;
         } 
         
         else if (switchc == 1) {
             answer[i].style.height = `0`;
             question[i].style.marginBottom = '0';
-            btnDropdown[i].innerHTML = '<i>+</i>';
             switchc --;
         }   
     })

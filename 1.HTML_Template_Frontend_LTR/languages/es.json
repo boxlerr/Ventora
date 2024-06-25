@@ -502,14 +502,41 @@
         "importar_text_1":"En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.",
         "importar_text_2":"Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.",
         "importar_text_3":"Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.",
-        "item_importar_1":"Ofrecemos servicios calificados y expertos en importación",
-        "item_importar_2":"Utilizamos herramientas modernas en el proceso de importación",
-        "item_importar_3":"Soluciones logísticas adaptadas a tus necesidades",
-        "item_importar_4":"Garantizamos cumplimiento y seguridad en todas tus importaciones",
-        "con_mas_de_10_años_importar":"Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus importaciones de manera eficiente y segura.",
-        "utilizamos_estrategias_importar":"Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de importación, maximizando tu rentabilidad.",
-        "implementamos_medidas_importar":"Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus importaciones lleguen a destino sin contratiempos.",
-        "traemos_lo_que_quieras":"Te traemos lo que quieras a la puerta de tu casa!"
+        "te_traemos":"Te traemos lo que quieras a la puerta de tu casa!",
+        "faq":"Preguntas Frecuentes",
+        
+        "faq-preg-1":"Nunca importe, no sé cómo hacerlo",
+        "faq-resp-1":"Contáctanos para una consulta gratuita. Nos cuentas qué productos deseas importar y desde dónde. Nosotros te ayudamos a encontrar proveedores confiables en el extranjero. Tenemos una red de contactos y herramientas para verificar la calidad y reputación de los proveedores.",
+
+        "faq-preg-2":"¿Cuanto me va a salir importar, existen costes extras?",
+        "faq-resp-2":"Solicitamos cotizaciones a los proveedores seleccionados y te las presentamos para que elijas la que mejor se adapte a tus necesidades y presupuesto.",
+
+        "faq-preg-3":"¿Qué se detallará en la cotización que me enviarán?",
+        "faq-resp-3":"",
+
+        "faq-preg-4":"¿Cuál es el monto minimo para poder importar?",
+        "faq-resp-4":"En Argentina, no existe un monto mínimo legalmente establecido para realizar importaciones. Sin embargo, desde nuestra experiencia y para optimizar los costos y la eficiencia del proceso, recomendamos que las importaciones se realicen a partir de un valor mínimo de 1.000 USD. Este monto permite cubrir de manera efectiva los costos asociados y maximizar la rentabilidad de tu operación.",
+
+        "faq-preg-5":"¿Necesito tener una empresa para importar mercaderías?",
+        "faq-resp-5":"No, no necesitas tener una empresa para importar mercaderías. Nuestro servicio integral se encarga de todo el proceso de importación, permitiéndote recibir tu mercancía en Argentina sin la necesidad de abrir una empresa.",
+
+        "faq-preg-6":"¿Cómo se paga la mercadería?",
+        "faq-resp-6":"Pagar la mercadería importada es un proceso sencillo y flexible. Ofrecemos varias opciones de pago para adaptarnos a tus necesidades y preferencias.",
+
+        "faq-preg-7":"¿Cómo se controla la calidad de la mercadería?",
+        "faq-resp-7":"Garantizar la calidad de la mercadería es una de nuestras prioridades. Trabajamos contigo para seleccionar proveedores confiables y de buena reputación, realizando una evaluación exhaustiva considerando su historial, capacidad de producción y cumplimiento de normas de calidad, verificamos la calidad solicitando fotografías, videos, muestras físicas y pesaje, y pedimos todos los certificados de calidad disponibles que respalden la conformidad del producto con las normas internacionales y especificaciones acordadas, como certificados ISO e informes de pruebas de laboratorio.",
+
+        "faq-preg-8":"¿Necesito hacer algún trámite?",
+        "faq-resp-8":"Para poder importar mercaderías, es necesario cumplir con algunos trámites básicos. En particular, necesitas: 1.Ser Responsable Inscripto: - Debes estar registrado como Responsable Inscripto en la Administración Federal de Ingresos Públicos (AFIP) de Argentina. Esto te permitirá realizar operaciones comerciales de importación y cumplir con las obligaciones fiscales correspondientes. 2.Domicilio Fiscal Declarado: - Es necesario tener un domicilio fiscal declarado ante la AFIP. Este es el lugar donde recibirás todas las notificaciones y comunicaciones oficiales relacionadas con tus operaciones de importación.",
+
+        "faq-preg-9":"¿Cuánto tiempo demora una importación?",
+        "faq-resp-9":"El tiempo que demora una importación puede variar dependiendo de varios factores, pero en general, el proceso completo puede tardar entre 6 y 15 días hábiles.",
+
+        "faq-preg-10":"¿La mercadería tiene seguro?",
+        "faq-resp-10":"Es recomendable contratar un seguro de carga para proteger tu mercancía contra daños o pérdidas durante el transporte. Te ofrecemos opciones de seguro y te ayudamos a seleccionar la cobertura adecuada.",
+
+        "faq-preg-11":"Tengo otras consultas antes de cotizar, como las puedo evacuar?",
+        "faq-resp-11":"Por nuestro numero telefonico, Instagram, mail. (despues ingresar)"
     },
 
     "shop-checkout":{
