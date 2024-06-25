@@ -500,14 +500,41 @@
         "importar_text_1": "At Vestore, we specialize in providing comprehensive import solutions that facilitate access to international markets. Our goal is to simplify the import process, giving you the peace of mind that your products will arrive on time and in perfect condition.",
         "importar_text_2": "We stand out for our dedication and experience, using advanced technology and customized strategies for each client. Whether you need guidance to navigate the complexities of international regulations or logistical solutions to optimize your shipments, we are here to assist you every step of the way.",
         "importar_text_3": "Trust Vestore to manage all your import needs. With a team of experts and a global network of partners, we ensure that your business remains competitive and efficient in the dynamic global market.",
-        "item_importar_1": "We offer qualified and expert import services",
-        "item_importar_2": "We use modern tools in the import process",
-        "item_importar_3": "Logistical solutions tailored to your needs",
-        "item_importar_4": "We guarantee compliance and security in all your imports",
-        "con_mas_de_10_años_importar": "With over 10 years in the sector, we have the necessary experience to manage your imports efficiently and safely.",
-        "utilizamos_estrategias_importar": "We use advanced strategies to reduce costs at every stage of the import process, maximizing your profitability.",
-        "implementamos_medidas_importar": "We implement rigorous risk management measures to protect your goods and ensure your imports reach their destination smoothly.",
-        "traemos_lo_que_quieras": "We bring you whatever you want right to your doorstep!"
+        "te_traemos":"We bring whatever you want right to your doorstep!",
+        "faq":"Frequently Asked Questions",
+
+        "faq-preg-1":"I never imported, I don't know how to do it.",
+        "faq-resp-1":"Contact us for a free consultation. Tell us which products you want to import and from where. We will help you find reliable suppliers abroad. We have a network of contacts and tools to verify the quality and reputation of the suppliers.",
+
+        "faq-preg-2":"How much will it cost me to import? Are there any extra costs?",
+        "faq-resp-2":"We request quotes from the selected suppliers and present them to you so you can choose the one that best fits your needs and budget.",
+
+        "faq-preg-3":"What will be detailed in the quote you will send me?",
+        "faq-resp-3":"",
+
+        "faq-preg-4":"What is the minimum amount required to import?",
+        "faq-resp-4":"In Argentina, there is no legally established minimum amount required to conduct imports. However, based on our experience and to optimize costs and efficiency in the process, we recommend imports be conducted starting from a minimum value of 1,000 USD. This amount effectively covers associated costs and maximizes the profitability of your operation.",
+
+        "faq-preg-5":"Do I need to have a company to import merchandise?",
+        "faq-resp-5":"No, you do not need to have a company to import merchandise. Our comprehensive service takes care of the entire importation process, allowing you to receive your merchandise in Argentina without the need to open a company.",
+
+        "faq-preg-6":"How is the merchandise paid for?",
+        "faq-resp-6":"Paying for imported merchandise is a straightforward and flexible process. We offer multiple payment options to accommodate your needs and preferences.",
+
+        "faq-preg-7":"How is the quality of the merchandise controlled?",
+        "faq-resp-7":"Ensuring the quality of the merchandise is one of our priorities. We work with you to select reliable and reputable suppliers, conducting a thorough evaluation that includes their track record, production capacity, and adherence to quality standards. We verify the quality by requesting photographs, videos, physical samples, and weight checks. Additionally, we request all available quality certificates that support the product's compliance with international standards and agreed specifications, such as ISO certificates and laboratory test reports.",
+
+        "faq-preg-8":"Do I need to complete any paperwork?",
+        "faq-resp-8":"To import merchandise, you need to complete some basic procedures. Specifically, you need to: 1.Be registered as a 'Responsable Inscripto': You must be registered as a 'Responsable Inscripto' with the Administración Federal de Ingresos Públicos (AFIP) of Argentina. This registration allows you to conduct commercial import operations and fulfill corresponding tax obligations. 2.Declare a Fiscal Address: It's necessary to have a declared fiscal address registered with AFIP. This address is where you will receive all notifications and official communications related to your import operations.",
+
+        "faq-preg-9":"How long does an importation take?",
+        "faq-resp-9":"The time it takes for an importation can vary depending on several factors, but generally, the entire process can take between 6 and 15 business days.",
+
+        "faq-preg-10":"Does the merchandise have insurance?",
+        "faq-resp-10":"It is advisable to contract cargo insurance to protect your merchandise against damages or losses during transportation. We offer insurance options and assist you in selecting the appropriate coverage.",
+
+        "faq-preg-11":"I have other questions before requesting a quote, how can I address them?",
+        "faq-resp-11":"By our phone number, Instagram, email. (continue after)"
     },
 
     "shop-checkout":{

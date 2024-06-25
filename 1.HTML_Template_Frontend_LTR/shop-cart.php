@@ -54,7 +54,7 @@
                         <div class='item-wishlist'>
                           <div class='wishlist-product'>
                             <div class='product-wishlist'>
-                              <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/page/product/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
+                              <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
                               <div class='product-info'><a href='shop-single-product.html'>
                                 <h6 class='color-brand-3'>".htmlspecialchars($articulo['nombre'])."</h6></a>
                                 <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'> (65)</span></div>

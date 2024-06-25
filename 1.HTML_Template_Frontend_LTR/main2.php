@@ -119,13 +119,13 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                 <?php
                                 if ($usuario) {
                                     echo "
-                        <li><a href='page-account.php'>Mi cuenta</a></li>
-                        <li><a href='page-account.php'>Historial de compras</a></li>
-                        <li><a href='page-account.php'>Mis compras</a></li>
-                        <li><a href='page-account.php'>Mis favoritos</a></li>
-                        <li><a href='page-account.php'>Configuracion</a></li>
-                        <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
-                        ";
+                                    <li><a href='page-account.php'>Mi cuenta</a></li>
+                                    <li><a href='page-account.php'>Historial de compras</a></li>
+                                    <li><a href='page-account.php'>Mis compras</a></li>
+                                    <li><a href='page-account.php'>Mis favoritos</a></li>
+                                    <li><a href='page-account.php'>Configuracion</a></li>
+                                    <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
+                                    ";
                                 } else {
                                     echo "<li><a href='page-login.php'>Iniciar sesion</a></li>";
                                     echo "<li><a href='page-register.php'>Crear cuenta</a></li>";
@@ -134,19 +134,20 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                             </ul>
                         </div>
                     </div>
-                    <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php">
-                        <span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span>
-                        <!-- <span class="number-item font-xs">5</span> -->
-                    </a>
+                    <?php
+                    if($usuario){
+                        echo "<a class='font-lg icon-list icon-wishlist' href='shop-wishlist.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                    } else{
+                        echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                    }
+                    ?>
                     <?php
                     if (!$usuario) {
                         echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
                     } else {
                         $carrito = mostrarCarrito($usuario);
                     ?>
-                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if ($carrito[0] > 0) {
-                                                                                                                                        echo "<span class='number-item font-xs'>$carrito[0] </span>";
-                                                                                                                                    } ?> </span>
+                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if ($carrito[0] > 0) {                                                                                                     } ?> </span>
                             <div class="dropdown-cart">
                                 <?php
                                 if (empty($_SESSION["moneda"])) {
