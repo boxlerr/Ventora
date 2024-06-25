@@ -278,7 +278,9 @@
         "cerrar_sesion":"Cerrar Sesión",
         "empezando_por":"Empezando por ",
         "venta_especial":"Venta Especial",
-        "saber_mas":"Saber Más"
+        "saber_mas":"Saber Más",
+        "mayorista":"Mayorista",
+        "minorista":"Minorista"
     },
 
     "shop-grid":{

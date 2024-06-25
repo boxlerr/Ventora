@@ -275,7 +275,9 @@
         "cerrar_sesion": "Log Out",
         "empezando_por": "Starting with ",
         "venta_especial": "Special Sale",
-        "saber_mas": "Learn More"
+        "saber_mas": "Learn More",
+        "mayorista":"Wholesale",
+        "minorista":"Retail sale"
     },
 
     "shop-grid":{

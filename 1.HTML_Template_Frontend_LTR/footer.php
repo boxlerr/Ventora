@@ -30,7 +30,7 @@
             <h4 class="mb-30 color-gray-1000" data-section="footer" data-value="mi_cuenta">Mi cuenta</h4>
             <ul class="menu-footer">
             <li><a href="page-account.php" data-section="footer" data-value="configuracion">Configuración</a></li>
-            <li><a href="#" data-section="footer" data-value="faq">FAQs</a></li>
+            <li><a href="faqs.php" data-section="footer" data-value="faq">FAQs</a></li>
             <li><a href="page-contact.php" data-section="footer" data-value="contactanos">Contáctanos</a></li>
             </ul>
         </div>
