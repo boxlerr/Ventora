@@ -113,71 +113,47 @@
           </div>
           <div class="col-lg-6">
             <div class="box-border">
-              <h5 class="font-md-bold mb-20">Your Order</h5>
-              <div class="listCheckout">
-                <div class="item-wishlist">
-                  <div class="wishlist-product">
-                    <div class="product-wishlist">
-                      <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"></a></div>
-                      <div class="product-info"><a href="shop-single-product.html">
-                          <h6 class="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6>
-                        </a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
+              <h5 class="font-md-bold mb-20">Tu orden</h5>
+              <?php
+              $carrito = mostrarCarrito($usuario);
+              if($carrito[0]){
+                $total=0;
+                foreach($carrito[1] as $articulo){
+                  $producto = getProducto($articulo['producto_id']);
+                  $precio = round($articulo['total_carrito'] * $moneda['precio_moneda']);
+                  $total += $precio;
+                  $precio = number_format($precio, 0, ',', '.');
+                  echo"
+                  <div class='listCheckout'>
+                    <div class='item-wishlist'>
+                      <div class='wishlist-product'>
+                        <div class='product-wishlist'>
+                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                          <div class='product-info'><a href='shop-single-product.html'>
+                              <h6 class='color-brand-3'>".htmlspecialchars($producto['nombre'])."</h6>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='wishlist-status'>
+                        <h5 class='color-gray-500'>x".htmlspecialchars($articulo['cantidad'])."</h5>
+                      </div>
+                      <div class='wishlist-price'>
+                        <h4 class='color-brand-3 font-lg-bold'>$$precio</h4>
                       </div>
                     </div>
                   </div>
-                  <div class="wishlist-status">
-                    <h5 class="color-gray-500">x1</h5>
-                  </div>
-                  <div class="wishlist-price">
-                    <h4 class="color-brand-3 font-lg-bold">$2.51</h4>
-                  </div>
-                </div>
-                <div class="item-wishlist">
-                  <div class="wishlist-product">
-                    <div class="product-wishlist">
-                      <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"></a></div>
-                      <div class="product-info"><a href="shop-single-product.html">
-                          <h6 class="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6>
-                        </a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wishlist-status">
-                    <h5 class="color-gray-500">x1</h5>
-                  </div>
-                  <div class="wishlist-price">
-                    <h4 class="color-brand-3 font-lg-bold">$1.51</h4>
-                  </div>
-                </div>
-                <div class="item-wishlist">
-                  <div class="wishlist-product">
-                    <div class="product-wishlist">
-                      <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"></a></div>
-                      <div class="product-info"><a href="shop-single-product.html">
-                          <h6 class="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6>
-                        </a>
-                        <div class="rating"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500"> (65)</span></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wishlist-status">
-                    <h5 class="color-gray-500">x1</h5>
-                  </div>
-                  <div class="wishlist-price">
-                    <h4 class="color-brand-3 font-lg-bold">$3.51</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group d-flex mt-15">
-                <input class="form-control mr-15" placeholder="Enter Your Coupon">
-                <button class="btn btn-buy w-auto">Apply</button>
-              </div>
+                  ";
+                }
+                $total = number_format($total, 0, ',', '.');
+              }
+
+              ?>
+
               <div class="form-group mb-0">
                 <div class="row mb-10">
                   <div class="col-lg-6 col-6"><span class="font-md-bold color-brand-3">Subtotal</span></div>
-                  <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3">$6.51</span></div>
+                  <div class="col-lg-6 col-6 text-end"><span class="font-lg-bold color-brand-3"><?php echo $total ?></span></div>
                 </div>
                 <div class="border-bottom mb-10 pb-5">
                   <div class="row">
@@ -475,6 +451,7 @@
   <script src="assets/js/vendors/slick.js"></script>
   <script src="assets/js/main.js?v=3.0.0"></script>
   <script src="assets/js/shop.js?v=1.2.1"></script>
+  <script src="assets/js/javaS.js"></script>
 </body>
 
 </html>

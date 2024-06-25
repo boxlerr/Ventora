@@ -127,10 +127,14 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     </ul>
                 </div>
                 </div>
-                <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php">
-                    <span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span>
-                    <!-- <span class="number-item font-xs">5</span> -->
-                </a>
+                <?php
+                if($usuario){
+                    echo "<a class='font-lg icon-list icon-wishlist' href='shop-wishlist.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                } else{
+                    echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                }
+                ?>
+                
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span data-section='header' data-value='carrito'>Cart</span></a>";

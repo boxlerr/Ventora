@@ -39,14 +39,14 @@
             $wishlist = verWishlist($usuario);
             if($wishlist[0]){
               foreach($wishlist[1] as $articulo){
-                $articulo = getProducto($producto['producto_id']);
+                $articulo = getProducto($articulo['producto_id']);
                 $precio = round($articulo['precio'] * $moneda['precio_moneda']);
                 $precio = number_format($precio, 0, ',', '.');
                 echo"                
                 <div class='item-wishlist'>
                   <div class='wishlist-product'>
                     <div class='product-wishlist'>
-                      <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/page/product/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
+                      <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
                       <div class='product-info'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'>
                           <h6 class='color-brand-3'>".htmlspecialchars($articulo['nombre'])."</h6>
                         </a>
