@@ -31,32 +31,55 @@
                   <p class="font-sm font-medium color-white mb-15 col texto-importar">Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
                 </div>
               </div>
-              <h3 class="faq-section">Preguntas Frecuentes</h3>
-              <div>
-                  <div>
-                    <div class="preguntas-frecuentes">
-                      <h4 class="mb-5">Nunca importe, no se como hacerlo</h4>
-                      <p class="font-md color-gray-700 mb-5">Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus importaciones de manera eficiente y segura.</p>
+              <div class="container importar">
+                <div class="row">
+                  <div class="container-faq">
+                    <div class="title-faq">
+                      <h3>Preguntas Frecuentes</h3>
                     </div>
-                  </div>
-                  <div>
-                    <div class="preguntas-frecuentes">
-                      <h4 class="mb-5">¿Cuanto me va a salir importar, existen costes extras?</h4>
-                      <p class="font-md color-gray-700 mb-5">Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de importación, maximizando tu rentabilidad.</p>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <h4>Nunca importe, no sé cómo hacerlo<span>Q</span></h4>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="answer">
+                            <p>Contáctanos para una consulta gratuita. Nos cuentas qué productos deseas importar y desde dónde. Nosotros te ayudamos a encontrar proveedores confiables en el extranjero. Tenemos una red de contactos y herramientas para verificar la calidad y reputación de los proveedores.<span>A</span></p>
+                        </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="preguntas-frecuentes">
-                      <h4 class="mb-5">¿Qué se detallará en la cotización que me enviarán?</h4>
-                      <p class="font-md color-gray-700 mb-5">Nuestro equipo de expertos te brinda soporte personalizado en todo momento, asegurando que tus necesidades específicas sean atendidas.</p>
+                  
+                    <div class="item-faq">
+                        <div class="question">
+                            <h4>¿Cuanto me va a salir importar, existen costes extras?<span>Q</span></h4>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="answer">
+                            <p>Solicitamos cotizaciones a los proveedores seleccionados y te las presentamos para que elijas la que mejor se adapte a tus necesidades y presupuesto.<span>A</span></p>
+                        </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="preguntas-frecuentes">
-                      <h4 class="mb-5">¿Cuál es el monto minimo para poder importar?</h4>
-                      <p class="font-md color-gray-700 mb-5">Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus importaciones lleguen a destino sin contratiempos.</p>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit?<span>Q</span></h4>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit tempore unde, sint sed non quia. Vitae est laborum commodi libero vero et asperiores nobis, enim voluptate ad optio nesciunt rem.<span>A</span></p>
+                        </div>
                     </div>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit?<span>Q</span></h4>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit tempore unde, sint sed non quia. Vitae est laborum commodi libero vero et asperiores nobis, enim voluptate ad optio nesciunt rem.<span>A</span></p>
+                        </div>
+                    </div>
+
                   </div>
+                </div>
               </div>
               
               <div class="contact-form">
@@ -177,5 +200,6 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>
