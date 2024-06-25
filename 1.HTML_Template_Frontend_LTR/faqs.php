@@ -26,14 +26,204 @@
               <h2 class="text-center mb-20">Preguntas Frecuentes</h2>
               <img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
               <div class="faq-container">
-                <h1>Preguntas Frecuentes</h1>
+                <div class="faq-topic">
+                <h3>Preguntas Generales</h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cuál es la política de devoluciones?</div>
-                  <div class="faq-answer">Nuestra política de devoluciones permite devoluciones hasta 30 días después de la compra con el recibo.</div>
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Qué tipo de productos venden?</div>
+                  <div class="faq-answer">Vendemos una amplia variedad de productos electrónicos, ropa y accesorios para el hogar.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo puedo contactar con el soporte técnico?</div>
-                  <div class="faq-answer">Puedes contactar con el soporte técnico a través de nuestro formulario de contacto o llamando al 123-456-7890.</div>
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Ofrecen productos al por mayor y al por menor?</div>
+                  <div class="faq-answer">Sí, ofrecemos productos tanto al por mayor como al por menor. Para compras al por mayor, te recomendamos visitar nuestra sección de precios mayoristas.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo puedo ponerme en contacto con su servicio de atención al cliente?</div>
+                  <div class="faq-answer">Puedes contactar con nuestro servicio de atención al cliente a través de nuestro formulario de contacto en línea o llamando al 123-456-7890.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cuál es su horario de atención al cliente?</div>
+                  <div class="faq-answer">Nuestro horario de atención al cliente es de lunes a viernes de 9:00 a.m. a 6:00 p.m. Hora local.</div>
+                </div>
+              </div>
+              
+              <div class="faq-topic">
+                <h3>Registro y Cuenta</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Necesito crear una cuenta para realizar una compra?</div>
+                  <div class="faq-answer">Sí, es necesario crear una cuenta para realizar una compra en nuestro sitio web. Esto nos ayuda a proporcionarte un mejor servicio y seguimiento de tu pedido.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo creo una cuenta en su sitio web?</div>
+                  <div class="faq-answer">Puedes crear una cuenta haciendo clic en el enlace "Registro" en la parte superior derecha de nuestra página de inicio y siguiendo las instrucciones proporcionadas.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">He olvidado mi contraseña, ¿cómo puedo recuperarla?</div>
+                  <div class="faq-answer">Puedes recuperar tu contraseña haciendo clic en "¿Olvidaste tu contraseña?" en la página de inicio de sesión y siguiendo los pasos para restablecerla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo actualizar la información de mi cuenta?</div>
+                  <div class="faq-answer">Sí, puedes actualizar la información de tu cuenta en cualquier momento accediendo a la sección "Mi cuenta" después de iniciar sesión.</div>
+                </div>
+              </div>
+              
+              <div class="faq-topic">
+                <h3>Pedidos y Compras</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Pagos</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Envios y Entrega</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Devoluciones y Reembolsos</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Productos y Stock</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Importación y Exportación</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Seguridad y Privacidad</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
+                </div>
+
+                <div class="faq-topic">
+                <h3>Programas y Descuentos</h3>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
+                  <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo modificar o cancelar mi pedido después de haberlo realizado?</div>
+                  <div class="faq-answer">Una vez confirmado, los pedidos no pueden modificarse directamente en línea. Para cancelaciones o modificaciones, por favor contáctanos lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Hay un monto mínimo de compra para pedidos al por mayor?</div>
+                  <div class="faq-answer">Sí, existe un monto mínimo de compra para pedidos al por mayor. Visita nuestra sección de precios mayoristas para más detalles.</div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
+                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                </div>
                 </div>
                 <!-- Añade más preguntas y respuestas aquí -->
               </div>
