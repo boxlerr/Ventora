@@ -155,7 +155,7 @@
                   </div>
                   ";
                   } ?>
-                  <h6 class="color-gray-900 mb-0 mt-40">Rating</h6>
+                  <!-- <h6 class="color-gray-900 mb-0 mt-40">Rating</h6>
                   <ul class="list-checkbox">
                     <li>
                       <label class='cb-container'>
@@ -192,7 +192,7 @@
                         <span class='checkmark'></span>
                       </label>
                     </li>
-                  </ul>
+                  </ul> -->
                   <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
                   <!-- <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a> -->
                 </form>
@@ -271,7 +271,7 @@
                         </div>
                         <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
                         <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Amish</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
-                          <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
+                          <!--<div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>-->
                           <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".$precio ."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
                           <ul class='list-features'>

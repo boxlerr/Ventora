@@ -115,8 +115,37 @@ function agregarCarritoProducto($cliente_id,$producto_id,$cantidad){
 
 function agregarWishlistProducto($cliente_id,$producto_id){
     global $con;
-    $sql = "INSERT INTO `wishlist_producto`(`id_wishlist`, `producto_id`) VALUES ((SELECT id_wishlist FROM wishlist WHERE id_cliente = $cliente_id),'$producto_id'";
+    $sql = "SELECT * FROM wishlist_producto WHERE producto_id = $producto_id";
+    $result = $con->query($sql);
+    if(!$result->num_rows){
+        $sql = "INSERT INTO `wishlist_producto`(`id_wishlist`, `producto_id`) VALUES ((SELECT id_wishlist FROM wishlist WHERE id_cliente = $cliente_id),'$producto_id')";
+        $con->query($sql);
+    }
+}
+
+function quitarWishlistProducto($cliente_id,$producto_id){
+    global $con;
+    $sql = "DELETE FROM `wishlist_producto` WHERE id_wishlist = (SELECT id_wishlist FROM wishlist WHERE id_cliente = $cliente_id) AND producto_id = $producto_id";
     $con->query($sql);
+}
+
+function buscarWishlist($producto_id){
+    global $con;
+    $sql = "SELECT * FROM wishlist_producto WHERE producto_id = $producto_id";
+    $result = $con->query($sql);
+    if(!$result->num_rows){
+        return false;
+    }
+    return true;
+}
+
+function verWishlist($cliente_id){
+    global $con;
+    $sql = "SELECT * FROM wishlist_producto WHERE id_wishlist = (SELECT id_wishlist FROM wishlist WHERE id_cliente = $cliente_id)";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all(MYSQLI_ASSOC);
+    $rows = $result->num_rows;
+    return [$rows,$datos];
 }
 
 function mostrarCarrito($cliente_id){
@@ -131,6 +160,12 @@ function mostrarCarrito($cliente_id){
 function eliminarArticuloCarrito($id){
     global $con;
     $sql = "DELETE FROM `carrito_producto` WHERE carrito_producto_id = '$id'";
+    $con->query($sql);
+}
+
+function eliminarArticuloWhislist($id,$usuario_id){
+    global $con;
+    $sql = "DELETE FROM `wishlist_producto` WHERE producto_id = '$id' AND id_wishlist = (SELECT id_wishlist FROM wishlist WHERE id_cliente = $usuario_id)";
     $con->query($sql);
 }
 

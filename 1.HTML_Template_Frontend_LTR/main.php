@@ -84,8 +84,8 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     <li><a class="active" href="index.php" data-section="header" data-value="inicio">Inicio</a></li>
                     <li class="has-children"><a href="#" data-section="header" data-value="productos">Productos</a>
                     <ul class="sub-menu">
-                        <li><a href="shop-grid.php" data-section="header" data-value="importa">Minorista</a></li>
-                        <li><a href="shop-grid-mayorista.php" data-section="header" data-value="exporta">Mayorista</a></li>
+                        <li><a href="shop-grid.php" data-section="header" data-value="minorista">Minorista</a></li>
+                        <li><a href="shop-grid-mayorista.php" data-section="header" data-value="mayorista">Mayorista</a></li>
                     </ul>
                     </li>
                     <li class="has-children"><a href="#" data-section="header" data-value="trabaja_con_nosotros">Trabajá con nosotros</a>
@@ -126,7 +126,11 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span><span class="number-item font-xs">5</span></a>
+                </div>
+                <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php">
+                    <span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span>
+                    <!-- <span class="number-item font-xs">5</span> -->
+                </a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span data-section='header' data-value='carrito'>Cart</span></a>";
@@ -145,7 +149,8 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     foreach($carrito[1] as $producto){
                         $articulo = getProducto($producto['producto_id']);
                         $total_prod_mod = round($articulo['precio'] * $moneda['precio_moneda']);
-                        $total += round($producto['Total_carrrito']); 
+                        $total_prod_mod = number_format($total_prod_mod, 0, ',', '.');
+                        $total += round($producto['total_carrito']);                         
                         echo "
                         <div class='item-cart mb-20'>
                             <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
@@ -156,8 +161,8 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         ";
                     }
                     $total = round($total * $moneda['precio_moneda']);
+                    $total = number_format($total, 0, ',', '.');
                     ?>
-
                         <div class="border-bottom pt-0 mb-15"></div>
                         <div class="cart-total">
                         <div class="row">
