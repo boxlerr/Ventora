@@ -22,7 +22,7 @@
             <li><a href="page-about-us.php" data-section="footer" data-value="sobre_nosotros">Sobre nosotros</a></li>
             <li><a href="politicas.php" data-section="footer" data-value="politicas_privacidad">Políticas de privacidad</a></li>
             <li><a href="page-term.php" data-section="footer" data-value="terminos_condiciones">Términos y condiciones</a></li>
-            <li><a href="#" data-section="footer" data-value="cookies">Cookies</a></li>
+            <li><a href="politicas.php" data-section="footer" data-value="cookies">Cookies</a></li>
             <!--<li><a href="#">Rastrear envío</a></li>-->
             </ul>
         </div>

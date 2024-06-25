@@ -82,7 +82,12 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                 <nav class="nav-main-menu d-none d-xl-block">
                 <ul class="main-menu">
                     <li><a class="active" href="index.php" data-section="header" data-value="inicio">Inicio</a></li>
-                    <li><a href="shop-grid.php" data-section="header" data-value="productos">Productos</a></li>
+                    <li class="has-children"><a href="#" data-section="header" data-value="productos">Productos</a>
+                    <ul class="sub-menu">
+                        <li><a href="shop-grid.php" data-section="header" data-value="importa">Minorista</a></li>
+                        <li><a href="shop-grid-mayorista.php" data-section="header" data-value="exporta">Mayorista</a></li>
+                    </ul>
+                    </li>
                     <li class="has-children"><a href="#" data-section="header" data-value="trabaja_con_nosotros">Trabajá con nosotros</a>
                     <ul class="sub-menu">
                         <li><a href="importar.php" data-section="header" data-value="importa">Importá</a></li>
