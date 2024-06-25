@@ -11074,9 +11074,15 @@ a:hover span {
   color: #000;
 }
 
-
-
 .ordenar_por p{
   display: inline !important;
   color: #000;
+}
+
+.wishlist_seleccionado{
+  background: var(--primary-color) url(../imgs/template/icons/wishlist-hover.svg) no-repeat center !important;
+}
+
+.wishlist_seleccionado:hover{
+  background: #fff url(../imgs/template/icons/wishlist.svg) no-repeat center !important;
 }

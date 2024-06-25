@@ -121,7 +121,11 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     ?>
                     </ul>
                 </div>
-                </div><a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php"><span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span><span class="number-item font-xs">5</span></a>
+                </div>
+                <a class="font-lg icon-list icon-wishlist" href="shop-wishlist.php">
+                    <span data-section="header" data-value="lista_de_deseos">Lista de Deseos</span>
+                    <!-- <span class="number-item font-xs">5</span> -->
+                </a>
                 <?php
                 if(!$usuario){
                     echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span data-section='header' data-value='carrito'>Cart</span></a>";
@@ -140,7 +144,8 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                     foreach($carrito[1] as $producto){
                         $articulo = getProducto($producto['producto_id']);
                         $total_prod_mod = round($articulo['precio'] * $moneda['precio_moneda']);
-                        $total += round($producto['Total_carrrito']); 
+                        $total_prod_mod = number_format($total_prod_mod, 0, ',', '.');
+                        $total += round($producto['total_carrito']);                         
                         echo "
                         <div class='item-cart mb-20'>
                             <div class='cart-image'><img src='assets/imgs/page/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></div>
@@ -151,8 +156,8 @@ if(empty($_SESSION["usuario"]) || isset($_GET['accion'])){
                         ";
                     }
                     $total = round($total * $moneda['precio_moneda']);
+                    $total = number_format($total, 0, ',', '.');
                     ?>
-
                         <div class="border-bottom pt-0 mb-15"></div>
                         <div class="cart-total">
                         <div class="row">

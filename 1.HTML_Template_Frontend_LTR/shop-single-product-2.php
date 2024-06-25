@@ -22,6 +22,7 @@
       $id = $_GET['id'];
       $producto = getProducto($id);
       $precio = round($producto['precio'] * $moneda['precio_moneda']);
+      $precio = number_format($precio, 0, ',', '.');
     }
     ?>
     <main class="main">
@@ -72,15 +73,22 @@
               </div>
             </div>
             <div class="col-lg-7">
+              <?php
+              $prodWish = buscarWishlist($producto['producto_id']);
+              ?>
               <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
-              <form class="row align-items-center" method="post" action="agregarWislist.php">
+              <form class="row align-items-center" method="post" action="agregarWishlist.php">
                 <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
                   <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
                 </div>
                 <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
                 <?php
                 if($usuario){
-                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWislist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Add to Wish list</span></span></div>";
+                  if($prodWish){
+                    echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='quitarWishlist' class='btn btn-wishlist wishlist_seleccionado mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Quitar de favoritos</span></span></div>";
+                  }else{
+                    echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWishlist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Agregar a favoritos</span></span></div>";
+                  }
                 } else{
                   echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><a class='mr-20' href='page-login.php'><span class='btn btn-wishlist mr-5 opacity-100 transform-none'></span><span class='font-md color-gray-900'>Add to Wish list</span></a></div>";
                 }

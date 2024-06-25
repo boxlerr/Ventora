@@ -37,9 +37,6 @@
               <div class="box-carts">
                 <div class="head-wishlist">
                   <div class="item-wishlist mt-55">
-                    <div class="wishlist-cb">
-                      <input class="cb-layout cb-all" type="checkbox">
-                    </div>
                     <div class="wishlist-product"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="producto">Product</span></div>
                     <div class="wishlist-price"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="precio_unidad">Unit Price</span></div>
                     <div class="wishlist-status"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="cantidad">Quantity</span></div>
@@ -55,9 +52,6 @@
                         $articulo = getProducto($producto['producto_id']);
                         echo"                      
                         <div class='item-wishlist'>
-                          <div class='wishlist-cb'>
-                            <input class='cb-layout cb-select' type='checkbox'>
-                          </div>
                           <div class='wishlist-product'>
                             <div class='product-wishlist'>
                               <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/page/product/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
@@ -78,7 +72,7 @@
                             </div>
                           </div>
                           <div class='wishlist-action'>
-                            <h4 class='color-brand-3'>$".htmlspecialchars($producto['precio_producto'])."</h4>
+                            <h4 class='color-brand-3'>$".htmlspecialchars($producto['total_carrito'])."</h4>
                           </div>
                           <div class='wishlist-remove'><a class='btn btn-delete' href='agregarCarrito.php?eliminar=".htmlspecialchars($producto['carrito_producto_id'])."'></a></div>
                         </div>";
