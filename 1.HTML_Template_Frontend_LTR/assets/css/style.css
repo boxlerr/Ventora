@@ -1785,33 +1785,42 @@ a.text-brand-3:hover {
   background: url(../imgs/page/product/checked.svg) no-repeat center;
 }
 
+.colorblanco{
+  color: white;
+}
+
 /*COMPONENTS -> FORM*/
 .form-control {
   border: 1px solid #DDE4F0 !important;
+  background-color: transparent;
 }
 
 .form-control::-webkit-date-and-time-value {
   color: #6B83B6;
   font-size: 14px;
   line-height: 18px;
+  background-color: transparent;
 }
 
 .form-control::-moz-placeholder {
   color: #B2C2E1;
   font-size: 14px;
   line-height: 18px;
+  background-color: transparent;
 }
 
 .form-control::placeholder {
   color: #B2C2E1;
   font-size: 14px;
   line-height: 18px;
+  background-color: transparent;
 }
 
 .form-control:disabled, .form-control[readonly] {
   color: #6B83B6;
   font-size: 14px;
   line-height: 18px;
+  background-color: transparent;
 }
 
 .box-swiper {
@@ -2418,6 +2427,11 @@ a.text-brand-3:hover {
 }
 .card-grid-style-4 .box-link {
   line-height: 10px;
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
 }
 
 .list-products-5 {
@@ -7412,7 +7426,7 @@ a.text-brand-3:hover {
 }
 
 .home7-style .card-grid-inner .image-box {
-  background-color: var(--tercery-color);
+  background-color: #1e2a36;
 }
 
 .mw-newsletter {
@@ -11056,7 +11070,6 @@ a:hover span {
   display: inline !important;
   width: 50%;
   background: transparent;
-  border: none !important;
   color: var(--tercery-color);
   font-size: 1em;
 }
@@ -11065,7 +11078,6 @@ a:hover span {
   display: inline !important;
   width: 50%;
   background: transparent;
-  border: none !important;
   color: var(--tercery-color);
   font-size: 1em;
 }
@@ -11078,5 +11090,5 @@ a:hover span {
 
 .ordenar_por p{
   display: inline !important;
-  color: #000;
+  color: #ffffff;
 }

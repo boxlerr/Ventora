@@ -92,8 +92,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                             <li><a class="active" href="index.php">Inicio</a></li>
                             <li class="has-children"><a href="#" data-section="header" data-value="productos">Productos</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop-grid.php" data-section="header" data-value="importa">Minorista</a></li>
-                                    <li><a href="shop-grid-mayorista.php" data-section="header" data-value="exporta">Mayorista</a></li>
+                                    <li><a href="shop-grid.php" data-section="header" data-value="minorista">Minorista</a></li>
+                                    <li><a href="shop-grid-mayorista.php" data-section="header" data-value="mayorista">Mayorista</a></li>
                                 </ul>
                             </li>
                             <li class="has-children"><a href="#">Trabajá con nosotros</a>
