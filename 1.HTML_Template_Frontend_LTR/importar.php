@@ -221,7 +221,7 @@
                             <div class="more"><i>+</i></div>
                         </div>
                         <div class="answer">
-                            <p>Num tel, Instagram, mail. (despues ingresar)<span>A</span></p>
+                            <p>Numero telefonico, Instagram, mail. (despues ingresar)<span>A</span></p>
                         </div>
                     </div>
                   </div>
