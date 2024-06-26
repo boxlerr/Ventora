@@ -25,9 +25,9 @@
             <div class="col-lg-10 mx-auto page-content">
               <h2 class="text-center mb-20">Preguntas Frecuentes</h2>
               <img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-              <div class="faq-container">
-                <div class="faq-topic">
-                <h3>Preguntas Generales</h3>
+              <div class="container-fluid">
+                <div class="title-faq">
+                <h3 class="faq-centrado">Preguntas Generales</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Qué tipo de productos venden?</div>
                   <div class="faq-answer">Vendemos una amplia variedad de productos electrónicos, ropa y accesorios para el hogar.</div>
@@ -47,7 +47,7 @@
               </div>
               
               <div class="faq-topic">
-                <h3>Registro y Cuenta</h3>
+                <h3 class="faq-centrado">Registro y Cuenta</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Necesito crear una cuenta para realizar una compra?</div>
                   <div class="faq-answer">Sí, es necesario crear una cuenta para realizar una compra en nuestro sitio web. Esto nos ayuda a proporcionarte un mejor servicio y seguimiento de tu pedido.</div>
@@ -67,7 +67,7 @@
               </div>
               
               <div class="faq-topic">
-                <h3>Pedidos y Compras</h3>
+                <h3 class="faq-centrado">Pedidos y Compras</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Pagos</h3>
+                <h3 class="faq-centrado">Pagos</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Envios y Entrega</h3>
+                <h3 class="faq-centrado">Envios y Entrega</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Devoluciones y Reembolsos</h3>
+                <h3 class="faq-centrado">Devoluciones y Reembolsos</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Productos y Stock</h3>
+                <h3 class="faq-centrado">Productos y Stock</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Importación y Exportación</h3>
+                <h3 class="faq-centrado">Importación y Exportación</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Seguridad y Privacidad</h3>
+                <h3 class="faq-centrado">Seguridad y Privacidad</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -207,7 +207,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3>Programas y Descuentos</h3>
+                <h3 class="faq-centrado">Programas y Descuentos</h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>

@@ -15,7 +15,7 @@
   <title>Vestore - Admin</title>
 </head>
 
-<body>
+<body data-bs-theme="dark">
   <?php
   include_once("header_admin.php")
   ?>
