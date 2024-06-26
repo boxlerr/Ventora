@@ -190,7 +190,6 @@
                     </div>
                   </div>
                 </div>
-              </div><a class="font-lg icon-list icon-compare" href="shop-compare.php"><span>Compare</span></a>
             </div>
           </div>
         </div>

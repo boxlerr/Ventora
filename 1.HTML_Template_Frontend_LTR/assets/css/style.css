@@ -526,15 +526,16 @@ body {
 }
 
 .bg-11 {
-  background-color: var(--negro-color);
+  background-image: url(../imgs/img/BannerHome1.jpg);
 }
 
 .bg-11-2 {
-  background-color: var(--negro-color);
+  background-image: url(../imgs/img/BannerHome2.jpg);
 }
 
 .bg-11-3 {
-  background-color: var(--negro-color);
+  background-image: url(../imgs/img/BannerHome3.jpg);
+
 }
 
 .bg-12 {
@@ -1592,6 +1593,10 @@ a.text-brand-3:hover {
   font-size: 14px;
   line-height: 18px;
   text-decoration: underline;
+}
+
+#productosindex{
+  color: rgb(182, 182, 182);
 }
 
 .colorblanco{
@@ -3000,7 +3005,6 @@ a.text-brand-3:hover {
   padding: 60px 60px 25px 60px;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: contain !important;
 }
 .banner-hero.banner-1 .banner-big.banner-big-2 {
   padding: 110px 60px 25px 60px;
@@ -3010,7 +3014,6 @@ a.text-brand-3:hover {
 }
 .banner-hero.banner-1 .banner-big.banner-big-3 {
   padding: 50px 40px 25px 40px;
-  background-image: url(../imgs/page/homepage4/bg-banner.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover !important;
@@ -3023,13 +3026,13 @@ a.text-brand-3:hover {
   position: relative;
 }
 .banner-hero.banner-1 .banner-small.banner-small-1 {
-  background-image: url(../imgs/page/homepage1/banner-small-1.png);
+  background-image: url(../imgs/img/AirpodsProManoSinFondo.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 60% auto;
 }
 .banner-hero.banner-1 .banner-small.banner-small-2 {
-  background-image: url(../imgs/page/homepage1/banner-small-2.png);
+  background-image: url(../imgs/img/AirpodsMax.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 70% auto;
@@ -7899,8 +7902,8 @@ a.text-brand-3:hover {
   width: 100%;
   line-height: 114px;
   max-width: 134px;
-  border-radius: 50%;
-  background: url(../imgs/page/homepage10/circle.png) no-repeat center;
+  border-radius: 20%;
+  background-color: #1e2a37;
   background-size: contain;
   display: inline-block;
   min-height: 114px;
@@ -11158,6 +11161,12 @@ a:hover span {
   height: 100%;
   margin-left: 5px;
   padding-right: 5px;
+}
+
+.flags__item:hover{
+  width: 32px;
+  height: 100%;
+  background-color: rgb(23, 23, 23);
 }
 
 .ordenar_por select{
