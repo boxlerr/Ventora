@@ -71,37 +71,24 @@
 
               <div class="container importar">
                 <div class="row">
-                  <div class="container-faq">
-                    <div class="title-faq">
-                      <h3 data-section="importar" data-value="faq">Preguntas Frecuentes</h3>
+                  <div class="container-fluid">
+                    <div class="faq-centrado">
+                      <h3>Resolvemos tus dudas!</h3>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>Nunca importe, no sé cómo hacerlo</h4>
-                        </div>
-                        <div class="answer">
-                            <p>Contáctanos para una consulta gratuita. Nos cuentas qué productos deseas importar y desde dónde. Nosotros te ayudamos a encontrar proveedores confiables en el extranjero. Tenemos una red de contactos y herramientas para verificar la calidad y reputación de los proveedores.</p>
-                        </div>
-                    </div>
-                  
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Cuanto me va a salir importar, existen costes extras?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Solicitamos cotizaciones a los proveedores seleccionados y te las presentamos para que elijas la que mejor se adapte a tus necesidades y presupuesto.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">Nunca importe, no sé cómo hacerlo</div>
+                      <div class="faq-answer">Contáctanos para una consulta gratuita. Nos cuentas qué productos deseas importar y desde dónde. Nosotros te ayudamos a encontrar proveedores confiables en el extranjero. Tenemos una red de contactos y herramientas para verificar la calidad y reputación de los proveedores.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Qué se detallará en la cotización que me enviarán?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>1. Descripción del Producto:<br>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Cuanto me va a salir importar, existen costes extras?</div>
+                      <div class="faq-answer">Solicitamos cotizaciones a los proveedores seleccionados y te las presentamos para que elijas la que mejor se adapte a tus necesidades y presupuesto.</div>
+                    </div>
+
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Qué se detallará en la cotización que me enviarán?</div>
+                      <div class="faq-answer">1. Descripción del Producto:<br>
                               - Detalles del producto que deseas importar (nombre, cantidad, especificaciones técnicas, etc.).<br>
                               - Información del proveedor (nombre, ubicación, contacto).<br><br>
                               2. Costo del Producto:<br>
@@ -135,93 +122,52 @@
                               11. Términos y Condiciones:<br>
                               - Plazos de pago y métodos aceptados.<br>
                               - Tiempos estimados de entrega.<br>
-                              - Políticas de cambios, cancelaciones y devoluciones.</p>
-                        </div>
+                              - Políticas de cambios, cancelaciones y devoluciones.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Cuál es el monto minimo para poder importar?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>En Argentina, no existe un monto mínimo legalmente establecido para realizar importaciones. Sin embargo, desde nuestra experiencia y para optimizar los costos y la eficiencia del proceso, recomendamos que las importaciones se realicen a partir de un valor mínimo de 1.000 USD. Este monto permite cubrir de manera efectiva los costos asociados y maximizar la rentabilidad de tu operación.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Cuál es el monto minimo para poder importar?</div>
+                      <div class="faq-answer">En Argentina, no existe un monto mínimo legalmente establecido para realizar importaciones. Sin embargo, desde nuestra experiencia y para optimizar los costos y la eficiencia del proceso, recomendamos que las importaciones se realicen a partir de un valor mínimo de 1.000 USD. Este monto permite cubrir de manera efectiva los costos asociados y maximizar la rentabilidad de tu operación.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Necesito tener una empresa para importar mercaderías?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>No, no necesitas tener una empresa para importar mercaderías. Nuestro servicio integral se encarga de todo el proceso de importación, permitiéndote recibir tu mercancía en Argentina sin la necesidad de abrir una empresa.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Necesito tener una empresa para importar mercaderías?</div>
+                      <div class="faq-answer">No, no necesitas tener una empresa para importar mercaderías. Nuestro servicio integral se encarga de todo el proceso de importación, permitiéndote recibir tu mercancía en Argentina sin la necesidad de abrir una empresa.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Cómo se paga la mercadería?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Pagar la mercadería importada es un proceso sencillo y flexible. Ofrecemos varias opciones de pago para adaptarnos a tus necesidades y preferencias.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo se paga la mercadería?</div>
+                      <div class="faq-answer">Pagar la mercadería importada es un proceso sencillo y flexible. Ofrecemos varias opciones de pago para adaptarnos a tus necesidades y preferencias.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Cómo se controla la calidad de la mercadería?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Garantizar la calidad de la mercadería es una de nuestras prioridades.<br>
-                            Trabajamos contigo para seleccionar proveedores confiables y de buena reputación, realizando una evaluación exhaustiva considerando su historial, capacidad de producción y cumplimiento de normas de calidad, verificamos la calidad solicitando fotografías, videos, muestras físicas y pesaje, y pedimos todos los certificados de calidad disponibles que respalden la conformidad del producto con las normas internacionales y especificaciones acordadas, como certificados ISO e informes de pruebas de laboratorio.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo se controla la calidad de la mercadería?</div>
+                      <div class="faq-answer">Garantizar la calidad de la mercadería es una de nuestras prioridades.<br>
+                      Trabajamos contigo para seleccionar proveedores confiables y de buena reputación, realizando una evaluación exhaustiva considerando su historial, capacidad de producción y cumplimiento de normas de calidad, verificamos la calidad solicitando fotografías, videos, muestras físicas y pesaje, y pedimos todos los certificados de calidad disponibles que respalden la conformidad del producto con las normas internacionales y especificaciones acordadas, como certificados ISO e informes de pruebas de laboratorio.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Necesito hacer algún trámite?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Para poder importar mercaderías, es necesario cumplir con algunos trámites básicos. En particular, necesitas:<br><br>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Necesito hacer algún trámite?</div>
+                      <div class="faq-answer">Para poder importar mercaderías, es necesario cumplir con algunos trámites básicos. En particular, necesitas:<br><br>
                             1. Ser Responsable Inscripto:<br>
                             - Debes estar registrado como Responsable Inscripto en la Administración Federal de Ingresos Públicos (AFIP) de Argentina. Esto te permitirá realizar operaciones comerciales de importación y cumplir con las obligaciones fiscales correspondientes.<br><br>
                             2. Domicilio Fiscal Declarado:<br>
-                            - Es necesario tener un domicilio fiscal declarado ante la AFIP. Este es el lugar donde recibirás todas las notificaciones y comunicaciones oficiales relacionadas con tus operaciones de importación.</p>
-                        </div>
+                            - Es necesario tener un domicilio fiscal declarado ante la AFIP. Este es el lugar donde recibirás todas las notificaciones y comunicaciones oficiales relacionadas con tus operaciones de importación.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿Cuánto tiempo demora una importación?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>El tiempo que demora una importación puede variar dependiendo de varios factores, pero en general, el proceso completo puede tardar entre 6 y 15 días hábiles.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿Cuánto tiempo demora una importación?</div>
+                      <div class="faq-answer">El tiempo que demora una importación puede variar dependiendo de varios factores, pero en general, el proceso completo puede tardar entre 6 y 15 días hábiles.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>¿La mercadería tiene seguro?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Es recomendable contratar un seguro de carga para proteger tu mercancía contra daños o pérdidas durante el transporte. Te ofrecemos opciones de seguro y te ayudamos a seleccionar la cobertura adecuada.</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">¿La mercadería tiene seguro?</div>
+                      <div class="faq-answer">Es recomendable contratar un seguro de carga para proteger tu mercancía contra daños o pérdidas durante el transporte. Te ofrecemos opciones de seguro y te ayudamos a seleccionar la cobertura adecuada.</div>
                     </div>
 
-                    <div class="item-faq">
-                        <div class="question">
-                            <h4>Tengo otras consultas antes de cotizar, como las puedo evacuar?</h4>
-                            
-                        </div>
-                        <div class="answer">
-                            <p>Por nuestro numero telefonico, Instagram, mail. (despues ingresar)</p>
-                        </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(this)">Tengo otras consultas antes de cotizar, como las puedo evacuar?</div>
+                      <div class="faq-answer">Por nuestro numero telefonico, Instagram, mail. (despues ingresar)</div>
                     </div>
                   </div>
                 </div>
@@ -310,5 +256,12 @@
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
     <script src="assets/js/javaS.js"></script>
+
+    <script>
+      function toggleAnswer(element) {
+          const answer = element.nextElementSibling;
+          answer.classList.toggle('open');
+      }
+    </script>
   </body>
 </html>
