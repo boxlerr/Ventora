@@ -10,7 +10,10 @@
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
+
+
     <title>Terminos y Condiciones - Vestore</title>
   </head>
   <body>
@@ -25,6 +28,88 @@
             <div class="col-lg-10 mx-auto page-content">
               <h2 class="text-center mb-20">Preguntas Frecuentes</h2>
               <img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
+              
+              <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
               <div class="container-fluid">
                 <div class="title-faq">
                 <h3 class="faq-centrado">Preguntas Generales</h3>
@@ -82,9 +167,14 @@
                 </div>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Puedo hacer pedidos especiales o personalizados?</div>
-                  <div class="faq-answer">Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. Por favor contáctanos directamente para discutir tus necesidades específicas.</div>
+                  <div class="faq-answer">
+                  Sí, ofrecemos la posibilidad de hacer pedidos especiales o personalizados. 
+                  Por favor contáctanos directamente para discutir tus necesidades específicas. 
+                  <a href="importar.php">importar</a> / <a href="exportar.php">exportar</a>
+                  </div>
                 </div>
-                </div>
+
+
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado">Pagos</h3>
@@ -231,7 +321,8 @@
           </div>
         </div>
       </section>
-      <section class="section-box mt-90 mb-50">
+      
+<!-- <section class="section-box mt-90 mb-50">
         <div class="container">
           <ul class="list-col-5">
             <li>
@@ -299,6 +390,7 @@
             </div>
           </div>
         </div>
+        -->
       </section>
     </main>
     <footer class="footer">
@@ -327,6 +419,7 @@
     <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Añade el JavaScript para las preguntas frecuentes al final del cuerpo -->
     <script>
