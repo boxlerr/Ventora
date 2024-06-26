@@ -27,7 +27,6 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
             <ul class="nav-small">
                 <li><a class="font-xs" href="page-contact.php">Sobre nosotros</a></li>
                 <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
-                <li><a class="font-xs" href="page-register.php">Importá con nosotros</a></li>
             </ul>
         </div>
         <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Envío gratis en compras a partir de</span><span class="font-sm-bold color-success"> ARS 40.000</span></div>
@@ -113,7 +112,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                     <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
                 </div>
                 <div class="header-shop">
-                    <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span>Account</span></span>
+                    <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span>Cuenta</span></span>
                         <div class="dropdown-account">
                             <ul>
                                 <?php
@@ -124,7 +123,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                     <li><a href='page-account.php'>Mis compras</a></li>
                                     <li><a href='page-account.php'>Mis favoritos</a></li>
                                     <li><a href='page-account.php'>Configuracion</a></li>
-                                    <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar cuenta</a></li>
+                                    <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar sesión</a></li>
                                     ";
                                 } else {
                                     echo "<li><a href='page-login.php'>Iniciar sesion</a></li>";
@@ -136,9 +135,9 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                     </div>
                     <?php
                     if($usuario){
-                        echo "<a class='font-lg icon-list icon-wishlist' href='shop-wishlist.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                        echo "<a class='font-lg icon-list icon-wishlist' href='shop-wishlist.php'><span data-section='header' data-value='lista_de_deseos'>Favoritos</span></a>";
                     } else{
-                        echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Lista de Deseos</span></a>'";
+                        echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Favoritos</span></a>";
                     }
                     ?>
                     <?php
@@ -188,7 +187,6 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                             </div>
                         </div>
                     <?php } ?>
-                    <a class="font-lg icon-list icon-compare" href="shop-compare.php"><span>Compare</span></a>
                 </div>
             </div>
         </div>
