@@ -68,7 +68,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
     <div class="container">
         <div class="main-header">
             <div class="header-left">
-                <div class="header-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+                <div class="header-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/img/vestorelogo.png" style="width: 80px;"></a></div>
                 <div class="header-search ">
                     <div class="box-header-search">
                         <form class="form-search" method="post" action="#">
@@ -190,7 +190,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
 <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-content-area">
-            <div class="mobile-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/template/logo.svg"></a></div>
+            <div class="mobile-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/img/vestorelogo.png" style="width: 80px;"></a></div>
             <div class="perfect-scroll">
                 <div class="mobile-menu-wrap mobile-header-border">
                     <nav class="mt-15">
