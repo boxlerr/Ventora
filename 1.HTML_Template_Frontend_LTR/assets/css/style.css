@@ -11288,6 +11288,16 @@ a:hover span {
 .page-content p {
   margin-bottom: 15px;
 }
+
+.imagen-pequena{
+  width: 100px;
+  height: 100px; 
+}
+.imagen-faqs-icon{
+  width: 100px;
+  height: 100px; 
+}
+
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 768px) {
@@ -11299,3 +11309,5 @@ a:hover span {
     margin-bottom: 10px;
   }
 }
+
+

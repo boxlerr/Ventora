@@ -14,7 +14,7 @@
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
 
 
-    <title>Terminos y Condiciones - Vestore</title>
+    <title>Preguntas Frecuentes - Vestore</title>
   </head>
   <body>
     <?php
@@ -28,88 +28,13 @@
             <div class="col-lg-10 mx-auto page-content">
               <h2 class="text-center mb-20">Preguntas Frecuentes</h2>
               <img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-              
-              <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/imgs/img/airpods3ra.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
+            <div class="container mt-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                <img src="assets/imgs/img/faqs-icon.webp" alt="Icono devolucion vestore" class="imagen-faqs-icon">
+                </div>
+              </div>
+            </div>
               <div class="container-fluid">
                 <div class="title-faq">
                 <h3 class="faq-centrado">Preguntas Generales</h3>
@@ -217,7 +142,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3 class="faq-centrado">Devoluciones y Reembolsos</h3>
+                <h3 class="faq-centrado">Devoluciones y <a href="politicas-reembolso.php"> Reembolsos</a></h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -257,7 +182,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3 class="faq-centrado">Importación y Exportación</h3>
+                <h3 class="faq-centrado"><a href="importar.php">Importación</a> y <a href="exportar.php">Exportación</a></h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>
@@ -277,7 +202,7 @@
                 </div>
 
                 <div class="faq-topic">
-                <h3 class="faq-centrado">Seguridad y Privacidad</h3>
+                <h3 class="faq-centrado">Seguridad y <a href="politicas.php">Privacidad</a></h3>
                 <div class="faq-item">
                   <div class="faq-question" onclick="toggleAnswer(this)">¿Cómo realizo un pedido?</div>
                   <div class="faq-answer">Para realizar un pedido, simplemente selecciona los productos que deseas comprar, añádelos al carrito y procede al pago siguiendo las instrucciones en pantalla.</div>

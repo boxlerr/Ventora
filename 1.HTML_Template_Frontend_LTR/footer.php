@@ -20,8 +20,9 @@
             <h4 class="mb-30 color-gray-1000" data-section="footer" data-value="empresa">Empresa</h4>
             <ul class="menu-footer">
             <li><a href="page-about-us.php" data-section="footer" data-value="sobre_nosotros">Sobre nosotros</a></li>
-            <li><a href="politicas.php" data-section="footer" data-value="politicas_privacidad">Políticas de privacidad</a></li>
             <li><a href="page-term.php" data-section="footer" data-value="terminos_condiciones">Términos y condiciones</a></li>
+            <li><a href="politicas.php" data-section="footer" data-value="politicas_privacidad">Políticas de privacidad</a></li>
+            <li><a href="politicas-reembolso.php" data-section="footer" data-value="politicas_devolucion">Politicas de Devolución y Reembolso</a></li>
             <li><a href="politicas.php" data-section="footer" data-value="cookies">Cookies</a></li>
             <!--<li><a href="#">Rastrear envío</a></li>-->
             </ul>
