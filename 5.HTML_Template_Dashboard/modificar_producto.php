@@ -13,7 +13,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <title>Ecom - Marketplace Dashboard Template</title>
 </head>
-<body>
+<body class="dark">
 <?php
 include_once("header_admin.php");
 require_once("../conexion/connect.php");

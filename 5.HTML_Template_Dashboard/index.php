@@ -15,7 +15,7 @@
   <title>Vestore - Admin</title>
 </head>
 
-<body data-bs-theme="dark">
+<body class="dark">
   <?php
   include_once("header_admin.php")
   ?>
@@ -27,44 +27,104 @@
       </div>
       <div><a class="btn btn-primary" href="#"><i class="text-muted material-icons md-post_add"></i>Create report</a></div>
     </div>
-    <div class="row">
-      <div class="col-lg-3">
+
+    <!-- mostrar datos con consultas -->
+    <?php
+require_once("../conexion/connect.php");
+
+if ($con) {
+    // Revenue
+    $queryRevenue = "SELECT SUM(total) AS total_revenue FROM venta";
+    $resultRevenue = mysqli_query($con, $queryRevenue);
+    $rowRevenue = mysqli_fetch_assoc($resultRevenue);
+    $totalRevenue = $rowRevenue['total_revenue'];
+
+    // Orders
+    $queryOrders = "SELECT COUNT(*) AS pending_orders FROM envio WHERE estado = 'pendiente'";
+    $resultOrders = mysqli_query($con, $queryOrders);
+    $rowOrders = mysqli_fetch_assoc($resultOrders);
+    $pendingOrders = $rowOrders['pending_orders'];
+
+    // Products
+    $queryProducts = "SELECT COUNT(*) AS total_products FROM producto";
+    $resultProducts = mysqli_query($con, $queryProducts);
+    $rowProducts = mysqli_fetch_assoc($resultProducts);
+    $totalProducts = $rowProducts['total_products'];
+
+    // Categories
+    $queryCategories = "SELECT COUNT(*) AS total_categories FROM categoria";
+    $resultCategories = mysqli_query($con, $queryCategories);
+    $rowCategories = mysqli_fetch_assoc($resultCategories);
+    $totalCategories = $rowCategories['total_categories'];
+
+    // Monthly Revenue
+    $currentMonth = date('Y-m');
+    $queryMonthlyRevenue = "SELECT SUM(total) AS monthly_revenue FROM venta WHERE DATE_FORMAT(fecha_venta, '%Y-%m') = '$currentMonth'";
+    $resultMonthlyRevenue = mysqli_query($con, $queryMonthlyRevenue);
+    $rowMonthlyRevenue = mysqli_fetch_assoc($resultMonthlyRevenue);
+    $monthlyRevenue = $rowMonthlyRevenue['monthly_revenue'];
+}
+?>
+
+<div class="row">
+    <div class="col-lg-3">
         <div class="card card-body mb-4">
-          <article class="icontext"><span class="icon icon-sm rounded-circle bg-primary-light"><i class="text-primary material-icons md-monetization_on"></i></span>
-            <div class="text">
-              <h6 class="mb-1 card-title">Revenue</h6><span>$13,456.5</span><span class="text-sm">Shipping fees are not included</span>
-            </div>
-          </article>
+            <article class="icontext">
+                <span class="icon icon-sm rounded-circle bg-primary-light">
+                    <i class="text-primary material-icons md-monetization_on"></i>
+                </span>
+                <div class="text">
+                    <h6 class="mb-1 card-title">Ganancia</h6>
+                    <span><?php echo '$' . number_format($totalRevenue, 2); ?></span>
+                    <span class="text-sm">Shipping fees are not included</span>
+                </div>
+            </article>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card card-body mb-4">
-          <article class="icontext"><span class="icon icon-sm rounded-circle bg-success-light"><i class="text-success material-icons md-local_shipping"></i></span>
-            <div class="text">
-              <h6 class="mb-1 card-title">Orders</h6><span>53.668</span><span class="text-sm">Excluding orders in transit</span>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card card-body mb-4">
-          <article class="icontext"><span class="icon icon-sm rounded-circle bg-warning-light"><i class="text-warning material-icons md-qr_code"></i></span>
-            <div class="text">
-              <h6 class="mb-1 card-title">Products</h6><span>9.856</span><span class="text-sm">In 19 Categories</span>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card card-body mb-4">
-          <article class="icontext"><span class="icon icon-sm rounded-circle bg-info-light"><i class="text-info material-icons md-shopping_basket"></i></span>
-            <div class="text">
-              <h6 class="mb-1 card-title">Monthly Earning</h6><span>$6,982</span><span class="text-sm">Based in your local time.</span>
-            </div>
-          </article>
-        </div>
-      </div>
     </div>
+    <div class="col-lg-3">
+        <div class="card card-body mb-4">
+            <article class="icontext">
+                <span class="icon icon-sm rounded-circle bg-success-light">
+                    <i class="text-success material-icons md-local_shipping"></i>
+                </span>
+                <div class="text">
+                    <h6 class="mb-1 card-title">Ordenes pendientes</h6>
+                    <span><?php echo number_format($pendingOrders); ?></span>
+                    <span class="text-sm">Excluding orders in transit</span>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="card card-body mb-4">
+            <article class="icontext">
+                <span class="icon icon-sm rounded-circle bg-warning-light">
+                    <i class="text-warning material-icons md-qr_code"></i>
+                </span>
+                <div class="text">
+                    <h6 class="mb-1 card-title">Productos</h6>
+                    <span><?php echo number_format($totalProducts); ?></span>
+                    <span class="text-sm">In <?php echo number_format($totalCategories); ?> Categories</span>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="card card-body mb-4">
+            <article class="icontext">
+                <span class="icon icon-sm rounded-circle bg-info-light">
+                    <i class="text-info material-icons md-shopping_basket"></i>
+                </span>
+                <div class="text">
+                    <h6 class="mb-1 card-title">Ganancia del mes</h6>
+                    <span><?php echo '$' . number_format($monthlyRevenue, 2); ?></span>
+                    <span class="text-sm">Based on your local time.</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+    
     <div class="row">
       <div class="col-xl-8 col-lg-12">
         <div class="card mb-4">
