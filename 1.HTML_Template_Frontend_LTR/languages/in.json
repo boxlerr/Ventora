@@ -509,7 +509,7 @@
         "importar_text_2": "We stand out for our dedication and experience, using advanced technology and customized strategies for each client. Whether you need guidance to navigate the complexities of international regulations or logistical solutions to optimize your shipments, we are here to assist you every step of the way.",
         "importar_text_3": "Trust Vestore to manage all your import needs. With a team of experts and a global network of partners, we ensure that your business remains competitive and efficient in the dynamic global market.",
         "te_traemos":"We bring whatever you want right to your doorstep!",
-        "faq":"Frequently Asked Questions",
+        "faq":"We solve your doubts!",
 
         "faq-preg-1":"I never imported, I don't know how to do it.",
         "faq-resp-1":"Contact us for a free consultation. Tell us which products you want to import and from where. We will help you find reliable suppliers abroad. We have a network of contacts and tools to verify the quality and reputation of the suppliers.",
@@ -518,7 +518,7 @@
         "faq-resp-2":"We request quotes from the selected suppliers and present them to you so you can choose the one that best fits your needs and budget.",
 
         "faq-preg-3":"What will be detailed in the quote you will send me?",
-        "faq-resp-3":"",
+        "faq-resp-3":"1. Product Description:<br> - Details of the product you wish to import (name, quantity, technical specifications, etc.).<br> - Supplier information (name, location, contact).<br><br> 2. Product Cost:<br> - Unit price and total price of the product based on the requested quantity.<br> - Currency used for the transaction (dollars, euros, etc.).<br><br> 3. International Freight:<br> - Shipping method (air, sea, or land).<br> - Cost of transportation from the country of origin to Argentina.<br> - Estimated transit time.<br><br> 4. Cargo Insurance:<br> - Cost of insurance to protect the goods during transportation.<br> - Coverage and terms of the insurance.<br><br> 5. Customs Duties and Taxes:<br> - Estimate of tariffs and taxes payable upon entry of the goods into Argentina.<br> - Calculation based on the tariff classification of the product and its value.<br><br> 6. Customs Procedures:<br> - Costs associated with customs clearance and release of the goods.<br> - Included services (customs clearance, documentation, etc.).<br><br> 7. Storage Costs (if applicable):<br> - Breakdown of storage costs if the goods need to be temporarily stored.<br> - Duration and conditions of storage.<br><br> 8. Local Transport:<br> - Cost of transportation from the port or airport in Argentina to your final location.<br> - Transport method (truck, courier, etc.).<br><br> 9. Import Service Fees:<br> - Our fees for managing the entire import process.<br> - Included services (supplier sourcing, negotiation, logistics coordination, etc.).<br><br> 10. Extra Costs (if applicable):<br> - Details of any additional costs that may arise (inspections, certifications, bank fees, etc.).<br> - Justification and explanation of these costs.<br><br> 11. Terms and Conditions:<br> - Payment terms and accepted methods.<br> - Estimated delivery times.<br> - Policies regarding changes, cancellations, and returns.",
 
         "faq-preg-4":"What is the minimum amount required to import?",
         "faq-resp-4":"In Argentina, there is no legally established minimum amount required to conduct imports. However, based on our experience and to optimize costs and efficiency in the process, we recommend imports be conducted starting from a minimum value of 1,000 USD. This amount effectively covers associated costs and maximizes the profitability of your operation.",
@@ -562,6 +562,11 @@
     },
 
     "placeholder":{
-        "nombre":"Name"
+        "nombre":"<input class='form-control' type='text' placeholder='Name'>",
+        "apellido":"<input class='form-control' type='text' placeholder='Surname'>",
+        "mail":"<input class='form-control' type='email' placeholder='Email'>",
+        "telefono":"<input class='form-control' type='tel' placeholder='Phone Number'>",
+        "cuentanos":"<textarea class='form-control' placeholder='Tell us about what you want to import and we will contact you!' rows='5'></textarea>",
+        "enviar_mensaje":"<input class='btn btn-buy w-auto' type='submit' value='Send Message'>"
     }
 }
