@@ -26,87 +26,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="box-border">
-              <!-- <div class="box-payment"><a class="btn btn-gpay"><img src="assets/imgs/page/checkout/gpay.svg" alt="Ecom"></a><a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a><a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
-              <div class="border-bottom-4 text-center mb-20">
-                <div class="text-or font-md color-gray-500">Or</div>
-              </div> -->
-              <div class="row">
-                <div class="col-lg-6 col-sm-6 mb-20">
-                  <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
-                </div>
-                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Email*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="First name*">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Last name*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 1*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 2">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <select class="form-control font-sm select-style1 color-gray-700">
-                      <option value="">Select an option...</option>
-                      <option value="1">Option 1</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="City*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Company name">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Phone*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-0">
-                    <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3>Tu compra se a realizado con exito</h3>
             <div class="row mt-20">
-              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-pay.php">Pasar al pago</a></div>
+              <!-- <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-checkout.php">Volver a la informacion del envio</a></div> -->
+              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-checkout.php">Seguir comprando</a></div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="box-border">
-              <h5 class="font-md-bold mb-20">Tu orden</h5>
+              <h5 class="font-md-bold mb-20">Detalles de la compra</h5>
               <?php
               $carrito = mostrarCarrito($usuario);
               if($carrito[0]){
