@@ -16,7 +16,7 @@
   <title>Ecom - Marketplace Dashboard Template</title>
 </head>
 
-<body>
+<body class="dark">
   <?php
   include_once("header_admin.php")
   ?>
