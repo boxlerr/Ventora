@@ -249,7 +249,7 @@
                 <h4 class="color-gray-500 mb-5" data-section="index" data-value="auriculares">Auriculares</h4>
                 <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
               </div>
-              <div class="box-img-banner"> <img class="img1" src="assets/imgs/page/homepage10/banner3.png" alt="Ecom"></div>
+              <div class="box-img-banner"> <img class="img1" src="assets/imgs/img/airpodsprofondotransparente.png" alt="Ecom"></div>
             </div>
           </div>
           <div class="col-lg-4 mb-20">
@@ -261,7 +261,7 @@
                 <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a>
                 </div>
               </div>
-              <div class="box-img-banner"> <img class="img2" src="assets/imgs/page/homepage10/banner4.png" alt="Ecom"></div>
+              <div class="box-img-banner"> <img class="img2" src="assets/imgs/img/airpods2gen.png" alt="Ecom"></div>
             </div>
           </div>
           <div class="col-lg-4 mb-20">
@@ -272,7 +272,7 @@
                 <div class="mt-30"><a class="btn btn-brand-2 btn-arrow-right" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a>
                 </div>
               </div>
-              <div class="box-img-banner"> <img class="img3" src="assets/imgs/page/homepage10/banner5.png" alt="Ecom"></div>
+              <div class="box-img-banner"> <img class="img3" src="assets/imgs/img/airpodspromax.png" alt="Ecom"></div>
             </div>
           </div>
         </div>
