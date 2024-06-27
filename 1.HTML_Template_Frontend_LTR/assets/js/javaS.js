@@ -82,3 +82,17 @@ for (let i = 0; i < btnDropdown.length; i ++) {
     })
 }
 
+let animado = document.querySelectorAll(".animado");
+function mostrarScroll(params) {
+    let scrollTop = document.documentElement.scrollTop;
+    for (var i = 0; i < animado.length; i++) {
+        let alturaAnimado = animado[i].offsetTop;
+        if (alturaAnimado - 300 < scrollTop) {
+            animado[i].style.opacity=1;
+            animado[i].classList.add("mostrarArriba");
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarScroll);
+

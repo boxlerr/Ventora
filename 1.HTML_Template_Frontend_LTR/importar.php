@@ -10,6 +10,7 @@
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
     <title>Importar - Vestore</title>
   </head>
@@ -23,16 +24,48 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h2 class="item-cat" data-section="importar" data-value="importa_con_vestore">Importa con Vestore</h2>
-              <div class="row mt-20">
-                <div class="row">
-                  <p class="font-sm font-medium color-white mb-15 col texto-importar animated animatedFadeInUp fadeInUp" data-section="importar" data-value="importar_text_1">En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</p>
-                  <p class="font-sm font-medium color-white mb-15 col texto-importar animated animatedFadeInUp fadeInUp" data-section="importar" data-value="importar_text_2">Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</p>
-                  <p class="font-sm font-medium color-white mb-15 col texto-importar animated animatedFadeInUp fadeInUp" data-section="importar" data-value="importar_text_3">Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
+              <h2 class="item-cat titulo-importar" data-section="importar" data-value="importa_con_vestore">Importa con Vestore</h2>
+
+              
+
+              
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card-container card-border">
+                    <img src="assets/imgs/img/importar-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Honestidad</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar">Con cada compra</span><br>
+                      <div class="linea-importar"></div>
+                      En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-container card-border">
+                    <img src="assets/imgs/img/importar-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Compromiso</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar">Con los clientes y compañeros</span><br>
+                      <div class="linea-importar"></div>
+                      Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-container card-border">
+                    <img src="assets/imgs/img/importar-3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Confiables</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar">Garantizando el mejor servicio</span><br>
+                      <div class="linea-importar"></div>
+                      Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="contact-form">
+              <div class="contact-form animado">
                   <h3 class="color-brand-3 mt-60" data-section="importar" data-value="importar">Importar</h3>
                   <p class="font-sm color-gray-700 mb-30" data-section="importar" data-value="te_traemos">Te traemos lo que quieras a la puerta de tu casa!</p>
                   <div class="row">
@@ -69,7 +102,7 @@
                 </div>
               </div>
 
-              <div class="container importar">
+              <div class="container importar animado">
                 <div class="row">
                   <div class="container-fluid">
                     <div class="faq-centrado">
@@ -256,6 +289,7 @@
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
     <script src="assets/js/javaS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
       function toggleAnswer(element) {
