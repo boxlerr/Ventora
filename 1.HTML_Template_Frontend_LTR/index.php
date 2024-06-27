@@ -77,15 +77,15 @@
               <div class="row">
                 <div class="col-lg-12 col-md-6 col-sm-12">
                   <div class="banner-small banner-small-1 bg-13"><span class="color-danger text-uppercase font-sm-lh32">10%<span class="color-brand-3" data-section="index" data-value="descuento10">de descuento</span></span>
-                    <h4 class="mb-10" data-section="index" data-value="applewatch7">AirPods Pro 2da Gen.</h4>
-                    <p class="color-brand-3 font-desc" data-section="index" data-value="ultima_oportunidad">No te los pierdas</p>
+                    <h4 class="mb-10" data-section="index" data-value="airpodspro">AirPods Pro 2da Gen.</h4>
+                    <p class="color-brand-3 font-desc" data-section="index" data-value="oferta">No te pierdas esta oferta única</p>
                     <div class="mt-20"><a class="btn btn-brand-3" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                   </div>
                 </div>
                 <div class="col-lg-12 col-md-6 col-sm-12">
                   <div class="banner-small banner-small-2 bg-14"><span class="color-danger text-uppercase font-sm-lh32" data-section="index" data-value="ultima_coleccion">ÚLTIMA COLECCIÓN</span>
-                    <h4 class="mb-10" data-section="index" data-value="dispo_y_soft_apple">AirPods Max</h4>
-                    <p class="color-brand-3 font-md" data-section="index" data-value="ultima_oportunidad">Los mejores precios</p>
+                    <h4 class="mb-10" data-section="index" data-value="airpodsmax">AirPods Max</h4>
+                    <p class="color-brand-3 font-md" data-section="index" data-value="mejor_precio">Los mejores precios</p>
                     <div class="mt-20"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
                   </div>
                 </div>
