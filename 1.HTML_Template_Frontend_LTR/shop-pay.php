@@ -1,3 +1,29 @@
+<?php
+require '../vendor/autoload.php';
+MercadoPago\SDK::setAccessToken('');//agregar credecial cuando creen cuenta
+
+$preference = new MercadoPago\Preference();
+
+$item = new MercadoPago\Item();
+$item->id='0001';
+$item->title='producto1';
+$item->id=1;
+$item->id=1500;
+$item->id='ARS';
+
+$preference->items = array($item);
+
+$preference->back_urls = array(
+  "success" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compra.php",
+  "failure" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compraFallada.php"
+);
+
+$preference->auto_return = "approved";
+$preference->binary_mode = "true";
+
+$preference->save();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +39,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
   <title>Pagos</title>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 
 <body>
@@ -27,81 +54,14 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="box-border">
-              <!-- <div class="box-payment"><a class="btn btn-gpay"><img src="assets/imgs/page/checkout/gpay.svg" alt="Ecom"></a><a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a><a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
-              <div class="border-bottom-4 text-center mb-20">
-                <div class="text-or font-md color-gray-500">Or</div>
-              </div> -->
-              <div class="row">
-                <div class="col-lg-6 col-sm-6 mb-20">
-                  <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
-                </div>
-                <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Email*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="First name*">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Last name*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 1*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 2">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <select class="form-control font-sm select-style1 color-gray-700">
-                      <option value="">Select an option...</option>
-                      <option value="1">Option 1</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="City*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Company name">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Phone*">
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-0">
-                    <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
-                  </div>
-                </div>
-              </div>
+              <div class="box-payment">
+                <div class="btn botonMercadoPago"></div>
+                <a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a>
+                <a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
             </div>
             <div class="row mt-20">
-              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-pay.php">Pasar al pago</a></div>
+              <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-checkout.php">Volver a la informacion del envio</a></div>
+              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-compra.php">Comprar</a></div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -164,6 +124,22 @@
         </div>
       </div>
     </section>
+    <script>
+      const mp = new MercadoPago('',{//aca va la public key
+      locale:'es-AR'
+      });
+  
+      mp.checkout({
+          preference: {
+              id: '<?php $preference->id; ?>'
+          },
+          reder:{
+            container: '.botonMercadoPago',
+            label:'Pagar con MP'
+          }
+      })
+    </script>
+
     <section class="section-box box-newsletter">
       <div class="container">
         <div class="row">
@@ -394,6 +370,7 @@
   <script src="assets/js/main.js?v=3.0.0"></script>
   <script src="assets/js/shop.js?v=1.2.1"></script>
   <script src="assets/js/javaS.js"></script>
+  <script src="assets/js/mercadoPago.js"></script>
 </body>
 
 </html>
