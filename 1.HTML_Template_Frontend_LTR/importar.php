@@ -34,10 +34,10 @@
                   <div class="card-container card-border">
                     <img src="assets/imgs/img/importar-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Honestidad</h5>
-                      <p class="card-text"><span class="subtitulo-card-importar">Con cada compra</span><br>
+                      <h5 class="card-title" data-section="importar" data-value="honestidad">Honestidad</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar" data-section="importar" data-value="con_cada_compra">Con cada compra</span><br>
                       <div class="linea-importar"></div>
-                      En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</p>
+                      <span data-section="importar" data-value="importar_text_1">En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.</span></p>
                     </div>
                   </div>
                 </div>
@@ -45,10 +45,10 @@
                   <div class="card-container card-border">
                     <img src="assets/imgs/img/importar-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Compromiso</h5>
-                      <p class="card-text"><span class="subtitulo-card-importar">Con los clientes y compañeros</span><br>
+                      <h5 class="card-title" data-section="importar" data-value="compromiso">Compromiso</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar" data-section="importar" data-value="con_los_clientes">Con los clientes y compañeros</span><br>
                       <div class="linea-importar"></div>
-                      Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</p>
+                      <span data-section="importar" data-value="importar_text_2">Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.</span></p>
                     </div>
                   </div>
                 </div>
@@ -56,10 +56,10 @@
                   <div class="card-container card-border">
                     <img src="assets/imgs/img/importar-3.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Confiables</h5>
-                      <p class="card-text"><span class="subtitulo-card-importar">Garantizando el mejor servicio</span><br>
+                      <h5 class="card-title" data-section="importar" data-value="confiables">Confiables</h5>
+                      <p class="card-text"><span class="subtitulo-card-importar" data-section="importar" data-value="garantizando">Garantizando el mejor servicio</span><br>
                       <div class="linea-importar"></div>
-                      Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</p>
+                      <span data-section="importar" data-value="importar_text_3">Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.</span></p>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@
                   <div class="row">
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Nombre">
+                        "nombre":"<input class="form-control" type="text" placeholder="Nombre">"
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -99,7 +99,7 @@
                         <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
                       </div>
                     </div>
-                </div>
+                  </div>
               </div>
 
               <div class="container importar animado">

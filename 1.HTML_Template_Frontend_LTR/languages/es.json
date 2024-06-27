@@ -16,7 +16,7 @@
         "gafas_virtuales": "Gafas de realidad virtual",
         "carrouselP3":"text",
         "descuento10": "de descuento",
-        "airpodspro": "AirPods Pro 2da Gen.",
+        "airpods": "AirPods 3ra Gen.",
         "oferta": "No te pierdas esta oferta única",
         "ultima_coleccion": "ÚLTIMA COLECCIÓN",
         "airpodsmax": "AirPods Max",
@@ -501,6 +501,12 @@
     "importar":{
         "importar":"Importar",
         "importa_con_vestore":"Importa con Vestore",
+        "honestidad":"Honestidad",
+        "con_cada_compra":"Con cada compra",
+        "compromiso":"Compromiso",
+        "con_los_clientes":"Con los clientes y compañeros",
+        "confiables":"Confiables",
+        "garantizando":"Garantizando el mejor servicio",
         "importar_text_1":"En Vestore, nos especializamos en ofrecer soluciones integrales de importación que facilitan el acceso a mercados internacionales. Nuestro objetivo es simplificar el proceso de importación, brindándote la tranquilidad de saber que tus productos llegarán a tiempo y en perfectas condiciones.",
         "importar_text_2":"Nos diferenciamos por nuestra dedicación y experiencia, utilizando tecnología avanzada y estrategias personalizadas para cada cliente. Ya sea que necesites asesoría para navegar las complejidades de las regulaciones internacionales o soluciones logísticas para optimizar tus envíos, estamos aquí para ayudarte en cada paso del camino.",
         "importar_text_3":"Confía en Vestore para gestionar todas tus necesidades de importación. Con un equipo de expertos y una red global de socios, garantizamos que tu negocio se mantenga competitivo y eficiente en el dinámico mercado global.",
@@ -555,5 +561,9 @@
         "subtotal":"Subtotal",
         "pedido":"Pedido",
         "total":"Total"
+    },
+
+    "placeholder":{
+        "nombre":"Nombre"
     }
 }
