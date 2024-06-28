@@ -30,7 +30,7 @@ $categorias = getCategorias();
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Categorias</title>
 </head>
 
 <body class="dark">
@@ -41,11 +41,11 @@ $categorias = getCategorias();
     <section class="content-main">
       <div class="content-header">
         <div>
-          <h2 class="content-title card-title">Categories</h2>
-          <p>Add, edit or delete a category</p>
+          <h2 class="content-title card-title">Categorias</h2>
+          <p>Añadir, editar o eliminar una categoria</p>
         </div>
         <div>
-          <input class="form-control bg-white" type="text" placeholder="Search Categories">
+          <input class="form-control bg-white" type="text" placeholder="Buscar categoria">
         </div>
       </div>
 
@@ -54,19 +54,19 @@ $categorias = getCategorias();
         <div class="col-md-3">
           <form action="add_categoria.php" method="post">
             <div class="mb-4">
-              <label class="form-label" for="product_name">Name</label>
-              <input class="form-control" id="product_name" name="product_name" type="text" placeholder="Type here">
+              <label class="form-label" for="product_name">Nombre</label>
+              <input class="form-control" id="product_name" name="product_name" type="text" placeholder="Nombre">
             </div>
             <div class="mb-4">
-              <label class="form-label">Description</label>
-              <textarea class="form-control" name="product_description" placeholder="Type here"></textarea>
+              <label class="form-label">Descripcion</label>
+              <textarea class="form-control" name="product_description" placeholder="Descripcion "></textarea>
             </div>
             <div class="mb-4">
               <label class="form-label" for="product_slug">Slug</label>
-              <input class="form-control" id="product_slug" name="product_slug" type="text" placeholder="Type here">
+              <input class="form-control" id="product_slug" name="product_slug" type="text" placeholder="Slug">
             </div>
             <div class="d-grid">
-              <button class="btn btn-primary" name="submit" type="submit">Create category</button>
+              <button class="btn btn-primary" name="submit" type="submit">Crear categoria</button>
             </div>
           </form>
         </div>
@@ -79,10 +79,10 @@ $categorias = getCategorias();
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
                     <th>Slug</th>
-                    <th class="text-end">Action</th>
+                    <th class="text-end">Accion</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -98,8 +98,8 @@ $categorias = getCategorias();
                       echo '<div class="dropdown">';
                       echo '<a class="btn btn-light rounded btn-sm font-sm" href="#" data-bs-toggle="dropdown"><i class="material-icons md-more_horiz"></i></a>';
                       echo '<div class="dropdown-menu">';
-                      echo '<a class="dropdown-item" href="modificar_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Edit info</a>';
-                      echo '<a class="dropdown-item text-danger" href="delete_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Delete</a>';
+                      echo '<a class="dropdown-item" href="modificar_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Editar</a>';
+                      echo '<a class="dropdown-item text-danger" href="delete_categoria.php?categoria_id=' . htmlspecialchars($categoria['categoria_id']) . '">Eliminar</a>';
                       echo '</div>';
                       echo '</div>';
                       echo '</td>';

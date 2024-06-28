@@ -12,7 +12,7 @@
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Productos</title>
 </head>
 
 <body class="dark">
@@ -24,13 +24,13 @@
   <section class="content-main">
     <div class="content-header">
       <div>
-        <h2 class="content-title card-title">Products grid</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h2 class="content-title card-title">Lista de productos</h2>
+        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
       </div>
       <div>
-        <a class="btn btn-light rounded font-md" href="#">Export</a>
-        <a class="btn btn-light rounded font-md" href="#">Import</a>
-        <a class="btn btn-primary btn-sm rounded" href="#">Create new</a>
+        <!-- <a class="btn btn-light rounded font-md" href="#">Export</a> -->
+        <!-- <a class="btn btn-light rounded font-md" href="#">Import</a> -->
+        <a class="btn btn-primary btn-sm rounded" href="page-form-product-1">Crear un producto</a>
       </div>
     </div>
 
@@ -38,12 +38,12 @@
       <header class="card-header">
         <div class="row gx-3">
           <div class="col-lg-4 col-md-6 me-auto">
-            <input class="form-control" type="text" placeholder="Search...">
+            <input class="form-control" type="text" placeholder="Buscar...">
           </div>
           <!-- Categorías de productos -->
           <div class="col-lg-2 col-6 col-md-3">
             <select class="form-select">
-              <option>All category</option>
+              <option>Todas las categorias</option>
               <?php
               // Obtener categorías desde la base de datos
               $sql_categorias = "SELECT nombre FROM categoria";
@@ -60,13 +60,13 @@
             </select>
           </div>
           <!-- Orden de búsqueda de los productos -->
-          <div class="col-lg-2 col-6 col-md-3">
+          <!-- <div class="col-lg-2 col-6 col-md-3">
             <select class="form-select">
-              <option>Latest added</option>
-              <option>Cheap first</option>
-              <option>Most viewed</option>
+              <option>Ultimo Añadido</option>
+              <option>Mas barato</option>
+              <option>Mas Visto</option>
             </select>
-          </div>
+          </div> -->
         </div>
       </header>
       <!-- card-header end//-->
@@ -106,7 +106,7 @@
     </div>
     <!-- card end//-->
 
-    <div class="pagination-area mt-30 mb-50">
+    <!-- <div class="pagination-area mt-30 mb-50">
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-start">
           <li class="page-item active"><a class="page-link" href="#">01</a></li>
@@ -117,7 +117,7 @@
           <li class="page-item"><a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a></li>
         </ul>
       </nav>
-    </div>
+    </div> -->
   </section>
 
   <footer class="main-footer font-xs">
