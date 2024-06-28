@@ -22,7 +22,6 @@
     <main class="main">
       <section class="section-box shop-template mt-30">
         <div class="container">
-          <div class="row">
             <div class="col-lg-10 mx-auto">
               <h2 class="item-cat titulo-importar" data-section="importar" data-value="importa_con_vestore">Importa con Vestore</h2>
 
@@ -54,7 +53,7 @@
                 </div>
                 <div class="col">
                   <div class="card-container card-border">
-                    <img src="assets/imgs/img/importar-3.jpeg" class="card-img-top" alt="...">
+                    <img src="assets/imgs/img/importar-3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title" data-section="importar" data-value="confiables">Confiables</h5>
                       <p class="card-text"><span class="subtitulo-card-importar" data-section="importar" data-value="garantizando">Garantizando el mejor servicio</span><br>
@@ -205,38 +204,37 @@
                   </div>
                 </div>
               </div>
-              
-            <h5 class="color-gray-500 mb-10">Nuestros socios</h5>
-            <h2 class="mb-40">Ellos exportan e importan con nosotros</h2>
+        </div>    
+            <div class="logos_marcas">
+              <h5 class="color-gray-500 mb-10">Nuestros socios</h5>
+              <h2 class="mb-40">Ellos exportan e importan con nosotros</h2>
+            </div>
             <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
             los logos de las marcas -->
             <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
             <div class="border-1 mb-80 mt-50"></div>
-            </div>
-        </div>
-        </div>
         <div class="box-contact-support pt-80 pb-50 background-gray-50">
         <div class="container">
             <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10">
-                <div class="row">
-                <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <h3 class="mb-5">We‘d love to hear from you</h3>
-                    <p class="font-sm color-gray-700">Chat with our friendly team</p>
-                </div>
-                <div class="col-lg-4 text-center mb-30">
-                    <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
-                    <h4 class="mb-5">Chat to sales</h4>
-                    <p class="font-sm color-gray-700 mb-5">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
-                </div>
-                <div class="col-lg-4 text-center mb-30">
-                    <div class="box-image mb-20"><img src="assets/imgs/page/contact/call.svg" alt="Ecom"></div>
-                    <h4 class="mb-5">Call us</h4>
-                    <p class="font-sm color-gray-700 mb-5">Mon-Fri from 8am to 5pm</p><a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
-                </div>
-                </div>
-            </div>
+              <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                   <div class="row">
+                      <div class="col-lg-4 mb-30 text-center text-lg-start">
+                          <h3 class="mb-5">We‘d love to hear from you</h3>
+                          <p class="font-sm color-gray-700">Chat with our friendly team</p>
+                      </div>
+                     <div class="col-lg-4 text-center mb-30">
+                          <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
+                         <h4 class="mb-5">Chat to sales</h4>
+                          <p class="font-sm color-gray-700 mb-5">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
+                      </div>
+                      <div class="col-lg-4 text-center mb-30">
+                          <div class="box-image mb-20"><img src="assets/imgs/page/contact/call.svg" alt="Ecom"></div>
+                          <h4 class="mb-5">Call us</h4>
+                          <p class="font-sm color-gray-700 mb-5">Mon-Fri from 8am to 5pm</p><a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>

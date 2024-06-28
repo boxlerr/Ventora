@@ -10015,6 +10015,14 @@ a:hover span {
   margin-bottom: 70px;
 }
 
+.logos_marcas {
+  background-color: #1e2a37;
+  padding: 15px 50px 1px 50px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
 @keyframes mostrarArriba {
   0% {
     transform: translateY(60px);
