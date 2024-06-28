@@ -16,7 +16,7 @@
   <body>
     <?php
     include_once("consultas_bd.php");
-    include_once("main.php");
+    include_once("main.php");    
     ?>
     <main class="main">
       <!-- <div class="section-box">
@@ -49,32 +49,31 @@
                     $carrito = mostrarCarrito($usuario);
                     if($carrito[0]){
                       foreach($carrito[1] as $articulo){
-                        $articulo = getProducto($producto['producto_id']);
+                        $producto = getProducto($articulo['producto_id']);
                         echo"                      
                         <div class='item-wishlist'>
                           <div class='wishlist-product'>
                             <div class='product-wishlist'>
-                              <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($articulo['imagen_url'])."' alt='Ecom'></a></div>
+                              <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
                               <div class='product-info'><a href='shop-single-product.html'>
-                                <h6 class='color-brand-3'>".htmlspecialchars($articulo['nombre'])."</h6></a>
-                                <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'> (65)</span></div>
+                                <h6 class='color-brand-3'>".htmlspecialchars($producto['nombre'])."</h6></a>
                               </div>
                             </div>
                           </div>
                           <div class='wishlist-price'>
-                            <h4 class='color-brand-3'>$".htmlspecialchars($articulo['precio'])."</h4>
+                            <h4 class='color-brand-3'>$".htmlspecialchars($producto['precio'])."</h4>
                           </div>
                           <div class='wishlist-status'>
                             <div class='box-quantity'>
                               <div class='input-quantity'>
-                                <input class='font-xl color-brand-3' type='text' value='".htmlspecialchars($producto['cantidad'])."'><span class='minus-cart'></span><span class='plus-cart'></span>
+                                <input class='font-xl color-brand-3' type='text' value='".htmlspecialchars($articulo['cantidad'])."'><span class='minus-cart'></span><span class='plus-cart'></span>
                               </div>
                             </div>
                           </div>
                           <div class='wishlist-action'>
-                            <h4 class='color-brand-3'>$".htmlspecialchars($producto['total_carrito'])."</h4>
+                            <h4 class='color-brand-3'>$".htmlspecialchars($articulo['total_carrito'])."</h4>
                           </div>
-                          <div class='wishlist-remove'><a class='btn btn-delete' href='agregarCarrito.php?eliminar=".htmlspecialchars($producto['carrito_producto_id'])."'></a></div>
+                          <div class='wishlist-remove'><a class='btn btn-delete' href='agregarCarrito.php?eliminar=".htmlspecialchars($articulo['carrito_producto_id'])."'></a></div>
                         </div>";
                       }
                     }

@@ -1,3 +1,34 @@
+<?php
+// Verificar si la sesión ya está iniciada
+session_start();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$time_limit = 250; 
+
+// Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
+if (isset($_SESSION['start_time'])) {
+    echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+    $elapsed_time = time() - $_SESSION['start_time'];
+    echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
+
+    if ($elapsed_time > $time_limit) {  
+        echo "Tiempo expirado. Redirigiendo...<br>";
+        unset($_SESSION['start_time']);
+        header("Location: index.php");
+        exit();
+    } else {
+        echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
+    }
+} else {
+    // Si no hay tiempo de inicio, establecemos uno
+    $_SESSION['start_time'] = time();
+    echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +57,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
+            <!-- <div class="row">
+              <?php
+                $tiempoRestante = (time() - $_SESSION['start_time']) - (15 * 60);
+                if ($tiempoRestante < 0) {
+                    $tiempoRestante *= -1;
+                }
+                $minutos = floor($tiempoRestante / 60);
+                $segundosRestantes = $tiempoRestante % 60;
+                $tiempo = sprintf("%02d:%02d", $minutos, $segundosRestantes);
+              ?>
+              <p>Tiempo restante: <?php echo $tiempo?></p>
+            </div> -->
             <div class="box-border">
               <!-- <div class="box-payment"><a class="btn btn-gpay"><img src="assets/imgs/page/checkout/gpay.svg" alt="Ecom"></a><a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a><a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
               <div class="border-bottom-4 text-center mb-20">
