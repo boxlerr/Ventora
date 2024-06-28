@@ -16,7 +16,7 @@ require_once("../conexion/connect.php");
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Registrarse</title>
 </head>
 
 <body class="dark">
@@ -26,7 +26,7 @@ require_once("../conexion/connect.php");
   <section class="content-main">
     <div class="card mx-auto card-login">
       <div class="card-body">
-        <h4 class="card-title mb-4">Create an Account</h4>
+        <h4 class="card-title mb-4">Crear una cuenta</h4>
         <!-- formulario para crear un usuario -->
         <form id="registroForm" action="registros/alta_administrador.php" method="POST">
           <div class="mb-3">
