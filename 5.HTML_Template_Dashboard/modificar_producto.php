@@ -48,7 +48,7 @@
                 <label class="admin-label" for="imagen_url">URL de la Imagen</label>
                 <input class="form-control mb-3" value="<?php echo $fila['imagen_url']; ?>" id="imagen_url" type="text" name="imagen_url" />
               </div>
-              <input class="btn btn-primary" type="submit" value="Modificar Producto" />
+              <input class="mb-30 btn btn-primary" type="submit" value="Modificar Producto" />
             </form>
           </div>
         </div>
@@ -63,6 +63,7 @@
     echo "Error al conectar con la base de datos.";
   }
   ?>
+  
   <footer class="main-footer font-xs">
     <?php include_once("footer_admin.php"); ?>
   </footer>
