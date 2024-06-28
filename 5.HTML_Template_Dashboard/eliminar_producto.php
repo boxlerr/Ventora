@@ -39,6 +39,53 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['producto_id'])) {
             throw new Exception("Error al eliminar inventario del producto $producto_id: " . mysqli_error($con));
         }
 
+        // Obtener IDs de ventas asociadas al producto
+        $consulta_ventas_ids = "SELECT venta_id FROM venta WHERE carrito_producto_id IN (
+            SELECT carrito_producto_id FROM carrito_producto WHERE producto_id = '$producto_id'
+        )";
+        $resultado_ventas_ids = mysqli_query($con, $consulta_ventas_ids);
+
+        if (!$resultado_ventas_ids) {
+            throw new Exception("Error al obtener IDs de ventas asociadas al producto $producto_id: " . mysqli_error($con));
+        }
+
+        // Eliminar registros de envio asociados a las ventas
+        while ($row = mysqli_fetch_assoc($resultado_ventas_ids)) {
+            $venta_id = $row['venta_id'];
+
+            // Eliminar registros de venta_impuesto asociados a la venta
+            $consulta_venta_impuesto = "DELETE FROM venta_impuesto WHERE venta_id = '$venta_id'";
+            if (!mysqli_query($con, $consulta_venta_impuesto)) {
+                throw new Exception("Error al eliminar registros de venta_impuesto asociados a la venta $venta_id: " . mysqli_error($con));
+            }
+
+            // Eliminar registros de detalle_pago asociados a la venta
+            $consulta_detalle_pago = "DELETE FROM detalle_pago WHERE venta_id = '$venta_id'";
+            if (!mysqli_query($con, $consulta_detalle_pago)) {
+                throw new Exception("Error al eliminar registros de detalle_pago asociados a la venta $venta_id: " . mysqli_error($con));
+            }
+
+            // Eliminar registros de envio asociados a la venta
+            $consulta_envio = "DELETE FROM envio WHERE venta_id = '$venta_id'";
+            if (!mysqli_query($con, $consulta_envio)) {
+                throw new Exception("Error al eliminar registros de envio asociados a la venta $venta_id: " . mysqli_error($con));
+            }
+        }
+
+        // Eliminar ventas asociadas al producto
+        $consulta_ventas = "DELETE FROM venta WHERE carrito_producto_id IN (
+            SELECT carrito_producto_id FROM carrito_producto WHERE producto_id = '$producto_id'
+        )";
+        if (!mysqli_query($con, $consulta_ventas)) {
+            throw new Exception("Error al eliminar ventas asociadas al producto $producto_id: " . mysqli_error($con));
+        }
+
+        // Eliminar registros de carrito_producto asociados al producto
+        $consulta_carrito = "DELETE FROM carrito_producto WHERE producto_id = '$producto_id'";
+        if (!mysqli_query($con, $consulta_carrito)) {
+            throw new Exception("Error al eliminar registros de carrito_producto del producto $producto_id: " . mysqli_error($con));
+        }
+
         // Eliminar el producto
         $consulta_eliminar_producto = "DELETE FROM producto WHERE producto_id = '$producto_id'";
         if (!mysqli_query($con, $consulta_eliminar_producto)) {
