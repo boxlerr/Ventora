@@ -1,5 +1,5 @@
 <?php
-include '../conexion/conexion.php';
+include '../conexion/connect.php';
 
 if (isset($_GET['producto_id'])) {
     $producto_id = intval($_GET['producto_id']);
