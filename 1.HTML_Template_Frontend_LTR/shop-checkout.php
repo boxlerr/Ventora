@@ -30,7 +30,7 @@ if (isset($_SESSION['start_time'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -144,7 +144,7 @@ if (isset($_SESSION['start_time'])) {
             </div>
             <div class="row mt-20">
               <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-pay.php">Pasar al pago</a></div>
+              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto" href="shop-pay.php">Pasar al pago</a></div>
             </div>
           </div>
           <div class="col-lg-6">
