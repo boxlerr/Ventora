@@ -15,7 +15,7 @@ require_once("../conexion/connect.php");
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Agregar un producto</title>
 </head>
 <body class="dark">
   <?php
@@ -25,11 +25,11 @@ require_once("../conexion/connect.php");
     <div class="row">
       <div class="col-9">
         <div class="content-header">
-          <h2 class="content-title">Add New Product</h2>
-          <div>
+          <h2 class="content-title">Agregar un nuevo producto</h2>
+          <!-- <div>
             <button class="btn btn-light rounded font-sm mr-5 text-body hover-up">Save to draft</button>
             <button class="btn btn-md rounded font-sm hover-up">Publich</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="col-lg-6">
@@ -40,19 +40,19 @@ require_once("../conexion/connect.php");
           <div class="card-body">
             <form action="add_product.php" method="POST" enctype="multipart/form-data">
               <div class="mb-4">
-                <label class="form-label" for="product_name">Product title</label>
-                <input class="form-control" id="product_name" name="product_name" type="text" placeholder="Type here" required>
+                <label class="form-label" for="product_name">Nombre del producto</label>
+                <input class="form-control" id="product_name" name="product_name" type="text" placeholder="Completar aca" required>
               </div>
               <div class="mb-4">
-                <label class="form-label">Full description</label>
-                <textarea class="form-control" name="description" placeholder="Type here" rows="4" required></textarea>
+                <label class="form-label">Descripcion completa</label>
+                <textarea class="form-control" name="description" placeholder="Completar aca" rows="4" required></textarea>
               </div>
               <div class="mb-4">
-                <label class="form-label">Regular price</label>
+                <label class="form-label">Precio regular en dolares</label>
                 <input class="form-control" name="price" placeholder="$" type="text" required>
               </div>
               <div class="mb-4">
-                <label class="form-label">Category</label>
+                <label class="form-label">Seleccionar categoria</label>
                 <select class="form-select" name="category">
                   <?php
                   $sql = "SELECT categoria_id, nombre FROM categoria";
@@ -68,7 +68,7 @@ require_once("../conexion/connect.php");
                 </select>
               </div>
               <div class="mb-4">
-                <label class="form-label">Image</label>
+                <label class="form-label">Imagen</label>
                 <input class="form-control" type="file" name="image" required>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>

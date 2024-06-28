@@ -13,7 +13,7 @@
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Iniciar sesion</title>
 </head>
 
 <body class="dark">
@@ -24,25 +24,25 @@
   <section class="content-main">
     <div class="card mx-auto card-login">
       <div class="card-body">
-        <h4 class="card-title mb-4">Sign in</h4>
+        <h4 class="card-title mb-4">Iniciar sesion</h4>
         <form action="registros/login_administrador.php" method="POST">
           <div class="mb-3">
-            <input class="form-control" name="email" placeholder="Username or email" type="text" required>
+            <input class="form-control" name="email" placeholder="Correo" type="text" required>
           </div>
           <div class="mb-3">
-            <input class="form-control" name="password" placeholder="Password" type="password" required>
+            <input class="form-control" name="password" placeholder="Contraseña" type="password" required>
           </div>
           <div class="mb-3">
-            <a class="float-end font-sm text-muted" href="#">Forgot password?</a>
+            <a class="float-end font-sm text-muted" href="#">Olvidaste tu contraseña?</a>
             <label class="form-check">
               <input class="form-check-input" type="checkbox" name="remember" checked="">
-              <span class="form-check-label">Remember</span>
+              <span class="form-check-label">Recordar</span>
             </label>
           </div>
           <div class="mb-4">
-            <button class="btn btn-primary w-100" type="submit">Login</button>
+            <button class="btn btn-primary w-100" type="submit">Iniciar sesion</button>
           </div>
-          <p class="text-center small text-muted mb-15">or sign up with</p>
+          <p class="text-center small text-muted mb-15">O iniciar sesion usando</p>
           <div class="d-grid gap-3 mb-4">
             <a class="btn w-100 btn-light font-sm" href="#">
               <svg class="icon-svg" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">

@@ -12,7 +12,7 @@
   <meta property="og:image" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Ecom - Marketplace Dashboard Template</title>
+  <title>Pedidos</title>
 </head>
 
 <body class="dark">
@@ -33,7 +33,7 @@
           <div class="col-lg-4 col-md-6 me-auto">
             <input class="form-control" type="text" placeholder="Buscar...">
           </div>
-          <div class="col-lg-2 col-6 col-md-3">
+          <!-- <div class="col-lg-2 col-6 col-md-3">
             <select class="form-select">
               <option>Estado</option>
               <option>Activo</option>
@@ -47,7 +47,7 @@
               <option>Mostrar 30</option>
               <option>Mostrar 40</option>
             </select>
-          </div>
+          </div> -->
         </div>
       </header>
 
@@ -112,7 +112,7 @@
         </div>
       </div>
     </div>
-    <div class="pagination-area mt-15 mb-50">
+    <!-- <div class="pagination-area mt-15 mb-50">
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-start">
           <li class="page-item active"><a class="page-link" href="#">01</a></li>
@@ -123,7 +123,7 @@
           <li class="page-item"><a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a></li>
         </ul>
       </nav>
-    </div>
+    </div> -->
   </section>
   <footer class="main-footer font-xs">
     <?php include_once("footer_admin.php"); ?>
