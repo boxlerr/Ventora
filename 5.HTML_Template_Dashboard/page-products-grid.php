@@ -25,12 +25,9 @@
     <div class="content-header">
       <div>
         <h2 class="content-title card-title">Lista de productos</h2>
-        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
       </div>
       <div>
-        <!-- <a class="btn btn-light rounded font-md" href="#">Export</a> -->
-        <!-- <a class="btn btn-light rounded font-md" href="#">Import</a> -->
-        <a class="btn btn-primary btn-sm rounded" href="page-form-product-1">Crear un producto</a>
+        <a class="btn btn-primary btn-sm rounded" href="page-form-product-1.php">Crear un producto</a>
       </div>
     </div>
 
@@ -40,10 +37,9 @@
           <div class="col-lg-4 col-md-6 me-auto">
             <input class="form-control" type="text" placeholder="Buscar...">
           </div>
-          <!-- Categorías de productos -->
           <div class="col-lg-2 col-6 col-md-3">
             <select class="form-select">
-              <option>Todas las categorias</option>
+              <option>Todas las categorías</option>
               <?php
               // Obtener categorías desde la base de datos
               $sql_categorias = "SELECT nombre FROM categoria";
@@ -55,21 +51,11 @@
                   echo '<option>' . $categoria_nombre . '</option>';
                 }
               }
-
               ?>
             </select>
           </div>
-          <!-- Orden de búsqueda de los productos -->
-          <!-- <div class="col-lg-2 col-6 col-md-3">
-            <select class="form-select">
-              <option>Ultimo Añadido</option>
-              <option>Mas barato</option>
-              <option>Mas Visto</option>
-            </select>
-          </div> -->
         </div>
       </header>
-      <!-- card-header end//-->
 
       <div class="row gx-3 mt-4">
         <?php
@@ -85,39 +71,25 @@
             $imagen_url = $row['imagen_url'];
 
             echo '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                      <div class="card card-product-grid">
-                        <a class="img-wrap" href="#"><img src="' . $imagen_url . '" alt="' . $nombre . '"></a>
-                        <div class="info-wrap">
-                          <a class="title text-truncate" href="#">' . $nombre . '</a>
-                          <div class="price mb-2">$' . $precio . '</div>
-                          <a class="btn btn-sm font-sm rounded btn-brand" href="modificar_producto"><i class="material-icons md-edit"></i> Edit</a>
-                          <a class="btn btn-sm font-sm btn-light rounded" href="eliminar_producto"><i class="material-icons md-delete_forever"></i> Delete</a>
-                        </div>
+                    <div class="card card-product-grid">
+                      <a class="img-wrap" href="#"><img src="' . $imagen_url . '" alt="' . $nombre . '"></a>
+                      <div class="info-wrap">
+                        <a class="title text-truncate" href="#">' . $nombre . '</a>
+                        <div class="price mb-2">$' . $precio . '</div>
+                        <a class="btn btn-sm font-sm rounded btn-brand" href="modificar_producto.php?producto_id=' . $producto_id . '"><i class="material-icons md-edit"></i> Editar</a>
+                        <a class="btn btn-sm font-sm btn-light rounded" href="eliminar_producto.php?producto_id=' . $producto_id . '"><i class="material-icons md-delete_forever"></i> Eliminar</a>
                       </div>
-                    </div>';
+                    </div>
+                  </div>';
           }
         } else {
-          echo '<div class="col">0 results</div>';
+          echo '<div class="col">No hay resultados</div>';
         }
         ?>
 
       </div>
-      <!-- Fin de card-body -->
     </div>
-    <!-- card end//-->
 
-    <!-- <div class="pagination-area mt-30 mb-50">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-start">
-          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-          <li class="page-item"><a class="page-link" href="#">02</a></li>
-          <li class="page-item"><a class="page-link" href="#">03</a></li>
-          <li class="page-item"><a class="page-link dot" href="#">...</a></li>
-          <li class="page-item"><a class="page-link" href="#">16</a></li>
-          <li class="page-item"><a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a></li>
-        </ul>
-      </nav>
-    </div> -->
   </section>
 
   <footer class="main-footer font-xs">
