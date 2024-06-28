@@ -13,7 +13,7 @@ if ($con) {
         $resultado = mysqli_query($con, $consulta);
 
         if ($resultado) {
-            header("Location: page-form-product.php");
+            header("Location: page-products-grid.php?success=1");
             exit();
         } else {
             echo "Error al actualizar el producto: " . mysqli_error($con);
