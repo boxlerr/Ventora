@@ -428,6 +428,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  text-align: center;
 }
 
 .font-lg {
@@ -11449,10 +11450,36 @@ a:hover span {
 .imagen-pequena{
   width: 100px;
   height: 100px; 
+  margin-bottom: 15px;
 }
+
+.imagen-mas-pequena{
+  width: 75px;
+  height: 75px; 
+}
+
 .imagen-faqs-icon{
   width: 100px;
   height: 100px; 
+}
+
+.box-contact-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-contact-support .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-contact-support .col-lg-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -11466,5 +11493,7 @@ a:hover span {
     margin-bottom: 10px;
   }
 }
-
+.center-texto-nos{
+  text-align: center;
+}
 

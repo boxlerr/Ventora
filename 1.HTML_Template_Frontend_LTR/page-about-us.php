@@ -24,42 +24,47 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="sobre_nosotros">Sobre Nosotros</h5>
-              <h2 data-section="page-about-us" data-value="tienda_lider">Leading Online Shop</h2>
+              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="sobre_nosotros">Vestore</h5>
+              <h2 data-section="page-about-us" data-value="tienda_lider">Importadora Líder en el Mercado</h2>
               <div class="row mt-20">
                 <div class="col-lg-6">
-                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto1">Ecom expands global footprint, delivering entertaining experiences customised to each user. Branches are expanding both in size and number.</p>
-                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto2">Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit. Urna neque viverra justo nec. Suspendisse faucibus interdum posuere lorem ipsum dolor. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Tortor vitae purus faucibus ornare.</p>
-                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto3">Tempus iaculis urna id volutpat lacus laoreet. Id neque aliquam vestibulum morbi blandit. Lacinia quis vel eros donec ac odio tempor orci. Lectus sit amet est placerat in egestas erat imperdiet. Nunc congue nisi vitae suscipit. Sed adipiscing diam donec adipiscing tristique risus.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto1">En <a href="index.php">Vestore</a>, nos especializamos en la importación y exportación de una amplia variedad de productos de alta calidad, adaptándonos a las necesidades tanto de minoristas como de mayoristas. Nuestro compromiso es ofrecer un servicio eficiente y personalizado, ayudando a nuestros clientes a acceder a productos internacionales con facilidad y confianza.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto2">Nuestro compromiso es ofrecer un servicio eficiente y personalizado, facilitando el acceso a productos internacionales con facilidad y confianza. Entendemos que cada cliente tiene necesidades únicas, por lo que proporcionamos soluciones a medida, ya sea para grandes volúmenes mayoristas o cantidades menores para negocios minoristas. Nuestro equipo de expertos está siempre disponible para asesorarte y garantizar una experiencia de importación y exportación sin complicaciones.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto3">Además de nuestros servicios de importación y exportación, vendemos todo tipo de productos de forma mayorista y minorista a través de nuestro ecommerce. Nuestra plataforma en línea <a href="index.php">www.vestore.com.ar</a> está diseñada para ser fácil de usar, permitiendo a nuestros clientes navegar y comprar con comodidad desde cualquier lugar. Ofrecemos una amplia gama de productos que van desde electrónica y moda hasta artículos para el hogar y más, asegurando que siempre encontrarás lo que necesitas. Con envíos rápidos y seguros, nos aseguramos de que tu experiencia de compra sea conveniente y satisfactoria en todo momento.</p>
                   <ul class="list-services mt-20">
-                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos">We provide qualified & expert</li>
-                    <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas">Modern tools & technology use</li>
-                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">We Develop Digital Future</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos">Variedad de Productos de Calidad</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas">Innovación y Tecnología</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">Servicios de Importación y Exportación Personalizados</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">Soporte al Cliente Excepcional</li>
                   </ul>
                 </div>
-                <div class="col-lg-6"><img src="assets/imgs/page/about/img.png" alt="Ecom"></div>
+                <div class="col-lg-6"><img src="assets/imgs/img/nosotros-equipo.webp" alt="Ecom"></div>
               </div>
-              <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
-                <div class="row">
-                  <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5" data-section="page-about-us" data-value="text1">Text 1</h4>
-                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">description 1</p>
-                  </div>
-                  <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5" data-section="page-about-us" data-value="text2">Text 2</h4>
-                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion2">description 2</p>
-                  </div>
-                  <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5" data-section="page-about-us" data-value="text3">Text 3</h4>
-                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion3">description 3</p>
-                  </div>
-                  <div class="col-lg-3 mb-30 text-center text-lg-start">
-                    <h4 class="mb-5" data-section="page-about-us" data-value="text4">Text 4</h4>
-                    <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion4">description 4</p>
-                  </div>
-                </div>
-              </div>
-              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="detras_marcas">Behind The Brands</h5>
+              <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">  
+    <div class="row">
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/expoimpo-icono.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text1">Importación y Exportación</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">Facilitamos el comercio internacional con servicios personalizados de importación y exportación.</p>
+        </div>
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+        <img src="assets/imgs/img/productos-icono.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text2">Variedad de Productos</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion2">Ofrecemos una amplia gama de productos para satisfacer tanto a minoristas como a mayoristas.</p>
+        </div>
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/ecomm-icono.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text3">Ecommerce</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion3">Compra productos de alta calidad de forma rápida y segura a través de nuestra plataforma en línea.</p>
+        </div>
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/supp24-icono.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text4">Servicio al Cliente</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion4">Ofrecemos soporte al cliente excepcional para garantizar una experiencia de compra satisfactoria.</p>
+        </div>
+    </div>
+</div>
+              <!-- <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="detras_marcas">Behind The Brands</h5>
               <h2 class="mb-40" data-section="page-about-us" data-value="personas_que_trabajan">The people who work at Vestore share the vision and values of our community.</h2>
               <div class="row mb-50">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -134,12 +139,13 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="nuestros_socios">Our Partners</h5>
-              <h2 class="mb-40" data-section="page-about-us" data-value="importamos_marcas_top">We import top-tier brands</h2>
+              </div> -->
+
+              <!-- <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="nuestros_socios">Our Partners</h5>
+              <h2 class="mb-40" data-section="page-about-us" data-value="importamos_marcas_top">We import top-tier brands</h2> -->
               <!--cambiar el color del background-about-us-100 en el css por un mejor color y ordenar mejor
               los logos de las marcas -->
-              <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
+             <!-- <div class="box-images-logo background-about-us-100"><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/microsoft.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sony.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/acer.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/nokia.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/asus.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/casio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/dell.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/panasonic.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/vaio.svg" alt="Ecom"></a><a class="hover-up" href="shop-vendor-single.php"><img src="assets/imgs/page/about/sharp.svg" alt="Ecom"></a></div>
               <div class="border-1 mb-80 mt-50"></div>
               <h2 class="mb-5">Visit our stores</h2>
               <p class="font-sm color-gray-700">Find us at these locations</p>
@@ -164,24 +170,30 @@
                     </div>
                   </div>
                 </div>
+              </div> -->
               </div>
             </div>
-          </div>
-        </div>
+        </div> 
+
         <div class="box-contact-support pt-80 pb-50 background-gray-50">
           <div class="container">
             <div class="row">
-              <div class="col-lg-1"></div>
               <div class="col-lg-10">
                 <div class="row">
                   <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">We‘d love to hear from you</h3>
-                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Chat with our friendly team</p>
+                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">Nos encantaría saber de ti</h3>
+                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Contactate con nuestro amable equipo</p>
+                    <ul class="list-services mt-20">
+                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos"><a href="importar.php">Importar</a></li>
+                    <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas"><a href="exportar.php">Exportar</a></li>
+                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="page-contact.php">Contacto</a></li>
+                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="faqs.php">Faqs</a></li>
+                    </ul>
                   </div>
                   <div class="col-lg-4 text-center mb-30">
-                    <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
-                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat to sales</h4>
-                    <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
+                    <div class="box-image mb-20"><img src="assets/imgs/img/asistencia-icono.webp" alt="Ecom" class="imagen-mas-pequena"></div>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat de ventas</h4>
+                    <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Habla con nuestro equipo.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">contacto@vestore.com</a>
                   </div>
                 </div>
               </div>
