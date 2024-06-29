@@ -13,7 +13,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
-            <div class="text-center"><img class="mb-10" src="assets/imgs/template/favicon.svg" alt="Ecom">
+            <div class="text-center"><img class="mb-10" src="assets/imgs/img/vestorelogoinventirdo.png" alt="Ecom">
                 <div class="preloader-dots"></div>
             </div>
         </div>

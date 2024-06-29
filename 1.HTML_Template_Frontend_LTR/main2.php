@@ -75,7 +75,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
     <div class="container">
         <div class="main-header">
             <div class="header-left">
-                <div class="header-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/img/vestorelogo.png" style="width: 80px;"></a></div>
+                <div class="header-logo"><a class="d-flex" href="index.php"><img id="logoheader" alt="Ecom" src="assets/imgs/img/vestorelogo.png"></a></div>
                 <div class="header-search ">
                     <div class="box-header-search">
                         <form class="form-search" method="post" action="#">
@@ -134,9 +134,9 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                         </div>
                     </div>
                     <?php
-                    if($usuario){
+                    if ($usuario) {
                         echo "<a class='font-lg icon-list icon-wishlist' href='shop-wishlist.php'><span data-section='header' data-value='lista_de_deseos'>Favoritos</span></a>";
-                    } else{
+                    } else {
                         echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Favoritos</span></a>";
                     }
                     ?>
@@ -146,7 +146,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                     } else {
                         $carrito = mostrarCarrito($usuario);
                     ?>
-                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if ($carrito[0] > 0) {                                                                                                     } ?> </span>
+                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if ($carrito[0] > 0) {
+                                                                                                                                    } ?> </span>
                             <div class="dropdown-cart">
                                 <?php
                                 if (empty($_SESSION["moneda"])) {
