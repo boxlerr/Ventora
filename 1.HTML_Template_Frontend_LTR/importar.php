@@ -75,34 +75,35 @@
                 </div>
               </div>
               
-              <div class="contact-form animado">
+              <div class="animado">      <!--Cambiar por un correo de importar-->
+              <form action="https://formsubmit.co/usuario@gmail.com" method="POST">
                 <h3 class="color-brand-3 mt-60" data-section="importar" data-value="importar">Importar</h3>
                 <p class="font-sm color-gray-700 mb-30" data-section="importar" data-value="te_traemos">Te traemos lo que quieras a la puerta de tu casa!</p>
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div class="form-group" data-section="placeholder" data-value="nombre">
-                      <input class="form-control" type="text" placeholder="Nombre">
+                      <input class="form-control" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group" data-section="placeholder" data-value="apellido">
-                        <input class="form-control" type="text" placeholder="Apellido">
+                        <input class="form-control" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="mail">
-                        <input class="form-control" type="email" placeholder="Email">
+                        <input class="form-control" type="email" placeholder="Email" name="mail" id="mail" required>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="telefono">
-                        <input class="form-control" type="tel" placeholder="Numero de telefono">
+                        <input class="form-control" type="tel" placeholder="Numero de telefono" name="telefono" id="telefono" required>
                       </div>
                     </div>
                     <section id="dudas"></section>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="cuentanos">
-                        <textarea class="form-control" placeholder="Cuentanos sobre lo que quieras importar y nosotros te contactamos!" rows="5"></textarea>
+                        <textarea class="form-control" placeholder="Cuentanos sobre lo que quieras importar y nosotros te contactamos!" rows="5" name="comentario" id="comentario" required></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -110,7 +111,12 @@
                         <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
                       </div>
                     </div>
+
+                    <input type="hidden" name="_next" value="http://localhost/ventora/1.HTML_Template_Frontend_LTR/importar.php">
+                    <input type="hidden" name="_captcha" value="false">
+
                   </div>
+              </form>
               </div>
 
               
@@ -275,30 +281,39 @@
             -->
         <div class="border-1 mb-80 mt-50"></div>
         <div class="box-contact-support pt-80 pb-50 background-gray-50">
-        <div class="container">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-1"></div>
-                <div class="col-lg-10">
-                   <div class="row">
-                      <div class="col-lg-4 mb-30 text-center text-lg-start">
-                          <h3 class="mb-5">We‘d love to hear from you</h3>
-                          <p class="font-sm color-gray-700">Chat with our friendly team</p>
-                      </div>
-                     <div class="col-lg-4 text-center mb-30">
-                          <div class="box-image mb-20"><img src="assets/imgs/page/contact/chat.svg" alt="Ecom"></div>
-                         <h4 class="mb-5">Chat to sales</h4>
-                          <p class="font-sm color-gray-700 mb-5">Speak to our team.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">ventasvestore@gmail.com</a>
-                      </div>
-                      <div class="col-lg-4 text-center mb-30">
-                          <div class="box-image mb-20"><img src="assets/imgs/page/contact/call.svg" alt="Ecom"></div>
-                          <h4 class="mb-5">Call us</h4>
-                          <p class="font-sm color-gray-700 mb-5">Mon-Fri from 8am to 5pm</p><a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
-                      </div>
-                    </div>
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-lg-4 mb-30 text-center text-lg-start">
+                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">Nos encantaría saber de ti</h3>
+                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Contactate con nuestro amable equipo</p>
                   </div>
+                  <div class="col-lg-4 mb-30 text-center text-lg-start">
+                    <ul class="list-services mt-20">
+                    <div class="col">
+                      <li class="hover-up" data-section="page-about-us" data-value="proporcionamos"><a href="importar.php">Importar</a></li>
+                    </div>
+                    <div class="col">
+                      <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas"><a href="exportar.php">Exportar</a></li>
+                    </div>
+                    <div class="col">
+                      <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="page-contact.php">Contacto</a></li>
+                    </div>
+                    <div class="col">
+                      <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="faqs.php">Faqs</a></li>
+                    </div>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 text-center mb-30">
+                    <div class="box-image mb-20"><img src="assets/imgs/img/asistencia-icono.webp" alt="Ecom" class="imagen-mas-pequena"></div>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat de ventas</h4>
+                    <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Habla con nuestro equipo.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">contacto@vestore.com</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          
-        </div>
+          </div>
       </section>
       
       <section class="section-box box-newsletter">
