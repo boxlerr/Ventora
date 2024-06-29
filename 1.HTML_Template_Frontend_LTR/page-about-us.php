@@ -9,7 +9,7 @@
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
     <title>Sobre Nosotros</title>
   </head>
@@ -206,7 +206,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3 class="color-white" data-section="index" data-value="suscripcion">Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
+              <h3 class="color-white" data-section="index" data-value="suscripcion">Subscribe &amp; Get <span class="color-warning">10%</span> Discount</h3>
               <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">

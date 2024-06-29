@@ -9,7 +9,7 @@
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
     <title>Importar - Vestore</title>
@@ -220,11 +220,11 @@
         </div>   
       </div>
       
-      <div class="container-fluid mt-2">
-    <div class="row">
-        <div class="col-lg-7">
-            <div class="custom-box bg-dark text-white d-flex align-items-center h-100">
-                <div>
+        <div class="container-fluid mt-2">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="custom-box bg-dark text-white d-flex align-items-center h-100 animado">
+                  <div>
                     <h2 class="custom-title mb-4">¡Descubre las maravillas de nuestros auriculares!</h2>
                     <ul class="custom-list">
                         <li>Calidad excepcional en cada par de auriculares.</li>
@@ -234,11 +234,11 @@
                         <li>Compromiso con la satisfacción total del cliente.</li>
                     </ul>
                     <p class="mt-4">¡En nuestra importadora, nos esforzamos por ofrecer lo mejor en calidad y servicio!</p>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-5">
-            <img src="assets/imgs/img/companeros-importadora.jpg" class="img-fluid h-100" alt="">
+              </div>
+            <div class="col-lg-5 borde-imagen animado">
+              <img src="assets/imgs/img/companeros-importadora.jpg" class="img-fluid h-100" alt="">
         </div>
     </div>
 </div>

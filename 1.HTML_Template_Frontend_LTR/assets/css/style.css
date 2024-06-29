@@ -10001,6 +10001,28 @@ a:hover span {
   height: 300px;
 }
 
+.borde-imagen {
+  border: 1px solid white;
+  background-color: #425A8B;
+  padding: 0;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .custom-container {
   margin-top: 30px;
 }
@@ -10028,7 +10050,7 @@ a:hover span {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #ffffff; /* Color amarillo */
+  color: #ffffff;
 }
 
 .custom-list {
@@ -10042,7 +10064,7 @@ a:hover span {
 }
 
 .custom-list li:before {
-  content: "\2022";  /* Bullet point */
+  content: "\2022";
   color: white;
   display: inline-block;
   width: 1em;
@@ -10050,18 +10072,16 @@ a:hover span {
 }
 
 .img-fluid {
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-
-@keyframes expandContract {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  transition: transform 0.3s ease-in-out;
 }
 
 .img-fluid:hover {
-  animation: expandContract 2s infinite;
+  transform: translate(10px, 10px);
 }
 
+.img-importar:hover {
+  animation: vibrate 2s linear infinite;
+}
 
 @keyframes vibrate {
   0%, 100% { transform: translate(0); }
@@ -10069,9 +10089,14 @@ a:hover span {
   40%, 80% { transform: translate(2px, 2px); }
 }
 
-.img-importar:hover {
-  animation: vibrate 1s linear infinite;
+.img-carousel {
+  transition: box-shadow 0.3s ease-in-out;
 }
+.img-carousel:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(9, 13, 36), 0 0 30px rgb(23, 30, 82), 0 0 40px rgb(29, 37, 100);
+}
+
+
 
 /* efecto de vibracion
 @keyframes vibrate {
@@ -10085,10 +10110,10 @@ a:hover span {
 }*/
 
 /* efecto luz neon
-.img-fluid {
+.neon {
   transition: box-shadow 0.3s ease-in-out;
 }
-.img-fluid:hover {
+.neon:hover {
   box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0);
 }
 */
@@ -10176,6 +10201,8 @@ a:hover span {
   background-size: cover;
   height: 50em;
 }
+
+
 
 @keyframes mostrarArriba {
   0% {
@@ -11468,10 +11495,123 @@ a:hover span {
 }
 
 .box-contact-support {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: transparent; /* Fondo transparente */
+  padding: 80px 50px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  border: 3px solid rgb(19, 22, 58);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.support-item {
+  padding: 20px;
+  background-color: rgb(19, 22, 58);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.support-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.support-item h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item-content {
+  border-top: 2px solid #0066ff;
+  padding-top: 10px;
+}
+
+.support-item p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.texto-izquierda {
+  text-align: left;
+}
+
+.section-image-text {
+  padding: 100px 0; /* Espaciado interior */
+  background-color: rgb(19, 22, 58); /* Color de fondo */
+}
+
+.image-container {
+  position: relative; /* Posición relativa para alinear elementos */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.image-container img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Efecto de transición para transform y opacidad */
+}
+
+.image-container:hover img {
+  transform: scale(1.02); /* Escala la imagen al 102% al hacer hover */
+  opacity: 0.9; /* Reduce la opacidad de la imagen al hacer hover */
+}
+
+.image-container .overlay {
+  position: absolute; /* Posición absoluta */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo semi-transparente */
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease; /* Efecto de transición para la opacidad */
+}
+
+.image-container:hover .overlay {
+  opacity: 0.8; /* Mostrar capa de superposición al hacer hover */
+}
+
+.text-container {
+  padding-left: 30px; /* Espaciado a la izquierda del texto */
+}
+
+.text-effect {
+  font-size: 28px; /* Tamaño del texto */
+  color: #ffffff; /* Color del texto */
+  margin-bottom: 20px; /* Margen inferior del texto */
+  transition: transform 0.3s ease; /* Efecto de transición para transform */
+}
+
+.text-container:hover .text-effect {
+  transform: translateX(10px); /* Desplaza el texto hacia la derecha al hacer hover */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efectos de transición */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al hacer hover */
+  transform: translateY(-3px); /* Desplaza el botón hacia arriba al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera al hacer hover */
+}
+
 
 .box-contact-support .row {
   display: flex;
@@ -11486,7 +11626,6 @@ a:hover span {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 768px) {
   .filtro{
