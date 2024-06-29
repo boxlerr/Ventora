@@ -59,73 +59,74 @@
                             </button>
                         </div>
                         <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 mb-30">
-        <div class="support-item text-center text-lg-start">
-          <h4 class="mb-3">Amplia experiencia en el mercado</h4>
-          <div class="item-content">
-            <p class="font-md color-gray-700 mb-4">Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus exportaciones de manera eficiente y segura.</p>
-          </div>
-          </div>
-      </div>
-      <div class="col-lg-3 mb-30">
-        <div class="support-item text-center text-lg-start">
-          <h4 class="mb-3">Optimización de costos</h4>
-          <div class="item-content">
-            <p class="font-md color-gray-700 mb-4">Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de exportación, maximizando tu rentabilidad.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 mb-30">
-        <div class="support-item text-center text-lg-start">
-          <h4 class="mb-3">Asistencia personalizada</h4>
-          <div class="item-content">
-            <p class="font-md color-gray-700 mb-4">Nuestro equipo de expertos te brinda soporte personalizado en todo momento, asegurando que tus necesidades específicas sean atendidas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 mb-30">
-        <div class="support-item text-center text-lg-start">
-          <h4 class="mb-3">Gestión de riesgos</h4>
-          <div class="item-content">
-            <p class="font-md color-gray-700 mb-4">Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus exportaciones lleguen a destino sin contratiempos.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                          <div class="container">
+                            <div class="row">
+                             <div class="col-lg-3 mb-30">
+                                <div class="support-item text-center text-lg-start">
+                                  <h4 class="mb-3">Amplia experiencia en el mercado</h4>
+                                  <div class="item-content">
+                                    <p class="font-md color-gray-700 mb-4">Con más de 10 años en el sector, tenemos la experiencia necesaria para gestionar tus exportaciones de manera eficiente y segura.</p>
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-3 mb-30">
+                                <div class="support-item text-center text-lg-start">
+                                  <h4 class="mb-3">Optimización de costos</h4>
+                                  <div class="item-content">
+                                    <p class="font-md color-gray-700 mb-4">Utilizamos estrategias avanzadas para reducir costos en cada etapa del proceso de exportación, maximizando tu rentabilidad.</p>
+                                  </div>
+                               </div>
+                              </div>
+                              <div class="col-lg-3 mb-30">
+                                <div class="support-item text-center text-lg-start">
+                                  <h4 class="mb-3">Asistencia personalizada</h4>
+                                  <div class="item-content">
+                                    <p class="font-md color-gray-700 mb-4">Nuestro equipo de expertos te brinda soporte personalizado en todo momento, asegurando que tus necesidades específicas sean atendidas.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 mb-30">
+                                <div class="support-item text-center text-lg-start">
+                                  <h4 class="mb-3">Gestión de riesgos</h4>
+                                  <div class="item-content">
+                                    <p class="font-md color-gray-700 mb-4">Implementamos medidas rigurosas de gestión de riesgos para proteger tus bienes y asegurar que tus exportaciones lleguen a destino sin contratiempos.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
               
-              <div class="contact-form mb-50">
-                  <h3 class="color-brand-3 mt-60">Exportar</h3>
-                  <p class="font-sm color-gray-700 mb-30">El mundo te espera!</p>
-                  <div class="row">
+              <div class="animado">     <!--Cambiar por un correo de exportar-->
+              <form action="https://formsubmit.co/usuario@gmail.com" method="POST">
+                <h3 class="color-brand-3 mt-60" data-section="exportar" data-value="exportar">Exportar</h3>
+                <p class="font-sm color-gray-700 mb-30" data-section="exportar" data-value="el_mundo_te_espera">El mundo te espera!</p>
+                <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div class="form-group" data-section="placeholder" data-value="nombre">
-                      <input class="form-control" type="text" placeholder="Nombre">
+                      <input class="form-control" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group" data-section="placeholder" data-value="apellido">
-                        <input class="form-control" type="text" placeholder="Apellido">
+                        <input class="form-control" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="mail">
-                        <input class="form-control" type="email" placeholder="Email">
+                        <input class="form-control" type="email" placeholder="Email" name="mail" id="mail" required>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="telefono">
-                        <input class="form-control" type="tel" placeholder="Numero de telefono">
+                        <input class="form-control" type="tel" placeholder="Numero de telefono" name="telefono" id="telefono" required>
                       </div>
                     </div>
                     <section id="dudas"></section>
                     <div class="col-lg-12">
                       <div class="form-group" data-section="placeholder" data-value="cuentanos">
-                        <textarea class="form-control" placeholder="Cuentanos sobre lo que quieras importar y nosotros te contactamos!" rows="5"></textarea>
+                        <textarea class="form-control" placeholder="Cuentanos sobre lo que quieras exportar y nosotros te contactamos!" rows="5" name="comentario" id="comentario" required></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -133,8 +134,13 @@
                         <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
                       </div>
                     </div>
+
+                    <input type="hidden" name="_next" value="http://localhost/ventora/1.HTML_Template_Frontend_LTR/exportar.php">
+                    <input type="hidden" name="_captcha" value="false">
+
                   </div>
-                </div>
+              </form>
+              </div>
             </div>
           </div>
         </div>
