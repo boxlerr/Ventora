@@ -1,34 +1,3 @@
-<?php
-// Verificar si la sesión ya está iniciada
-session_start();
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-$time_limit = 250; 
-
-// Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
-if (isset($_SESSION['start_time'])) {
-    echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-    $elapsed_time = time() - $_SESSION['start_time'];
-    echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
-
-    if ($elapsed_time > $time_limit) {  
-        echo "Tiempo expirado. Redirigiendo...<br>";
-        unset($_SESSION['start_time']);
-        header("Location: index.php");
-        exit();
-    } else {
-        echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
-    }
-} else {
-    // Si no hay tiempo de inicio, establecemos uno
-    $_SESSION['start_time'] = time();
-    echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -144,7 +113,10 @@ if (isset($_SESSION['start_time'])) {
             </div>
             <div class="row mt-20">
               <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto" href="shop-pay.php">Pasar al pago</a></div>
+              <form class="col-lg-6 col-7 mb-20 text-end" method="post" action="shop-pay.php">
+                <input type="hidden" name="user" value="<?php echo $usuario ?>">
+                <input class="btn btn-buy w-auto" type="submit" value="Pasar al pago">
+              </form>
             </div>
           </div>
           <div class="col-lg-6">
