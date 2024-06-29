@@ -11636,4 +11636,8 @@ a:hover span {
 .center-texto-nos{
   text-align: center;
 }
-
+.icono-introduccion{
+  width: 150px;
+  height: 150px; 
+  margin-bottom: 0;
+}

@@ -12,7 +12,7 @@
   <meta name="author" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-  <title>Politicas - Vestore</title>
+  <title>Politicas de privacidad - Vestore</title>
 </head>
 
 <body>
@@ -26,8 +26,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto page-content">
-            <h2 class="text-center mb-20">Politicas de Privacidad</h2><img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-            <img src="assets/imgs/img/privacidad-icon.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h2 class="text-center mb-20">Politicas de Privacidad</h2>
+            <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">  
+    <div class="row">
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/privacidad-icon.webp" alt="Icono general" class="icono-introduccion">
+        </div>
+        <div class="col-lg-9 mb-30 text-lg-start">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text1">Politicas de Privacidad</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">En Vestore, nos preocupamos por tu privacidad y nos comprometemos a proteger tus datos personales. Esta sección explica cómo recolectamos, usamos y protegemos tu información. Nuestro objetivo es asegurar la seguridad de tus datos y garantizar que tengas control sobre tu información personal. Te invitamos a revisar nuestras políticas para entender mejor nuestras prácticas y cómo puedes gestionar tus datos.</p>
+        </div>
+    </div>
+</div>
             <h5>1. Recolección de Datos Personales.</h5>
 <p><strong>1.1 Definición de datos personales</strong></p>
 <p>Datos personales significa cualquier información relacionada con una persona física identificada o identificable (‘sujeto de datos’); una persona física identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un identificador como un nombre, un número de identificación, datos de localización. Los datos personales no incluyen datos que han sido anonimados irreversiblemente o agregados para que no nos permitan identificarte, ya sea en combinación con otra información o de otra manera.</p>

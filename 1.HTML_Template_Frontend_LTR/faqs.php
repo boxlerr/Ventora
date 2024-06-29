@@ -27,14 +27,24 @@
           <div class="row">
             <div class="col-lg-10 mx-auto page-content">
               <h2 class="text-center mb-20">Preguntas Frecuentes</h2>
-              <img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
+
             <div class="container mt-5">
               <div class="row justify-content-center align-items-center">
                 <div class="col-auto">
-                <img src="assets/imgs/img/faqs-icon.webp" alt="Icono devolucion vestore" class="imagen-faqs-icon">
                 </div>
               </div>
             </div>
+            <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">  
+            <div class="row">
+    <div class="col-lg-3 mb-30 text-center text-lg-start">
+        <img src="assets/imgs/img/faqs-icon.webp" alt="Icono general" class="imagen-pequena">
+    </div>
+    <div class="col-lg-9 mb-30 text-lg-start">
+        <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text1">Preguntas Frecuentes</h4>
+        <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">¡Encuentra respuestas rápidas a tus preguntas! Aquí reunimos las consultas más comunes sobre nuestros productos y servicios. Explora esta sección para resolver tus dudas de manera sencilla y directa.</p>
+    </div>
+</div>
+</div>
               <div class="container-fluid">
                 <div class="title-faq">
                 <h3 class="faq-centrado">Preguntas Generales</h3>

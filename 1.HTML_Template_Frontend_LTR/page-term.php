@@ -23,8 +23,20 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto page-content">
-              <h2 class="text-center mb-20">Terminos y Condiciones - Vestore</h2><img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-              <img src="assets/imgs/img/terminoscond-icon.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+              <h2 class="text-center mb-20">Terminos y Condiciones - Vestore</h2>
+              <img src="assets/imgs/img/terminos-banner.webp" alt="Ecom">
+              <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">
+    <div class="row">
+        <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/terminos-icon.webp" alt="Icono general" class="icono-introduccion">
+        </div>
+        <div class="col-lg-9 mb-30 text-lg-start">
+            <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text1">Términos y Condiciones de Uso</h4>
+            <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">¡Bienvenido! Aquí encontrarás nuestros Términos y Condiciones de Uso. En Vestore, nos preocupamos por tu privacidad y protegemos tus datos personales con mucho cuidado. Queremos que te sientas seguro al navegar y comprar con nosotros. Lee nuestras políticas para entender cómo manejamos tu información y qué derechos tienes sobre ella.</p>
+        </div>
+    </div>
+</div>
+
               <h5>Términos y Condiciones de Uso</h5>
 <p><strong>INFORMACIÓN RELEVANTE</strong></p>
 <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios, así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todos los productos que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.</p>

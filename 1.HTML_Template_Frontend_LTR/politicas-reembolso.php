@@ -26,8 +26,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto page-content">
-            <h2 class="text-center mb-20">Politicas de Devolución y Reembolso</h2><img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-            <img src="assets/imgs/img/devolucion-icon.webp" alt="Icono devolucion vestore" class="imagen-pequena">
+            <h2 class="text-center mb-20">Politicas de Devolución y Reembolso</h2>
+            <div class="box-contact-support pt-80 pb-50 pl-50 pr-50 background-gray-50 mt-50 mb-90">  
+            <div class="row">
+            <div class="col-lg-3 mb-30 text-center text-lg-start">
+            <img src="assets/imgs/img/reembolso-icon.webp" alt="Icono general" class="icono-introduccion">
+        </div>
+    <div class="col-lg-9 mb-0 text-lg-start">
+        <h4 class="mb-5 center-texto-nos" data-section="page-about-us" data-value="text1">Políticas de Devolución y Reembolso</h4>
+        <p class="font-md color-gray-700 mb-5" data-section="page-about-us" data-value="descripcion1">En Vestore, nos esforzamos por ofrecer productos de la más alta calidad y garantizar una experiencia de compra excepcional. Entendemos que, en ocasiones, puedes necesitar devolver un artículo o solicitar un reembolso. Si no estás completamente satisfecho, nuestro proceso de devolución y reembolso es sencillo y justo. A continuación, encontrarás los pasos y condiciones para gestionar tu solicitud de manera rápida y eficiente. Estamos aquí para asegurar que tengas una experiencia de compra sin inconvenientes.</p>
+    </div>
+</div>
+
+</div>
             <h5>POLÍTICAS DE DEVOLUCIÓN Y REEMBOLSO - Vestore</h5>
 <p><strong>Cómo solicitar una devolución por insatisfacción con el producto:</strong></p>
 <p>Si usted no se encuentra satisfecho con el producto o se arrepintió de su compra, puede solicitar la devolución de su dinero dentro de los 7 días siguientes a la fecha de recepción del pedido.</p>
