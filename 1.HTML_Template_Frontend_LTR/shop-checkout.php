@@ -50,7 +50,7 @@
                 <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Email*">
+                    <input class="form-input form-control" type="text" placeholder="Email*">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -58,27 +58,27 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="First name*">
+                    <input class="form-input form-control" type="text" placeholder="First name*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Last name*">
+                    <input class="form-input form-control" type="text" placeholder="Last name*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Address 1*">
+                    <input class="form-input form-control" type="text" placeholder="Address 1*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Address 2">
+                    <input class="form-input form-control" type="text" placeholder="Address 2">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <select class="form-input select-style1 color-gray-700">
+                    <select class="form-input form-control select-style1 color-gray-700">
                       <option value="">Select an option...</option>
                       <option value="1">Option 1</option>
                     </select>
@@ -86,27 +86,27 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="City*">
+                    <input class="form-input form-control" type="text" placeholder="City*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="PostCode / ZIP*">
+                    <input class="form-input form-control" type="text" placeholder="PostCode / ZIP*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Company name">
+                    <input class="form-input form-control" type="text" placeholder="Company name">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-input" type="text" placeholder="Phone*">
+                    <input class="form-input form-control" type="text" placeholder="Phone*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mb-0">
-                    <textarea class="form-input" placeholder="Additional Information" rows="5"></textarea>
+                    <textarea class="form-input form-control" placeholder="Additional Information" rows="5"></textarea>
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@
                     <div class='item-wishlist'>
                       <div class='wishlist-product'>
                         <div class='product-wishlist'>
-                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/" . htmlspecialchars($producto['imagen_url']) . "' alt='Ecom'></a></div>
-                          <div class='product-info'><a href='shop-single-product.html'>
+                          <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/" . htmlspecialchars($producto['imagen_url']) . "' alt='Ecom'></a></div>
+                          <div class='product-info'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'>
                               <h6 class='color-brand-3'>" . htmlspecialchars($producto['nombre']) . "</h6>
                             </a>
                           </div>

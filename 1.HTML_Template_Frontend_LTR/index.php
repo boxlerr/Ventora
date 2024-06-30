@@ -242,9 +242,9 @@
           <div class="col-lg-4 mb-20">
             <div class="banner-small-home10 bg-2">
               <div class="info-banner">
-                <h1 class="color-gray-1000 mb-10" data-section="index" data-value="descuento">Descuento</h1>
-                <h3 class="color-brand-3 mb-5">70% OFF</h3>
-                <h4 class="color-gray-500 mb-5" data-section="index" data-value="auriculares">Auriculares</h4>
+                <h1 class="color-gray-1000 mb-10 bcr" data-section="index" data-value="descuento">Descuento</h1>
+                <h3 class="color-brand-3 mb-5 bcr2">10% OFF</h3>
+                <h4 class="color-gray-500 mb-5 bcr3" data-section="index" data-value="auriculares">Auriculares</h4>
                 <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a></div>
               </div>
               <div class="box-img-banner"> <img class="img1" src="assets/imgs/img/airpodsprofondotransparente.png" alt="Ecom"></div>
@@ -253,9 +253,9 @@
           <div class="col-lg-4 mb-20">
             <div class="banner-small-home10 bg-3">
               <div class="info-banner">
-                <h1 class="color-gray-1000 mb-10" data-section="index" data-value="ofertas">Ofertas</h1>
-                <h3 class="color-gray-500 mb-5" data-section="index" data-value="electronica">Electronica</h3>
-                <h4 class="color-gray-500 mb-5" data-section="index" data-value="envio_gratis">Envio gratis</h4>
+                <h1 class="color-gray-1000 mb-10 bcr" data-section="index" data-value="ofertas">Ofertas</h1>
+                <h3 class="color-gray-500 mb-5 bcr2" data-section="index" data-value="electronica">Electronica</h3>
+                <h4 class="color-gray-500 mb-5 bcr3" data-section="index" data-value="envio_gratis">Envio gratis</h4>
                 <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a>
                 </div>
               </div>
@@ -265,8 +265,8 @@
           <div class="col-lg-4 mb-20">
             <div class="banner-small-home10 bg-32">
               <div class="info-banner">
-                <h1 class="color-gray-1000" data-section="index" data-value="ultima_tendencia">Ultima <br class="d-none d-lg-block">Tendencia</h1>
-                <h3 class="color-gray-500 mb-0" data-section="index" data-value="productos">Productos</h3>
+                <h1 class="color-gray-1000 bcr" data-section="index" data-value="ultima_tendencia">Ultima <br class="d-none d-lg-block">Tendencia</h1>
+                <h3 class="color-gray-500 mb-0 bcr2" data-section="index" data-value="productos">Productos</h3>
                 <div class="mt-30"><a class="btn btn-brand-2" href="shop-grid.php" data-section="index" data-value="comprar_ahora">Comprar ahora</a>
                 </div>
               </div>
