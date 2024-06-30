@@ -111,7 +111,7 @@
       </div>
     </div>
     <!-- card end//-->
-    <div class="pagination-area mt-30 mb-50">
+    <!-- <div class="pagination-area mt-30 mb-50">
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-start">
           <li class="page-item active"><a class="page-link" href="#">01</a></li>
@@ -122,7 +122,7 @@
           <li class="page-item"><a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a></li>
         </ul>
       </nav>
-    </div>
+    </div> -->
   </section>
   <footer class="main-footer font-xs">
     <?php

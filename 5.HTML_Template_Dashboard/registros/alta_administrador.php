@@ -1,5 +1,7 @@
 <?php
 require_once("../../conexion/connect.php");
+include_once("header_admin.php");    
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
