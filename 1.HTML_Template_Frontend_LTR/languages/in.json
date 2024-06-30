@@ -623,6 +623,15 @@
   "respuesta103": "Yes, we offer discounts for wholesale purchases on certain products. For more details on available discounts and requirements for wholesale purchases, we recommend visiting our <a href='shop-grid-mayorista.php'>Wholesale</a> section."
     },
 
+    "page-contact":{
+    "contacto":"Contact",
+    "contactanos":"Contact us",
+    "nuestro-equipo":"Our team would love to hear from you!",
+    "chat-ventas":"Sales chat",
+    "habla-con":"Talk to our team.",
+    "llamanos":"Call us",
+    "lun-vie":"Mon-Fri from 8am to 5pm"
+},
 
     "page-account":{
         "hola": "Hello ",
