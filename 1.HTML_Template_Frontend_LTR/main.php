@@ -98,6 +98,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                 <ul class="sub-menu">
                                     <li><a href="page-about-us.php" data-section="header" data-value="sobre_nosotros">Sobre nosotros</a></li>
                                     <li><a href="page-term.php" data-section="header" data-value="terminos_condiciones">Términos y condiciones</a></li>
+                                    <li><a href="faqs.php" data-section="header" data-value="faqs">Preguntas frecuentes</a></li>
                                 </ul>
                             </li>
                             <li><a href="page-contact.php" data-section="header" data-value="contacto">Contacto</a></li>
