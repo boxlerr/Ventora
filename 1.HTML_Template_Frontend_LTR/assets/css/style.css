@@ -10315,6 +10315,9 @@ a:hover span {
   }
 }
 @media (max-width: 1399.98px) {
+  .bcr{
+    font-size: 400%;
+  }
   .block-samsung {
     padding: 25px 100px 25px 35px;
     background-size: auto 170px;
@@ -10376,6 +10379,15 @@ a:hover span {
   }
 }
 @media (max-width: 1199.98px) {
+  .bcr{
+    font-size: 300%;
+  }
+  .bcr2{
+    font-size: 200%;
+  }
+  .bcr3{
+    font-size: 150%;
+  }
   .burger-icon {
     display: inline-block;
   }
