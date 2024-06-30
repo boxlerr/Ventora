@@ -3,7 +3,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     include '../conexion/connect.php';
-    
+    include_once("header_admin.php");    
     
     if (isset($_POST['product_name'], $_POST['product_description'], $_POST['product_slug'])) {
     
