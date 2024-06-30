@@ -197,6 +197,8 @@
     "servicios": "Services",
     "importa_con_nosotros": "Import with us",
     "exporta_con_nosotros": "Export with us",
+    "productos_minorista": "Retail Products",
+    "productos_mayorista": "Wholesale Products",
     "testimonios": "Testimonials",
 
     "empresa": "Company",
@@ -333,26 +335,29 @@
     },
 
     "page-about-us":{
-        "sobre_nosotros":"About Us",
-        "tienda_lider": "Leading Online Store",
-        "texto1": "Lorem Ipsum",
-        "texto2": "Lorem Ipsum",
-        "texto3": "Lorem Ipsum",
-        "proporcionamos": "We Provide Qualified and Expert",
-        "usamos_tec_her_modernas": "We Use Modern Technology and Tools",
-        "desarrollamos_fut_dig": "We Develop the Digital Future",
+        "sobre_nosotros": "About Us",
+        "importadora_lider": "Leading Importer in the Market",
+        "vestore":"vestore",
+        "texto1": "At <a href='index.php' data-section='page-about-us' data-value='vestore'>Vestore</a>, we specialize in the import and export of a wide variety of high-quality products, catering to the needs of both retailers and wholesalers. Our commitment is to offer efficient and personalized service, helping our clients access international products with ease and confidence.",
+        "texto2": "Our commitment is to provide efficient and personalized service, facilitating access to international products with ease and confidence. We understand that each client has unique needs, so we provide tailored solutions, whether for large wholesale volumes or smaller quantities for retail businesses. Our team of experts is always available to advise you and ensure a hassle-free import and export experience.",
+        "www.vestore.com.ar":"www.vestore.com.ar",
+        "texto3": "In addition to our import and export services, we sell all types of products wholesale and retail through our e-commerce platform. Our online platform <a href='index.php' data-section='page-about-us' data-value='www.vestore.com.ar'>www.vestore.com.ar</a> is designed to be user-friendly, allowing our customers to browse and shop comfortably from anywhere. We offer a wide range of products, from electronics and fashion to home goods and more, ensuring you always find what you need. With fast and secure shipping, we ensure that your shopping experience is convenient and satisfying at all times.",
+        "variedad-calidad": "Variety of Quality Products",
+        "usamos_tec_her_modernas": "Innovation and Technology",
+        "servicio-impo-expo": "Personalized Import and Export Services",
+        "soporte-cliente": "Exceptional Customer Support",
 
-        "text1":"text 1",
-        "descripcion1":"description 1",
-
-        "text2":"text 2",
-        "descripcion2":"description 2",
-
-        "text3":"text 3",
-        "descripcion3":"description 3",
-
-        "text4":"text 4",
-        "descripcion4":"description 4",
+        "text1": "Import and Export",
+        "descripcion1": "We facilitate international trade with personalized import and export services.",
+    
+        "text2": "Product Variety",
+        "descripcion2": "We offer a wide range of products to satisfy both retailers and wholesalers.",
+    
+        "text3": "Ecommerce",
+        "descripcion3": "Shop high-quality products quickly and securely through our online platform.",
+    
+        "text4": "Customer Service",
+        "descripcion4": "We provide exceptional customer support to ensure a satisfying shopping experience.",
 
         "detras_marcas": "Behind the Brand",
         "personas_que_trabajan": "The People Working at Vestore Share the Same Vision and Values",
@@ -368,11 +373,47 @@
 
         "saber_de_ti": "Our team would love to hear from you!",
         "chatea_con_nuestro_equipo": "Chat with our friendly team",
+        "importar": "Import",
+        "exportar": "Export",
+        "contacto": "Contact",
         "chatea_con_ventas": "Chat with sales",
-        "habla_con_nuestro_equipo": "Speak with our team",
-        "llamanos": "Call us",
-        "horario_llamada": "Mon-Fri from 8am to 5pm"
+        "habla_con_nuestro_equipo": "Talk to our team"
     },
+
+"page-term": {
+        "terminos-condiciones": "Terms and Conditions - Vestore",
+
+        "titulo1": "Terms and Conditions of Use",
+        "texto1": "Welcome! Here you will find our Terms and Conditions of Use. At Vestore, we care about your privacy and protect your personal data with great care. We want you to feel safe while browsing and shopping with us. Read our policies to understand how we handle your information and what rights you have over it.",
+        
+        "titulo2": "RELEVANT INFORMATION",
+        "texto2": "It is a necessary requirement for the purchase of the products offered on this site that you read and accept the following Terms and Conditions. The use of our services, as well as the purchase of our products, will imply that you have read and accepted the Terms and Conditions of Use in this document. All the products offered by our website may be created, charged, sent, or presented by a third-party website and would be subject to their own Terms and Conditions. In some cases, to acquire a product, it will be necessary for the user to register, with the input of true personal data and definition of a password.",
+        "texto3": "The user can choose and change the password for their account access at any time, in case they have registered and it is necessary for the purchase of any of our products. https://vestore.com.ar does not assume responsibility if the user gives such a password to third parties.",
+        "texto4": "All purchases and transactions carried out through this website are subject to a confirmation and verification process, which could include checking the stock and availability of the product, payment method validation, invoice validation (if any), and compliance with the conditions required by the selected payment method. In some cases, email verification may be required.",
+        "texto5": "The prices of the products offered on this Online Store are valid only for purchases made on this website.",
+        "titulo3": "LICENSE",
+        "titulo4": "UNAUTHORIZED USE",
+        "titulo5": "PROPERTY",
+        "titulo6": "REFUND AND WARRANTY POLICY",
+        "texto6": "Vestore, through its website, grants a license for users to use the products sold on this website according to the Terms and Conditions described in this document.",
+        "texto7": "If applicable (for software sales, templates, or other design and programming products), you cannot place one of our products, modified or unmodified, on a CD, website, or any other medium and offer them for redistribution or resale of any kind.",
+        "texto8": "You cannot declare intellectual or exclusive property of any of our products, modified or unmodified. All products are the property of the content providers. Unless otherwise specified, our products are provided without any warranty, express or implied. In no event shall this company be liable for any damages including, but not limited to, direct, indirect, special, incidental, or consequential damages or other losses resulting from the use or inability to use our products.",
+        "texto9": "In the case of irrevocable non-tangible goods, we do not make refunds after the product is shipped, you have the responsibility to understand before buying it. Please read carefully before buying. We make exceptions to this rule only when the product description does not match the product. There are some products that may have a warranty and the possibility of a refund, but this will be specified when purchasing the product. In such cases, the warranty will only cover factory defects and will only be effective when the product has been used correctly. The warranty does not cover damage or breakage due to misuse. The terms of the warranty are associated with manufacturing and operating conditions under normal use of the products and will only be effective if the equipment has been used correctly. This includes:",
+        "item1": "According to the technical specifications indicated for each product.",
+        "item2": "In environmental conditions according to the specifications indicated by the manufacturer.",
+        "item3": "In specific use for the function it was designed for at the factory.",
+        "item4": "In operating electrical conditions according to the specifications and tolerances indicated.",
+        "titulo7": "ANTIFRAUD CHECK",
+        "texto10": "The customer's purchase may be delayed for antifraud verification. It can also be suspended for longer for a more rigorous investigation, to avoid fraudulent transactions.",
+        "titulo8": "PRIVACY",
+        "https://www.vestore.com.ar": "https://www.vestore.com.ar",
+        "texto11": "This <a href='index.php' data-section='page-term' data-value='https://www.vestore.com.ar'>https://www.vestore.com.ar</a> guarantees that the personal information you send has the necessary security. The data entered by the user or in case of requiring order validation will not be delivered to third parties unless it must be disclosed in compliance with a court order or legal requirements.",
+        "texto12": "Subscription to email newsletters is voluntary and could be selected at the time of creating your account.",
+        "texto13": "Vestore reserves the rights to change or modify these terms without prior notice.",
+        "texto14": "Thank you for supporting Ecom. To protect your personal data when you use Ecom's services, we have drafted this privacy policy.",
+        "gracias_vestore": "Thank you, we are Vestore."
+    },
+
 
     "page-account":{
         "hola": "Hello ",

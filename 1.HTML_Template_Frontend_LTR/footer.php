@@ -3,7 +3,7 @@
         <div class="row">
         <div class="col-lg-3 width-25 mb-30">
             <h4 class="mb-30 color-gray-1000" data-section="footer" data-value="contacto">Contacto</h4>
-            <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Dirección:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
+            <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold" data-section="footer" data-value="direccion">Dirección:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
             <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold" data-section="footer" data-value="telefono">Teléfono:</strong> (+01) 123-456-789</div>
             <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold" data-section="footer" data-value="mail">E-mail:</strong> contact@ecom-market.com</div>
             <div class="mt-30"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-instagram" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
@@ -13,8 +13,8 @@
             <ul class="menu-footer">
             <li><a href="importar.php" data-section="footer" data-value="importa_con_nosotros">Importá con nosotros</a></li>
             <li><a href="exportar.php" data-section="footer" data-value="exporta_con_nosotros">Exportá con nosotros</a></li>
-            <li><a href="shop-grid.php" data-section="footer" data-value="importa_con_nosotros">Productos minorista</a></li>
-            <li><a href="shop-grid-mayorista.php" data-section="footer" data-value="exporta_con_nosotros">Productos mayorista</a></li>
+            <li><a href="shop-grid.php" data-section="footer" data-value="productos_minorista">Productos minorista</a></li>
+            <li><a href="shop-grid-mayorista.php" data-section="footer" data-value="productos_mayorista">Productos mayorista</a></li>
             </ul>
         </div>
         <div class="col-lg-3 width-16 mb-30">

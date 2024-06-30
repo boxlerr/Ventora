@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Sobre Nosotros</title>
+    <title data-section="page-about-us" data-value="sobre_nosotros" >Sobre Nosotros</title>
   </head>
   <body>
     <?php
@@ -24,18 +24,18 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h5 class="color-gray-500 mb-10" data-section="page-about-us" data-value="sobre_nosotros">Vestore</h5>
-              <h2 data-section="page-about-us" data-value="tienda_lider">Importadora Líder en el Mercado</h2>
+              <h5 class="color-gray-500 mb-10">Vestore</h5>
+              <h2 data-section="page-about-us" data-value="importadora_lider">Importadora Líder en el Mercado</h2>
               <div class="row mt-20">
                 <div class="col-lg-6">
-                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto1">En <a href="index.php">Vestore</a>, nos especializamos en la importación y exportación de una amplia variedad de productos de alta calidad, adaptándonos a las necesidades tanto de minoristas como de mayoristas. Nuestro compromiso es ofrecer un servicio eficiente y personalizado, ayudando a nuestros clientes a acceder a productos internacionales con facilidad y confianza.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto1">En <a href="index.php" data-section="page-about-us" data-value="vestore">Vestore</a>, nos especializamos en la importación y exportación de una amplia variedad de productos de alta calidad, adaptándonos a las necesidades tanto de minoristas como de mayoristas. Nuestro compromiso es ofrecer un servicio eficiente y personalizado, ayudando a nuestros clientes a acceder a productos internacionales con facilidad y confianza.</p>
                   <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto2">Nuestro compromiso es ofrecer un servicio eficiente y personalizado, facilitando el acceso a productos internacionales con facilidad y confianza. Entendemos que cada cliente tiene necesidades únicas, por lo que proporcionamos soluciones a medida, ya sea para grandes volúmenes mayoristas o cantidades menores para negocios minoristas. Nuestro equipo de expertos está siempre disponible para asesorarte y garantizar una experiencia de importación y exportación sin complicaciones.</p>
-                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto3">Además de nuestros servicios de importación y exportación, vendemos todo tipo de productos de forma mayorista y minorista a través de nuestro ecommerce. Nuestra plataforma en línea <a href="index.php">www.vestore.com.ar</a> está diseñada para ser fácil de usar, permitiendo a nuestros clientes navegar y comprar con comodidad desde cualquier lugar. Ofrecemos una amplia gama de productos que van desde electrónica y moda hasta artículos para el hogar y más, asegurando que siempre encontrarás lo que necesitas. Con envíos rápidos y seguros, nos aseguramos de que tu experiencia de compra sea conveniente y satisfactoria en todo momento.</p>
+                  <p class="font-sm font-medium color-white mb-15" data-section="page-about-us" data-value="texto3">Además de nuestros servicios de importación y exportación, vendemos todo tipo de productos de forma mayorista y minorista a través de nuestro ecommerce. Nuestra plataforma en línea <a href="index.php" data-section="page-about-us" data-value="www.vestore.com.ar">www.vestore.com.ar</a> está diseñada para ser fácil de usar, permitiendo a nuestros clientes navegar y comprar con comodidad desde cualquier lugar. Ofrecemos una amplia gama de productos que van desde electrónica y moda hasta artículos para el hogar y más, asegurando que siempre encontrarás lo que necesitas. Con envíos rápidos y seguros, nos aseguramos de que tu experiencia de compra sea conveniente y satisfactoria en todo momento.</p>
                   <ul class="list-services mt-20">
-                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos">Variedad de Productos de Calidad</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="variedad-calidad">Variedad de Productos de Calidad</li>
                     <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas">Innovación y Tecnología</li>
-                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">Servicios de Importación y Exportación Personalizados</li>
-                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig">Soporte al Cliente Excepcional</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="servicio-impo-expo">Servicios de Importación y Exportación Personalizados</li>
+                    <li class="hover-up" data-section="page-about-us" data-value="soporte-cliente">Soporte al Cliente Excepcional</li>
                   </ul>
                 </div>
                 <div class="col-lg-6"><img src="assets/imgs/img/nosotros-equipo.webp" alt="Ecom"></div>
@@ -181,18 +181,18 @@
               <div class="col-lg-10">
                 <div class="row">
                   <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">Nos encantaría saber de ti</h3>
-                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Contactate con nuestro amable equipo</p>
+                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">¡A nuestro equipo le encantaría saber de ti!</h3>
+                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Chatea con nuestro amable equipo</p>
                     <ul class="list-services mt-20">
-                    <li class="hover-up" data-section="page-about-us" data-value="proporcionamos"><a href="importar.php">Importar</a></li>
-                    <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas"><a href="exportar.php">Exportar</a></li>
-                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="page-contact.php">Contacto</a></li>
-                    <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="faqs.php">Faqs</a></li>
+                    <li class="hover-up"><a href="importar.php" data-section="page-about-us" data-value="importar">Importar</a></li>
+                    <li class="hover-up"><a href="exportar.php" data-section="page-about-us" data-value="exportar">Exportar</a></li>
+                    <li class="hover-up"><a href="page-contact.php" data-section="page-about-us" data-value="contacto">Contacto</a></li>
+                    <li class="hover-up"><a href="faqs.php">Faqs</a></li>
                     </ul>
                   </div>
                   <div class="col-lg-4 text-center mb-30">
                     <div class="box-image mb-20"><img src="assets/imgs/img/asistencia-icono.webp" alt="Ecom" class="imagen-mas-pequena"></div>
-                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat de ventas</h4>
+                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chatea con ventas</h4>
                     <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Habla con nuestro equipo.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">contacto@vestore.com</a>
                   </div>
                 </div>

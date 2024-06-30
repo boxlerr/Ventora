@@ -26,18 +26,18 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="form-wrapper">
-              <h3 class="form-title">Contact Us</h3>
-              <p class="form-description">Our team would love to hear from you!</p>
+              <h3 class="form-title">Contactanos</h3>
+              <p class="form-description">¡A nuestro equipo le encantaría saber de usted!</p>
               <form class="contact-form">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="form-group">
-                      <input class="form-control form-input" type="text" placeholder="First name">
+                      <input class="form-control form-input" type="text" placeholder="Nombre">
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="form-group">
-                      <input class="form-control form-input" type="text" placeholder="Last name">
+                      <input class="form-control form-input" type="text" placeholder="Boxler">
                     </div>
                   </div>
                   <div class="col-lg-12">
@@ -47,17 +47,17 @@
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <input class="form-control form-input" type="tel" placeholder="Phone number">
+                      <input class="form-control form-input" type="tel" placeholder="Telefono">
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <textarea class="form-control form-input" placeholder="Message" rows="5"></textarea>
+                      <textarea class="form-control form-input" placeholder="Mensaje" rows="5"></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <input class="btn btn-buy form-submit" type="submit" value="Send message">
+                      <input class="btn btn-buy form-submit" type="submit" value="Enviar Mensaje">
                     </div>
                   </div>
                 </div>
