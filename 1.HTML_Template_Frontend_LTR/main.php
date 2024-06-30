@@ -13,8 +13,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
-            <div class="text-center"><img class="mb-10" src="assets/imgs/img/vestorelogoinventirdo.png" alt="Ecom">
-                <div class="preloader-dots"></div>
+            <div class="text-center">
+                <img class="mb-10" src="assets/imgs/img/vestorelogoinventirdo.png" alt="Ecom">
             </div>
         </div>
     </div>
@@ -158,7 +158,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                     echo "
                                     <div class='item-cart mb-20'>
                                         <div class='cart-image'><img src='assets/imgs/" . htmlspecialchars($articulo['imagen_url']) . "' alt='Ecom'></div>
-                                        <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php'>" . htmlspecialchars($articulo['nombre']) . "</a>
+                                        <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'>" . htmlspecialchars($articulo['nombre']) . "</a>
                                             <p><span class='color-brand-2 font-sm-bold'>$moneda[simbolo] $total_prod_mod x " .htmlspecialchars($producto['cantidad']) . "</span></p>
                                         </div>
                                     </div>

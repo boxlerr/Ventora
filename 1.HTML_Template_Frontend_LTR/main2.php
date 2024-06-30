@@ -15,8 +15,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
-            <div class="text-center"><img class="mb-10" src="assets/imgs/template/favicon.svg" alt="Ecom">
-                <div class="preloader-dots"></div>
+            <div class="text-center">
+                <img class="mb-10" src="assets/imgs/img/vestorelogoinventirdo.png" alt="Ecom">
             </div>
         </div>
     </div>
@@ -148,7 +148,9 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                         $carrito = mostrarCarrito($usuario);
                     ?>
                         <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span data-section="header" data-value="carrito">Carrito</span>
-                        <?php if ($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";} ?> </span>
+                                <?php if ($carrito[0] > 0) {
+                                    echo "<span class='number-item font-xs'>$carrito[0] </span>";
+                                } ?> </span>
                             <div class="dropdown-cart">
                                 <?php
                                 if (empty($_SESSION["moneda"])) {
@@ -165,8 +167,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                     echo "
                                     <div class='item-cart mb-20'>
                                         <div class='cart-image'><img src='assets/imgs/" . htmlspecialchars($articulo['imagen_url']) . "' alt='Ecom'></div>
-                                        <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php'>" . htmlspecialchars($articulo['nombre']) . "</a>
-                                            <p><span class='color-brand-2 font-sm-bold'>$moneda[simbolo] $total_prod_mod x " .htmlspecialchars($producto['cantidad']) . "</span></p>
+                                        <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'>" . htmlspecialchars($articulo['nombre']) . "</a>
+                                            <p><span class='color-brand-2 font-sm-bold'>$moneda[simbolo] $total_prod_mod x " . htmlspecialchars($producto['cantidad']) . "</span></p>
                                         </div>
                                     </div>
                                     ";
@@ -178,7 +180,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                 <div class="cart-total">
                                     <div class="row">
                                         <div class="col-6 text-start"><span class="font-md-bold color-brand-3" data-section="header" data-value="total">Total</span></div>
-                                        <div class="col-6"><span class="font-md-bold color-brand-1"><?php echo $moneda['simbolo']. $total; ?></span></div>
+                                        <div class="col-6"><span class="font-md-bold color-brand-1"><?php echo $moneda['simbolo'] . $total; ?></span></div>
                                     </div>
                                     <div class="row mt-15">
                                         <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php" data-section="header" data-value="vista_carrito">Ver Carrito</a></div>

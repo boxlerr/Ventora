@@ -28,17 +28,17 @@
           <div class="col-lg-6">
             <!-- <div class="row">
               <?php
-                $tiempoRestante = (time() - $_SESSION['start_time']) - (15 * 60);
-                if ($tiempoRestante < 0) {
-                    $tiempoRestante *= -1;
-                }
-                $minutos = floor($tiempoRestante / 60);
-                $segundosRestantes = $tiempoRestante % 60;
-                $tiempo = sprintf("%02d:%02d", $minutos, $segundosRestantes);
+              $tiempoRestante = (time() - $_SESSION['start_time']) - (15 * 60);
+              if ($tiempoRestante < 0) {
+                $tiempoRestante *= -1;
+              }
+              $minutos = floor($tiempoRestante / 60);
+              $segundosRestantes = $tiempoRestante % 60;
+              $tiempo = sprintf("%02d:%02d", $minutos, $segundosRestantes);
               ?>
-              <p>Tiempo restante: <?php echo $tiempo?></p>
+              <p>Tiempo restante: <?php echo $tiempo ?></p>
             </div> -->
-            <div class="box-border">
+            <div class="box-border" style="background-color: #20303f;">
               <!-- <div class="box-payment"><a class="btn btn-gpay"><img src="assets/imgs/page/checkout/gpay.svg" alt="Ecom"></a><a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a><a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
               <div class="border-bottom-4 text-center mb-20">
                 <div class="text-or font-md color-gray-500">Or</div>
@@ -50,7 +50,7 @@
                 <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Email*">
+                    <input class="form-input" type="text" placeholder="Email*">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -58,27 +58,27 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="First name*">
+                    <input class="form-input" type="text" placeholder="First name*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Last name*">
+                    <input class="form-input" type="text" placeholder="Last name*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 1*">
+                    <input class="form-input" type="text" placeholder="Address 1*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 2">
+                    <input class="form-input" type="text" placeholder="Address 2">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <select class="form-control font-sm select-style1 color-gray-700">
+                    <select class="form-input select-style1 color-gray-700">
                       <option value="">Select an option...</option>
                       <option value="1">Option 1</option>
                     </select>
@@ -86,27 +86,27 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="City*">
+                    <input class="form-input" type="text" placeholder="City*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*">
+                    <input class="form-input" type="text" placeholder="PostCode / ZIP*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Company name">
+                    <input class="form-input" type="text" placeholder="Company name">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Phone*">
+                    <input class="form-input" type="text" placeholder="Phone*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mb-0">
-                    <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
+                    <textarea class="form-input" placeholder="Additional Information" rows="5"></textarea>
                   </div>
                 </div>
               </div>
@@ -124,27 +124,27 @@
               <h5 class="font-md-bold mb-20">Tu orden</h5>
               <?php
               $carrito = mostrarCarrito($usuario);
-              if($carrito[0]){
-                $total=0;
-                foreach($carrito[1] as $articulo){
+              if ($carrito[0]) {
+                $total = 0;
+                foreach ($carrito[1] as $articulo) {
                   $producto = getProducto($articulo['producto_id']);
                   $precio = round($articulo['total_carrito'] * $moneda['precio_moneda']);
                   $total += $precio;
                   $precio = number_format($precio, 0, ',', '.');
-                  echo"
+                  echo "
                   <div class='listCheckout'>
                     <div class='item-wishlist'>
                       <div class='wishlist-product'>
                         <div class='product-wishlist'>
-                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/" . htmlspecialchars($producto['imagen_url']) . "' alt='Ecom'></a></div>
                           <div class='product-info'><a href='shop-single-product.html'>
-                              <h6 class='color-brand-3'>".htmlspecialchars($producto['nombre'])."</h6>
+                              <h6 class='color-brand-3'>" . htmlspecialchars($producto['nombre']) . "</h6>
                             </a>
                           </div>
                         </div>
                       </div>
                       <div class='wishlist-status'>
-                        <h5 class='color-gray-500'>x".htmlspecialchars($articulo['cantidad'])."</h5>
+                        <h5 class='color-gray-500'>x" . htmlspecialchars($articulo['cantidad']) . "</h5>
                       </div>
                       <div class='wishlist-price'>
                         <h4 class='color-brand-3 font-lg-bold'>$$precio</h4>

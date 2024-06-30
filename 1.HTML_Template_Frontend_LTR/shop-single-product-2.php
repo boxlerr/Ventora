@@ -35,7 +35,7 @@
               <div class="gallery-image">
                 <div class="detail-gallery">
                   <div class="product-image">
-                    <figure class="border-radius-10"><img src='assets/imgs/<?php echo htmlspecialchars($producto['imagen_url']); ?>' alt="product image"></figure>
+                    <figure id="vistasingleproduct" class="border-radius-10"><img src='assets/imgs/<?php echo htmlspecialchars($producto['imagen_url']); ?>' alt="product image" style="width: 70%;"></figure>
                   </div>
                 </div>
               </div>

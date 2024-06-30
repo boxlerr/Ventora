@@ -1802,6 +1802,7 @@ a.text-brand-3:hover {
 
 /*COMPONENTS -> FORM*/
 .form-control {
+  color: white;
   border: 1px solid #DDE4F0 !important;
   background-color: transparent;
 }
@@ -2925,7 +2926,7 @@ a.text-brand-3:hover {
 .preloader-dots {
   --uib-size: 40px;
   --uib-speed: .9s;
-  --uib-color: var(--tercery-color);
+  --uib-color: .color-black;
   position: relative;
   height: calc(var(--uib-size) / 2);
   width: var(--uib-size);
@@ -8442,11 +8443,16 @@ a:hover span {
   width: 100%;
 }
 
+#vistasingleproduct{
+  display: flex;
+  justify-content: center;
+}
+
 .detail-gallery {
   width: 100%;
-  border: 4px solid #DDE4F0;
+  border: 1px solid #DDE4F0;
   border-radius: 4px;
-  background: var(--tercery-color);
+  background: #060f19;
 }
 
 .slider-nav-thumbnails {
@@ -8857,6 +8863,7 @@ a:hover span {
   background-image: url("../imgs/page/cart/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 5px center;
+  color: #b6c4e3;
 }
 
 .summary-cart {
@@ -8878,9 +8885,9 @@ a:hover span {
 }
 
 .box-border {
-  border: 1px solid #DDE4F0;
   padding: 20px;
   border-radius: 4px;
+  background-color: #20303f;
 }
 
 .border-bottom-4 {

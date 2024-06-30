@@ -29,10 +29,10 @@
               <form class="form-register mt-30 mb-30" action="verificarUsuario.php" method="post">
                 <div class="form-group">  
                   <label class="mb-5 font-sm color-gray-700" for="email">Email</label>
-                  <input class="form-control" type="text" placeholder="" name="email">
+                  <input class="form-control" type="text" placeholder="example@hotmail.com" name="email">
                 </div>
                 <div class="form-group">
-                  <label class="mb-5 font-sm color-gray-700" for="clave">Password *</label>
+                  <label class="mb-5 font-sm color-gray-700" for="clave">Password</label>
                   <input class="form-control" type="password" placeholder="******************" name="clave">
                 </div>
                 <div class="row">
