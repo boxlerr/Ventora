@@ -23,7 +23,7 @@
         <div class="container">
           <div class="row mb-100">
             <div class="col-lg-1"></div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 form1-login">
               <h3>Login</h3>
               <p class="font-md color-gray-500">¡Bienvenido de nuevo!</p>
               <form class="form-register mt-30 mb-30" action="verificarUsuario.php" method="post">
@@ -53,7 +53,32 @@
                 </div>
               </form>
             </div>
-            <div class="col-lg-5"></div>
+            <div class="col-lg-5 form2-login">
+              <h3>Admin Login</h3>
+              <form class="form-register mt-30 mb-30" action="verificarUsuario.php" method="post">
+                <div class="form-group">  
+                  <label class="mb-5 font-sm color-gray-700" for="email">Email</label>
+                  <input class="form-control" type="text" placeholder="example@hotmail.com" name="email">
+                </div>
+                <div class="form-group">
+                  <label class="mb-5 font-sm color-gray-700" for="clave">Password</label>
+                  <input class="form-control" type="password" placeholder="******************" name="clave">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mt-20"><a class="font-xs color-gray-500" href="#">¿Olvidaste tu contraseña?</a></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <?php
+                  if(isset($_GET["error"])){
+                    echo "<div class='error'><p>$_GET[error]</p></div>";
+                  }
+                  ?>
+                  <input name="iniciarSesion" class="font-md-bold btn btn-buy" type="submit" value="Iniciar Sesion">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

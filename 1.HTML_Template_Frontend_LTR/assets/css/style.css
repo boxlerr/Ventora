@@ -11680,6 +11680,14 @@ a:hover span {
   margin-right: 20px;
 }
 
+.form1-login {
+  margin-right: 50px;
+}
+
+.form2-login {
+  margin-left: 50px;
+}
+
 .form-title {
   color: #ffffff; /* Color del texto del título */
   text-align: center;
