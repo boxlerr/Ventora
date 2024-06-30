@@ -11642,3 +11642,69 @@ a:hover span {
   height: 150px; 
   margin-bottom: 0;
 }
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+.form-wrapper {
+  background-color: #22354a; /* Color de fondo del formulario */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.form-title {
+  color: #ffffff; /* Color del texto del título */
+  text-align: center;
+}
+
+.form-description {
+  color: #d1d1d1; /* Color del texto de descripción */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3a4a61; /* Color del borde del input */
+  border-radius: 4px;
+  background-color: #2a3a50; /* Color de fondo del input */
+  color: #ffffff; /* Color del texto del input */
+}
+
+.form-input::placeholder {
+  color: #b0b0b0; /* Color del texto placeholder */
+}
+
+.form-submit {
+  background-color: #40a9ff; /* Color del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #1e90ff; /* Color del botón al pasar el cursor */
+}
+
+.box-contact-support {
+  padding: 80px 0;
+  background-color: #f9f9f9; /* Color de fondo de la sección de contacto */
+  flex: 1;
+}

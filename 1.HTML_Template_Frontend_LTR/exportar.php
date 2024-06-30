@@ -166,41 +166,38 @@
 
 
   
-        <div class="box-contact-support pt-80 pb-50 background-gray-50">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10">
-                <div class="row">
-                  <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <h3 class="mb-5" data-section="page-about-us" data-value="saber_de_ti">Nos encantaría saber de ti</h3>
-                    <p class="font-sm color-gray-700" data-section="page-about-us" data-value="chatea_con_nuestro_equipo">Contactate con nuestro amable equipo</p>
-                  </div>
-                  <div class="col-lg-4 mb-30 text-center text-lg-start">
-                    <ul class="list-services mt-20">
-                    <div class="col">
-                      <li class="hover-up" data-section="page-about-us" data-value="proporcionamos"><a href="importar.php">Importar</a></li>
-                    </div>
-                    <div class="col">
-                      <li class="hover-up" data-section="page-about-us" data-value="usamos_tec_her_modernas"><a href="exportar.php">Exportar</a></li>
-                    </div>
-                    <div class="col">
-                      <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="page-contact.php">Contacto</a></li>
-                    </div>
-                    <div class="col">
-                      <li class="hover-up" data-section="page-about-us" data-value="desarrollamos_fut_dig"><a href="faqs.php">Faqs</a></li>
-                    </div>
-                    </ul>
-                  </div>
-                  <div class="col-lg-4 text-center mb-30">
-                    <div class="box-image mb-20"><img src="assets/imgs/img/asistencia-icono.webp" alt="Ecom" class="imagen-mas-pequena"></div>
-                    <h4 class="mb-5" data-section="page-about-us" data-value="chatea_con_ventas">Chat de ventas</h4>
-                    <p class="font-sm color-gray-700 mb-5" data-section="page-about-us" data-value="habla_con_nuestro_equipo">Habla con nuestro equipo.</p><a class="font-sm color-gray-900" href="mailto:sales@ecom.com">contacto@vestore.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section class="box-contact-support pt-80 pb-50 background-gray-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-4 mb-30 text-center text-lg-start">
+            <h3 class="mb-5">Nos encantaría saber de ti</h3>
+            <p class="font-sm color-gray-700">Contactate con nuestro amable equipo</p>
+            <ul class="list-services mt-20">
+              <li class="hover-up"><a href="importar.php">Importar</a></li>
+              <li class="hover-up"><a href="exportar.php">Exportar</a></li>
+              <li class="hover-up"><a href="page-contact.php">Contacto</a></li>
+              <li class="hover-up"><a href="faqs.php">Faqs</a></li>
+            </ul>
           </div>
-      </section>
+          <div class="col-lg-4 col-md-6 text-center mb-30">
+            <div class="box-image mb-20"><img src="assets/imgs/img/chat-icon.webp" alt="Chat de ventas" class="imagen-pequena"></div>
+            <h4 class="mb-5">Chat de ventas</h4>
+            <p class="font-sm color-gray-700 mb-5">Habla con nuestro equipo.</p>
+            <a class="font-sm color-gray-900" href="mailto:sales@ecom.com">contacto@vestore.com</a>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center mb-30">
+            <div class="box-image mb-20"><img src="assets/imgs/img/llamar-icon.webp" alt="Call us" class="imagen-pequena"></div>
+            <h4 class="mb-5">Llamanos</h4>
+            <p class="font-sm color-gray-700 mb-5">Lun-Vie de 8am a 5pm</p>
+            <a class="font-sm color-gray-900" href="tel:+1(555)000-0000">+1(555)000-0000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       
       <section class="section-box box-newsletter">
         <div class="container">

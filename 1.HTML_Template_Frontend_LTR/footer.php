@@ -13,7 +13,8 @@
             <ul class="menu-footer">
             <li><a href="importar.php" data-section="footer" data-value="importa_con_nosotros">Importá con nosotros</a></li>
             <li><a href="exportar.php" data-section="footer" data-value="exporta_con_nosotros">Exportá con nosotros</a></li>
-            <li><a href="#" data-section="footer" data-value="testimonios">Testimonios</a></li>
+            <li><a href="shop-grid.php" data-section="footer" data-value="importa_con_nosotros">Productos minorista</a></li>
+            <li><a href="shop-grid-mayorista.php" data-section="footer" data-value="exporta_con_nosotros">Productos mayorista</a></li>
             </ul>
         </div>
         <div class="col-lg-3 width-16 mb-30">
@@ -23,7 +24,6 @@
             <li><a href="page-term.php" data-section="footer" data-value="terminos_condiciones">Términos y condiciones</a></li>
             <li><a href="politicas.php" data-section="footer" data-value="politicas_privacidad">Políticas de privacidad</a></li>
             <li><a href="politicas-reembolso.php" data-section="footer" data-value="politicas_devolucion">Politicas de Devolución y Reembolso</a></li>
-            <li><a href="politicas.php" data-section="footer" data-value="cookies">Cookies</a></li>
             <!--<li><a href="#">Rastrear envío</a></li>-->
             </ul>
         </div>
