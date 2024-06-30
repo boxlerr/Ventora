@@ -54,10 +54,10 @@
                     </div>
                   </div>
                   <div class='wishlist-price'>
-                    <h4 class='color-brand-3'>$".$precio."</h4>
+                    <h4 class='color-brand-3'>".$moneda['simbolo'].$precio."</h4>
                   </div>
-                  <div class='wishlist-status'><span class='btn btn-gray font-md-bold color-brand-3' data-section='shop-wishlist' data-value='en_stock'>In Stock</span></div>
-                  <div class='wishlist-action'><a class='btn btn-cart font-sm-bold' href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."' data-section='shop-wishlist' data-value='añadir_al_carrito'>Add to Cart</a></div>
+                  <div class='wishlist-status'><span class='btn btn-gray font-md-bold color-brand-3' data-section='shop-wishlist' data-value='en_stock'>En stock</span></div>
+                  <div class='wishlist-action'><a class='btn btn-cart font-sm-bold' href='shop-single-product-2.php?id=".htmlspecialchars($articulo['producto_id'])."' data-section='shop-wishlist' data-value='añadir_al_carrito'>Agregar al carrito</a></div>
                   <form class='wishlist-remove' action='agregarWishlist.php' method='post'>
                     <input class='btn btn-delete' type='hidden' value='".htmlspecialchars($articulo['producto_id'])."' name='producto_id'>
                     <input class='btn btn-delete' type='hidden' value='".$usuario."' name='cliente_id'>
@@ -74,26 +74,24 @@
         </div>
         <h4 class="color-brand-3" data-section="shop-wishlist" data-value="tambien_podria_gustarte">You may also like</h4>
         <div class="list-products-5 mt-20 mb-40">
-          <?php
-          $productos=getProductosLimitados(5);
-          foreach($productos as $producto){
-            $precio = round($producto['precio'] * $moneda['precio_moneda']);
-            $precio = number_format($precio, 0, ',', '.');
-            echo"              
-              <div class='card-grid-style-3 home6-style home7-style'>
-                <div class='card-grid-inner'>
-                  <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
-                  <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                  <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Apple</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
-                    <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                    <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
-                    <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php' data-section='index' data-value='agregar_carrito'>Add To Cart</a></div> -->
-                  </div>
+        <?php
+        $productos=getProductosLimitados(5);
+        foreach($productos as $producto){
+          $precio = round($producto['precio'] * $moneda['precio_moneda']);
+          $precio = number_format($precio, 0, ',', '.');
+          echo"              
+            <div class='card-grid-style-3 home6-style home7-style'>
+              <div class='card-grid-inner'>
+                <div class='image-box'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                <div class='info-right'><a class='font-xs color-gray-500' href=#>Apple</a><br><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."' class='color-brand-3 font-sm-bold'>".htmlspecialchars($producto['nombre'])."</a>
+                  <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>".$moneda['simbolo']. $precio ."</strong></div>
+                  <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
                 </div>
               </div>
-            ";
-          }
-          ?>
+            </div>
+          ";
+        }
+        ?>
         </div>
       </div>
     </section>
