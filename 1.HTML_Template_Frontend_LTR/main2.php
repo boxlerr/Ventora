@@ -29,7 +29,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                 <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
             </ul>
         </div>
-        <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3">Envío gratis en compras a partir de</span><span class="font-sm-bold color-success"> ARS 40.000</span></div>
+        <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3"></div>
         <div class="menu-topbar-right">
             <!-- <span class="font-xs color-brand-3">Ayuda? Llámanos:</span><span class="font-sm-bold color-success"> + 1800 900</span> -->
             <div class="dropdown dropdown-language dropdown-flags">
@@ -140,14 +140,15 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                         echo "<a class='font-lg icon-list icon-wishlist' href='page-login.php'><span data-section='header' data-value='lista_de_deseos'>Favoritos</span></a>";
                     }
                     ?>
+
                     <?php
                     if (!$usuario) {
-                        echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span>Cart</span></a>";
+                        echo "<a href='page-login.php' class='font-lg icon-list icon-cart'><span data-section='header' data-value='carrito'>Cart</span></a>";
                     } else {
                         $carrito = mostrarCarrito($usuario);
                     ?>
-                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span>Cart</span><?php if ($carrito[0] > 0) {
-                                                                                                                                    } ?> </span>
+                        <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-cart"><span data-section="header" data-value="carrito">Carrito</span>
+                        <?php if ($carrito[0] > 0) {echo "<span class='number-item font-xs'>$carrito[0] </span>";} ?> </span>
                             <div class="dropdown-cart">
                                 <?php
                                 if (empty($_SESSION["moneda"])) {
@@ -162,27 +163,26 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                                     $total_prod_mod = number_format($total_prod_mod, 0, ',', '.');
                                     $total += round($producto['total_carrito']);
                                     echo "
-                            <div class='item-cart mb-20'>
-                                <div class='cart-image'><img src='assets/imgs/page/" . htmlspecialchars($articulo['imagen_url']) . "' alt='Ecom'></div>
-                                <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php'>" . htmlspecialchars($articulo['nombre']) . "</a>
-                                    <p><span class='color-brand-2 font-sm-bold'>$total_prod_mod x " . htmlspecialchars($producto['cantidad']) . "</span></p>
-                                </div>
-                            </div>
-                            ";
+                                    <div class='item-cart mb-20'>
+                                        <div class='cart-image'><img src='assets/imgs/" . htmlspecialchars($articulo['imagen_url']) . "' alt='Ecom'></div>
+                                        <div class='cart-info'><a class='font-sm-bold color-brand-3' href='shop-single-product-2.php'>" . htmlspecialchars($articulo['nombre']) . "</a>
+                                            <p><span class='color-brand-2 font-sm-bold'>$moneda[simbolo] $total_prod_mod x " .htmlspecialchars($producto['cantidad']) . "</span></p>
+                                        </div>
+                                    </div>
+                                    ";
                                 }
                                 $total = round($total * $moneda['precio_moneda']);
                                 $total = number_format($total, 0, ',', '.');
                                 ?>
-
                                 <div class="border-bottom pt-0 mb-15"></div>
                                 <div class="cart-total">
                                     <div class="row">
-                                        <div class="col-6 text-start"><span class="font-md-bold color-brand-3">Total</span></div>
-                                        <div class="col-6"><span class="font-md-bold color-brand-1">$<?php echo $total; ?></span></div>
+                                        <div class="col-6 text-start"><span class="font-md-bold color-brand-3" data-section="header" data-value="total">Total</span></div>
+                                        <div class="col-6"><span class="font-md-bold color-brand-1"><?php echo $moneda['simbolo']. $total; ?></span></div>
                                     </div>
                                     <div class="row mt-15">
-                                        <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php">View cart</a></div>
-                                        <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.php">Checkout</a></div>
+                                        <div class="col-6 text-start"><a class="btn btn-cart w-auto" href="shop-cart.php" data-section="header" data-value="vista_carrito">Ver Carrito</a></div>
+                                        <div class="col-6"><a class="btn btn-buy w-auto" href="shop-checkout.php" data-section="header" data-value="pago">Pago</a></div>
                                     </div>
                                 </div>
                             </div>

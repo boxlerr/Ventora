@@ -24,7 +24,6 @@
           <div class="row">
             <div class="col-lg-10 mx-auto page-content">
               <h2 class="text-center mb-20">Terminos y Condiciones - Vestore</h2><img class="mb-30" src="assets/imgs/page/about/team.jpg" alt="Ecom">
-              <img src="assets/imgs/img/terminoscond-icon.webp" alt="Icono devolucion vestore" class="imagen-pequena">
               <h5>Términos y Condiciones de Uso</h5>
 <p><strong>INFORMACIÓN RELEVANTE</strong></p>
 <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios, así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todos los productos que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.</p>

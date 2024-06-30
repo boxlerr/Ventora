@@ -1,39 +1,39 @@
 <?php
 // Verificar si la sesión ya está iniciada
-session_start();
-include_once("consultas_bd.php");
+// session_start();
+// include_once("consultas_bd.php");
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
-$time_limit = 250; 
+// $time_limit = 250; 
 
-if(isset($_POST["user"]) && !isset($_SESSION['start_time'])){
-  $user = $_POST["user"];
-  quitarStock($user);
-}
+// if(isset($_POST["user"]) && !isset($_SESSION['start_time'])){
+//   $user = $_POST["user"];
+//   quitarStock($user);
+// }
 
-// Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
-if (isset($_SESSION['start_time'])) {
-    echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-    $elapsed_time = time() - $_SESSION['start_time'];
-    echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
+// // Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
+// if (isset($_SESSION['start_time'])) {
+//     echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+//     $elapsed_time = time() - $_SESSION['start_time'];
+//     echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
 
-    if ($elapsed_time > $time_limit) {
-        agregarStock($_POST["user"]);  
-        echo "Tiempo expirado. Redirigiendo...<br>";
-        unset($_SESSION['start_time']);
-        header("Location: index.php");
-        exit();
-    } else {
-        echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
-    }
-} else {
-    // Si no hay tiempo de inicio, establecemos uno
-    $_SESSION['start_time'] = time();
-    echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-}
+//     if ($elapsed_time > $time_limit) {
+//         agregarStock($_POST["user"]);  
+//         echo "Tiempo expirado. Redirigiendo...<br>";
+//         unset($_SESSION['start_time']);
+//         header("Location: index.php");
+//         exit();
+//     } else {
+//         echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
+//     }
+// } else {
+//     // Si no hay tiempo de inicio, establecemos uno
+//     $_SESSION['start_time'] = time();
+//     echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+// }
 
 // require '../vendor/autoload.php';
 // MercadoPago\SDK::setAccessToken('');//agregar credecial cuando creen cuenta
@@ -81,6 +81,7 @@ if (isset($_SESSION['start_time'])) {
 <body>
   <?php
   include_once("main.php");
+  include_once("consultas_bd.php");
   include_once("cambio.php");
   ?>
   <main class="main">

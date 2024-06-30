@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Login - Ecom Marketplace Template</title>
+    <title>Login</title>
   </head>
   <body>
     <?php
@@ -24,12 +24,12 @@
           <div class="row mb-100">
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
-              <h3>Member Login</h3>
-              <p class="font-md color-gray-500">Welcome back!</p>
+              <h3>Login</h3>
+              <p class="font-md color-gray-500">¡Bienvenido de nuevo!</p>
               <form class="form-register mt-30 mb-30" action="verificarUsuario.php" method="post">
                 <div class="form-group">  
                   <label class="mb-5 font-sm color-gray-700" for="email">Email</label>
-                  <input class="form-control" type="text" placeholder="stevenjob@gmail.com" name="email">
+                  <input class="form-control" type="text" placeholder="" name="email">
                 </div>
                 <div class="form-group">
                   <label class="mb-5 font-sm color-gray-700" for="clave">Password *</label>
@@ -37,14 +37,10 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-6">
-                    <div class="form-group">
-                      <label class="color-gray-500 font-xs">
-                        <input class="checkagree" type="checkbox">Remember me
-                      </label>
-                    </div>
+                    <div class="mt-20"><span class="font-xs color-gray-500 font-medium">¿No tienes cuenta?</span><a class="font-xs color-brand-3 font-medium" href="page-register.php"> Crear cuenta</a></div>
                   </div>
-                  <div class="col-lg-6 text-end">
-                    <div class="form-group"><a class="font-xs color-gray-500" href="#">Forgot your password?</a></div>
+                  <div class="col-lg-6">
+                    <div class="mt-20"><a class="font-xs color-gray-500" href="#">¿Olvidaste tu contraseña?</a></div>
                   </div>
                 </div>
                 <div class="form-group">
@@ -53,9 +49,8 @@
                     echo "<div class='error'><p>$_GET[error]</p></div>";
                   }
                   ?>
-                  <input name="iniciarSesion" class="font-md-bold btn btn-buy" type="submit" value="Sign Up">
+                  <input name="iniciarSesion" class="font-md-bold btn btn-buy" type="submit" value="Iniciar Sesion">
                 </div>
-                <div class="mt-20"><span class="font-xs color-gray-500 font-medium">Have not an account?</span><a class="font-xs color-brand-3 font-medium" href="page-register.php">Sign Up</a></div>
               </form>
             </div>
             <div class="col-lg-5"></div>
