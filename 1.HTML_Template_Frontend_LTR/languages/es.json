@@ -190,6 +190,7 @@
         "ingresar":"Ingresar"
     },
 
+
     "footer":{
         "contacto": "Contacto",
         "direccion": "Direccion:",
@@ -200,6 +201,8 @@
         "servicios": "Servicios",
         "importa_con_nosotros":"Importá con nosotros",
         "exporta_con_nosotros":"Exportá con nosotros",
+        "productos_minorista":"Productos minorista",
+        "productos_mayorista":"Productos mayorista",
         "testimonios":"Testimonios",
 
         "empresa":"Empresa",
@@ -337,25 +340,27 @@
 
     "page-about-us":{
         "sobre_nosotros":"Sobre Nosotros",
-        "tienda_lider":"Tienda Online Líder",
-        "texto1":"Lorem Ipsum",
-        "texto2":"Lorem Ipsum",
-        "texto3":"Lorem Ipsum",
-        "proporcionamos":"Proporcionamos Calificados y Expertos",
-        "usamos_tec_her_modernas":"Usamos Tecnologia y Herramientas Modernas",
-        "desarrollamos_fut_dig":"Desarrollamos el Futuro Digital",
+        "importadora_lider":"Importadora Líder en el Mercado",
+        "vestore":"vestore",
+        "texto1":"En <a href='index.php' data-section='page-about-us' data-value='vestore'>Vestore</a>, nos especializamos en la importación y exportación de una amplia variedad de productos de alta calidad, adaptándonos a las necesidades tanto de minoristas como de mayoristas. Nuestro compromiso es ofrecer un servicio eficiente y personalizado, ayudando a nuestros clientes a acceder a productos internacionales con facilidad y confianza.",
+        "texto2":"Nuestro compromiso es ofrecer un servicio eficiente y personalizado, facilitando el acceso a productos internacionales con facilidad y confianza. Entendemos que cada cliente tiene necesidades únicas, por lo que proporcionamos soluciones a medida, ya sea para grandes volúmenes mayoristas o cantidades menores para negocios minoristas. Nuestro equipo de expertos está siempre disponible para asesorarte y garantizar una experiencia de importación y exportación sin complicaciones.",
+        "texto3":"Además de nuestros servicios de importación y exportación, vendemos todo tipo de productos de forma mayorista y minorista a través de nuestro ecommerce. Nuestra plataforma en línea <a href='index.php' data-section='page-about-us' data-value='www.vestore.com.ar'>www.vestore.com.ar</a> está diseñada para ser fácil de usar, permitiendo a nuestros clientes navegar y comprar con comodidad desde cualquier lugar. Ofrecemos una amplia gama de productos que van desde electrónica y moda hasta artículos para el hogar y más, asegurando que siempre encontrarás lo que necesitas. Con envíos rápidos y seguros, nos aseguramos de que tu experiencia de compra sea conveniente y satisfactoria en todo momento.",
+        "variedad-calidad":"Variedad de Productos de Calidad",
+        "usamos_tec_her_modernas":"Innovación y Tecnología",
+        "servicio-impo-expo":"Servicios de Importación y Exportación Personalizados",
+        "soporte-cliente":"Soporte al Cliente Excepcional",
 
-        "text1":"texto 1",
-        "descripcion1":"descripcion 1",
+        "text1":"Importación y Exportación",
+        "descripcion1":"Facilitamos el comercio internacional con servicios personalizados de importación y exportación.",
 
-        "text2":"texto 2",
-        "descripcion2":"descripcion 2",
+        "text2":"Variedad de Productos",
+        "descripcion2":"Ofrecemos una amplia gama de productos para satisfacer tanto a minoristas como a mayoristas.",
 
-        "text3":"texto 3",
-        "descripcion3":"descripcion 3",
+        "text3":"Ecommerce",
+        "descripcion3":"Compra productos de alta calidad de forma rápida y segura a través de nuestra plataforma en línea.",
 
-        "text4":"texto 4",
-        "descripcion4":"descripcion 4",
+        "text4":"Servicio al Cliente",
+        "descripcion4":"Ofrecemos soporte al cliente excepcional para garantizar una experiencia de compra satisfactoria.",
 
         "detras_marcas":"Detrás de la Marca",
         "personas_que_trabajan":"Las Personas que Trabajan en Vestore Comparten la Misma Visión y Valores",
@@ -371,10 +376,45 @@
 
         "saber_de_ti":"¡A nuestro equipo le encantaría saber de ti!",
         "chatea_con_nuestro_equipo":"Chatea con nuestro amable equipo",
+        "importar":"Importar",
+        "exportar":"Exportar",
+        "contacto":"Contacto",
         "chatea_con_ventas":"Chatea con ventas",
-        "habla_con_nuestro_equipo":"Habla con nuestro equipo",
-        "llamanos":"Llámanos",
-        "horario_llamada":"Lun-Vie de 8am a 5pm"
+        "habla_con_nuestro_equipo":"Habla con nuestro equipo"
+    },
+
+    "page-term":{
+    "terminos-condiciones":"Terminos y Condiciones - Vestore",
+
+    "titulo1":"Términos y Condiciones de Uso",
+    "texto1":"¡Bienvenido! Aquí encontrarás nuestros Términos y Condiciones de Uso. En Vestore, nos preocupamos por tu privacidad y protegemos tus datos personales con mucho cuidado. Queremos que te sientas seguro al navegar y comprar con nosotros. Lee nuestras políticas para entender cómo manejamos tu información y qué derechos tienes sobre ella.",
+    
+    "titulo2":"INFORMACIÓN RELEVANTE",
+    "texto2":"Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios, así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todos los productos que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.",
+    "texto3":"El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de nuestros productos. https://vestore.com.ar no asume la responsabilidad en caso de que entregue dicha clave a terceros.",
+    "texto4":"Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la verificación del stock y disponibilidad de producto, validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.",
+    "texto5":"Los precios de los productos ofrecidos en esta Tienda Online son válidos solamente en las compras realizadas en este sitio web.",
+    "titulo3":"LICENCIA",
+    "titulo4":"USO NO AUTORIZADO",
+    "titulo5":"PROPIEDAD",
+    "titulo6":"POLÍTICA DE REEMBOLSO Y GARANTÍA",
+    "texto6":"Vestore a través de su sitio web concede una licencia para que los usuarios utilicen los productos que son vendidos en este sitio web de acuerdo a los Términos y Condiciones que se describen en este documento.",
+    "texto7":"En caso de que aplique (para venta de software, templetes, u otro producto de diseño y programación) usted no puede colocar uno de nuestros productos, modificado o sin modificar, en un CD, sitio web o ningún otro medio y ofrecerlos para la redistribución o la reventa de ningún tipo.",
+    "texto8":"Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros productos, modificado o sin modificar. Todos los productos son propiedad de los proveedores del contenido. En caso de que no se especifique lo contrario, nuestros productos se proporcionan sin ningún tipo de garantía, expresa o implícita. En ningún esta compañía será responsables de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestros productos.",
+    "texto9":"En el caso de productos que sean mercancías irrevocables no-tangibles, no realizamos reembolsos después de que se envíe el producto, usted tiene la responsabilidad de entender antes de comprarlo.  Le pedimos que lea cuidadosamente antes de comprarlo. Hacemos solamente excepciones con esta regla cuando la descripción no se ajusta al producto. Hay algunos productos que pudieran tener garantía y posibilidad de reembolso, pero este será especificado al comprar el producto. En tales casos la garantía solo cubrirá fallas de fábrica y sólo se hará efectiva cuando el producto se haya usado correctamente. La garantía no cubre averías o daños ocasionados por uso indebido. Los términos de la garantía están asociados a fallas de fabricación y funcionamiento en condiciones normales de los productos y sólo se harán efectivos estos términos si el equipo ha sido usado correctamente. Esto incluye:",
+    "item1":"De acuerdo a las especificaciones técnicas indicadas para cada producto.",
+    "item2":"En condiciones ambientales acorde con las especificaciones indicadas por el fabricante.",
+    "item3":"En uso específico para la función con que fue diseñado de fábrica.",
+    "item4":"En condiciones de operación eléctricas acorde con las especificaciones y tolerancias indicadas.",
+    "titulo7":"COMPROBACIÓN ANTIFRAUDE",
+    "texto10":"La compra del cliente puede ser aplazada para la comprobación antifraude. También puede ser suspendida por más tiempo para una investigación más rigurosa, para evitar transacciones fraudulentas.",
+    "titulo8":"PRIVACIDAD",
+    "https://www.vestore.com.ar":"https://www.vestore.com.ar",
+    "texto11":"Este <a href='index.php' data-section='page-term' data-value='https://www.vestore.com.ar'>https://www.vestore.com.ar</a> garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.",
+    "texto12":"La suscripción a boletines de correos electrónicos publicitarios es voluntaria y podría ser seleccionada al momento de crear su cuenta.",
+    "texto13":"Vestore reserva los derechos de cambiar o de modificar estos términos sin previo aviso.",
+    "texto14":"Gracias por apoyar a Ecom. Para proteger tus datos personales cuando utilizas los servicios de Ecom, hemos redactado esta política de privacidad.",
+    "gracias_vestore":"Gracias, somos Vestore."
     },
 
     "page-account":{
