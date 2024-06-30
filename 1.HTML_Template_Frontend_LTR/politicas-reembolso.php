@@ -12,7 +12,7 @@
   <meta name="author" content="">
   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-  <title>Politicas de Devolución - Vestore</title>
+  <title >Politicas de Devolución - Vestore</title>
 </head>
 
 <body>
