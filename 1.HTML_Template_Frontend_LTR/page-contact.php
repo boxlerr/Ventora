@@ -22,54 +22,54 @@
     <main class="main">
     <div class="section-box"></div>
     <section class="section-bax shop-templata mt-0">
-      <div class="container form-container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-          <form action="https://formsubmit.co/contacto@vestore.com.ar" method="POST">
-                <h3 class="color-brand-3 mt-60" data-section="exportar" data-value="exportar">Contactanos</h3>
-                <p class="font-sm color-gray-700 mb-30" data-section="exportar" data-value="el_mundo_te_espera">¡A nuestro equipo le encantaría saber de usted!</p>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div class="form-group" data-section="placeholder" data-value="nombre">
-                      <input class="form-control" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-group" data-section="placeholder" data-value="apellido">
-                        <input class="form-control" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group" data-section="placeholder" data-value="mail">
-                        <input class="form-control" type="email" placeholder="Email" name="mail" id="mail" required>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group" data-section="placeholder" data-value="telefono">
-                        <input class="form-control" type="tel" placeholder="Numero de telefono" name="telefono" id="telefono" required>
-                      </div>
-                    </div>
-                    <section id="dudas"></section>
-                    <div class="col-lg-12">
-                      <div class="form-group" data-section="placeholder" data-value="cuentanos">
-                        <textarea class="form-control" placeholder="Mensaje" rows="5" name="comentario" id="comentario" required></textarea>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group" data-section="placeholder" data-value="enviar_mensaje">
-                        <input class="btn btn-buy w-auto" type="submit" value="Enviar mensaje">
-                      </div>
-                    </div>
+  <div class="container form-container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 form-wrapper">
+        <form action="https://formsubmit.co/contacto@vestore.com.ar" method="POST">
+          <h3 class="color-brand-3 mt-60 form-title" data-section="exportar" data-value="exportar">Contactanos</h3>
+          <p class="font-sm color-gray-700 mb-30 form-description" data-section="exportar" data-value="el_mundo_te_espera">¡A nuestro equipo le encantaría saber de usted!</p>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group" data-section="placeholder" data-value="nombre">
+                <input class="form-control form-input" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group" data-section="placeholder" data-value="apellido">
+                <input class="form-control form-input" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group" data-section="placeholder" data-value="mail">
+                <input class="form-control form-input" type="email" placeholder="Email" name="mail" id="mail" required>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group" data-section="placeholder" data-value="telefono">
+                <input class="form-control form-input" type="tel" placeholder="Numero de telefono" name="telefono" id="telefono" required>
+              </div>
+            </div>
+            <section id="dudas"></section>
+            <div class="col-lg-12">
+              <div class="form-group" data-section="placeholder" data-value="cuentanos">
+                <textarea class="form-control form-input" placeholder="Mensaje" rows="5" name="comentario" id="comentario" required></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group" data-section="placeholder" data-value="enviar_mensaje">
+                <input class="btn btn-buy w-auto form-submit" type="submit" value="Enviar mensaje">
+              </div>
+            </div>
 
-                    <input type="hidden" name="_next" value="http://localhost/ventora/1.HTML_Template_Frontend_LTR/page-contact.php">
-                    <input type="hidden" name="_captcha" value="false">
-
-                  </div>
-              </form>
+            <input type="hidden" name="_next" value="http://localhost/ventora/1.HTML_Template_Frontend_LTR/page-contact.php">
+            <input type="hidden" name="_captcha" value="false">
           </div>
-        </div>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <section class="box-contact-support pt-80 pb-50 background-gray-50">
   <div class="container">
@@ -226,5 +226,6 @@
 <script src="assets/js/vendors/slick.js"></script>
     <script src="assets/js/main.js?v=3.0.0"></script>
     <script src="assets/js/shop.js?v=1.2.1"></script>
+    <script src="assets/js/javaS.js"></script>
   </body>
 </html>
