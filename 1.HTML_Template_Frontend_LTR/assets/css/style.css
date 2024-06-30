@@ -11499,6 +11499,7 @@ a:hover span {
   border: 3px solid rgb(19, 22, 58);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
 .support-item {

@@ -33,23 +33,29 @@
       <section class="section-box shop-template">
         <div class="container">
           <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
               <div class="box-carts">
                 <div class="head-wishlist">
                   <div class="item-wishlist mt-55">
-                    <div class="wishlist-product"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="producto">Product</span></div>
-                    <div class="wishlist-price"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="precio_unidad">Unit Price</span></div>
-                    <div class="wishlist-status"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="cantidad">Quantity</span></div>
-                    <div class="wishlist-action"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="subtotal">Subtotal</span></div>
-                    <div class="wishlist-remove"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="remover">Remove</span></div>
+                    <div class="wishlist-product"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="producto">Producto</span></div>
+                    <div class="wishlist-price"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="precio_unidad">Precio Unidad</span></div>
+                    <div class="wishlist-status"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="cantidad">Cantidad</span></div>
+                    <div class="wishlist-action"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="subtotal">Sub total</span></div>
+                    <div class="wishlist-remove"><span class="font-md-bold color-brand-3" data-section="shop-cart" data-value="remover">Remover</span></div>
                   </div>
                 </div>
                 <div class="content-wishlist mb-20">
                   <?php
                     $carrito = mostrarCarrito($usuario);
                     if($carrito[0]){
+                      $total=0;
                       foreach($carrito[1] as $articulo){
                         $producto = getProducto($articulo['producto_id']);
+                        $total+=$articulo['total_carrito'];
+                        $precio = round($producto['precio'] * $moneda['precio_moneda']);
+                        $precio = number_format($precio, 0, ',', '.');
+                        $total_carrito = round($articulo['total_carrito'] * $moneda['precio_moneda']);
+                        $total_carrito = number_format($total_carrito, 0, ',', '.');
                         echo"                      
                         <div class='item-wishlist'>
                           <div class='wishlist-product'>
@@ -61,7 +67,7 @@
                             </div>
                           </div>
                           <div class='wishlist-price'>
-                            <h4 class='color-brand-3'>$".htmlspecialchars($producto['precio'])."</h4>
+                            <h4 class='color-brand-3'>".$moneda['simbolo'].$precio."</h4>
                           </div>
                           <div class='wishlist-status'>
                             <div class='box-quantity'>
@@ -71,28 +77,25 @@
                             </div>
                           </div>
                           <div class='wishlist-action'>
-                            <h4 class='color-brand-3'>$".htmlspecialchars($articulo['total_carrito'])."</h4>
+                            <h4 class='color-brand-3'>".$moneda['simbolo'].$total_carrito."</h4>
                           </div>
                           <div class='wishlist-remove'><a class='btn btn-delete' href='agregarCarrito.php?eliminar=".htmlspecialchars($articulo['carrito_producto_id'])."'></a></div>
                         </div>";
                       }
+                      $total = round($total * $moneda['precio_moneda']);
+                      $total = number_format($total, 0, ',', '.');
                     }
                   ?>
                 </div>
                 <div class="row mb-40">
-                  <div class="col-lg-6 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="shop-grid.php" data-section="shop-cart" data-value="continuar_comprando">Continue shopping</a></div>
-                  <div class="col-lg-6 col-md-6 col-sm-6-col-6 text-md-end"><a class="btn btn-buy w-auto update-cart mb-10" href="shop-cart.php" data-section="shop-cart" data-value="actualizar_carrito">Update cart</a></div>
+                  <div class="col-lg-8 col-md-6 col-sm-6-col-6"><a class="btn btn-buy w-auto arrow-back mb-10" href="shop-grid.php" data-section="shop-cart" data-value="continuar_comprando">Continuar Comprando</a></div>
+                  <div class="col-lg-2 col-md-6 col-sm-6-col-6 text-md-end"><h4 class='color-brand-3'>Total: <?php echo $moneda['simbolo'].$total ?></h4></div>
+                  <div class="col-lg-2 col-md-6 col-sm-6-col-6 text-md-end"><a class="btn btn-buy w-auto update-cart mb-10" href="shop-cart.php" data-section="shop-cart" data-value="actualizar_carrito">Actualizar Carrito</a></div>
                 </div>
                 <div class="row mb-50">
                   <div class="col-lg-6 col-md-6">
-                    <div class="box-cart-left">
+                    <!-- <div class="box-cart-left">
                       <h5 class="font-md-bold mb-10" data-section="shop-cart" data-value="calcular_envio">Calculate Shipping</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500" data-section="shop-cart" data-value="tarifa_plana">Flat rate:</span><span class="font-sm-bold d-inline-block color-brand-3">5%</span>
-                      <div class="form-group">
-                        <select class="form-control select-style1 color-gray-700">
-                          <option value="1">USA</option>
-                          <option value="1">EURO</option>
-                        </select>
-                      </div>
                       <div class="row">
                         <div class="col-lg-6 mb-10">
                           <input class="form-control" placeholder="Stage / Country">
@@ -101,22 +104,13 @@
                           <input class="form-control" placeholder="PostCode / ZIP">
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="box-cart-right p-20">
-                      <h5 class="font-md-bold mb-10" data-section="shop-cart" data-value="aplicar_cupon">Apply Coupon</h5><span class="font-sm-bold mb-5 d-inline-block color-gray-500" data-section="shop-cart" data-value="usando_cod_prom">Using A Promo Code?</span>
-                      <div class="form-group d-flex">
-                        <input class="form-control mr-15" placeholder="Enter Your Coupon">
-                        <button class="btn btn-buy w-auto" data-section="shop-cart" data-value="aplicar">Apply</button>
-                      </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 mt-55">
-              <div class="summary-cart">
+            <!-- <div class="col-lg-3 mt-55"> -->
+              <!-- <div class="summary-cart">
                 <div class="border-bottom mb-10">
                   <div class="row">
                     <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="subtotal">Subtotal</span></div>
@@ -124,8 +118,8 @@
                       <h4>	$2.51</h4>
                     </div>
                   </div>
-                </div>
-                <div class="border-bottom mb-10">
+                </div> -->
+                <!-- <div class="border-bottom mb-10">
                   <div class="row">
                     <div class="col-6"><span class="font-md-bold color-gray-500" data-section="shop-cart" data-value="envio">Shipping</span></div>
                     <div class="col-6 text-end">
@@ -150,22 +144,22 @@
                   </div>
                 </div>
                 <div class="box-button"><a class="btn btn-buy" href="shop-checkout.php" data-section="shop-cart" data-value="proceder_al_pago">Proceed To CheckOut</a></div>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
           </div>
-          <h4 class="color-brand-3" data-section="shop-cart" data-value="tambien_podria_gustarte">You may also like</h4>
+          <h4 class="color-brand-3" data-section="shop-cart" data-value="tambien_podria_gustarte">Tambien podria gustarte</h4>
           <div class="list-products-5 mt-20 mb-40">
             <?php
             $productos=getProductosLimitados(5);
             foreach($productos as $producto){
+              $precio = round($producto['precio'] * $moneda['precio_moneda']);
+              $precio = number_format($precio, 0, ',', '.');
               echo"              
                 <div class='card-grid-style-3 home6-style home7-style'>
                   <div class='card-grid-inner'>
-                    <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
-                    <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                    <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Apple</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
-                      <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                      <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".htmlspecialchars($producto['precio'])."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                    <div class='image-box'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                    <div class='info-right'><a class='font-xs color-gray-500' href=#>Apple</a><br><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."' class='color-brand-3 font-sm-bold'>".htmlspecialchars($producto['nombre'])."</a>
+                      <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>".$moneda['simbolo']. $precio ."</strong></div>
                       <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
                     </div>
                   </div>

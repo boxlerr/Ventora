@@ -208,3 +208,32 @@ function getMarcas(){
     $rows = $result->num_rows;
     return [$rows, $datos];
 }
+
+function quitarStock($user){
+    global $con;
+    $sql = "SELECT producto_id FROM carrito_producto WHERE carrito_id = (SELECT carrito_id FROM carrito WHERE cliente_id = $user)";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all(MYSQLI_ASSOC);
+
+    foreach($datos as $dato){
+        $sql = "UPDATE inventario SET cantidad=(SELECT cantidad FROM inventario WHERE producto_id = $dato[producto_id])-1 WHERE producto_id = $dato[producto_id]";
+        // $sql = "SELECT cantidad FROM inventario WHERE producto_id = $dato";
+        $result = $con->query($sql);
+    }
+    // $datos = $result->fetch_all(MYSQLI_ASSOC);
+    // $rows = $result->num_rows;
+    // return [$rows, $datos];
+}
+
+function agregarStock($user){
+    global $con;
+    $sql = "SELECT producto_id FROM carrito_producto WHERE carrito_id = (SELECT carrito_id FROM carrito WHERE cliente_id = $user)";
+    $result = $con->query($sql);
+    $datos = $result->fetch_all(MYSQLI_ASSOC);
+
+    foreach($datos as $dato){
+        $sql = "UPDATE inventario SET cantidad=(SELECT cantidad FROM inventario WHERE producto_id = $dato[producto_id])+1 WHERE producto_id = $dato[producto_id]";
+        // $sql = "SELECT cantidad FROM inventario WHERE producto_id = $dato";
+        $result = $con->query($sql);
+    }
+}
