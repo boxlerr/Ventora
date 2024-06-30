@@ -1,36 +1,5 @@
-<?php
-// Verificar si la sesión ya está iniciada
-session_start();
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-$time_limit = 250; 
-
-// Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
-if (isset($_SESSION['start_time'])) {
-    echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-    $elapsed_time = time() - $_SESSION['start_time'];
-    echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
-
-    if ($elapsed_time > $time_limit) {  
-        echo "Tiempo expirado. Redirigiendo...<br>";
-        unset($_SESSION['start_time']);
-        header("Location: index.php");
-        exit();
-    } else {
-        echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
-    }
-} else {
-    // Si no hay tiempo de inicio, establecemos uno
-    $_SESSION['start_time'] = time();
-    echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -41,7 +10,7 @@ if (isset($_SESSION['start_time'])) {
   <meta name="description" content="Index page">
   <meta name="keywords" content="index, page">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
   <title>Pagos</title>
 </head>
@@ -59,17 +28,17 @@ if (isset($_SESSION['start_time'])) {
           <div class="col-lg-6">
             <!-- <div class="row">
               <?php
-                $tiempoRestante = (time() - $_SESSION['start_time']) - (15 * 60);
-                if ($tiempoRestante < 0) {
-                    $tiempoRestante *= -1;
-                }
-                $minutos = floor($tiempoRestante / 60);
-                $segundosRestantes = $tiempoRestante % 60;
-                $tiempo = sprintf("%02d:%02d", $minutos, $segundosRestantes);
+              $tiempoRestante = (time() - $_SESSION['start_time']) - (15 * 60);
+              if ($tiempoRestante < 0) {
+                $tiempoRestante *= -1;
+              }
+              $minutos = floor($tiempoRestante / 60);
+              $segundosRestantes = $tiempoRestante % 60;
+              $tiempo = sprintf("%02d:%02d", $minutos, $segundosRestantes);
               ?>
-              <p>Tiempo restante: <?php echo $tiempo?></p>
+              <p>Tiempo restante: <?php echo $tiempo ?></p>
             </div> -->
-            <div class="box-border">
+            <div class="box-border" style="background-color: #20303f;">
               <!-- <div class="box-payment"><a class="btn btn-gpay"><img src="assets/imgs/page/checkout/gpay.svg" alt="Ecom"></a><a class="btn btn-paypal"><img src="assets/imgs/page/checkout/paypal.svg" alt="Ecom"></a><a class="btn btn-amazon"><img src="assets/imgs/page/checkout/amazon.svg" alt="Ecom"></a></div>
               <div class="border-bottom-4 text-center mb-20">
                 <div class="text-or font-md color-gray-500">Or</div>
@@ -81,7 +50,7 @@ if (isset($_SESSION['start_time'])) {
                 <div class="col-lg-6 col-sm-6 mb-20 text-sm-end text-center"><span class="font-sm color-brand-3">Already have an account?</span><a class="font-sm color-brand-1" href="page-login.php"> Login</a></div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Email*">
+                    <input class="form-input form-control" type="text" placeholder="Email*">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -89,27 +58,27 @@ if (isset($_SESSION['start_time'])) {
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="First name*">
+                    <input class="form-input form-control" type="text" placeholder="First name*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Last name*">
+                    <input class="form-input form-control" type="text" placeholder="Last name*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 1*">
+                    <input class="form-input form-control" type="text" placeholder="Address 1*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Address 2">
+                    <input class="form-input form-control" type="text" placeholder="Address 2">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <select class="form-control font-sm select-style1 color-gray-700">
+                    <select class="form-input form-control select-style1 color-gray-700">
                       <option value="">Select an option...</option>
                       <option value="1">Option 1</option>
                     </select>
@@ -117,34 +86,37 @@ if (isset($_SESSION['start_time'])) {
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="City*">
+                    <input class="form-input form-control" type="text" placeholder="City*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*">
+                    <input class="form-input form-control" type="text" placeholder="PostCode / ZIP*">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Company name">
+                    <input class="form-input form-control" type="text" placeholder="Company name">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control font-sm" type="text" placeholder="Phone*">
+                    <input class="form-input form-control" type="text" placeholder="Phone*">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mb-0">
-                    <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
+                    <textarea class="form-input form-control" placeholder="Additional Information" rows="5"></textarea>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row mt-20">
               <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-cart.php">Return to Cart</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-pay.php">Pasar al pago</a></div>
+              <form class="col-lg-6 col-7 mb-20 text-end" method="post" action="shop-pay.php">
+                <input type="hidden" name="user" value="<?php echo $usuario ?>">
+                <input class="btn btn-buy w-auto" type="submit" value="Pasar al pago">
+              </form>
             </div>
           </div>
           <div class="col-lg-6">
@@ -152,27 +124,27 @@ if (isset($_SESSION['start_time'])) {
               <h5 class="font-md-bold mb-20">Tu orden</h5>
               <?php
               $carrito = mostrarCarrito($usuario);
-              if($carrito[0]){
-                $total=0;
-                foreach($carrito[1] as $articulo){
+              if ($carrito[0]) {
+                $total = 0;
+                foreach ($carrito[1] as $articulo) {
                   $producto = getProducto($articulo['producto_id']);
                   $precio = round($articulo['total_carrito'] * $moneda['precio_moneda']);
                   $total += $precio;
                   $precio = number_format($precio, 0, ',', '.');
-                  echo"
+                  echo "
                   <div class='listCheckout'>
                     <div class='item-wishlist'>
                       <div class='wishlist-product'>
                         <div class='product-wishlist'>
-                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                          <div class='product-info'><a href='shop-single-product.html'>
-                              <h6 class='color-brand-3'>".htmlspecialchars($producto['nombre'])."</h6>
+                          <div class='product-image'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/" . htmlspecialchars($producto['imagen_url']) . "' alt='Ecom'></a></div>
+                          <div class='product-info'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'>
+                              <h6 class='color-brand-3'>" . htmlspecialchars($producto['nombre']) . "</h6>
                             </a>
                           </div>
                         </div>
                       </div>
                       <div class='wishlist-status'>
-                        <h5 class='color-gray-500'>x".htmlspecialchars($articulo['cantidad'])."</h5>
+                        <h5 class='color-gray-500'>x" . htmlspecialchars($articulo['cantidad']) . "</h5>
                       </div>
                       <div class='wishlist-price'>
                         <h4 class='color-brand-3 font-lg-bold'>$$precio</h4>

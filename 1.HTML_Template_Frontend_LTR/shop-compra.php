@@ -10,7 +10,7 @@
   <meta name="description" content="Index page">
   <meta name="keywords" content="index, page">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
   <title>Pagos</title>
 </head>
@@ -29,11 +29,11 @@
             <h3>Tu compra se a realizado con exito</h3>
             <div class="row mt-20">
               <!-- <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-checkout.php">Volver a la informacion del envio</a></div> -->
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-checkout.php">Seguir comprando</a></div>
+              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto" href="shop-grid.php">Seguir comprando</a></div>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="box-border">
+            <div class="box-border mb-20">
               <h5 class="font-md-bold mb-20">Detalles de la compra</h5>
               <?php
               $carrito = mostrarCarrito($usuario);

@@ -1,27 +1,63 @@
 <?php
-require '../vendor/autoload.php';
-MercadoPago\SDK::setAccessToken('');//agregar credecial cuando creen cuenta
+// Verificar si la sesión ya está iniciada
+// session_start();
+// include_once("consultas_bd.php");
 
-$preference = new MercadoPago\Preference();
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
-$item = new MercadoPago\Item();
-$item->id='0001';
-$item->title='producto1';
-$item->id=1;
-$item->id=1500;
-$item->id='ARS';
+// $time_limit = 250; 
 
-$preference->items = array($item);
+// if(isset($_POST["user"]) && !isset($_SESSION['start_time'])){
+//   $user = $_POST["user"];
+//   quitarStock($user);
+// }
 
-$preference->back_urls = array(
-  "success" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compra.php",
-  "failure" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compraFallada.php"
-);
+// // Depuración: Mostrar el tiempo de inicio y el tiempo transcurrido
+// if (isset($_SESSION['start_time'])) {
+//     echo "Tiempo de inicio de la sesión: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+//     $elapsed_time = time() - $_SESSION['start_time'];
+//     echo "Tiempo transcurrido: " . $elapsed_time . " segundos<br>";
 
-$preference->auto_return = "approved";
-$preference->binary_mode = "true";
+//     if ($elapsed_time > $time_limit) {
+//         agregarStock($_POST["user"]);  
+//         echo "Tiempo expirado. Redirigiendo...<br>";
+//         unset($_SESSION['start_time']);
+//         header("Location: index.php");
+//         exit();
+//     } else {
+//         echo "Tiempo restante: " . ($time_limit - $elapsed_time) . " segundos<br>";
+//     }
+// } else {
+//     // Si no hay tiempo de inicio, establecemos uno
+//     $_SESSION['start_time'] = time();
+//     echo "Sesión de tiempo de inicio establecida en: " . date('H:i:s', $_SESSION['start_time']) . "<br>";
+// }
 
-$preference->save();
+// require '../vendor/autoload.php';
+// MercadoPago\SDK::setAccessToken('');//agregar credecial cuando creen cuenta
+
+// $preference = new MercadoPago\Preference();
+
+// $item = new MercadoPago\Item();
+// $item->id='0001';
+// $item->title='producto1';
+// $item->id=1;
+// $item->id=1500;
+// $item->id='ARS';
+
+// $preference->items = array($item);
+
+// $preference->back_urls = array(
+//   "success" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compra.php",
+//   "failure" => "http://localhost/ventora/1.HTML_Template_Frontend_LTR/shop-compraFallada.php"
+// );
+
+// $preference->auto_return = "approved";
+// $preference->binary_mode = "true";
+
+// $preference->save();
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +72,7 @@ $preference->save();
   <meta name="description" content="Index page">
   <meta name="keywords" content="index, page">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
   <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
   <title>Pagos</title>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -44,8 +80,8 @@ $preference->save();
 
 <body>
   <?php
-  include_once("consultas_bd.php");
   include_once("main.php");
+  include_once("consultas_bd.php");
   include_once("cambio.php");
   ?>
   <main class="main">
@@ -61,7 +97,7 @@ $preference->save();
             </div>
             <div class="row mt-20">
               <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-checkout.php">Volver a la informacion del envio</a></div>
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto arrow-next" href="shop-compra.php">Comprar</a></div>
+              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto" href="shop-compra.php">Comprar</a></div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -124,7 +160,7 @@ $preference->save();
         </div>
       </div>
     </section>
-    <script>
+    <!-- <script>
       const mp = new MercadoPago('',{//aca va la public key
       locale:'es-AR'
       });
@@ -138,7 +174,7 @@ $preference->save();
             label:'Pagar con MP'
           }
       })
-    </script>
+    </script> -->
 
     <section class="section-box box-newsletter">
       <div class="container">

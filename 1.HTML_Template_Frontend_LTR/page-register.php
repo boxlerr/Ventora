@@ -9,7 +9,7 @@
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
     <title>Register - Ecom Marketplace Template</title>
   </head>
@@ -24,27 +24,27 @@
           <div>
             <form action="verificarUsuario.php" method="post" class="row mb-100">
               <!-- <div class="col-lg-1"></div> -->
-              <h3>Create an account</h3>
+              <h3>Crear una cuenta</h3>
               <!-- <p class="font-md color-gray-500">Access to all features. No credit card required.</p> -->
-              <div class="mt-10"><span class="font-xs color-gray-500 font-medium">Already have an account?</span><a class="font-xs color-brand-3 font-medium" href="page-login.php"> Sign In</a></div>
+              <div class="mt-10"><span class="font-xs color-gray-500 font-medium">¿Ya tenes una cuenta?</span><a class="font-xs color-brand-3 font-medium" href="page-login.php"> Iniciar Sesion</a></div>
               <div class="mt-15 mb-15"></div>
               <div class="col-lg-6">
                 <div class="form-register">
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Nombre completo *</label>
-                    <input class="form-control" type="text" placeholder="Steven job" name="nombre">
+                    <input class="form-control" type="text" placeholder="" name="nombre">
                   </div>
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Email *</label>
-                    <input class="form-control" type="text" placeholder="stevenjob@gmail.com" name="email">
+                    <input class="form-control" type="text" placeholder="" name="email">
                   </div>
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Telefono</label>
-                    <input class="form-control" type="text" placeholder="stevenjob" name="telefono">
+                    <input class="form-control" type="text" placeholder="" name="telefono">
                   </div>
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Fecha de nacimiento *</label>
-                    <input class="form-control" type="date" placeholder="stevenjob" name="fecha_nacimiento">
+                    <input class="form-control" type="date" placeholder="" name="fecha_nacimiento">
                   </div>
                 </div>
               </div>
@@ -52,21 +52,21 @@
                 <div class="form-register">
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Nacionalidad *</label>
-                    <input class="form-control" type="text" placeholder="stevenjob" name="nacionalidad">
+                    <input class="form-control" type="text" placeholder="" name="nacionalidad">
                   </div>
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Password *</label>
-                    <input class="form-control" type="password" placeholder="******************" name="contrasena">
+                    <input class="form-control" type="password" placeholder="" name="contrasena">
                   </div>
                   <div class="form-group">
                     <label class="mb-5 font-sm color-gray-700">Re-Password *</label>
-                    <input class="form-control" type="password" placeholder="******************" name="contrasena2">
+                    <input class="form-control" type="password" placeholder="" name="contrasena2">
                   </div>
                   <!-- <div class="form-group"> -->
                     <!-- </div> -->
                     <div class="form-group">
-                    <label class="mb-5 font-sm"><input class="checkagree" type="checkbox">By clicking Register button, you agree our terms and policy,</label>
-                    <input class="font-md-bold btn btn-buy" type="submit" value="Sign Up" name="crear">
+                    <label class="mb-5 font-sm"><input class="checkagree" type="checkbox">Acepto los terminos y condiciones</label>
+                    <input class="font-md-bold btn btn-buy" type="submit" value="Crear cuenta" name="crear">
                     <?php
                     if(isset($_GET["error"])){
                       echo "<div class='error'><p>$_GET[error]</p></div>";

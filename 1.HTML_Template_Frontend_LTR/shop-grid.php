@@ -9,7 +9,7 @@
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
     <title>Lista Productos</title>
   </head>
@@ -26,7 +26,7 @@
             <div class="col-lg-3 col-md-4 order-first order-lg-first d-none d-md-block">
               <div class="sidebar-border mb-40">
                 <div class="sidebar-head">
-                  <h6 class="color-gray-900">Products Filter</h6>
+                  <h6 class="color-gray-900">Filtros</h6>
                 </div>
                 <form class="sidebar-content" action="shop-grid.php" method="get">
                   <h6 class="color-gray-900 mt-10 mb-10">Categorias</h6>
@@ -80,7 +80,7 @@
                   </div>
                   ";
                   } ?>
-                  <h6 class="color-gray-900 mt-10 mb-10">Price</h6>
+                  <h6 class="color-gray-900 mt-10 mb-10">Precio</h6>
                   <ul class="list-checkbox">
                     <li>
                       <div class="row">
@@ -93,7 +93,7 @@
                       </div>
                     </li>
                   </ul>
-                  <h6 class="color-gray-900 mt-20 mb-10">Brands</h6>
+                  <h6 class="color-gray-900 mt-20 mb-10">Marcas</h6>
                   <ul class="list-checkbox">
                     <!-- <input type="hidden" name="marcas[]" value=""> -->
                     <?php
@@ -181,7 +181,7 @@
                       </label>
                     </li>
                   </ul> -->
-                  <input class="btn btn-buy w-auto" href="#ModalFiltersForm" data-bs-toggle="modal" value="Apply Fillters" type="submit">
+                  <input class="btn btn-buy w-auto" value="Aplicar filtros" type="submit">
                   <!-- <a class="btn btn-filter font-sm color-brand-3 font-medium mt-10" data-bs-toggle="modal">More Fillters</a> -->
                 </form>
               </div>
@@ -244,16 +244,9 @@
                   <div class='col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12'>
                     <div class='card-grid-style-3 home6-style home7-style'>
                       <div class='card-grid-inner'>
-                        <div class='tools'>
-                          <!--<a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a> -->
-                          <!--<a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a> -->
-                          <!--<a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a> -->
-                          <!--<a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a>-->
-                        </div>
-                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Apple</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
-                          <!--<div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>-->
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$".$precio ."</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                        <div class='image-box'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                        <div class='info-right'><a class='font-xs color-gray-500' href=#>Apple</a><br><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."' class='color-brand-3 font-sm-bold'>".htmlspecialchars($producto['nombre'])."</a>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>".$moneda['simbolo'].$precio ."</strong></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
                         </div>
                       </div>
@@ -263,7 +256,7 @@
                 }
                 ?>
               </div>
-              <nav class>
+              <!-- <nav class>
                 <ul id="flexcentrado" class="pagination">
                   <li class="page-item"><a class="page-link page-prev" href="#"></a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -274,7 +267,7 @@
                   <li class="page-item"><a class="page-link" href="#">6</a></li>
                   <li class="page-item"><a class="page-link page-next" href="#"></a></li>
                 </ul>
-              </nav>
+              </nav> -->
             </div>
           </div>
         </div>
@@ -283,14 +276,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-12">
-              <h3>Subscrible &amp; Get <span class="color-warning">10%</span> Discount</h3>
-              <p class="font-lg">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+              <h3 class="color-white" data-section="index" data-value="suscripcion">Suscribete y consigue 10% de Descuento</h3>
+              <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales</span></p>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12">
               <div class="box-form-newsletter mt-15">
                 <form class="form-newsletter">
-                  <input class="input-newsletter font-xs" value="" placeholder="Your email Address">
-                  <button class="btn btn-brand-2">Sign Up</button>
+                  <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                  <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Ingresar</button>
                 </form>
               </div>
             </div>

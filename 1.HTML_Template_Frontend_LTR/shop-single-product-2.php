@@ -9,9 +9,9 @@
     <meta name="description" content="Index page">
     <meta name="keywords" content="index, page">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/img/logovestoreventana.png">
     <link href="assets/css/style.css?v=3.0.0" rel="stylesheet">
-    <title>Single Product 2 - Ecom Marketplace Template</title>
+    <title>Productos</title>
   </head>
   <body>
     <?php
@@ -33,41 +33,9 @@
           <div class="row">
             <div class="col-lg-5">
               <div class="gallery-image">
-                <div class="galleries">
-                  <div class="detail-gallery">
-                    <label class="label">-17%</label>
-                    <div class="product-image-slider">
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-1.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-2.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-3.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-4.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-5.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-6.jpg" alt="product image"></figure>
-                      <figure class="border-radius-10"><img src="assets/imgs/page/product/img-gallery-7.jpg" alt="product image"></figure>
-                    </div>
-                  </div>
-                  <div class="slider-nav-thumbnails">
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-1.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-2.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-3.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-4.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-5.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-6.jpg" alt="product image"></div>
-                    </div>
-                    <div>
-                      <div class="item-thumb"><img src="assets/imgs/page/product/img-gallery-7.jpg" alt="product image"></div>
-                    </div>
+                <div class="detail-gallery">
+                  <div class="product-image">
+                    <figure id="vistasingleproduct" class="border-radius-10"><img src='assets/imgs/<?php echo htmlspecialchars($producto['imagen_url']); ?>' alt="product image" style="width: 70%;"></figure>
                   </div>
                 </div>
               </div>
@@ -76,43 +44,42 @@
               <?php
               $prodWish = buscarWishlist($producto['producto_id']);
               ?>
-              <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
               <form class="row align-items-center" method="post" action="agregarWishlist.php">
-                <div class="col-lg-4 col-md-4 col-sm-3 mb-mobile">
-                  <div class="rating mt-5"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><img src="assets/imgs/template/icons/star.svg" alt="Ecom"><span class="font-xs color-gray-500 font-medium"> (65 reviews)</span></div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 mb-mobile">
+                    <h3 class="color-brand-3 mb-25"><?php echo htmlspecialchars($producto['nombre']) ?></h3>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 mb-mobile">
+                    <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
+                    <?php
+                    if($usuario){
+                      if($prodWish){
+                        echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='quitarWishlist' class='btn btn-wishlist wishlist_seleccionado mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Quitar de favoritos</span></span></div>";
+                      }else{
+                        echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWishlist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Agregar a favoritos</span></span></div>";
+                      }
+                    } else{
+                      echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><a class='mr-20' href='page-login.php'><span class='btn btn-wishlist mr-5 opacity-100 transform-none'></span><span class='font-md color-gray-900'>Agregar a favoritos</span></a></div>";
+                    }
+                    ?>
+                  </div>
                 </div>
-                <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
-                <?php
-                if($usuario){
-                  if($prodWish){
-                    echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='quitarWishlist' class='btn btn-wishlist wishlist_seleccionado mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Quitar de favoritos</span></span></div>";
-                  }else{
-                    echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><span class='mr-20'><button type='submit' name='agregarWishlist' class='btn btn-wishlist mr-5 opacity-100 transform-none'></button><span class='font-md color-gray-900'>Agregar a favoritos</span></span></div>";
-                  }
-                } else{
-                  echo "<div class='col-lg-8 col-md-8 col-sm-9 text-start text-sm-end'><a class='mr-20' href='page-login.php'><span class='btn btn-wishlist mr-5 opacity-100 transform-none'></span><span class='font-md color-gray-900'>Add to Wish list</span></a></div>";
-                }
-                ?>
               </form>
               <div class="border-bottom pt-10 mb-20"></div>
               <div class="row">
                 <div class="col-lg-7">
                   <div class="box-product-price">
-                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo $precio ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
+                    <h3 class="color-brand-3 price-main d-inline-block mr-10"><?php echo $moneda['simbolo']. $precio ?></h3> <!-- <span class="color-gray-500 price-line font-xl line-througt">$3225.6</span> -->
                   </div>
-                  <div class="product-description color-gray-900">
-                    <ul class="list-dot">
-                      <li><?php echo htmlspecialchars($producto['descripcion']) ?></li>
-                    </ul>
-                  </div>
-                  <div class="border-bottom mt-20 mb-20"></div>
-                  <div class="info-product">
-                    <div class="row align-items-end">
+                    <div class="border-bottom mt-20 mb-20"></div>
+                    <div class="info-product">
+                    <li><?php echo htmlspecialchars($producto['descripcion']) ?></li>
+                    <!-- <div class="row align-items-end">
                       <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">SKU:<span class="color-gray-500">iphone12pro128</span><br>Category:<span class="color-gray-500">Smartphones</span><br>Tags:<span class="color-gray-500">Blue, Smartphone</span></span></div>
                       <div class="col-lg-6 col-md-6 mb-20"><span class="font-sm font-medium color-gray-900">Free Delivery<br><span class="color-gray-500">Available for all locations.</span><br><span class="color-gray-500">Delivery Options & Info</span></span></div>
                       <div class="col-lg-12 mb-20">
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="col-lg-5">
@@ -147,7 +114,7 @@
                       </div>
                     </div> -->
                     <div class="buy-product mt-10 d-flex">
-                      <div class="font-sm text-quantity">Quantity</div>
+                      <div class="font-sm text-quantity">Cantidad</div>
                       <div class="box-quantity">
                         <div class="input-quantity">
                           <input class="font-xl color-brand-3" type="text" value="1" name="cantidad"><span class="minus-cart"></span><span class="plus-cart"></span>
@@ -157,46 +124,23 @@
                     <input type="hidden" value="<?php echo htmlspecialchars($producto['producto_id']) ?>" name="producto_id">
                     <?php
                     if($usuario){
-                      echo "<div class='button-buy mt-15'><input class='btn btn-cart mb-15' type='submit' name='agregarCarrito' value='Add to cart'>";
+                      echo "<div class='button-buy mt-15'><input class='btn btn-cart mb-15' type='submit' name='agregarCarrito' value='Agregar al carrito'>";
                     } else{
-                      echo "<div class='button-buy mt-15'><a class='btn btn-cart mb-15' href='page-login.php'>Add to cart</a>";
+                      echo "<div class='button-buy mt-15'><a class='btn btn-cart mb-15' href='page-login.php'>Agregar al carrito</a>";
                     }
                     ?>
-                    <a class="btn btn-buy" href="shop-checkout.php">Buy now</a></div>
+                    <!-- <a class="btn btn-buy" href="shop-checkout.php">Buy now</a> -->
+                  </div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="border-bottom pt-30 mb-40"></div>
-          <h4 class="color-brand-3 mb-20">Frequently Bought Together</h4>
-          <div class="box-bought-together">
-            <div class="box-product-bought box-product-bought-2">
-              <div class="product-bought"><img src="assets/imgs/page/product/sp1.png" alt="Ecom"></div>
-              <div class="product-bought"><img src="assets/imgs/page/product/sp2.png" alt="Ecom"></div>
-              <div class="product-bought"><img src="assets/imgs/page/product/sp3.png" alt="Ecom"></div>
-              <div class="product-bought"><img src="assets/imgs/page/product/sp4.png" alt="Ecom"></div>
-            </div>
-            <div class="price-bought">
-              <h3 class="color-brand-3 mr-10">$2856.3</h3><span class="font-lg color-gray-900">(3 items)</span>
-              <div class="box-btn-add-cart"><a class="btn btn-cart" href="shop-cart.php">Add To Cart</a></div>
-            </div>
-          </div>
-          <label class="cb-container-2">
-            <input type="checkbox" checked="checked"><span class="font-md color-brand-3"><strong>This item:</strong>iPhone 12 Pro Max 128GB Pacific Blue - $1,099.00</span><span class="checkmark"></span>
-          </label>
-          <label class="cb-container-2">
-            <input type="checkbox" checked="checked"><span class="font-md color-brand-3">Apple AirPods Pro, Active Noise Cancellation, Custom Fit - $197.00</span><span class="checkmark"></span>
-          </label>
-          <label class="cb-container-2">
-            <input type="checkbox" checked="checked"><span class="font-md color-brand-3">Apple iMac 24" All-In-One Computer, Apple M1, 8GB RAM, 512GB SSD, macOS Big Sur, Green, MGPJ3LL/A - $1,599.00</span><span class="checkmark"></span>
-          </label>
-        </div> -->
       </section>
       <section class="section-box shop-template">
         <div class="container">
           <div class="pt-30 mb-10">
-            <ul class="nav nav-tabs nav-tabs-product" role="tablist">
+            <!-- <ul class="nav nav-tabs nav-tabs-product" role="tablist">
               <li><a class="active" href="#tab-description" data-bs-toggle="tab" role="tab" aria-controls="tab-description" aria-selected="true">Description</a></li>
               <li><a href="#tab-specification" data-bs-toggle="tab" role="tab" aria-controls="tab-specification" aria-selected="true">Specification</a></li>
               <li><a href="#tab-additional" data-bs-toggle="tab" role="tab" aria-controls="tab-additional" aria-selected="true">Additional information</a></li>
@@ -395,9 +339,9 @@
                   Colorado. The company went public in 2013 and recorded a $457 million revenue in 2017.In late 2018, there were 460 Noodles &amp; Company locations across 29 states and Washington, D.C.
                 </p>
                 <p class="font-sm color-gray-500">Proin congue dapibus rhoncus. Curabitur ipsum orci, malesuada in porttitor a, porttitor quis diam. Nunc at arcu ut turpis facilisis volutpat. Proin tristique, mauris non gravida dignissim, purus mauris malesuada tellus, in tincidunt orci enim eget ligula. Quisque bibendum, ipsum id malesuada placerat, purus felis vehicula risus, vel fringilla justo erat ullamcorper ligula. Fusce congue ullamcorper ligula, at commodo turpis molestie vel.</p>
-              </div>
+              </div> -->
               <div class="border-bottom pt-30 mb-50"></div>
-              <h4 class="color-brand-3">Related Products</h4>
+              <h4 class="color-brand-3">Otros productos</h4>
               <div class="list-products-5 mt-20">
                 <?php
                 $productos=getProductosLimitados(5);
@@ -406,15 +350,10 @@
                   echo"              
                     <div class='card-grid-style-3 home6-style home7-style'>
                       <div class='card-grid-inner'>
-                        <div class='tools'><a class='btn btn-trend btn-tooltip mb-10' href='#' aria-label='Trend' data-bs-placement='left'></a><a class='btn btn-wishlist btn-tooltip mb-10' href='shop-wishlist.php' aria-label='Add To Wishlist'></a><a class='btn btn-compare btn-tooltip mb-10' href='shop-compare.php' aria-label='Compare'></a><a class='btn btn-quickview btn-tooltip' aria-label='Quick view' href='#ModalQuickview' data-bs-toggle='modal'></a></div>
-                        <div class='image-box'><span class='label bg-brand-2'>-17%</span><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
-                        <div class='info-right'><a class='font-xs color-gray-500' href='shop-vendor-single.php'>Apple</a><br><a class='color-brand-3 font-sm-bold' href='shop-single-product-2.php'>".htmlspecialchars($producto['nombre'])."</a>
-                          <div class='rating'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><img src='assets/imgs/template/icons/star.svg' alt='Ecom'><span class='font-xs color-gray-500'>(65)</span></div>
-                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>$$precio</strong><span class='color-gray-500 price-line'>$3225.6</span></div>
+                        <div class='image-box'><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                        <div class='info-right'><a class='font-xs color-gray-500' href=#>Apple</a><br><a href='shop-single-product-2.php?id=".htmlspecialchars($producto['producto_id'])."' class='color-brand-3 font-sm-bold'>".htmlspecialchars($producto['nombre'])."</a>
+                          <div class='price-info mb-10'><strong class='font-lg-bold color-brand-3 price-main'>".$moneda['simbolo'].$precio ."</strong></div>
                           <!-- <div class='mt-10 box-btn-cart'><a class='btn btn-cart' href='shop-cart.php'>Add To Cart</a></div> -->
-                          <ul class='list-features'>
-                            <li>".htmlspecialchars($producto['descripcion'])."</li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -749,94 +688,9 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 width-25 mb-30">
-              <h4 class="mb-30 color-gray-1000">Contact</h4>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Phone:</strong> (+01) 123-456-789</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">E-mail:</strong> contact@ecom-market.com</div>
-              <div class="font-md mb-20 color-gray-900"><strong class="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat</div>
-              <div class="mt-30"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-instagram" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
-            </div>
-            <div class="col-lg-3 width-20 mb-30">
-              <h4 class="mb-30 color-gray-1000">Make Money with Us</h4>
-              <ul class="menu-footer">
-                <li><a href="page-about-us.php">Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.php">Our Team</a></li>
-                <li><a href="page-careers.html">Careers</a></li>
-                <li><a href="#">Press &amp; Media</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">Company</h4>
-              <ul class="menu-footer">
-                <li><a href="blog-2.html">Our Blog</a></li>
-                <li><a href="#">Plans &amp; Pricing</a></li>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Office Center</a></li>
-                <li><a href="blog.html">News &amp; Events</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-16 mb-30">
-              <h4 class="mb-30 color-gray-1000">My account</h4>
-              <ul class="menu-footer">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Editor Help</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.php">Contact Us</a></li>
-                <li><a href="#">Support Center</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 width-23">
-              <h4 class="mb-30 color-gray-1000">App &amp; Payment</h4>
-              <div>
-                <p class="font-md color-gray-900">Download our Apps and get extra 15% Discount on your first Order&mldr;!</p>
-                <div class="mt-20"><a class="mr-10" href="#"><img src="assets/imgs/template/appstore.png" alt="Ecom"></a><a href="#"><img src="assets/imgs/template/google-play.png" alt="Ecom"></a></div>
-                <p class="font-md color-gray-900 mt-20 mb-10">Secured Payment Gateways</p><img src="assets/imgs/template/payment-method.png" alt="Ecom">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-2">
-        <div class="footer-bottom-1">
-          <div class="container">
-            <div class="footer-2-top mb-20"><a href="index.html"><img alt="Ecom" src="assets/imgs/template/logo-2.svg"></a><a class="font-xs color-gray-1000" href="#">EcomMarket.com</a><a class="font-xs color-gray-1000" href="#">Ecom Partners</a><a class="font-xs color-gray-1000" href="#">Ecom Bussiness</a><a class="font-xs color-gray-1000" href="#">Ecom Factory</a></div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Electronic:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-fullwidth.html">Cell Phones</a><a href="shop-grid.php">Headphones</a><a href="shop-grid-2.html">Television &amp; Video</a><a href="shop-list.html">Game Controller</a><a href="shop-list-2.html">Apple Watch</a><a href="shop-grid.php">HTC</a><a href="shop-grid.php">Ipad</a><a href="shop-grid.php">Keyboard</a><a href="shop-grid.php">Samsung</a><a href="shop-grid.php">Wireless Speaker</a><a href="shop-grid.php">Samsung Galaxy</a><a href="shop-grid.php">Gaming Mouse</a><a href="shop-grid.php">eBook Readers</a><a href="shop-grid.php">Service Plans</a><a href="shop-grid.php">Home Audio</a><a href="shop-grid.php">Office Electronics</a><a href="shop-grid.php">Lenovo</a><a href="shop-grid.php">Mackbook Pro M1</a><a href="shop-grid.php">HD Videos Player</a></div>
-            </div>
-            <div class="footer-2-bottom">
-              <div class="head-left-footer">
-                <h6 class="color-gray-1000">Furniture:</h6>
-              </div>
-              <div class="tags-footer"><a href="shop-grid.php">Sofa</a><a href="shop-grid.php">Chair</a><a href="shop-grid.php">Dining Table</a><a href="shop-grid.php">Living Room</a><a href="shop-grid.php">Table Lamp</a><a href="shop-grid.php">Night Stand</a><a href="shop-grid.php">Computer Desk</a><a href="shop-grid.php">Bar Table</a><a href="shop-grid.php">Pillow</a><a href="shop-grid.php">Radio</a><a href="shop-grid.php">Clock</a><a href="shop-grid.php">Bad Room</a><a href="shop-grid.php">Stool</a><a href="shop-grid.php">Television</a><a href="shop-grid.php">wardrobe</a><a href="shop-grid.php">Living Room Tables</a><a href="shop-grid.php">Dressers</a><a href="shop-grid.php">Patio Sofas</a><a href="shop-grid.php">Nursery</a><a href="shop-grid.php">Kitchen</a><a href="shop-grid.php">Accent Furniture</a><a href="shop-grid.php">Replacement Parts</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="footer-bottom mt-20">
-            <div class="row">
-              <div class="col-lg-6 col-md-12 text-center text-lg-start"><span class="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
-              <div class="col-lg-6 col-md-12 text-center text-lg-end">
-                <ul class="menu-bottom">
-                  <li><a class="font-sm color-gray-900" href="page-term.php">Conditions of Use</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-term.php">Privacy Notice</a></li>
-                  <li><a class="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+      include_once("footer.php")
+      ?>
     </footer>
     <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
