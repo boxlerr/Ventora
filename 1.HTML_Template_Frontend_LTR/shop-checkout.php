@@ -73,7 +73,7 @@
                   </div>
                   <div class="col-lg-6">
                       <div class="form-group">
-                          <input class="form-input form-control" type="text" placeholder="Pais*" name="pais">
+                          <input class="form-input form-control" type="text" placeholder="País*" name="pais">
                       </div>
                   </div>
                   <div class="col-lg-6">

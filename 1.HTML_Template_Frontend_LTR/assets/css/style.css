@@ -1597,6 +1597,15 @@ a.text-brand-3:hover {
   text-decoration: underline;
 }
 
+.centrado {
+  text-align: center;
+}
+
+.centrado2 {
+  display: flex;
+  justify-content: center;
+}
+
 #productosindex{
   color: rgb(182, 182, 182);
 }
@@ -4505,7 +4514,18 @@ a.text-brand-3:hover {
   width: 32px;
   transition-duration: 0.2s;
 }
+.iconos {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  width: 32px;
+  transition-duration: 0.2s;
+}
 .footer .icon-socials:hover {
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+}
+.iconos:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
 }
@@ -4513,7 +4533,15 @@ a.text-brand-3:hover {
   background: url(../imgs/template/icons/facebook-gray.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
+.iconosf {
+  background: url(../imgs/template/icons/facebook-gray.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
 .footer .icon-socials.icon-facebook:hover {
+  background: url(../imgs/template/icons/facebook.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
+.iconosf:hover {
   background: url(../imgs/template/icons/facebook.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
@@ -4521,7 +4549,15 @@ a.text-brand-3:hover {
   background: url(../imgs/template/icons/twitter-gray.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
+.iconost {
+  background: url(../imgs/template/icons/twitter-gray.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
 .footer .icon-socials.icon-twitter:hover {
+  background: url(../imgs/template/icons/twitter.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
+.iconost:hover {
   background: url(../imgs/template/icons/twitter.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
@@ -4529,7 +4565,15 @@ a.text-brand-3:hover {
   background: url(../imgs/template/icons/instagram-gray.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
+.iconosi {
+  background: url(../imgs/template/icons/instagram-gray.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
 .footer .icon-socials.icon-instagram:hover {
+  background: url(../imgs/template/icons/instagram.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
+.iconosi:hover {
   background: url(../imgs/template/icons/instagram.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
@@ -4537,7 +4581,15 @@ a.text-brand-3:hover {
   background: url(../imgs/template/icons/linkedin-gray.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
+.iconosl {
+  background: url(../imgs/template/icons/linkedin-gray.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
 .footer .icon-socials.icon-linkedin:hover {
+  background: url(../imgs/template/icons/linkedin.svg) no-repeat 0px 0px;
+  transition-duration: 0.2s;
+}
+.iconosl:hover {
   background: url(../imgs/template/icons/linkedin.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
