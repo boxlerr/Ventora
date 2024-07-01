@@ -637,6 +637,11 @@
             "lun-vie":"Lun-Vie de 8am a 5pm"
             },
 
+    "page-login":{
+
+    },
+    
+
     "page-account":{
         "hola":"Hola ",
         "desde_el_panel":"Desde el panel de tu cuenta, puedes revisar y ver fácilmente tus pedidos recientes, gestionar tus direcciones de envío y facturación, y editar tu contraseña y los detalles de tu cuenta",
@@ -830,6 +835,8 @@
         "mail":"<input class='form-control' type='email' placeholder='Email'>",
         "telefono":"<input class='form-control' type='tel' placeholder='Numero de telefono'>",
         "cuentanos":"<textarea class='form-control' placeholder='Cuentanos sobre lo que quieras importar y nosotros te contactamos!' rows='5'></textarea>",
-        "enviar_mensaje":"<input class='btn btn-buy w-auto' type='submit' value='Enviar mensaje'>"
+        "enviar_mensaje":"<input class='btn btn-buy w-auto' type='submit' value='Enviar mensaje'>",
+        "buscar_producto": "<input class='form-control font-xs' type='text' value='' placeholder='Buscar productos'>",
+        "ingresa_mail":"<input class='input-newsletter font-xs' value='' placeholder='Ingresa tu mail'>"
     }
 }

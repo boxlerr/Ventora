@@ -72,7 +72,7 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                 <div class="header-search ">
                     <div class="box-header-search">
                         <form class="form-search" method="post" action="#">
-                            <div class="box-keysearch">
+                            <div class="box-keysearch" data-section="placeholder" data-value="buscar_producto">
                                 <input class="form-control font-xs" type="text" value="" placeholder="Buscar productos">
                             </div>
                         </form>

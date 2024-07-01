@@ -827,6 +827,8 @@
         "mail":"<input class='form-control' type='email' placeholder='Email'>",
         "telefono":"<input class='form-control' type='tel' placeholder='Phone Number'>",
         "cuentanos":"<textarea class='form-control' placeholder='Tell us about what you want to import and we will contact you!' rows='5'></textarea>",
-        "enviar_mensaje":"<input class='btn btn-buy w-auto' type='submit' value='Send Message'>"
+        "enviar_mensaje":"<input class='btn btn-buy w-auto' type='submit' value='Send Message'>",
+        "buscar_producto": "<input class='form-control font-xs' type='text' value='' placeholder='Search products'>",
+        "ingresa_mail":"<input class='input-newsletter font-xs' value='' placeholder='Enter your email'>"
     }
 }

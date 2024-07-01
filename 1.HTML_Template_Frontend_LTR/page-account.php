@@ -497,20 +497,25 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-7 col-sm-12">
-            <h3 class="color-white" data-section="index" data-value="suscripcion">Subscribe &amp; Get <span class="color-warning">10%</span> Discount</h3>
-            <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Get E-mail updates about our latest shop and <span class="font-lg-bold">special offers.</span></p>
+            <h3 class="color-white" data-section="index" data-value="suscripcion">Suscribete y consigue 10% de Descuento</h3>
+            <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales</span></p>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-12">
             <div class="box-form-newsletter mt-15">
               <form class="form-newsletter">
+              <div data-section="placeholder" data-value="ingresa_mail"> 
                 <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
-                <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Sign Up</button>
+                </div>
+                <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Ingresar</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    
     <div class="modal fade" id="ModalFiltersForm" tabindex="-1" aria-hidden="true" style="display: none;">
       <div class="modal-dialog modal-xl">
         <div class="modal-content apply-job-form">
