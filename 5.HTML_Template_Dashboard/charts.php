@@ -115,5 +115,30 @@ $con->close();
             }
         });
     </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line', // Cambia esto al tipo de gráfico que desees
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], // Ejemplo de etiquetas
+            datasets: [{
+                label: 'Sales',
+                data: [12, 19, 3, 5, 2, 3, 7], // Ejemplo de datos
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+});
+</script>
+
 </body>
 </html>

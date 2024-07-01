@@ -262,174 +262,89 @@ if ($con) {
         </div>
       </div>
     </div>
+
+
     <div class="card mb-4">
-      <header class="card-header">
-        <h4 class="card-title">Latest orders</h4>
-        <div class="row align-items-center">
-          <div class="col-md-3 col-12 me-auto mb-md-0 mb-3">
-            <div class="custom_select">
-              <select class="form-select select-nice">
-                <option selected="">All Categories</option>
-                <option>Women&apos;s Clothing</option>
-                <option>Men&apos;s Clothing</option>
-                <option>Cellphones</option>
-                <option>Computer &amp; Office</option>
-                <option>Consumer Electronics</option>
-                <option>Jewelry &amp; Accessories</option>
-                <option>Home &amp; Garden</option>
-                <option>Luggage &amp; Bags</option>
-                <option>Shoes</option>
-                <option>Mother &amp; Kids</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-2 col-6">
-            <input class="form-control" type="date" value="02.05.2022">
-          </div>
-          <div class="col-md-2 col-6">
-            <div class="custom_select">
-              <select class="form-select select-nice">
-                <option selected="">Status</option>
-                <option>All</option>
-                <option>Paid</option>
-                <option>Chargeback</option>
-                <option>Refund</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="card-body">
+    <header class="card-header">
+        <h4 class="card-title">Últimas Ventas</h4>
+    </header>
+    <div class="card-body">
         <div class="table-responsive">
-          <div class="table-responsive">
             <table class="table align-middle table-nowrap mb-0">
-              <thead class="table-light">
-                <tr>
-                  <th class="text-center" scope="col">
-                    <div class="form-check align-middle">
-                      <input class="form-check-input" id="transactionCheck01" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck01"></label>
-                    </div>
-                  </th>
-                  <th class="align-middle" scope="col">Order ID</th>
-                  <th class="align-middle" scope="col">Billing Name</th>
-                  <th class="align-middle" scope="col">Date</th>
-                  <th class="align-middle" scope="col">Total</th>
-                  <th class="align-middle" scope="col">Payment Status</th>
-                  <th class="align-middle" scope="col">Payment Method</th>
-                  <th class="align-middle" scope="col">View Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck02" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck02"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2540</a></td>
-                  <td>Neal Matthews</td>
-                  <td>07 Oct, 2022</td>
-                  <td>$400</td>
-                  <td><span class="badge badge-pill badge-soft-success">Paid</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Mastercard</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck03" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck03"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2541</a></td>
-                  <td>Jamal Burnett</td>
-                  <td>07 Oct, 2022</td>
-                  <td>$380</td>
-                  <td><span class="badge badge-pill badge-soft-danger">Chargeback</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Visa</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck04" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck04"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2542</a></td>
-                  <td>Juan Mitchell</td>
-                  <td>06 Oct, 2022</td>
-                  <td>$384</td>
-                  <td><span class="badge badge-pill badge-soft-success">Paid</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Paypal</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck05" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck05"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2543</a></td>
-                  <td>Barry Dick</td>
-                  <td>05 Oct, 2022</td>
-                  <td>$412</td>
-                  <td><span class="badge badge-pill badge-soft-success">Paid</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Mastercard</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck06" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck06"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2544</a></td>
-                  <td>Ronald Taylor</td>
-                  <td>04 Oct, 2022</td>
-                  <td>$404</td>
-                  <td><span class="badge badge-pill badge-soft-warning">Refund</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Visa</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-                <tr>
-                  <td class="text-center">
-                    <div class="form-check">
-                      <input class="form-check-input" id="transactionCheck07" type="checkbox">
-                      <label class="form-check-label" for="transactionCheck07"></label>
-                    </div>
-                  </td>
-                  <td><a class="fw-bold" href="#">#SK2545</a></td>
-                  <td>Jacob Hunter</td>
-                  <td>04 Oct, 2022</td>
-                  <td>$392</td>
-                  <td><span class="badge badge-pill badge-soft-success">Paid</span></td>
-                  <td><i class="material-icons md-payment font-xxl text-muted mr-5"></i> Paypal</td>
-                  <td><a class="btn btn-xs" href="#"> View details</a></td>
-                </tr>
-              </tbody>
+                <thead class="table-light">
+                    <tr>
+                        <th class="text-center" scope="col">
+                            <div class="form-check align-middle">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"></label>
+                            </div>
+                        </th>
+                        <th class="align-middle" scope="col">ID Venta</th>
+                        <th class="align-middle" scope="col">Cliente</th>
+                        <th class="align-middle" scope="col">Fecha</th>
+                        <th class="align-middle" scope="col">Total</th>
+                        <th class="align-middle" scope="col">Estado</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // 1. Conexión a la base de datos (asumiendo que ya tienes el código de conexión)
+                    require_once("../conexion/connect.php");
+
+                    // 2. Consulta SQL para obtener las últimas 5 ventas
+                    $query = "SELECT v.venta_id, c.nombre AS nombre_cliente, v.fecha_venta, v.total, v.estado
+                              FROM venta v
+                              INNER JOIN cliente c ON v.cliente_id = c.cliente_id
+                              ORDER BY v.fecha_venta DESC
+                              LIMIT 5";
+                    $result = mysqli_query($con, $query);
+
+                    // 3. Mostrar los resultados en la estructura HTML
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
+                            <tr>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="transactionCheck<?php echo $row['venta_id']; ?>" type="checkbox">
+                                        <label class="form-check-label" for="transactionCheck<?php echo $row['venta_id']; ?>"></label>
+                                    </div>
+                                </td>
+                                <td><a class="fw-bold" href="#"><?php echo '#SK' . $row['venta_id']; ?></a></td>
+                                <td><?php echo $row['nombre_cliente']; ?></td>
+                                <td><?php echo date('d M, Y', strtotime($row['fecha_venta'])); ?></td>
+                                <td>$<?php echo number_format($row['total'], 2); ?></td>
+                                <td>
+                                    <?php if ($row['estado'] == 'Paid') { ?>
+                                        <span class="badge badge-pill badge-soft-success"><?php echo $row['estado']; ?></span>
+                                    <?php } elseif ($row['estado'] == 'Chargeback') { ?>
+                                        <span class="badge badge-pill badge-soft-danger"><?php echo $row['estado']; ?></span>
+                                    <?php } elseif ($row['estado'] == 'Refund') { ?>
+                                        <span class="badge badge-pill badge-soft-warning"><?php echo $row['estado']; ?></span>
+                                    <?php } else { ?>
+                                        <span class="badge badge-pill badge-soft-info"><?php echo $row['estado']; ?></span>
+                                    <?php } ?>
+                                </td>
+                                
+                            </tr>
+                            <?php
+                        }
+                    } else {
+                        // Manejar el caso donde no hay resultados
+                        ?>
+                        <tr>
+                            <td colspan="7" class="text-center">No se encontraron ventas.</td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                </tbody>
             </table>
-          </div>
         </div>
-        <!-- table-responsive end//-->
-      </div>
     </div>
-    <div class="pagination-area mt-30 mb-50">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-start">
-          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-          <li class="page-item"><a class="page-link" href="#">02</a></li>
-          <li class="page-item"><a class="page-link" href="#">03</a></li>
-          <li class="page-item"><a class="page-link dot" href="#">...</a></li>
-          <li class="page-item"><a class="page-link" href="#">16</a></li>
-          <li class="page-item"><a class="page-link" href="#"><i class="material-icons md-chevron_right"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+</div>
+    
+    
   </section>
   <footer class="main-footer font-xs">
     <?php
