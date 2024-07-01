@@ -192,7 +192,7 @@
                   <!-- <div class="col-xl-2 col-lg-3 col-md-6 mb-10 text-lg-start text-center d-none d-md-block"><a class="btn btn-filter font-sm color-brand-3 font-medium" href="#ModalFiltersForm" data-bs-toggle="modal">All Fillters</a></div> -->
                   <form class="col-xl-5 col-lg-6 col-md-12 mb-10 text-lg-end text-center d-none d-md-block ordenar_por" method="get" action="shop-grid.php" id="formularioOrden">
                     <p class="colorblanco"><strong>Ordenar por:</strong></p>
-                    <select class='form-control' name="orden" id="orden">
+                    <select class='form-control centrado' name="orden" id="orden">
                       <?php
                       if(isset($_GET["orden"]) && $_GET["orden"]=="desc"){
                         echo "<option value='asc' class='opcionOrden'>Precio Ascendente</option>";

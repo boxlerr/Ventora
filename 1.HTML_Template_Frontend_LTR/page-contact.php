@@ -26,35 +26,33 @@
     <div class="fila justificar-centro">
       <div class="col-lg-8 formulario-wrapper">
         <form action="https://formsubmit.co/contacto@vestore.com.ar" method="POST">
-          <h3 class="color-brand-3 mt-60 formulario-titulo" data-section="page-contact" data-value="contactanos">Contáctanos</h3>
-          <p class="font-sm color-gray-700 mb-30 formulario-descripcion" data-section="page-contact" data-value="nuestro-equipo">¡A nuestro equipo le encantaría saber de usted!</p>
+          <h3 class="color-brand-3 mt-20 formulario-titulo centrado" data-section="page-contact" data-value="contactanos">Contáctanos</h3>
+          <p class="font-sm color-gray-700 mb-30 formulario-descripcion centrado" data-section="page-contact" data-value="nuestro-equipo">¡A nuestro equipo le encantaría saber de usted!</p>
           <div class="fila">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-12">
               <div class="grupo-formulario" data-section="placeholder" data-value="nombre">
-                <input class="control-formulario formulario-entrada" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+                <input class="form-input form-control" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
               <div class="grupo-formulario" data-section="placeholder" data-value="apellido">
-                <input class="control-formulario formulario-entrada" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+                <input class="form-input form-control" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="grupo-formulario" data-section="placeholder" data-value="mail">
-                <input class="control-formulario formulario-entrada" type="email" placeholder="Email" name="mail" id="mail" required>
+                <input class="form-input form-control" type="email" placeholder="Email" name="mail" id="mail" required>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="grupo-formulario" data-section="placeholder" data-value="telefono">
-                <input class="control-formulario formulario-entrada" type="tel" placeholder="Número de teléfono" name="telefono" id="telefono" required>
+                <input class="form-input form-control" type="tel" placeholder="Número de teléfono" name="telefono" id="telefono" required>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="grupo-formulario" data-section="placeholder" data-value="cuentanos">
-                <textarea class="control-formulario formulario-entrada" placeholder="Mensaje" rows="5" name="comentario" id="comentario" required></textarea>
+                <textarea class="form-input form-control" placeholder="Mensaje" rows="5" name="comentario" id="comentario" required></textarea>
               </div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-12 centrado2">
               <div class="grupo-formulario" data-section="placeholder" data-value="enviar_mensaje">
                 <input class="btn btn-comprar w-auto formulario-submit" type="submit" value="Enviar mensaje">
               </div>

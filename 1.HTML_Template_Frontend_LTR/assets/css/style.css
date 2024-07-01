@@ -11721,7 +11721,10 @@ a:hover span {
 
 .formulario-wrapper {
   background-color: #1b263b;
-  padding: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
