@@ -189,7 +189,9 @@
           <div class="col-lg-4 col-md-5 col-sm-12">
             <div class="box-form-newsletter mt-15">
               <form class="form-newsletter">
+                <div data-section="placeholder" data-value="ingresa_mail"> 
                 <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                </div>
                 <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Ingresar</button>
               </form>
             </div>

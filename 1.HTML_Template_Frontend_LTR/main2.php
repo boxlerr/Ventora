@@ -25,8 +25,8 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
     <div class="container-topbar">
         <div class="menu-topbar-left d-none d-xl-block">
             <ul class="nav-small">
-                <li><a class="font-xs" href="page-contact.php">Sobre nosotros</a></li>
-                <li><a class="font-xs" href="page-careers.html">Contacto</a></li>
+                <li><a class="font-xs" href="page-contact.php" data-section="header" data-value="sobre_nosotros">Sobre nosotros</a></li>
+                <li><a class="font-xs" href="page-careers.html" data-section="header" data-value="contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="info-topbar text-center d-none d-xl-block"><span class="font-xs color-brand-3"></div>
@@ -88,46 +88,47 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
                 <div class="header-nav">
                     <nav class="nav-main-menu d-none d-xl-block">
                         <ul class="main-menu">
-                            <li><a class="active" href="index.php">Inicio</a></li>
+                            <li><a class="active" href="index.php" data-section="header" data-value="inicio">Inicio</a></li>
                             <li class="has-children"><a href="#" data-section="header" data-value="productos">Productos</a>
                                 <ul class="sub-menu">
                                     <li><a href="shop-grid.php" data-section="header" data-value="minorista">Minorista</a></li>
                                     <li><a href="shop-grid-mayorista.php" data-section="header" data-value="mayorista">Mayorista</a></li>
                                 </ul>
-                            <li class="has-children"><a href="#">Trabajá con nosotros</a>
+                            <li class="has-children"><a href="#" data-section="header" data-value="trabaja_con_nosotros">Trabajá con nosotros</a>
                                 <ul class="sub-menu">
-                                    <li><a href="importar.php">Importá</a></li>
-                                    <li><a href="exportar.php">Exportá</a></li>
+                                    <li><a href="importar.php" data-section="header" data-value="importa">Importá</a></li>
+                                    <li><a href="exportar.php" data-section="header" data-value="exporta">Exportá</a></li>
                                 </ul>
                             </li>
-                            <li class="has-children"><a href="#">Paginas</a>
+                            <li class="has-children"><a href="#" data-section="header" data-value="paginas">Paginas</a>
                                 <ul class="sub-menu">
-                                    <li><a href="page-about-us.php">Sobre nosotros</a></li>
-                                    <li><a href="page-term.php">Términos y condiciones</a></li>
+                                    <li><a href="page-about-us.php" data-section="header" data-value="sobre_nosotros">Sobre nosotros</a></li>
+                                    <li><a href="page-term.php" data-section="header" data-value="terminos_condiciones">Términos y condiciones</a></li>
+                                    <li><a href="faqs.php" data-section="header" data-value="faqs">Preguntas frecuentes</a></li>
                                 </ul>
                             </li>
-                            <li><a href="page-contact.php">Contacto</a></li>
+                            <li><a href="page-contact.php" data-section="header" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
                 </div>
                 <div class="header-shop">
-                    <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span>Cuenta</span></span>
+                    <div class="d-inline-block box-dropdown-cart"><span class="font-lg icon-list icon-account"><span data-section="header" data-value="cuenta">Cuenta</span></span>
                         <div class="dropdown-account">
                             <ul>
                                 <?php
                                 if ($usuario) {
                                     echo "
-                                    <li><a href='page-account.php'>Mi cuenta</a></li>
-                                    <li><a href='page-account.php'>Historial de compras</a></li>
+                                    <li><a href='page-account.php' data-section='header' data-value='mi_cuenta'>Mi cuenta</a></li>
+                                    <li><a href='page-account.php' data-section='header' data-value='historial_compras'>Historial de compras</a></li>
                                     <li><a href='page-account.php'>Mis compras</a></li>
-                                    <li><a href='page-account.php'>Mis favoritos</a></li>
-                                    <li><a href='page-account.php'>Configuracion</a></li>
-                                    <li><a href='index.php?accion=afrg323sd44sfe'>Cerrar sesión</a></li>
+                                    <li><a href='page-account.php data-section='header' data-value='mis_favoritos''>Mis favoritos</a></li>
+                                    <li><a href='page-account.php' data-section='header' data-value='configuracion'>Configuracion</a></li>
+                                    <li><a href='index.php?accion=afrg323sd44sfe' data-section='header' data-value='cerrar_cuenta'>Cerrar sesión</a></li>
                                     ";
                                 } else {
-                                    echo "<li><a href='page-login.php'>Iniciar sesion</a></li>";
-                                    echo "<li><a href='page-register.php'>Crear cuenta</a></li>";
+                                    echo "<li><a href='page-login.php' data-section='header' data-value='iniciar_sesion'>Iniciar sesion</a></li>";
+                                    echo "<li><a href='page-register.php' data-section='header' data-value='crear_cuenta'>Crear cuenta</a></li>";
                                 }
                                 ?>
                             </ul>
