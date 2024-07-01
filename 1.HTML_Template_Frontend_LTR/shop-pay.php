@@ -80,8 +80,8 @@
 
 <body>
   <?php
-  include_once("main.php");
   include_once("consultas_bd.php");
+  include_once("main.php");
   include_once("cambio.php");
   ?>
   <main class="main">
