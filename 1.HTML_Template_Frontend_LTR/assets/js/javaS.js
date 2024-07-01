@@ -96,4 +96,122 @@ function mostrarScroll(params) {
 
 window.addEventListener('scroll', mostrarScroll);
 
+if(document.getElementById('registrationForm')){
+    
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const form = event.target;
+        const nombre = form.nombre.value.trim();
+        const email = form.email.value.trim();
+        const telefono = form.telefono.value.trim();
+        const fechaNacimiento = form.fecha_nacimiento.value.trim();
+        const nacionalidad = form.nacionalidad.value.trim();
+        const password = form.contrasena.value.trim();
+        const confirmPassword = form.contrasena2.value.trim();
+        const agree = form.agree.checked;
+    
+        if (!nombre || !email || !fechaNacimiento || !nacionalidad || !password || !confirmPassword) {
+            showModal('Todos los campos marcados con * son obligatorios.');
+            return;
+        }
+    
+        if (!validateEmail(email)) {
+            showModal('Por favor, ingresa un email válido.');
+            return;
+        }
+    
+        if (password !== confirmPassword) {
+            showModal('Las contraseñas no coinciden.');
+            return;
+        }
+    
+        if (!agree) {
+            showModal('Debes aceptar los términos y condiciones.');
+            return;
+        }
+    
+        // Si todo es válido, puedes enviar el formulario
+        form.submit();
+    });
+    
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+    
+    function showModal(message) {
+        const modal = document.getElementById("myModal");
+        const modalMessage = document.getElementById("modalMessage");
+        modalMessage.textContent = message;
+        modal.style.display = "block";
+    }
+    
+    document.querySelector(".close").onclick = function() {
+        closeModal();
+    }
+    
+    window.onclick = function(event) {
+        const modal = document.getElementById("myModal");
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+    
+    function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.animation = "fadeOut 0.5s, slideOut 0.5s";
+        setTimeout(() => {
+            modal.style.display = "none";
+            modal.style.animation = "";
+        }, 500);
+    }
+}
 
+document.getElementById('shippingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = event.target;
+    // const email = form.email.value.trim();
+    const nombre = form.nombre.value.trim();
+    const apellido = form.apellido.value.trim();
+    const direccion1 = form.direccion1.value.trim();
+    const pais = form.pais.value.trim();
+    const ciudad = form.ciudad.value.trim();
+    const codigoPostal = form.codigo_postal.value.trim();
+    const celular = form.celular.value.trim();
+
+    if (!nombre || !apellido || !direccion1 || !pais || !ciudad || !codigoPostal || !celular) {
+        showModal('Todos los campos marcados con * son obligatorios.');
+        return;
+    }
+
+    // Validación adicional de formato de email u otros campos si fuera necesario
+
+    form.submit();
+});
+
+function showModal(message) {
+    const modal = document.getElementById("myModal");
+    const modalMessage = document.getElementById("modalMessage");
+    modalMessage.textContent = message;
+    modal.style.display = "block";
+}
+
+document.querySelector(".close").onclick = function() {
+    closeModal();
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById("myModal");
+    modal.style.animation = "fadeOut 0.5s, slideOut 0.5s";
+    setTimeout(() => {
+        modal.style.display = "none";
+        modal.style.animation = "";
+    }, 500);
+}

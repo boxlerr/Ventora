@@ -114,140 +114,139 @@
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo4">Pagos</h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta4"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta4"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta4">¿Qué métodos de pago aceptan?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta4">Aceptamos una variedad de métodos de pago para tu conveniencia, incluyendo tarjetas de crédito (Visa, MasterCard, American Express), PayPal, Mercado Pago. También ofrecemos la opción de pago mediante transferencia bancaria.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta41"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta41"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta41">¿Es seguro realizar pagos en su sitio web?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta41">Sí, la seguridad de tus datos es nuestra máxima prioridad. Nuestro sitio web utiliza tecnología de cifrado SSL (Secure Socket Layer) para proteger tu información personal y de pago. Además, colaboramos con procesadores de pagos confiables para garantizar transacciones seguras.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta42"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta42"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta42">¿Puedo cambiar el método de pago después de haber realizado un pedido?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta42">Una vez que el pedido ha sido confirmado y el pago procesado, no es posible cambiar el método de pago. Sin embargo, puedes contactar a nuestro equipo de atención al cliente para ver si existe alguna alternativa viable según el estado de tu pedido.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta43"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta43">.</div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta43">¿Qué debo hacer si mi pago ha sido rechazado?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta43">Si tu pago ha sido rechazado, primero verifica que los detalles de pago ingresados sean correctos y que tu tarjeta tenga fondos suficientes. Si el problema persiste, te recomendamos contactar a tu banco para obtener más información. También puedes intentar utilizar un método de pago diferente o ponerte en contacto con nuestro servicio de atención al cliente para asistencia adiciona</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo5">Envios y Entrega</h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta5"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta5"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta5">¿Cuáles son los tiempos de entrega estimados?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta5">Los tiempos de entrega pueden variar según la ubicación y el método de envío seleccionado. En general, los pedidos nacionales se entregan en un plazo de 3 a 7 días hábiles, mientras que los envíos internacionales pueden tardar entre 10 y 15 días hábiles. Te proporcionaremos un número de seguimiento para que puedas monitorear el progreso de tu pedido.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta51"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta51"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta51">¿Ofrecen envío gratuito?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta51">Sí, ofrecemos envío gratuito en pedidos que superen una determinada cantidad. Las condiciones específicas para el envío gratuito pueden variar según las promociones actuales y la ubicación del destinatario. Consulta nuestras políticas de envío o la página del producto para más detalles.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta52"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta52"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta52">¿Cómo puedo rastrear mi pedido?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta52">Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un número de seguimiento y un enlace para rastrear tu paquete. También puedes ingresar este número de seguimiento en la sección "Rastreo de Pedido" en nuestro sitio web para obtener actualizaciones en tiempo real sobre el estado de tu entrega.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta53"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta53"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta53">¿Qué debo hacer si mi pedido llega dañado o incorrecto?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta53">Lamentamos cualquier inconveniente que esto pueda causar. Si tu pedido llega dañado o incorrecto, por favor contacta a nuestro equipo de atención al cliente dentro de los 7 días posteriores a la recepción del paquete. Proporciónanos fotos del daño o del artículo incorrecto, y trabajaremos rápidamente para resolver el problema, ya sea enviándote un reemplazo o procesando un reembolso.</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
-                <h3 class="faq-centrado" data-section="faqs" data-value="titulo6">Devoluciones y <a href="politicas-reembolso.php"> Reembolsos</a></h3>
+                <h3 class="faq-centrado" data-section="faqs" data-value="titulo6">Devoluciones y <a href="politicas-reembolso.php">Reembolsos</a></h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta6"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta6"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta6">¿Cuál es el proceso para devolver un artículo?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta6">Para devolver un artículo, sigue estos pasos:
+                      <br>Contacta a nuestro equipo de atención al cliente dentro de los 7 días posteriores a la recepción del producto para iniciar la devolución.
+                      Empaca el artículo en su empaque original y asegúrate de incluir todos los accesorios y etiquetas.<
+                      Te proporcionaremos una etiqueta de devolución y las instrucciones necesarias para enviar el artículo de vuelta.
+                      Una vez que recibamos el artículo y verifiquemos su estado, procesaremos tu reembolso o cambio según lo acordado.
+                  </div>
+                  </div>
+                </div>
+              </div>
+                <div class="faq-item">
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta61">¿Puedo devolver un artículo si no estoy satisfecho con mi compra?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta61">Sí, aceptamos devoluciones de productos no utilizados y en su estado original dentro de los 7 días posteriores a la recepción. Ten en cuenta que algunos artículos, como productos personalizados o en oferta, pueden no ser elegibles para devolución. Por favor, revisa nuestras políticas de devolución para más detalles específicos.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta61"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta61"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta62">¿Cuánto tiempo tarda en procesarse un reembolso?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta62">Una vez que hayamos recibido y verificado el artículo devuelto, el proceso de reembolso puede tardar hasta 30 dias hábiles en completarse. El tiempo exacto puede variar dependiendo de tu banco o proveedor de pagos. Te notificaremos por correo electrónico una vez que el reembolso haya sido procesado.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta62"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta62"></div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta63"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta63"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta63">¿Quién cubre los costos de envío de la devolución?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta63">Si la devolución se debe a un error nuestro, como un artículo defectuoso o incorrecto, cubriremos los costos de envío de la devolución. Sin embargo, si deseas devolver un artículo por razones personales, como un cambio de opinión, los costos de envío de la devolución serán tu responsabilidad. Te proporcionaremos una etiqueta de devolución y deduciremos el costo del envío del monto total del reembolso.</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo7">Productos y Stock</h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta7"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta7"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta7">¿Cómo puedo verificar la disponibilidad de un producto?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta7">Puedes verificar la disponibilidad de un producto en nuestra tienda en línea. Cada producto tiene un indicador de stock que te mostrará si está disponible para su compra.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta71"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta71"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta71">¿Qué debo hacer si un producto que deseo comprar está agotado?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta71">Si un producto está agotado, puedes suscribirte para recibir notificaciones cuando vuelva a estar disponible. También puedes consultar con nuestro servicio de atención al cliente para obtener información sobre la reposición de stock.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta72"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta72"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta72">¿Cuál es la política de devolución para productos agotados?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta72">Para productos agotados, aplican las mismas políticas de devolución que para productos disponibles. Puedes devolver el producto dentro del período especificado y recibir un reembolso o cambio según nuestras políticas de devolución y reembolso.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta73"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta73"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta73">¿Ofrecen descuentos por compras al por mayor?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta73">Sí, ofrecemos descuentos por compras al por mayor en determinados productos. Por favor, contacta a nuestro equipo de ventas para obtener más detalles sobre los descuentos disponibles y los requisitos para compras al por mayor.</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo8"><a href="importar.php">Importación</a> y <a href="exportar.php">Exportación</a></h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta8"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta8">.</div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta8">¿Como puedo importar?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta8">Te recomendamos que vayas a la seccion <a href="importar.php">Importar</a> para resolver tus dudas!</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta81"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta81"></div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta82"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta82"></div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta83"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta83"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta81">¿Como puedo exportar?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta81">Te recomendamos entrar a la seccion <a href="exportar.php">Exportar</a> para resolver tus dudas!</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo9">Seguridad y <a href="politicas.php">Privacidad</a></h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta9"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta9"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta9">¿Qué medidas de seguridad tienen implementadas para proteger la información de los clientes?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta9">Nos tomamos muy en serio la seguridad de la información de nuestros clientes. Utilizamos tecnologías de cifrado avanzadas y mantenemos políticas estrictas de acceso para proteger los datos personales y financieros.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta91"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta91"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta91">¿Qué información personal recopilan y cómo la utilizan?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta91">Recopilamos información personal como nombre, dirección y detalles de contacto para procesar tus pedidos y proporcionarte un servicio personalizado. Esta información se utiliza según nuestras políticas de privacidad para mejorar tu experiencia de compra y cumplir con nuestras obligaciones legales.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta92"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta92"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta92">¿Comparten mi información personal con terceros?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta92">No vendemos ni compartimos tu información personal con terceros no autorizados. Solo compartimos información cuando es necesario para procesar tus pedidos, cumplir con la ley o proteger nuestros derechos.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta93"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta93"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta93">¿Qué debo hacer si creo que mi cuenta ha sido comprometida?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta93">Si sospechas que tu cuenta ha sido comprometida, te recomendamos que cambies tu contraseña inmediatamente y que contactes a nuestro equipo de soporte para investigar en la seccion <a href="page-contact.php">Contacto</a> o enviando un mail a <a href="mailto:contacto@vestore.com.ar" data-section="politicas-reembolso" data-value="contacto@vestore.com.ar">contacto@vestore.com.ar</a> y poder tomar medidas adicionales para proteger tu cuenta.</div>
                 </div>
                 </div>
 
                 <div class="faq-topic">
                 <h3 class="faq-centrado" data-section="faqs" data-value="titulo10">Programas y Descuentos</h3>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta10"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta10"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta10">¿Qué programas de referidos ofrecen?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta10">Puedes unirte a nuestro programa de referidos <a href="page-contact.php">contactándonos</a> directamente. Al unirte, podrás obtener beneficios especiales al referir a amigos y familiares para que compren en nuestra tienda. Además, tendrás acceso a promociones exclusivas y descuentos adicionales.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta101"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta101"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta101">¿Cómo puedo aplicar un código de descuento?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta101">Puedes aplicar un código de descuento durante el proceso de pago en nuestra tienda en línea. Hay un campo específico donde puedes ingresar el código de descuento antes de finalizar tu compra. Asegúrate de verificar la validez y las condiciones del código antes de usarlo.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta102"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta102"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta102">¿Tienen descuentos para estudiantes?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta102">Por el momento no.</div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta103"></div>
-                  <div class="faq-answer" data-section="faqs" data-value="respuesta103"></div>
+                  <div class="faq-question" onclick="toggleAnswer(this)" data-section="faqs" data-value="pregunta103">¿Hay descuentos disponibles para compras al por mayor?</div>
+                  <div class="faq-answer" data-section="faqs" data-value="respuesta103">Sí, ofrecemos descuentos por compras al por mayor en ciertos productos. Para obtener más detalles sobre los descuentos disponibles y los requisitos para compras al por mayor, te recomendamos visitar nuestra seccion <a href="shop-grid-mayorista.php">Mayorista</a></div>
                 </div>
                 </div>
                 <!-- Añade más preguntas y respuestas aquí -->
@@ -256,6 +255,26 @@
           </div>
         </div>
       </section>
+      <section class="section-box box-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-7 col-sm-12">
+            <h3 class="color-white" data-section="index" data-value="suscripcion">Suscribete y consigue 10% de Descuento</h3>
+            <p class="font-lg color-white" data-section="index" data-value="suscripcion_descripcion">Recibe actualizaciones por correo electrónico sobre nuestra tienda y ofertas especiales</span></p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="box-form-newsletter mt-15">
+              <form class="form-newsletter">
+              <div data-section="placeholder" data-value="ingresa_mail"> 
+                <input class="input-newsletter font-xs" value="" placeholder="Ingresa tu mail">
+                </div>
+                <button class="btn btn-brand-2" data-section="index" data-value="ingresar">Ingresar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       
 <!-- <section class="section-box mt-90 mb-50">
         <div class="container">

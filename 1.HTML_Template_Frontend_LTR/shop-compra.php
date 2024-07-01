@@ -25,11 +25,21 @@
     <section class="section-box shop-template mt-20">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h3>Tu compra se a realizado con exito</h3>
-            <div class="row mt-20">
-              <!-- <div class="col-lg-6 col-5 mb-20"><a class="btn font-sm-bold color-brand-1 arrow-back-1" href="shop-checkout.php">Volver a la informacion del envio</a></div> -->
-              <div class="col-lg-6 col-7 mb-20 text-end"><a class="btn btn-buy w-auto" href="shop-grid.php">Seguir comprando</a></div>
+          <div class="col-lg-6 box-border mb-20">
+            <div class="row mt-20 centrado">
+              <h3>Muchas gracias por tu compra!</h3>
+            </div>
+            <div class="row mt-20 centrado2">
+              <div class="col-lg-8 col-5 mb-20"><p class="centrado">Recibirás tu pedido en un plazo máximo de 2 semanas. Realizá el seguimiento de tu pedido<a class="btn font-sm-bold color-brand-1" href="#" style="padding: 3px;">aquí.</a></p></div>
+            </div>
+            <div class="row mt-20 centrado2">
+              <div class="col-lg-6 col-7 mb-20 centrado2"><a class="btn btn-buy w-auto" href="shop-grid.php">Seguir comprando</a></div>
+            </div>
+            <div class="row mt-20 centrado mt-70">
+              <h3 class="color-gray-700">Seguinos en nuestras redes sociales!</h3>
+              <div class="mt-30 mb-20">
+                <a class="icon-socials icon-facebook iconosf iconos" href="#"></a><a class="icon-socials icon-instagram iconosi iconos" href="#"></a><a class="icon-socials icon-twitter iconost iconos" href="#"></a><a class="icon-socials icon-linkedin iconosl iconos" href="#"></a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -37,27 +47,27 @@
               <h5 class="font-md-bold mb-20">Detalles de la compra</h5>
               <?php
               $carrito = mostrarCarrito($usuario);
-              if($carrito[0]){
-                $total=0;
-                foreach($carrito[1] as $articulo){
+              if ($carrito[0]) {
+                $total = 0;
+                foreach ($carrito[1] as $articulo) {
                   $producto = getProducto($articulo['producto_id']);
                   $precio = round($articulo['total_carrito'] * $moneda['precio_moneda']);
                   $total += $precio;
                   $precio = number_format($precio, 0, ',', '.');
-                  echo"
+                  echo "
                   <div class='listCheckout'>
                     <div class='item-wishlist'>
                       <div class='wishlist-product'>
                         <div class='product-wishlist'>
-                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/".htmlspecialchars($producto['imagen_url'])."' alt='Ecom'></a></div>
+                          <div class='product-image'><a href='shop-single-product.html'><img src='assets/imgs/" . htmlspecialchars($producto['imagen_url']) . "' alt='Ecom'></a></div>
                           <div class='product-info'><a href='shop-single-product.html'>
-                              <h6 class='color-brand-3'>".htmlspecialchars($producto['nombre'])."</h6>
+                              <h6 class='color-brand-3'>" . htmlspecialchars($producto['nombre']) . "</h6>
                             </a>
                           </div>
                         </div>
                       </div>
                       <div class='wishlist-status'>
-                        <h5 class='color-gray-500'>x".htmlspecialchars($articulo['cantidad'])."</h5>
+                        <h5 class='color-gray-500'>x" . htmlspecialchars($articulo['cantidad']) . "</h5>
                       </div>
                       <div class='wishlist-price'>
                         <h4 class='color-brand-3 font-lg-bold'>$$precio</h4>
