@@ -10225,8 +10225,8 @@ a:hover span {
 }
 
 .boton-importar {
-  fill: #0d305e;
-  color: #0d305e;
+  fill: #163763;
+  color: #163763;
   background-color: #ffffff;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
@@ -10236,7 +10236,11 @@ a:hover span {
   width: 200px; /* Ancho fijo para ambos botones */
   display: inline-block; /* Asegura que se respeten las dimensiones fijas */
   text-align: center; /* Centra el texto dentro del botón */
-  margin: 0 10px; /* Ajusta el margen entre los botones */
+  margin: 10px; /* Ajusta el margen entre los botones */
+}
+
+.boton-importar:hover {
+  color: #001632;
 }
 
 .texto-boton {
@@ -10367,6 +10371,9 @@ a:hover span {
   }
 }
 @media (max-width: 1399.98px) {
+  .bcr{
+    font-size: 55px;
+  }
   .block-samsung {
     padding: 25px 100px 25px 35px;
     background-size: auto 170px;
@@ -10428,6 +10435,13 @@ a:hover span {
   }
 }
 @media (max-width: 1199.98px) {
+  .bcr{
+    font-size: 45px;
+  }
+  .card-body {
+    background-color: #1e2a37;
+    height: 370px;
+  }
   .burger-icon {
     display: inline-block;
   }
@@ -10556,6 +10570,10 @@ a:hover span {
   }
 }
 @media (max-width: 991.98px) {
+  .card-body {
+    background-color: #1e2a37;
+    height: 420px;
+  }
   .footer .width-20 {
     width: 50%;
   }
@@ -10804,6 +10822,10 @@ a:hover span {
   }
 }
 @media (max-width: 767.98px) {
+  .card-body {
+    background-color: #1e2a37;
+    height: 300px;
+  }
   .footer .width-20 {
     width: 100%;
   }
@@ -11211,6 +11233,11 @@ a:hover span {
   .banner-hero.banner-1 .banner-big {
     padding: 60px 20px 25px 20px;
     background-position: center bottom;
+  }
+  .bannerc {
+    padding: 60px 20px 25px 20px;
+    background-position: right !important;
+
   }
   .box-newsletter {
     padding-bottom: 190px;
