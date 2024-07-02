@@ -217,99 +217,54 @@ if (empty($_SESSION["usuario"]) || isset($_GET['accion'])) {
 <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-content-area">
-            <div class="mobile-logo"><a class="d-flex" href="index.php"><img alt="Ecom" src="assets/imgs/img/vestorelogo.png" style="width: 80px;"></a></div>
+            <div class="mobile-logo"><a class="d-flex" href="index.php"><img id="logoheader" alt="Ecom" src="assets/imgs/img/vestorelogo.png"></a></div>
             <div class="perfect-scroll">
                 <div class="mobile-menu-wrap mobile-header-border">
                     <nav class="mt-15">
                         <ul class="mobile-menu font-heading">
-                            <li class="has-children"><a class="active" href="index.php">Home</a>
+                            <li class="has-children"><a class="active" href="index.php" data-section="header" data-value="home">Inicio</a></li>
+                            <li class="has-children"><a href="shop-grid.php" data-section="header" data-value="productos">Productos</a>
                                 <ul class="sub-menu">
-                                    <li><a href="index.php">Homepage - 1</a></li>
-                                    <li><a href="index-2.html">Homepage - 2</a></li>
-                                    <li><a href="index-3.html">Homepage - 3</a></li>
-                                    <li><a href="index-4.html">Homepage - 4</a></li>
-                                    <li><a href="index-5.html">Homepage - 5</a></li>
-                                    <li><a href="index-6.html">Homepage - 6</a></li>
-                                    <li><a href="index-7.html">Homepage - 7</a></li>
-                                    <li><a href="index-8.html">Homepage - 8</a></li>
-                                    <li><a href="index-9.html">Homepage - 9</a></li>
-                                    <li><a href="index-10.php">Homepage - 10</a></li>
+                                    <li><a href="shop-grid.php" data-section="header" data-value="minorista">Minorista</a></li>
+                                    <li><a href="shop-single-product-2.php" data-section="header" data-value="mayorista">Mayorista</a></li>
                                 </ul>
                             </li>
-                            <li class="has-children"><a href="shop-grid.php">Shop</a>
+                            </li>
+                            <li class="has-children"><a href="#" data-section="header" data-value="trabaja_con_nosotros">Trabajá con nosotros</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop-grid.php">Shop Grid</a></li>
-                                    <li><a href="shop-grid-2.html">Shop Grid 2</a></li>
-                                    <li><a href="shop-list.html">Shop List</a></li>
-                                    <li><a href="shop-list-2.html">Shop List 2</a></li>
-                                    <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
-                                    <li><a href="shop-single-product.html">Single Product</a></li>
-                                    <li><a href="shop-single-product-2.php">Single Product 2</a></li>
-                                    <li><a href="shop-single-product-3.html">Single Product 3</a></li>
-                                    <li><a href="shop-single-product-4.html">Single Product 4</a></li>
-                                    <li><a href="shop-cart.php">Shop Cart</a></li>
-                                    <li><a href="shop-checkout.php">Shop Checkout</a></li>
-                                    <li><a href="shop-compare.php">Shop Compare</a></li>
-                                    <li><a href="shop-wishlist.php">Shop Wishlist</a></li>
+                                    <li><a href="importar.php" data-section="header" data-value="importa">Importá</a></li>
+                                    <li><a href="exportar.php" data-section="header" data-value="exporta">Exportá</a></li>
                                 </ul>
                             </li>
-                            <li class="has-children"><a href="shop-vendor-list.html">Vendors</a>
+                            <li class="has-children"><a href="#" data-section="header" data-value="paginas">Paginas</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop-vendor-list.html">Vendors Listing</a></li>
-                                    <li><a href="shop-vendor-single.php">Vendor Single</a></li>
+                                    <li><a href="page-about-us.php" data-section="header" data-value="sobre_nosotros">Sobre nosotros</a></li>
+                                    <li><a href="page-term.php" data-section="header" data-value="terminos_condiciones">Términos y condiciones</a></li>
                                 </ul>
                             </li>
-                            <li class="has-children"><a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="page-contact.php">About Us</a></li>
-                                    <li><a href="page-contact.php">Contact Us</a></li>
-                                    <li><a href="page-careers.html">Careers</a></li>
-                                    <li><a href="page-term.php">Term and Condition</a></li>
-                                    <li><a href="page-register.php">Register</a></li>
-                                    <li><a href="page-login.php">Login</a></li>
-                                    <li><a href="page-404.html">Error 404</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children"><a href="blog.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog Grid</a></li>
-                                    <li><a href="blog-2.html">Blog Grid 2</a></li>
-                                    <li><a href="blog-list.html">Blog List</a></li>
-                                    <li><a href="blog-big.html">Blog Big</a></li>
-                                    <li><a href="blog-single.html">Blog Single - Left sidebar</a></li>
-                                    <li><a href="blog-single-2.html">Blog Single - Right sidebar</a></li>
-                                    <li><a href="blog-single-3.html">Blog Single - No sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-contact.php">Contact</a></li>
+                            <li><a href="page-contact.php" data-section="header" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="mobile-account">
-                    <div class="mobile-header-top">
-                        <div class="user-account"><a href="page-account.php"><img src="assets/imgs/template/ava_1.png" alt="Ecom"></a>
-                            <div class="content">
-                                <h6 class="user-name">Hello<span class="text-brand"> Steven !</span></h6>
-                                <p class="font-xs text-muted">You have 3 new messages</p>
-                            </div>
-                        </div>
-                    </div>
                     <ul class="mobile-menu">
-                        <li><a href="page-account.php">My Account</a></li>
-                        <li><a href="page-account.php">Order Tracking</a></li>
-                        <li><a href="page-account.php">My Orders</a></li>
-                        <li><a href="page-account.php">My Wishlist</a></li>
-                        <li><a href="page-account.php">Setting</a></li>
-                        <li><a href="page-login.php">Sign out</a></li>
+                    <?php
+                                if ($usuario) {
+                                    echo "
+                        <li><a href='page-account.php' data-section='header' data-value='mi_cuenta'>Mi cuenta</a></li>
+                        <li><a href='page-account.php' data-section='header' data-value='historial_compras'>Historial de compras</a></li>
+                        <li><a href='page-account.php' data-section='header' data-value='mis_favoritos'>Mis favoritos</a></li>
+                        <li><a href='page-account.php' data-section='header' data-value='configuracion'>Configuracion</a></li>
+                        <li><a href='index.php?accion=afrg323sd44sfe' data-section='header' data-value='cerrar_cuenta'>Cerrar sesión</a></li>
+                        ";
+                                } else {
+                                    echo "<li><a href='page-login.php' data-section='header' data-value='iniciar_sesion'>Iniciar sesion</a></li>";
+                                    echo "<li><a href='page-register.php' data-section='header' data-value='crear_cuenta'>Crear cuenta</a></li>";
+                                }
+                                ?>
                     </ul>
                 </div>
-                <div class="mobile-banner">
-                    <div class="bg-5 block-iphone"><span class="color-brand-3 font-sm-lh32">Starting from $899</span>
-                        <h3 class="font-xl mb-10">iPhone 12 Pro 128Gb</h3>
-                        <p class="font-base color-brand-3 mb-10">Special Sale</p><a class="btn btn-arrow" href="shop-grid.php">learn more</a>
-                    </div>
-                </div>
-                <div class="site-copyright color-gray-400 mt-30">Copyright 2022 &copy; Ecom - Marketplace Template.<br>Designed by<a href="http://alithemes.com" target="_blank">&nbsp; AliThemes</a></div>
+                <div class="site-copyright color-gray-400 mt-30">Copyright 2024 &copy; Vestore</div>
             </div>
         </div>
     </div>

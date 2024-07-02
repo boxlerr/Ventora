@@ -31,7 +31,7 @@
                 <div class="swiper-container swiper-group-1">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="banner-big bg-11"><span class="font-sm text-uppercase" data-section="index" data-value="tendencia_ahora_mismo">Tendencia ahora mismo</span>
+                      <div class="banner-big bg-11 bannerc"><span class="font-sm text-uppercase" data-section="index" data-value="tendencia_ahora_mismo">Tendencia ahora mismo</span>
                         <h2 class="mt-10" data-section="index" data-value="descuento50">Descuento hasta un 50%</h2>
                         <h1 data-section="index" data-value="dispositivos_Moviles">Dispositivos Moviles</h1>
                         <!-- <div class="row">
