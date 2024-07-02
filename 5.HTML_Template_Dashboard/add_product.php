@@ -31,7 +31,7 @@ if($con != NULL) {
                     $respuesta = mysqli_query($con, $consulta);
 
                     if ($respuesta) {
-                        header("Location: index.php");
+                        header("Location: page-products-grid.php");
                         exit();
                     } else {
                         echo "<h1>Algo salió mal al insertar los datos</h1>";
