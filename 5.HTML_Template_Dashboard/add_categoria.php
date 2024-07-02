@@ -11,25 +11,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $descripcion = $con->real_escape_string($_POST['product_description']);
         $slug = $con->real_escape_string($_POST['product_slug']);
         
-        
-        echo "Nombre: " . $nombre . "<br>";
-        echo "Descripción: " . $descripcion . "<br>";
-        echo "Slug: " . $slug . "<br>";
-        
-        
         $sql = "INSERT INTO categoria (nombre, descripcion, slug) VALUES ('$nombre', '$descripcion', '$slug')";
         
-        
-        
         if ($con->query($sql) === TRUE) {
-            echo "Categoría creada exitosamente";
+            $con->close();
+            // Redirigir a page-categories.php después de la inserción exitosa
+            header("Location: page-categories.php");
+            exit();
         } else {
-            echo "Error al crear la categoría: " . $con->error;
+            $error = "Error al crear la categoría: " . $con->error;
+            $con->close();
+            header("Location: page-categories.php?error=" . urlencode($error));
+            exit();
         }
     } else {
-        echo "Por favor completa todos los campos del formulario";
+        $error = "Por favor completa todos los campos del formulario";
+        $con->close();
+        header("Location: page-categories.php?error=" . urlencode($error));
+        exit();
     }
-    
-    $con->close();
 }
 ?>
